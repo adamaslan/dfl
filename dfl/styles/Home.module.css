@@ -2,7 +2,6 @@
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -34,7 +33,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: #00f314;
   text-decoration: none;
 }
 
