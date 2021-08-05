@@ -6,11 +6,11 @@ const Layout = ({ children }) => {
   return (
     <>
       <Nav />
+      <Header />
       <div className={styles.container}>
-        <main className={styles.main}>
-          <Header />
-          {children}
-        </main>
+        <main className={styles.main}></main>
+        <div className={styles.submain}></div>
+        <div className={styles.subsubmain}>{children} </div>
       </div>
     </>
   );
