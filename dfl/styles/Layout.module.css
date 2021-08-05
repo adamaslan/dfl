@@ -4,9 +4,9 @@
   margin: 2rem;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px;
+  grid-template-columns: [col] 25% [col] 25% [col] 25% [col] 25%;
   grid-template-rows: [row] auto [row] auto [row];
-  background-color: #fff;
+  background-color: rgb(226, 199, 199);
   color: #444;
   align-items: center;
 }
@@ -17,16 +17,17 @@
 }
 
 .submain {
-  grid-column: col / span 2;
+  grid-column: col / span 4;
   grid-row: row 2;
+  background-color: rgb(16, 180, 57);
 }
 
 .subsubmain {
   grid-column: col / span 4;
   grid-row: row 3;
   background-color: rgb(182, 51, 51);
-  color: #fff;
-  border-radius: 5px;
+  color: rgb(56, 41, 190);
+  border-radius: 20px;
   padding: 20px;
   font-size: 150%;
 }

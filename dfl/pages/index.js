@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Layout.module.css";
 import Carousel from "../components/Carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -24,7 +24,7 @@ export default function Home() {
         <p> We miss Loic and Will!</p>
         <p> We miss Loic and Will!</p>
       </div>
-      <div className={styles.submain}>
+      <div className={styles.subsubmain}>
         <p>Chicken is a Chicken</p>
       </div>
     </div>

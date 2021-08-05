@@ -8,9 +8,9 @@ const Layout = ({ children }) => {
       <Nav />
       <Header />
       <div className={styles.container}>
-        <main className={styles.main}>{children}</main>
+        <main className={styles.main}></main>
         <div className={styles.submain}></div>
-        <div className={styles.subsubmain}></div>
+        <div className={styles.subsubmain}>{children} </div>
       </div>
     </>
   );
