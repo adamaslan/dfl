@@ -6,6 +6,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  font-family: cursive;
+  font-size: larger;
 }
 
 .nav ul {
