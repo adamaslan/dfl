@@ -1,6 +1,6 @@
 .container {
   min-height: 100vh;
-  padding: 1rem;
+
   margin: 2rem;
   display: grid;
   grid-gap: 10px;
@@ -14,7 +14,7 @@
 .main {
   grid-column: col / span 4;
   grid-row: row;
-  padding: 1rem;
+
   margin: 2rem;
 }
 
