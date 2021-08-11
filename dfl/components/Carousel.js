@@ -15,7 +15,7 @@ const createCarouselItemImage = (index, options = {}) => (
   </div>
 );
 
-const baseChildren = <div>{[].map(createCarouselItemImage)}</div>;
+//const baseChildren = <div>{[].map(createCarouselItemImage)}</div>;
 
 const tooglesGroupId = "Toggles";
 const valuesGroupId = "Values";
