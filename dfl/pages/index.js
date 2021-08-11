@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Layout.module.css";
 import Carousel from "../components/Carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Home() {
   return (
