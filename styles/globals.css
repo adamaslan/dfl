@@ -1,3 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+/*   color variables */
+$clr-primary: #d50000;
+$clr-primary-hover: #29e6a7;
+$clr-primary-dark: #039d69;
+$clr-gray100: #f9fbff;
+$clr-gray150: #f4f6fb;
+$clr-gray200: #eef1f6;
+$clr-gray300: #e1e5ee;
+$clr-gray400: #767b91;
+$clr-gray500: #4f546c;
+$clr-gray600: #2a324b;
+$clr-gray700: #161d34;
+
+/*   border radius */
+$radius: 0.2rem;
+
 html,
 body {
   padding: 0;
@@ -19,4 +37,31 @@ a {
   display: flex;
   max-height: 25rem;
   flex: 0 1 auto;
+
+  object-fit: fill;
+}
+
+.img1 {
+  max-width: 50%;
+  border-radius: 10px;
+}
+a.card-link {
+  display: flex;
+  text-decoration: none;
+}
+
+.tagged-content-card {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+
+  width: 420px;
+  height: 350px;
+
+  background-color: #2c3e50;
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
