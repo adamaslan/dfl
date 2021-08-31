@@ -13,7 +13,8 @@
     "nuka-carousel": "^4.7.9",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-responsive-carousel": "^3.2.20"
+    "react-responsive-carousel": "^3.2.20",
+    "sass": "^1.38.2"
   },
   "devDependencies": {
     "eslint": "7.31.0",
