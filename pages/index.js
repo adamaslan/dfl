@@ -37,20 +37,26 @@ export default function Home() {
           <p> We miss Loic and Will!</p>
           <p> We miss Loic and Will!</p>
         </div>
-        <div className={styles.smain3}></div>
+        <div className={styles.smain3}>
+          <p>
+            Here's is another section its important we need more content why? I
+            thinking its a visual thing. Cards, Carousel, some animation, some
+            hover effects. These are things that make something seem
+            professional.
+          </p>
+        </div>
       </div>
       <div className="wrapper">
         <ContentCard
           img="https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-          title="The Everyday Salad"
-          description="Take your boring salads up a knotch. This recipe is perfect for lunch
-          and only contains 5 ingredients!"
+          title="Drinking Amaros at ZXY Gallery"
+          description="Amaro Montenegro making an appearance at ZXY Gallery"
         />
 
         <ContentCard
           img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
           title="Baked Cod with Vegetables"
-          description="Baked Cod with Vegetables. 30 minute meal!"
+          description="In love with North Dumpling "
         />
       </div>
     </>
