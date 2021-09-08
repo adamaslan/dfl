@@ -15,48 +15,12 @@ export default function Home() {
         <div className={styles.main}></div>
         <div className={styles.submain}>
           <p>
-            {" "}
-            An awkward question is posed, “hey...there...I'm looking for a
-            ...natural wine...something funky...that isn’t going to cost over
-            twenty five dollars?”{" "}
-          </p>{" "}
-          <p>
-            If you are like me, then your normal speaking voice is ridden with
-            pauses so as to humbly point out a lack of certainty. When it comes
-            to the new movement of natural wines, one could say the whole
-            movement should be speaking in such a tone. A movement that is
-            clearly going to gain steam in 2019, natural wines do not come with
-            a specific certification one has to pay for necessarily, like a wine
-            that is certified organic or biodynamic for example and thus, the
-            definition of natural is open to interpretation.
+            North Dumpling you are the most beautiful dumpling spot and you dont
+            even know it. I follow the directions for your frozen dumplings that
+            you pasted on to the glass display next to the spring rolls
+            seemingly years ago. Eternal endless bliss pours through your
+            dumplings. Bountiful is the vitality of the owners ps.
           </p>
-          <p>
-            {" "}
-            While the question of what makes a wine natural is clearly an
-            interesting one, another great question is: why is everybody
-            freaking out over natural wines? There are several good answers to
-            that question. You could answer that question by mentioning all the
-            nods to minimalism that comes with natural wine like the lack of or
-            minimal use of sulfites, lack of advanced technology, or lack of
-            filtration. Another way you could answer that question would be to
-            mention how natural wine uses more old school techniques in the wine
-            making process. Lets not forget all the cool labels they come with,
-            boutique distributors, stores, and restaurants all dedicated to
-            natural wine. However, none of these are the best reasons to freak
-            out about natural wine.
-          </p>
-          <p>
-            {" "}
-            What is the best reason? The unique funky taste. When I awkwardly
-            asked an employee at Irving Bottle, located on...Irving Ave (who
-            would have guessed???) in Bushwick Brooklyn, if they had a funky yet
-            affordable natural red, I was delighted to find out that this
-            neighborhood gem did indeed carry an array of such wines. The wine
-            they suggested to me was the Coup de Canon produced by Gregory
-            Leclerc of Domaine Chahut et Prodiges located in the Loire Valley.{" "}
-          </p>
-          <p> We miss Loic and Will!</p>
-          <p> We miss Loic and Will!</p>
         </div>
         <div className={styles.subsubmain}>
           <p>Chicken is a Chicken</p>
