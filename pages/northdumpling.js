@@ -23,7 +23,7 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.subsubmain}>
-          <p>Chicken is a Chicken</p>
+          
         </div>
         <div className={styles.smain}>
           <img
@@ -50,7 +50,7 @@ export default function Home() {
         <ContentCard
           img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
           title="On the beauty of North Dumpling"
-          description="In love with North Dumpling "
+          description="Change me "
         />
       </div>
     </>
