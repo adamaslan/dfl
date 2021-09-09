@@ -22,9 +22,7 @@ export default function Home() {
             dumplings. Bountiful is the vitality of the owners ps.
           </p>
         </div>
-        <div className={styles.subsubmain}>
-          
-        </div>
+        <div className={styles.subsubmain}></div>
         <div className={styles.smain}>
           <img
             className="img1"
@@ -48,9 +46,9 @@ export default function Home() {
         />
 
         <ContentCard
-          img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+          img="https://lh3.googleusercontent.com/enozCMR1J14Q1tHk-w5t7CGi1uKjXMZ9C0qROHSu3wwK0YOijaM4aC_7FIMRh3xKktKndbYSogQLHf6CdCjcCw2dFPztFBvaObpijdBI1AP7uibQ5ydl3dsYoSblNvR8bsAZdQKwTg=w2400"
           title="On the beauty of North Dumpling"
-          description="Change me "
+          description="Change me to something else"
         />
       </div>
     </>
