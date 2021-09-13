@@ -15,6 +15,7 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className={styles.main}>
+          {" "}
           <Carousel />
         </div>
         <div className={styles.submain}>
