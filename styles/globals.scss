@@ -31,7 +31,7 @@ a {
 }
 
 /*   color variables */
-$clr-primary: #d50000;
+$clr-primary: #12d500;
 $clr-primary-hover: #29e6a7;
 $clr-primary-dark: #039d69;
 $clr-gray100: #f9fbff;
@@ -105,5 +105,6 @@ $radius: 0.2rem;
   &:hover &__btn {
     background: $clr-primary;
     color: white;
+    cursor: cell;
   }
 }
