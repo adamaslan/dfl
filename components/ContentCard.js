@@ -8,9 +8,7 @@ const ContentCard = (props) => {
         <h2 className="card__title">{props.title}</h2>
         <p className="card__description">{props.description}</p>
       </div>{" "}
-      <Link href="/amaromontenegro">
-        <button className="card__btn">View Recipe</button>
-      </Link>
+      <button className="card__btn">View Recipe</button>
     </div>
   );
 };
