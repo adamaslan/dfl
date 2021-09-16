@@ -49,7 +49,7 @@ export default function Home() {
         </div>
       </div>
       <div className="wrapper">
-        <Link href="/amaromontenegro">
+        <a href="./amaromontenegro">
           <ContentCard
             img="https://lh3.googleusercontent.com/SpfSt4EadOjpRUZCfjEPu_bl5mCTyXq5skTyHKKqwcCt1hUzXHZ5ZxU9rPg_oY4e_tIZQQnZb4RD4FjBFzJTmMGKArLmctic3R1oD7GbBy_kXHazlVy1QdGWiN0ywz1GGenQRrCl2w=w2400"
             title="Drinking Amaros at ZXY Gallery"
@@ -57,16 +57,16 @@ export default function Home() {
             tag="amaromontenegro"
             href="amaromontenegro"
           />
-        </Link>
+        </a>
 
-        <Link href="/northdumpling">
+        <a href="./northdumpling">
           <ContentCard
             img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-            title="North Dumpling"
-            description="In love with North Dumpling "
+            title="Yas, North Dumpling. You are my Guru."
+            description="I'm in love with North Dumpling, duh. Get over it...Dad."
             href="northdumpling"
           />
-        </Link>
+        </a>
       </div>
     </>
   );
