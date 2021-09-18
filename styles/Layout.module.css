@@ -1,14 +1,16 @@
 .container {
   min-height: 100vh;
 
-  margin: 2rem;
+  margin: 1rem;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: [col] 25% [col] 25% [col] 25% [col] 25%;
   grid-template-rows: [row] auto [row] auto [row] auto [row] auto [row];
   background-color: rgba(9, 47, 173, 0.096);
-  color: rgb(104, 207, 255);
+  color: rgb(3, 13, 17);
   align-items: center;
+
+  border: 2px solid black;
 }
 
 .main {
@@ -90,9 +92,14 @@
 
 .article1 {
   grid-column-start: 2;
-  grid-column-end: five;
-  grid-row-start: row1-start;
+  grid-column-end: 4;
+  grid-row-start: 1;
   grid-row-end: 3;
+  background-color: rgb(27, 199, 76);
 
-  background-color: rgb(32, 179, 39);
+  justify-content: space-between;
+
+  font-size: 1rem;
+  margin: 1rem;
+  border: 2px solid black;
 }

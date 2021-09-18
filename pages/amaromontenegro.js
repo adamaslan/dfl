@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Layout.module.css";
 import ContentCard from "../components/ContentCard";
+import headerStyles from "../styles/Header.module.css";
 
 export default function Home() {
   return (
@@ -16,19 +17,32 @@ export default function Home() {
       </Head>
       <div className={styles.container}>
         <div className={styles.article1}>
+          <p className={headerStyles.description}>
+            Drinking Amaro Montenegro at ZXY Gallery
+          </p>
+          <br />
           <p>
             {" "}
             ZXY Gallery and Drinks...Food...Life! teamed up for Art pop up that
             featured an Amaro Montenegro tasting on the rooftop of ZXY Gallery
             in Bushwick. The rest was history. Insert upside down smiley face
             here. Loic Luspo, french model and professional handball athlete,
-            models for the photo. The ZXY Gallery is located by the Williamsburg
-            and Bushwick border. Cosmic Veggie is a curatorial platform that
-            focuses on art experiences paired with food and drinks. Check out
-            their instagram for more info
-            https://www.instagram.com/cosmicveggie/ For more on Amaro Montenegro
-            visit www.amaromontenegro.com
+            models for the photo.{" "}
+            <p>
+              ZXY Gallery is located by the Williamsburg and Bushwick border.
+              Cosmic Veggie is a curatorial platform that focuses on art
+              experiences paired with food and drinks.{" "}
+            </p>{" "}
+            <p>
+              Check out their instagram for more info
+              https://www.instagram.com/zxygallery/{" "}
+            </p>{" "}
+            For more on Amaro Montenegro visit www.amaromontenegro.com
           </p>
+          <img
+            className="img1"
+            src="https://lh3.googleusercontent.com/SpfSt4EadOjpRUZCfjEPu_bl5mCTyXq5skTyHKKqwcCt1hUzXHZ5ZxU9rPg_oY4e_tIZQQnZb4RD4FjBFzJTmMGKArLmctic3R1oD7GbBy_kXHazlVy1QdGWiN0ywz1GGenQRrCl2w=w2400"
+          />{" "}
         </div>
       </div>
       <div className="wrapper">
@@ -52,10 +66,7 @@ export default function Home() {
         </a>
       </div>
       <div className={styles.smain}>
-        <img
-          className="img1"
-          src="https://lh3.googleusercontent.com/SpfSt4EadOjpRUZCfjEPu_bl5mCTyXq5skTyHKKqwcCt1hUzXHZ5ZxU9rPg_oY4e_tIZQQnZb4RD4FjBFzJTmMGKArLmctic3R1oD7GbBy_kXHazlVy1QdGWiN0ywz1GGenQRrCl2w=w2400"
-        />{" "}
+        Contact us cause this is now the footer
       </div>
     </>
   );
