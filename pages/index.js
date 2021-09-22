@@ -16,7 +16,10 @@ export default function Home() {
         </Head>
         <div className={styles.main}>
           {" "}
-          <Carousel />
+          <p>
+            Sooo this is the main but really we just want like some little
+            images - maybe video - not too much no carousels they are cancelled
+          </p>
         </div>
         <div className={styles.submain}>
           <p> We miss Loic and Will!</p> <p> We miss Loic and Will!</p>
