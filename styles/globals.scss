@@ -61,6 +61,12 @@ $radius: 0.2rem;
   justify-content: center;
 }
 
+.wrapper1 {
+  display: flex;
+
+  gap: 4 rem;
+  justify-content: space-evenly;
+}
 .card {
   overflow: hidden;
   box-shadow: 0 2px 20px $clr-gray300;
