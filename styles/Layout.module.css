@@ -19,6 +19,8 @@
   display: flex;
   justify-content: space-evenly;
   margin: 2rem;
+
+  border: 2px solid black;
 }
 
 .submain {
@@ -28,6 +30,8 @@
   color: black;
   padding: 1rem;
   margin: 2rem;
+
+  border: 2px solid black;
 }
 
 .subsubmain {
@@ -49,6 +53,8 @@
   color: rgb(3, 2, 7);
   border-radius: 20px;
 
+  border: 2px solid black;
+
   font-size: 150%;
   padding: 1rem;
   margin: 2rem;
@@ -68,6 +74,8 @@
   color: rgb(2, 1, 12);
   border-radius: 20px;
 
+  border: 2px solid black;
+
   font-size: 150%;
   padding: 1rem;
   margin: 2rem;
@@ -85,6 +93,8 @@
   background-color: rgb(32, 179, 39);
   color: rgb(56, 41, 190);
   border-radius: 20px;
+
+  border: 2px solid black;
 
   padding: 1rem;
   margin: 2rem;
