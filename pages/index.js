@@ -37,14 +37,11 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.smain3}>
-          <p> We miss Loic and Will!</p> <p> We miss Loic and Will!</p>
-          <p> We miss Loic and Will!</p>
-          <p> We miss Loic and Will!</p>
-          <p> We miss Loic and Will!</p>
-          <p> We miss Loic and Will!</p>
+          <h2>North Dumplings</h2>
+          <p>We Love this spot</p>
         </div>
         <div className={styles.subsubmain}>
-          <p>Chicken is a Chicken</p>
+          <p>Cafe Versailles - pernounced Ver-Sigh-yes :) </p>
         </div>
         <div className={styles.smain}>
           <img
@@ -58,12 +55,8 @@ export default function Home() {
           <p> We miss Loic and Will!</p>
         </div>
         <div className={styles.smain3}>
-          <p>
-            Here's is another section its important we need more content why? I
-            thinking its a visual thing. Cards, Carousel, some animation, some
-            hover effects. These are things that make something seem
-            professional.
-          </p>
+          <h1>Sea Wolf great to chill in</h1>
+          <p>The indoor and out door areas tho!</p>
         </div>
       </div>
       <div className="wrapper">
