@@ -9,6 +9,7 @@ export default function handler(req, res) {
       desc: "coffee shop",
     },
     456: {
+      name: "notnook",
       desc: "nookYo",
     },
   };

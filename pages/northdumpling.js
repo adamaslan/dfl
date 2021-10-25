@@ -24,10 +24,14 @@ export default function Home() {
         </div>
         <div className={styles.subsubmain}></div>
         <div className={styles.smain}>
-          <img
-            className="img1"
-            src="https://lh3.googleusercontent.com/iOJLi8Zp1F5QSBsfWCHVskuxB05OSOOKd5qgUf2FajSHtkQ-tgyYusHTcWWXo2xJGKIhXVZKP57bAlZKEIJ_Tv6RqFjO8bYbHj4rOKmFYF8Zs9ra48bc9kPBUPjWUoLTn87z3J9QNg=w2400"
-          />{" "}
+          <div className="img1">
+            <Image
+              className="img2"
+              alt="dumpling"
+              layout="fill"
+              src="https://lh3.googleusercontent.com/iOJLi8Zp1F5QSBsfWCHVskuxB05OSOOKd5qgUf2FajSHtkQ-tgyYusHTcWWXo2xJGKIhXVZKP57bAlZKEIJ_Tv6RqFjO8bYbHj4rOKmFYF8Zs9ra48bc9kPBUPjWUoLTn87z3J9QNg=w2400"
+            />{" "}
+          </div>
         </div>
         <div className={styles.smain3}>
           <p>

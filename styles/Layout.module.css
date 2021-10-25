@@ -13,6 +13,12 @@
   border: 2px solid black;
 }
 
+.img2 {
+  max-width: 50%;
+  height: 50%;
+  border-radius: 10px;
+}
+
 .main {
   grid-column: col / span 4;
   grid-row: row;
