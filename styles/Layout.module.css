@@ -13,12 +13,6 @@
   border: 2px solid black;
 }
 
-.img2 {
-  max-width: 50%;
-  height: 50%;
-  border-radius: 10px;
-}
-
 .main {
   grid-column: col / span 4;
   grid-row: row;
@@ -66,8 +60,8 @@
   margin: 2rem;
 
   display: flex;
-  align-items: center;
   flex: 0 1 auto;
+  justify-content: space-between;
   margin: 2rem;
 
   object-fit: fill;
@@ -105,6 +99,25 @@
   padding: 1rem;
   margin: 2rem;
 }
+
+.divArt{
+
+  width:  500 px;
+
+  height:  500 px;
+
+
+  border: 2px solid rgb(32, 179, 39);
+
+}
+
+
+.img2 {
+  max-width: 20%;
+  height: 50%;
+  border: 4px solid rgb(32, 179, 39);
+}
+
 
 .article1 {
   grid-column-start: 2;
