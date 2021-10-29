@@ -5,9 +5,10 @@ import Head from "next/head";
 const Footer = () => {
   return (
     <div className={footerStyles.basic}>
-      Visit the Drinks Food Life!{" "}
-      <a href="https://:www.instagram.com/drinksfoodlife"> HERE</a>
+      Check out our instagram{" "}
+      <a href="https://:www.instagram.com/drinksfoodlife"><u> HERE</u></a>!
     </div>
+    //add top line border line at least :)
   );
 };
 
