@@ -48,11 +48,8 @@ export default function Home() {
             className="img1"
             src="https://lh3.googleusercontent.com/SpfSt4EadOjpRUZCfjEPu_bl5mCTyXq5skTyHKKqwcCt1hUzXHZ5ZxU9rPg_oY4e_tIZQQnZb4RD4FjBFzJTmMGKArLmctic3R1oD7GbBy_kXHazlVy1QdGWiN0ywz1GGenQRrCl2w=w2400"
           />{" "}
-          <p> </p> <p>Yooo!</p>
-          <p>Yooo!</p>
-          <p> We miss Loic and Will!</p>
-          <p> We miss Loic and Will!</p>
-          <p> We miss Loic and Will!</p>
+        <div  className={styles.divArt}>   <h2> Amaro Montenegro and ZXY Gallery Collab</h2> <h3>Amaro Montenegro making an appearance at ZXY Gallery</h3>
+</div>
         </div>
         <div className={styles.smain3}>
           <h1>Sea Wolf great to chill in</h1>
