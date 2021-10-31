@@ -15,12 +15,12 @@
 
 .main {
   grid-column: col / span 4;
-  grid-row: row;
+  grid-row: 0 / 5;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin: 2rem;
 
-  border: 2px solid black;
+  border: 2px solid green;
 }
 
 .submain {
