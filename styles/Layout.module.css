@@ -10,6 +10,7 @@
   color: rgb(3, 13, 17);
   align-items: center;
 
+  border-radius: 20px;
   border: 2px solid black;
 }
 
@@ -20,6 +21,7 @@
   justify-content: space-around;
   margin: 2rem;
 
+  border-radius: 20px;
   border: 2px solid green;
 }
 
@@ -32,6 +34,8 @@
   margin: 2rem;
 
   border: 2px solid black;
+
+  border-radius: 20px;
 }
 
 .subsubmain {
@@ -106,11 +110,13 @@
 
   height:  500 px;
 
+  border-radius: 20px;
 
   border: 2px solid rgb(32, 179, 39);
 
 }
 
+.
 
 .img2 {
   max-width: 20%;
