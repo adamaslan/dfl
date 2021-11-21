@@ -29,7 +29,6 @@ a {
   max-width: 50%;
   height: 50%;
   border-radius: 30px;
-
 }
 
 /*   color variables */
@@ -61,6 +60,9 @@ $radius: 0.2rem;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
   gap: 2rem;
   justify-content: center;
+  border-radius: 20px;
+  border: 5px solid rgb(3, 247, 255);
+  margin-top: 1 rem;
 }
 
 .wrapper1 {
@@ -68,6 +70,10 @@ $radius: 0.2rem;
 
   gap: 4 rem;
   justify-content: space-evenly;
+
+  border-radius: 20px;
+  border: 5px solid rgb(3, 247, 255);
+  margin-top: 1 rem;
 }
 .card {
   overflow: hidden;
