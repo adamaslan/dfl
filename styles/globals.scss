@@ -25,10 +25,15 @@ a {
   object-fit: fill;
 }
 
-.img1 {
-  max-width: 50%;
-  height: 50%;
-  border-radius: 30px;
+.image-wrapper {
+  box-sizing: border-box;
+  width: auto;
+  padding: 5px;
+}
+/* the magic happens here */
+.image-wrapper > div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
 }
 
 /*   color variables */
