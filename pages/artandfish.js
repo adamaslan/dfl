@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
+        git
         <title>
           ZXY Gallery and Drinks Food Life team up for Art Event and Amaro
           Montenegro Tasting
@@ -18,15 +19,17 @@ export default function Home() {
       </Head>
       <div className={styles.container}>
         <div className={styles.article1}>
-          <p className={headerStyles.description}>On Art and Spear Fishing</p>
-          <Image
-            alt="fish plate"
-            className="fish.jpg"
-            width={500}
-            height={500}
-            src="/fish.jpg"
-          />{" "}
           <br />
+          <p className={headerStyles.description}>
+            On Art and Spear Fishing <br />
+            <Image
+              alt="fish plate"
+              className="fish2.jpg"
+              width={872}
+              height={554}
+              src="/fish.jpg"
+            />{" "}
+          </p>
           <p>
             My friend caught a fish free diving in the depths of the Atlantic
             like a ferocious predator, but photos of her submerged laying in
