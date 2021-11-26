@@ -2,10 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Layout.module.css";
 import ContentCard from "../components/ContentCard";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Layout.module.css";
-import ContentCard from "../components/ContentCard";
+
 import headerStyles from "../styles/Header.module.css";
 
 export default function Home() {
@@ -21,9 +18,7 @@ export default function Home() {
       </Head>
       <div className={styles.container}>
         <div className={styles.article1}>
-          <p className={headerStyles.description}>
-            Drinking Amaro Montenegro at ZXY Gallery
-          </p>
+          <p className={headerStyles.description}>On Art and Spear Fishing</p>
           <Image
             alt="fish plate"
             className="fish.jpg"
@@ -33,12 +28,16 @@ export default function Home() {
           />{" "}
           <br />
           <p>
-            {" "}
-            North Dumpling you are the most beautiful dumpling spot and you dont
-            even know it.I follow the directions for your frozen dumplings that
-            you pasted on to the glass display next to the spring rolls
-            seemingly years ago.Eternal endless bliss pours through your
-            dumplings.Bountiful is the vitality of the owners ps.{" "}
+            My friend caught a fish free diving in the depths of the Atlantic
+            like a ferocious predator, but photos of her submerged laying in
+            wait at the bottom of the sea are more precious and beautiful than
+            anything else. How nice it is to know that this blackened strip bass
+            came from the hands of a friend, Nicole Burko. Check out her art
+            here @nicoleburko on insta. Also noteworthy, fried plantains
+            forever, pescatarian vibes, and new favourite green -> Baby Kale.
+            Not that I don’t love my arugula and red lettuce, but that baby kale
+            has the cutest name of the leafy greens that I know of. Is their
+            cuter leafy green competition?
           </p>
         </div>
       </div>
