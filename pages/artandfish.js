@@ -19,13 +19,15 @@ export default function Home() {
           <br />
           <p className={headerStyles.description}>
             On Art and Spear Fishing <br />
-            <Image
-              alt="fish plate"
-              className="fish2.jpg"
-              width={872}
-              height={554}
-              src="/fish.jpg"
-            />{" "}
+            <div className="image-wrapper">
+              <Image
+                alt="fish plate"
+                width={872}
+                height={554}
+                src="/fish2.jpg"
+              />{" "}
+            </div>
+            .
           </p>
           <p>
             My friend caught a fish free diving in the depths of the Atlantic
