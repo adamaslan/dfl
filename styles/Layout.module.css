@@ -134,21 +134,21 @@
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 3;
-  background-color: rgb(192, 252, 132);
-
   justify-content: space-between;
 
   font-size: 1rem;
   margin: 1rem;
   border: 2px solid black;
+
+  border-radius: 20px;
+  border: 5px solid rgb(0, 32, 75);
 }
 
 .card {
   color: rgb(0, 0, 0);
-  padding: 1rem;
 
   border-radius: 20px;
-  border: 5px solid rgba(96, 252, 6, 0.665);
+  border: 5px solid rgb(0, 32, 75);
 }
 
 .cards {
