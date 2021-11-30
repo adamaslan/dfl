@@ -136,7 +136,7 @@
   grid-row-end: 3;
   justify-content: space-between;
 
-  font-size: 1rem;
+  font-size: 2 rem;
   margin: 1rem;
   border: 2px solid black;
 
@@ -149,6 +149,7 @@
 
   border-radius: 20px;
   border: 5px solid rgb(0, 32, 75);
+  margin: 1rem;
 }
 
 .cards {
