@@ -15,13 +15,7 @@ export default function Home() {
       </Head>{" "}
       <div className={styles.cards}>
         <div className={styles.card}>
-          <Image
-            alt="dumpling"
-            className="img2"
-            width={500}
-            height={500}
-            src="/northdump1.jpg"
-          />{" "}
+          <Image alt="fish" width={500} height={500} src="/fish2.jpg" />{" "}
           <h2> North Dumpling, my Guru</h2>{" "}
           <h3>I'm in love with North Dumpling, duh.</h3>
         </div>
