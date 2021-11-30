@@ -16,8 +16,7 @@ export default function Home() {
       <div className={styles.cards}>
         <div className={styles.card}>
           <Image alt="fish" width={500} height={500} src="/fish2.jpg" />{" "}
-          <h2> North Dumpling, my Guru</h2>{" "}
-          <h3>I'm in love with North Dumpling, duh.</h3>
+          <h2> On Art and Spear Fishing</h2> <h3>The Nicole Burko Story</h3>
         </div>
 
         <div className={styles.card}>
