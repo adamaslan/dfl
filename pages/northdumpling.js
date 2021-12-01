@@ -18,9 +18,12 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.article1}>
           <p className={headerStyles.description}>
-            Drinking Amaro Montenegro at ZXY Gallery
+            In Love with North Dumpling
           </p>
-          <br />
+
+          <div className="image-wrapper">
+            <Image alt="dumps" width={872} height={554} src="/northdump1.jpg" />{" "}
+          </div>
           <p>
             {" "}
             North Dumpling you are the most beautiful dumpling spot and you dont
