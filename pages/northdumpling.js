@@ -22,7 +22,7 @@ export default function Home() {
           </p>
 
           <div className="image-wrapper">
-            <Image alt="dumps" width={872} height={554} src="/northdump1.jpg" />{" "}
+            <Image alt="dumps" width={572} height={572} src="/northdump1.jpg" />{" "}
           </div>
           <p>
             {" "}
