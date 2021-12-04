@@ -27,7 +27,6 @@ export default function Home() {
                 src="/fish2.jpg"
               />{" "}
             </div>
-            .
           </p>
           <p>
             My friend caught a fish free diving in the depths of the Atlantic
