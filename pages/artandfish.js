@@ -45,11 +45,12 @@ export default function Home() {
       <div className="wrapper">
         <a href="./amaromontenegro">
           <ContentCard
-            img="https://lh3.googleusercontent.com/SpfSt4EadOjpRUZCfjEPu_bl5mCTyXq5skTyHKKqwcCt1hUzXHZ5ZxU9rPg_oY4e_tIZQQnZb4RD4FjBFzJTmMGKArLmctic3R1oD7GbBy_kXHazlVy1QdGWiN0ywz1GGenQRrCl2w=w2400"
+            img="amaro-monte.jpg"
             title="Drinking Amaros at ZXY Gallery"
-            description="Amaro Montenegro making an appearance at ZXY Gallery"
+            description="Amaro at ZXY Gallery"
             tag="amaromontenegro"
             href="amaromontenegro"
+            //techdebt-make this into an IMAGE for NEXT Optimization
           />
         </a>
 
