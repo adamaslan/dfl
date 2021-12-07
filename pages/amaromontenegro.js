@@ -20,7 +20,10 @@ export default function Home() {
           <p className={headerStyles.description}>
             Drinking Amaro Montenegro at ZXY Gallery
           </p>
-          <br />
+          <img
+            className="img1"
+            src="https://lh3.googleusercontent.com/SpfSt4EadOjpRUZCfjEPu_bl5mCTyXq5skTyHKKqwcCt1hUzXHZ5ZxU9rPg_oY4e_tIZQQnZb4RD4FjBFzJTmMGKArLmctic3R1oD7GbBy_kXHazlVy1QdGWiN0ywz1GGenQRrCl2w=w2400"
+          />{" "}
           <p>
             {" "}
             ZXY Gallery and Drinks...Food...Life! teamed up for Art pop up that
@@ -35,14 +38,12 @@ export default function Home() {
             </p>{" "}
             <p>
               Check out their instagram for more info
-              https://www.instagram.com/zxygallery/{" "}
+              <a href="https://www.instagram.com/zxygallery/">
+                <u>here</u>{" "}
+              </a>
             </p>{" "}
             For more on Amaro Montenegro visit www.amaromontenegro.com
           </p>
-          <img
-            className="img1"
-            src="https://lh3.googleusercontent.com/SpfSt4EadOjpRUZCfjEPu_bl5mCTyXq5skTyHKKqwcCt1hUzXHZ5ZxU9rPg_oY4e_tIZQQnZb4RD4FjBFzJTmMGKArLmctic3R1oD7GbBy_kXHazlVy1QdGWiN0ywz1GGenQRrCl2w=w2400"
-          />{" "}
         </div>
       </div>
       <div className="wrapper">
