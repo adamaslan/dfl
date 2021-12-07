@@ -54,6 +54,7 @@ export default function Home() {
           <h3>I'm in love with North Dumpling, duh.</h3>
         </div>
       </div>
+      //sticky social and tiny about + newsletter
       <div className="wrapper">
         <a href="./amaromontenegro">
           <ContentCard
