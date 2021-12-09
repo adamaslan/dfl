@@ -35,7 +35,8 @@ export default function Home() {
             resonates with me because it has actually touched the hearts of many
             in the Cuban and greater Latino population in Miami regardless of
             income level. They have a location in Little Haiti and in the Miami
-            Airport. Vibe with it. Rock with it.
+            Airport, which makes MIA one of the more culturally relevant
+            airports in the US in competition with DEN to name one.
           </p>
         </div>
       </div>
