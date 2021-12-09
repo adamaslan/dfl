@@ -20,10 +20,14 @@ export default function Home() {
           <p className={headerStyles.description}>
             Drinking Amaro Montenegro at ZXY Gallery
           </p>
-          <img
-            className="img1"
-            src="https://lh3.googleusercontent.com/SpfSt4EadOjpRUZCfjEPu_bl5mCTyXq5skTyHKKqwcCt1hUzXHZ5ZxU9rPg_oY4e_tIZQQnZb4RD4FjBFzJTmMGKArLmctic3R1oD7GbBy_kXHazlVy1QdGWiN0ywz1GGenQRrCl2w=w2400"
-          />{" "}
+          <div className="image-wrapper">
+            <Image
+              alt="Amaro Bottle"
+              width={872}
+              height={554}
+              src="/amaro-monte.jpg"
+            />{" "}
+          </div>
           <p>
             {" "}
             ZXY Gallery and Drinks...Food...Life! teamed up for Art pop up that
