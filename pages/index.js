@@ -42,25 +42,26 @@ export default function Home() {
               height={500}
               src="/leclerc.jpg"
             />{" "}
-            <h2> North Dumpling, my Guru</h2>{" "}
-            <h3>I'm in love with North Dumpling, duh.</h3>
+            <h2> An Awkward Quest</h2> <h3>For a Funky Natural Red</h3>
           </div>
         </Link>
 
-        <div className={styles.card}>
-          <Image
-            alt="dumpling"
-            className="img2"
-            width={500}
-            height={500}
-            src="/northdump1.jpg"
-          />{" "}
-          <h2> North Dumpling, my Guru</h2>{" "}
-          <h3>I'm in love with North Dumpling, duh.</h3>
-        </div>
+        <Link href="/cafeversailles">
+          <div className={styles.card}>
+            <Image
+              alt="Cafe Versailles"
+              className="img2"
+              width={500}
+              height={500}
+              src="/versailles.jpg"
+            />{" "}
+            <h2> In Love with Cafe Versailles</h2>
+            <h3>Especially the MIA airport location</h3>
+          </div>
+        </Link>
       </div>
-      //sticky social and tiny about + newsletter
       <div className="wrapper">
+        {/* sticky social and tiny about + newsletter */}
         <a href="./amaromontenegro">
           <ContentCard
             img="https://lh3.googleusercontent.com/SpfSt4EadOjpRUZCfjEPu_bl5mCTyXq5skTyHKKqwcCt1hUzXHZ5ZxU9rPg_oY4e_tIZQQnZb4RD4FjBFzJTmMGKArLmctic3R1oD7GbBy_kXHazlVy1QdGWiN0ywz1GGenQRrCl2w=w2400"
