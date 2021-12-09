@@ -15,7 +15,7 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.article1}>
           <p className={headerStyles.description}>
-            In Love with Cafe Vaersailles
+            In Love with Cafe Versailles
             <div className="image-wrapper">
               <Image
                 alt="cafe versailles"
