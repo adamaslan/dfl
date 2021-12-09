@@ -33,17 +33,20 @@ export default function Home() {
           </div>
         </Link>
 
-        <div className={styles.card}>
-          <Image
-            alt="dumpling"
-            className="img2"
-            width={500}
-            height={500}
-            src="/northdump1.jpg"
-          />{" "}
-          <h2> North Dumpling, my Guru</h2>{" "}
-          <h3>I'm in love with North Dumpling, duh.</h3>
-        </div>
+        <Link href="/naturalwine">
+          <div className={styles.card}>
+            <Image
+              alt="wine"
+              className="img2"
+              width={500}
+              height={500}
+              src="/leclerc.jpg"
+            />{" "}
+            <h2> North Dumpling, my Guru</h2>{" "}
+            <h3>I'm in love with North Dumpling, duh.</h3>
+          </div>
+        </Link>
+
         <div className={styles.card}>
           <Image
             alt="dumpling"
