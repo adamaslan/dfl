@@ -18,10 +18,10 @@ export default function Home() {
             Writing Away My Sunny Days at Sea Wolf
             <div className="image-wrapper">
               <Image
-                alt="cafe versailles"
+                alt="Oysters"
                 width={640}
                 height={800}
-                src="/notes.jpg"
+                src="/oysters.jepg"
               />{" "}
             </div>
           </p>
@@ -55,9 +55,6 @@ export default function Home() {
             href="northdumpling"
           />
         </a>
-      </div>
-      <div className={styles.smain}>
-        Contact us cause this is now the footer
       </div>
     </>
   );

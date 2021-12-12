@@ -100,10 +100,13 @@ export default function Home() {
         </a>
       </div>
       <div className={styles.cards2}>
-        <div className={styles.card2}>
-          <Image alt="fish" width={500} height={500} src="/fish2.jpg" />{" "}
-          <h2> On Art and Spear Fishing</h2> <h3>The Nicole Burko Story</h3>
-        </div>
+        <Link href="/seawolf">
+          <div className={styles.card2}>
+            <Image alt="fish" width={500} height={800} src="/oysters.jpeg" />{" "}
+            <h2> Notes On Seawolf</h2>{" "}
+            <h3>Happy Hour Celebrations and Other Vibing</h3>
+          </div>
+        </Link>
 
         <div className={styles.card2}>
           <Image
