@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-  "dev": "next dev -p 3001",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -12,6 +12,7 @@
     "next": "11.0.1",
     "nuka-carousel": "^4.7.9",
     "react": "17.0.2",
+    "react-burger-menu": "^3.0.6",
     "react-dom": "17.0.2",
     "react-responsive-carousel": "^3.2.20",
     "sass": "^1.38.2"

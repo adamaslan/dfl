@@ -116,8 +116,8 @@ export default function Home() {
             height={500}
             src="/northdump1.jpg"
           />{" "}
-          <h2> North Dumpling, my Guru</h2>{" "}
-          <h3>I'm in love with North Dumpling, duh.</h3>
+          <h2>Drinking Amaro Montenegro at ZXY Gallery</h2>{" "}
+          <h3> Amaro Montenegro making an appearance at ZXY Gallery</h3>
         </div>
 
         <div className={styles.card2}>
