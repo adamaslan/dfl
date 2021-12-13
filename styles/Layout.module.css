@@ -12,7 +12,7 @@
   margin: 2rem;
   display: grid;
   grid-gap: 1rem;
-  padding: 20px;
+  padding: 40px;
   text-align: center;
 }
 .cards:hover {
@@ -42,7 +42,7 @@
   padding: 20px;
   text-align: center;
 }
-
+/* 
 .container {
   display: grid;
   grid-column-gap: 1px;
@@ -156,7 +156,7 @@
   margin: 2rem;
 
   object-fit: fill;
-}
+} */
 
 .divArt {
   width: 500 px;
