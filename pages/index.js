@@ -14,10 +14,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>{" "}
       <div className={styles.cards}>
-        <div className={styles.card}>
-          <Image alt="fish" width={500} height={500} src="/fish2.jpg" />{" "}
-          <h2> On Art and Spear Fishing</h2> <h3>The Nicole Burko Story</h3>
-        </div>
+        <Link href="/artandfish">
+          <div className={styles.card}>
+            <Image alt="fish" width={500} height={500} src="/fish2.jpg" />{" "}
+            <h2> On Art and Spear Fishing</h2> <h3>The Nicole Burko Story</h3>
+          </div>
+        </Link>
 
         <Link href="/northdumpling">
           <div className={styles.card}>
