@@ -6,11 +6,18 @@ import styles from "../styles/Layout.module.css";
 const Layout = ({ children }) => {
   return (
     <>
-      <Nav />
+      <div id="App">
+        <Nav pageWrapId={"page-wrap"} outerContainerId={"App"} />
+
+        <div id="page-wrap">
+          <h1>Click to show menu</h1>
+        </div>
+      </div>
+
       <Header />
 
       {children}
-          <Footer />
+      <Footer />
     </>
   );
 };
