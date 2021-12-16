@@ -1,3 +1,7 @@
+#App {
+  height: 100vh;
+}
+
 #page-wrap {
   text-align: center;
   overflow: auto;
@@ -6,7 +10,7 @@
 }
 
 .bm-item {
-  display: inline-block;
+  display: inline -bl  ock;
 
   /* Our sidebar item styling */
   text-decoration: none;
