@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "nuka-carousel";
+//import Carousel from "nuka-carousel";
 //https://kenwheeler.github.io/nuka-carousel/#/
 //   cellAlign="center" - not working well
 export default class extends React.Component {
