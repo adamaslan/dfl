@@ -16,7 +16,7 @@ const Nav = () => {
         <span />
       </Hamburger>
       <Menu isOpen={isOpen}>
-        <MenuLink href=""> Work</MenuLink>
+        <MenuLink href=""> Subscribe</MenuLink>
         <MenuLink href="">About</MenuLink>
 
         <MenuLink href="">Contact</MenuLink>
@@ -34,7 +34,7 @@ const MenuLink = styled.a`
   text-decoration: none;
   color: ##001022;
   transition: all 0.3s ease-in;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   &:hover {
     color: yellow;
   }
