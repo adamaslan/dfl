@@ -32,11 +32,11 @@ const MenuLink = styled.a`
   cursor: crosshair;
   text-align: center;
   text-decoration: none;
-  color: #67bc98;
+  color: ##001022;
   transition: all 0.3s ease-in;
   font-size: 0.9rem;
   &:hover {
-    color: #7b7fda;
+    color: yellow;
   }
 `;
 
