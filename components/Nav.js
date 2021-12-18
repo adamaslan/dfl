@@ -32,9 +32,9 @@ const MenuLink = styled.a`
   cursor: crosshair;
   text-align: center;
   text-decoration: none;
-  color: ##001022;
+  color: #001022;
   transition: all 0.3s ease-in;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   &:hover {
     color: yellow;
   }
@@ -78,7 +78,7 @@ const Menu = styled.div`
   @media (max-width: 768px) {
     overflow: hidden;
     flex-direction: column;
-    max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
+    max-height: ${({ isOpen }) => (isOpen ? "350px" : "0")};
     transition: max-height 0.3s ease-in;
     width: 100%;
   }
