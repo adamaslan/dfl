@@ -7,10 +7,11 @@ const Layout = ({ children }) => {
   return (
     <>
       <Nav />
-      <Header />
 
       {/* </div> */}
       {children}
+
+      <Header />
       <Footer />
     </>
   );

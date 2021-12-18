@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <Navbare>
       <Logo href="">
-        Drinks Food<span>Life</span>
+        Drinks Food<span> Life</span>
       </Logo>
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
         <span />
@@ -48,7 +48,6 @@ const Navbare = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background: white;
 `;
 
 const Logo = styled.a`
@@ -57,9 +56,17 @@ const Logo = styled.a`
   text-decoration: none;
   font-weight: 800;
   font-size: 1.7rem;
+
+  color: #001022;
+  text-decoration: none;
+  font-family: "Palette Mosaic", cursive;
   span {
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 2.3rem;
+
+    color: #001022;
+    text-decoration: none;
+    font-family: "Palette Mosaic", cursive;
   }
 `;
 
