@@ -9,16 +9,9 @@ const Layout = ({ children }) => {
       <Nav />
       <Header />
 
-      {/* <div id="App">
-        <Nav pageWrapId={"page-wrap"} outerContainerId={"App"} />
-
-        <div id="page-wrap">
-          <h1>Click to show menu</h1>
-        </div> */}
-
-      <Footer />
       {/* </div> */}
       {children}
+      <Footer />
     </>
   );
 };
