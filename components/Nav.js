@@ -89,9 +89,9 @@ const Hamburger = styled.div`
   flex-direction: column;
   cursor: pointer;
   span {
-    height: 2px;
-    width: 25px;
-    background: #7b7fda;
+    height: 3px;
+    width: 30px;
+    background: #001022;
     margin-bottom: 4px;
     border-radius: 5px;
   }
