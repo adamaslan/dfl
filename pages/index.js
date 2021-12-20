@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Layout.module.css";
-import Carousel from "../components/Carousel";
 import ContentCard from "../components/ContentCard";
 import Link from "next/link";
 
