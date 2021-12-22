@@ -19,34 +19,16 @@ export default function Home() {
         <div className={styles.submain}>
           <p>
             {" "}
-            ZXY Gallery and Drinks...Food...Life! teamed up for Art pop up that
-            featured an Amaro Montenegro tasting on the rooftop of ZXY Gallery
-            in Bushwick. The rest was history. Insert upside down smiley face
-            here. Loic Luspo, french model and professional handball athlete,
-            models for the photo. The ZXY Gallery is located by the Williamsburg
-            and Bushwick border. Cosmic Veggie is a curatorial platform that
-            focuses on art experiences paired with food and drinks. Check out
-            their instagram for more info
-            https://www.instagram.com/cosmicveggie/ For more on Amaro Montenegro
-            visit www.amaromontenegro.com
+            Drink Food Life is a publication that focuses on spirits, wine,
+            beer, coffee, cheese, cakes.
           </p>
         </div>
-        <div className={styles.subsubmain}>
-          <p>Chicken is a Chicken</p>
-        </div>
+
         <div className={styles.smain}>
           <img
             className="img1"
             src="https://lh3.googleusercontent.com/SpfSt4EadOjpRUZCfjEPu_bl5mCTyXq5skTyHKKqwcCt1hUzXHZ5ZxU9rPg_oY4e_tIZQQnZb4RD4FjBFzJTmMGKArLmctic3R1oD7GbBy_kXHazlVy1QdGWiN0ywz1GGenQRrCl2w=w2400"
           />{" "}
-        </div>
-        <div className={styles.smain3}>
-          <p>
-            Here's is another section its important we need more content why? I
-            thinking its a visual thing. Cards, Carousel, some animation, some
-            hover effects. These are things that make something seem
-            professional.
-          </p>
         </div>
       </div>
       <div className="wrapper">
