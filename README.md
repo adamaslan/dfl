@@ -11,4 +11,9 @@
 
 ##NEXTJS stuff
 
-#
+###Tech Debt
+
+##Navbar
+##burger
+#styling
+#animations
