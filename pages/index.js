@@ -94,9 +94,9 @@ export default function Home() {
         <a href="./northdumpling">
           <ContentCard
             img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-            title="North Dumpling, my Guru."
-            description="I'm in love with North Dumpling, duh."
-            href="northdumpling"
+            title="Tea Love"
+            description="Tea Shopping at Puerto Rico"
+            href="tea"
           />
         </a>
       </div>
