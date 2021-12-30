@@ -4,13 +4,17 @@ export default function handler(req, res) {
   console.log(req.query);
 
   const restaurantData = {
-    123: {
+    1: {
       name: "nook",
       desc: "coffee shop",
     },
-    456: {
+    2: {
       name: "notnook",
       desc: "nookYo",
+    },
+    3: {
+      name: "los hermanos",
+      desc: "The greatest tortilleria north of Mexico",
     },
   };
 
