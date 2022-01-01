@@ -16,6 +16,7 @@ export default function handler(req, res) {
       name: "los hermanos",
       desc: "The greatest tortilleria north of Mexico",
     },
+    4: { name: "sey Cafe", desc: "The lightest of" },
   };
 
   const restaurantId = req.query.id;
