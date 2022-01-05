@@ -18,12 +18,10 @@ export async function getServerSideProps(context) {
   );
 
   return {
-    <h1>
     props: {
       restaurantId: rid,
       result: result,
     },
-    </h1>
   };
 }
 
