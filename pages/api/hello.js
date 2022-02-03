@@ -20,7 +20,7 @@ export default function handler(req, res) {
     5: { name: "Athans bakery", desc: "Very Tasty Pastries" },
   };
 
-  const restaurantId = req.query.id;
-  const result = restaurantData[restaurantId] || {};
+  const restaurant = req.query.id;
+  const result = restaurantData[restaurant] || {};
   res.status(200).send(result);
 }
