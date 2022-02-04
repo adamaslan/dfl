@@ -138,7 +138,7 @@ export default function Home() {
             className="img2"
             width={500}
             height={500}
-            src="/northdump1.jpg"
+            src="/versailles.jpg"
           />{" "}
           <h2> North Dumpling, my Guru</h2>{" "}
           <h3>I'm in love with North Dumpling, duh.</h3>
