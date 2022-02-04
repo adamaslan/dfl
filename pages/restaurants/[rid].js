@@ -2,12 +2,13 @@ import React from "react";
 
 // const Restaurant = ({ restaurantId, result }) => {
 
-const Restaurant = ({ restaurant, result }) => {
+const Restaurant = ({ pagey, result }) => {
   console.dir(result);
   return (
     <div>
-      <p>{name.pagey}</p>
-      <p>{desc.restaurant}</p>
+      <h2>Drinks Food Life Restaurant Pics</h2>
+      <p>{restaurant.name}</p>
+      <p>{restaurant.desc}</p>
     </div>
   );
 };
@@ -23,7 +24,7 @@ export async function getServerSideProps(context) {
   return {
     props: {
       restaurantId: rid,
-      restaurant: result,
+      restaurant: pagey,
     },
   };
 }
