@@ -1,29 +1,38 @@
 import React from "react";
 
-// const Restaurant = ({ restaurantId, result }) => {
 
-const Restaurant = ({ restaurant, result }) => {
-  console.dir(result);
-  return (
+const Restaurant = ({ restaurant }) =>  (
     <div>
-      <p>{name.pagey}</p>
-      <p>{desc.restaurant}</p>
+    <div style={{marginTop: "5rem"}} />
+      <p>{restaurant.name}</p>
+      <p>{restaurant.desc}</p>
     </div>
   );
-};
 
 export async function getServerSideProps(context) {
   const { params } = context;
   const { rid } = params;
-  console.log(rid);
-  const pagey = await fetch(`http://localhost:3001/api/hello?id=${rid}`).then(
-    (R) => R.json()
-  );
+  const restaurantData = {
+    1: {
+      name: "nook",
+      desc: "coffee shop",
+      slug: "nook"
+    },
+    2: {
+      name: "notnook",
+      desc: "nookYo",
+    },
+    3: {
+      name: "los hermanos",
+      desc: "The greatest tortilleria north of Mexico",
+    },
+    4: { name: "sey Cafe", desc: "The lightest of" },
+    5: { name: "Athans bakery", desc: "Very Tasty Pastries" },
+  };
 
   return {
     props: {
-      restaurantId: rid,
-      restaurant: result,
+      restaurant: restaurantData[rid] || {name: "not found"},
     },
   };
 }
