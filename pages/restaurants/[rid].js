@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Restaurant = ({ restaurant }) =>  (
     <div>
     <div style={{marginTop: "5rem"}} />
