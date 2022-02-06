@@ -20,14 +20,6 @@ export default function Home() {
           <p className={headerStyles.description}>
             3 Low Cost High Value Red Wines
             <br />
-            <div className="image-wrapper">
-              <Image
-                alt="fish plate"
-                width={872}
-                height={554}
-                src="/fish2.jpg"
-              />{" "}
-            </div>
           </p>
           <p>
             If you are looking for wine that is low in cost and high in value,
@@ -36,6 +28,9 @@ export default function Home() {
 
           <p>
             <h2>1. Santa Rita’s 120 Carménère </h2>
+            <div className="image-wrapper">
+              <Image alt="120 Wine" width={872} height={554} src="/120.png" />{" "}
+            </div>
             While Carménère is not one of the most popular types of wine out
             there it certainly a solid bodied red that is the pride of Chile.
             What makes Santa Rita’s Carménère stand out from the croud is its
@@ -49,6 +44,14 @@ export default function Home() {
             independence from Spain.
           </p>
           <h2>2) Fetzer Valley Oaks Cabernet Sauvignon</h2>
+          <div className="image-wrapper">
+            <Image
+              alt="Fetzer Wine"
+              width={872}
+              height={554}
+              src="/fetzer.png"
+            />{" "}
+          </div>
           <p>
             With grapes grown in the valleys of Mendocino County, Fetzer’s
             Valley Oaks offers delightful black currant aromas of aromas of
@@ -60,7 +63,14 @@ export default function Home() {
           </p>
 
           <h2>3) Casillero del Diablo Reserva Cabernet Sauvignon</h2>
-
+          <div className="image-wrapper">
+            <Image
+              alt="Diablo Wine"
+              width={872}
+              height={554}
+              src="/diablo.png"
+            />{" "}
+          </div>
           <p>
             Described by the wine maker as “Medium bodied with silky tannins”
             the Casillero del Diablo Reserva is yet another solid bet for those
