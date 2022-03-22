@@ -54,9 +54,7 @@ export default function Home() {
           />
         </a>
       </div>
-      <div className={styles.smain}>
-        Contact us cause this is now the footer
-      </div>
+      <div className={styles.smain}></div>
     </>
   );
 }
