@@ -26,6 +26,16 @@ export default function Home() {
             </div>
           </p>
           <br />
+          <h3>
+            Please follow us on Instagram{" "}
+            <a
+              href="https://www.instagram.com/drinksfoodlife/?hl=en"
+              target="_blank"
+            >
+              <u>HERE</u>
+            </a>
+          </h3>
+
           <p>
             Founded by @cosmicveggie with the desire to focus on drinks and
             food, but then life in its most general yet effervescent spirit came

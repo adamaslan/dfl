@@ -16,10 +16,8 @@ const Nav = () => {
         <span />
       </Hamburger>
       <Menu isOpen={isOpen}>
-        <MenuLink href="">Subscribe</MenuLink>
-        <MenuLink href="">About</MenuLink>
-
-        <MenuLink href="">Contact</MenuLink>
+        <MenuLink href="./about">Subscribe</MenuLink>
+        <MenuLink href="./about">About</MenuLink>
       </Menu>
     </Navbare>
   );
