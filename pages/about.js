@@ -31,6 +31,7 @@ export default function Home() {
             <a
               href="https://www.instagram.com/drinksfoodlife/?hl=en"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <u>HERE</u>
             </a>
