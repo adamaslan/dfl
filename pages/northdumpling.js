@@ -54,7 +54,6 @@ export default function Home() {
           />
         </a>
       </div>
-      <div className={styles.smain}></div>
     </>
   );
 }
