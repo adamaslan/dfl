@@ -17,33 +17,30 @@ a {
 * {
   box-sizing: border-box;
 }
-.caro {
-  display: flex;
-  max-height: 25rem;
-  flex: 0 1 auto;
+// .caro {
+//   display: flex;
+//   max-height: 25rem;
+//   flex: 0 1 auto;
 
-  object-fit: fill;
-}
+//   object-fit: fill;
+// }
 
 .image-wrapper {
-  box-sizing: border-box;
+  display: flex;
   width: auto;
-  padding: 5px;
+
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 /* the magic happens here */
 .image-wrapper > div {
-  box-shadow: 0 16px 120px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+
   justify-content: center;
   align-items: center;
 }
+//Zoom article feature
 
 /*   color variables */
 $clr-primary: #103a0c;
@@ -71,25 +68,35 @@ $radius: 0.2rem;
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 25rem));
   gap: 2rem;
   justify-content: center;
   border-radius: 20px;
   border: 5px solid rgb(0, 32, 75);
-  margin: 1rem 6rem 1rem;
+  margin: 1rem 1rem 1rem;
 }
-
-.wrapper1 {
-  display: flex;
-
-  gap: 4 rem;
-  justify-content: space-evenly;
-
-  border-radius: 20px;
-  border: 5px solid rgb(3, 247, 255);
-  margin-top: 1 rem;
-  padding-top: 1 rem;
+@media (max-width: 200px) {
+  .wrapper {
+    grid-template-columns: repeat(auto, 1fr);
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+    border-radius: 20px;
+    border: 5px solid rgb(0, 32, 75);
+    margin: 1rem 1rem 1rem;
+  }
 }
+// .wrapper1 {
+//   display: flex;
+
+//   gap: 1rem;
+//   justify-content: space-evenly;
+
+//   border-radius: 5px;
+//   border: 5px solid rgb(3, 247, 255);
+//   margin-top: 1 rem;
+//   padding-top: 1 rem;
+// }
 .card {
   overflow: hidden;
   box-shadow: 0 2px 20px $clr-gray300;
@@ -102,25 +109,25 @@ $radius: 0.2rem;
   font-size: 1rem;
 
   &__image {
-    height: 12rem;
-    width: 100%;
+    height: 100%;
+    width: auto;
     object-fit: cover;
   }
 
   &__title {
-    padding: 1rem;
+    padding: 5px;
   }
 
   &__description {
-    padding: 0 1rem;
+    padding: 5px;
   }
 
   &__btn {
-    padding: 1rem;
+    padding: 5px;
     font-family: inherit;
     font-weight: bold;
     font-size: 1rem;
-    margin: 1rem;
+    margin: 5px;
     border: 2px solid $clr-primary;
     background: transparent;
     color: $clr-primary;
