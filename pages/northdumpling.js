@@ -27,10 +27,10 @@ export default function Home() {
           <p>
             {" "}
             North Dumpling you are the most beautiful dumpling spot and you dont
-            even know it.I follow the directions for your frozen dumplings that
+            even know it. I follow the directions for your frozen dumplings that
             you pasted on to the glass display next to the spring rolls
-            seemingly years ago.Eternal endless bliss pours through your
-            dumplings.Bountiful is the vitality of the owners ps.{" "}
+            seemingly years ago. Eternal endless bliss pours through your
+            dumplings. Bountiful is the vitality of the owners ps.{" "}
           </p>
         </div>
       </div>

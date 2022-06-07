@@ -1,7 +1,11 @@
 .basic {
+  display: flex;
   border-top: 1rem;
   border-color: aqua;
   line-height: 1.5;
   font-size: 1.25rem;
   font-family: cursive;
+  border-radius: 20px;
+  border: 5px solid rgb(0, 32, 75);
+  justify-content: center;
 }
