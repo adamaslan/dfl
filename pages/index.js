@@ -78,7 +78,7 @@ export default function Home() {
           />
         </a>
 
-        <a href="./northdumpling">
+        <a href="./tealove">
           <ContentCard
             img="https://res.cloudinary.com/adamaslan/image/upload/v1654718487/drinksfoodlife/teasecret1_corwi6.jpg"
             title="Tea Love'"
@@ -108,7 +108,7 @@ export default function Home() {
       <Link href="/babydaddy">
         <div className={styles.card2}>
           <Image
-            src="https://res.cloudinary.com/adamaslan/image/upload/v1654724665/drinksfoodlife/babydaddy_bkw67t.jpg"
+            src="https://res.cloudinary.com/adamaslan/image/upload/v1654731696/drinksfoodlife/babydaddy2_u29dmu.png"
             width={500}
             height={500}
             alt="beer"
@@ -116,7 +116,7 @@ export default function Home() {
           <h2>Baby Daddy Please</h2> <h3>Baby Daddy is a great choice</h3>
         </div>
       </Link>
-      <Link href="/mole">
+      <Link href="/mole" passHref>
         <div className={styles.card2}>
           <Image
             alt="mole"
