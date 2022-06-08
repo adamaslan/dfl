@@ -15,7 +15,12 @@ export default function Home() {
       <div className={styles.cards}>
         <Link href="/artandfish">
           <div className={styles.card}>
-            <Image alt="fish" width={500} height={500} src="/fish2.jpg" />{" "}
+            <Image
+              alt="fish"
+              width={500}
+              height={500}
+              src="https://res.cloudinary.com/adamaslan/image/upload/v1654729613/drinksfoodlife/fish_ddrxgr.jpg"
+            />{" "}
             <h2> On Art and Spear Fishing</h2> <h3>The Nicole Burko Story</h3>
           </div>
         </Link>
@@ -27,7 +32,7 @@ export default function Home() {
               className="img2"
               width={500}
               height={500}
-              src="/northdump1.jpg"
+              src="https://res.cloudinary.com/adamaslan/image/upload/v1654718488/drinksfoodlife/northdump1_dptuen.jpg"
             />{" "}
             <h2> North Dumpling, my Guru</h2>{" "}
             <h3>I'm in love with North Dumpling, duh.</h3>
@@ -41,20 +46,20 @@ export default function Home() {
               className="img2"
               width={500}
               height={500}
-              src="/leclerc.jpg"
+              src="https://res.cloudinary.com/adamaslan/image/upload/v1654718485/drinksfoodlife/coup-wine_pjdgdv.jpg"
             />{" "}
             <h2> An Awkward Quest</h2> <h3>For a Funky Natural Red</h3>
           </div>
         </Link>
 
-        <Link href="/cafeversailles">
+        <Link href="/cafeversailles" passHref>
           <div className={styles.card}>
             <Image
               alt="Cafe Versailles"
               className="img2"
               width={500}
               height={500}
-              src="/versailles.jpg"
+              src="https://res.cloudinary.com/adamaslan/image/upload/v1654726367/drinksfoodlife/versailles_h25q20.jpg"
             />{" "}
             <h2> In Love with Cafe Versailles</h2>
             <h3>Especially the MIA airport location</h3>
@@ -65,7 +70,7 @@ export default function Home() {
         {/* sticky social and tiny about + newsletter */}
         <a href="./amaromontenegro">
           <ContentCard
-            img="https://lh3.googleusercontent.com/SpfSt4EadOjpRUZCfjEPu_bl5mCTyXq5skTyHKKqwcCt1hUzXHZ5ZxU9rPg_oY4e_tIZQQnZb4RD4FjBFzJTmMGKArLmctic3R1oD7GbBy_kXHazlVy1QdGWiN0ywz1GGenQRrCl2w=w2400"
+            img="https://res.cloudinary.com/adamaslan/image/upload/v1654725062/drinksfoodlife/amaro-monte_omsl1h.jpg"
             title="Drinking Amaros at ZXY Gallery"
             description="Amaro Montenegro making an appearance at ZXY Gallery"
             tag="amaromontenegro"
@@ -75,15 +80,15 @@ export default function Home() {
 
         <a href="./northdumpling">
           <ContentCard
-            img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-            title="North Dumpling, my Guru."
-            description="I'm in love with North Dumpling, duh."
+            img="https://res.cloudinary.com/adamaslan/image/upload/v1654718487/drinksfoodlife/teasecret1_corwi6.jpg"
+            title="Tea Love'"
+            description="We Love Tea, for real"
             href="northdumpling"
           />
         </a>
         <a href="./amaromontenegro">
           <ContentCard
-            img="https://lh3.googleusercontent.com/SpfSt4EadOjpRUZCfjEPu_bl5mCTyXq5skTyHKKqwcCt1hUzXHZ5ZxU9rPg_oY4e_tIZQQnZb4RD4FjBFzJTmMGKArLmctic3R1oD7GbBy_kXHazlVy1QdGWiN0ywz1GGenQRrCl2w=w2400"
+            img="https://res.cloudinary.com/adamaslan/image/upload/v1654725062/drinksfoodlife/amaro-monte_omsl1h.jpg"
             title="Drinking Amaros at ZXY Gallery"
             description="Amaro Montenegro making an appearance at ZXY Gallery"
             tag="amaromontenegro"
@@ -100,50 +105,30 @@ export default function Home() {
           />
         </a>
       </div>
-      <div className={styles.cards2}>
-        <Link href="/seawolf">
-          <div className={styles.card2}>
-            <Image alt="fish" width={500} height={800} src="/oysters.jpeg" />{" "}
-            <h2> Notes On Seawolf</h2>{" "}
-            <h3>Happy Hour Celebrations and Other Vibing</h3>
-          </div>
-        </Link>
-
+      <Link href="/babydaddy">
         <div className={styles.card2}>
           <Image
-            alt="dumpling"
+            src="https://res.cloudinary.com/adamaslan/image/upload/v1654724665/drinksfoodlife/babydaddy_bkw67t.jpg"
+            width={500}
+            height={500}
+            alt="beer"
+          />
+          <h2>Baby Daddy Please</h2> <h3>Baby Daddy is a great choice</h3>
+        </div>
+      </Link>
+      <Link href="/mole">
+        <div className={styles.card2}>
+          <Image
+            alt="mole"
             className="img2"
             width={500}
             height={500}
-            src="/northdump1.jpg"
+            src="/mole.jpg"
           />{" "}
-          <h2>Drinking Amaro Montenegro at ZXY Gallery</h2>{" "}
-          <h3> Amaro Montenegro making an appearance at ZXY Gallery</h3>
+          <h2> On the Love of Mole and Coyoacan</h2>{" "}
+          <h3>Fida, Mole, Coyoacan Oh MY!</h3>
         </div>
-
-        <div className={styles.card2}>
-          <Image
-            alt="dumpling"
-            className="img2"
-            width={500}
-            height={500}
-            src="/northdump1.jpg"
-          />{" "}
-          <h2> North Dumpling, my Guru</h2>{" "}
-          <h3>I'm in love with North Dumpling, duh.</h3>
-        </div>
-        <div className={styles.card2}>
-          <Image
-            alt="dumpling"
-            className="img2"
-            width={500}
-            height={500}
-            src="/versailles.jpg"
-          />{" "}
-          <h2> North Dumpling, my Guru</h2>{" "}
-          <h3>I'm in love with North Dumpling, duh.</h3>
-        </div>
-      </div>
+      </Link>
     </>
   );
 }
