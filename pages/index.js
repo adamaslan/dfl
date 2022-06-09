@@ -66,45 +66,7 @@ export default function Home() {
           </div>
         </Link>
       </div>
-      <div className="wrapper">
-        {/* sticky social and tiny about + newsletter */}
-        <a href="./amaromontenegro">
-          <ContentCard
-            img="https://res.cloudinary.com/adamaslan/image/upload/v1654725062/drinksfoodlife/amaro-monte_omsl1h.jpg"
-            title="Drinking Amaros at ZXY Gallery"
-            description="Amaro Montenegro making an appearance at ZXY Gallery"
-            tag="amaromontenegro"
-            href="amaromontenegro"
-          />
-        </a>
-
-        <a href="./tealove">
-          <ContentCard
-            img="https://res.cloudinary.com/adamaslan/image/upload/v1654718487/drinksfoodlife/teasecret1_corwi6.jpg"
-            title="Tea Love'"
-            description="We Love Tea, for real"
-            href="northdumpling"
-          />
-        </a>
-        <a href="./amaromontenegro">
-          <ContentCard
-            img="https://res.cloudinary.com/adamaslan/image/upload/v1654725062/drinksfoodlife/amaro-monte_omsl1h.jpg"
-            title="Drinking Amaros at ZXY Gallery"
-            description="Amaro Montenegro making an appearance at ZXY Gallery"
-            tag="amaromontenegro"
-            href="amaromontenegro"
-          />
-        </a>
-
-        <a href="./northdumpling">
-          <ContentCard
-            img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-            title="Tea Love"
-            description="Tea Shopping at Puerto Rico"
-            href="tea"
-          />
-        </a>
-      </div>
+      <ContentCard />
       <Link href="/babydaddy">
         <div className={styles.card2}>
           <Image
