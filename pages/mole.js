@@ -28,10 +28,12 @@ export default function Home() {
           </p>
           <p>
             I love Mole. You can get in dry form at the market in{" "}
-            <a href="./coyoacan.js">Coyoacan</a> or you can get it in mousse
-            form at the Meson Antigua Santa Catarina which is right next to the
-            Parque Santa Catarina. It also comes with a cute apple shaped duck.
-            Nuff said.
+            <a href="./coyoacan">
+              <u>Coyoacan</u>
+            </a>{" "}
+            or you can get it in mousse form at the Meson Antigua Santa Catarina
+            which is right next to the Parque Santa Catarina. It also comes with
+            a cute apple shaped duck. Nuff said.
           </p>
           <div className="image-wrapper">
             <Image

@@ -21,15 +21,22 @@ export default function Home() {
         <div className={styles.article1}>
           <br />
           <p className={headerStyles.description}>
-            On the Love of Mole and Coyoacan <br />
+            Getting Deep in Coyoacan <br />
             <div className="image-wrapper">
               <Image alt="mole" width={872} height={554} src="/mole.jpg" />{" "}
             </div>
           </p>
           <p>
-            I love Mole. I love Coyoacan. I love Frida Kahlo. What a lovely way
-            to spend the day, visiting the Blue House and the market in
-            Coyoacan!
+            I love Coyoacan. I love Frida Kahlo. What a lovely way to spend the
+            day, visiting the Blue House and the market in Coyoacan! It was also
+            a deeply emotional experience. Having visited a flower filled
+            graveyard nearby. I was struck by the living flower plants growing
+            amongst freshly layed flowers soon to dry juxtaposed to signs on the
+            graves that would feature sad lements at death and loss. After all
+            of that I was ready for some{" "}
+            <a href="./mole">
+              <u>mole</u>
+            </a>
           </p>
         </div>
       </div>
