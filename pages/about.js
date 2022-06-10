@@ -18,10 +18,10 @@ export default function Home() {
             About Drinks Food Life
             <div className="image-wrapper">
               <Image
-                alt="cafe versailles"
-                width={640}
+                alt="Party"
+                width={800}
                 height={800}
-                src="/versailles.jpg"
+                src="https://res.cloudinary.com/adamaslan/image/upload/v1654725062/drinksfoodlife/amaro-monte_omsl1h.jpg"
               />{" "}
             </div>
           </p>
@@ -38,33 +38,14 @@ export default function Home() {
           </h3>
 
           <p>
-            Founded by @cosmicveggie with the desire to focus on drinks and
-            food, but then life in its most general yet effervescent spirit came
-            through. We have had contributions from @chemixtry ,
-            @journeyswithjaphe , Loic Luspo, @omlettehoe, and others.
+            Founded with the desire to focus on drinks and food, but then life
+            in its most general yet effervescent spirit came through. We have
+            had contributions from @chemixtry, @journeyswithjaphe , Loic Luspo,
+            @omlettehoe, @cosmicveggieand others.
           </p>
         </div>
       </div>
-      <div className="wrapper">
-        <a href="./amaromontenegro">
-          <ContentCard
-            img="https://lh3.googleusercontent.com/SpfSt4EadOjpRUZCfjEPu_bl5mCTyXq5skTyHKKqwcCt1hUzXHZ5ZxU9rPg_oY4e_tIZQQnZb4RD4FjBFzJTmMGKArLmctic3R1oD7GbBy_kXHazlVy1QdGWiN0ywz1GGenQRrCl2w=w2400"
-            title="Drinking Amaros at ZXY Gallery"
-            description="Amaro Montenegro making an appearance at ZXY Gallery"
-            tag="amaromontenegro"
-            href="amaromontenegro"
-          />
-        </a>
-
-        <a href="./northdumpling">
-          <ContentCard
-            img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-            title="North Dumpling"
-            description="In love with North Dumpling "
-            href="northdumpling"
-          />
-        </a>
-      </div>
+      <ContentCard />
     </>
   );
 }
