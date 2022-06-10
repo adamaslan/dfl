@@ -5,17 +5,17 @@ import styles from "../styles/Layout.module.css";
 const ContentCard = () => {
   return (
     <div className={styles.cards3}>
-      <Link href="/northdumpling" passHref>
+      <Link href="/amaromontenegro" passHref>
         <div className={styles.card3}>
           <Image
-            alt="dumpling"
-            className="img2"
+            alt="Amaro"
+            className="card4"
             width={500}
             height={500}
-            src="https://res.cloudinary.com/adamaslan/image/upload/v1654718488/drinksfoodlife/northdump1_dptuen.jpg"
+            src="https://res.cloudinary.com/adamaslan/image/upload/v1654725062/drinksfoodlife/amaro-monte_omsl1h.jpg"
           />{" "}
-          <h2> North Dumpling, my Guru</h2>{" "}
-          <h3>I'm in love with North Dumpling, duh.</h3>
+          <h2> Drinking Amaro Montenegro at ZXY Gallery</h2>{" "}
+          <h3>A delicious party.</h3>
         </div>
       </Link>
 
@@ -23,7 +23,7 @@ const ContentCard = () => {
         <div className={styles.card3}>
           <Image
             alt="wine"
-            className="img2"
+            className="card4"
             width={500}
             height={500}
             src="https://res.cloudinary.com/adamaslan/image/upload/v1654718485/drinksfoodlife/coup-wine_pjdgdv.jpg"
@@ -36,7 +36,7 @@ const ContentCard = () => {
         <div className={styles.card3}>
           <Image
             alt="Cafe Versailles"
-            className="img2"
+            className="card4"
             width={500}
             height={500}
             src="https://res.cloudinary.com/adamaslan/image/upload/v1654726367/drinksfoodlife/versailles_h25q20.jpg"

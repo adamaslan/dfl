@@ -24,7 +24,7 @@ export default function Home() {
               <Image
                 alt="market"
                 width={872}
-                height={554}
+                height={872}
                 src="https://res.cloudinary.com/adamaslan/image/upload/v1654718487/drinksfoodlife/teasecret1_corwi6.jpg"
               />{" "}
             </div>
@@ -35,27 +35,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="wrapper">
-        <a href="./amaromontenegro">
-          <ContentCard
-            img="amaro-monte.jpg"
-            title="Drinking Amaros at ZXY Gallery"
-            description="Amaro at ZXY Gallery"
-            tag="amaromontenegro"
-            href="amaromontenegro"
-            //techdebt-make this into an IMAGE for NEXT Optimization
-          />
-        </a>
-
-        <a href="./northdumpling">
-          <ContentCard
-            img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-            title="North Dumpling"
-            description="In love with North Dumpling "
-            href="northdumpling"
-          />
-        </a>
-      </div>
+      <ContentCard />
       <div className={styles.smain}>
         Contact us cause this is now the footer
       </div>

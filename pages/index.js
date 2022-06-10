@@ -16,6 +16,7 @@ export default function Home() {
         <Link href="/artandfish">
           <div className={styles.card}>
             <Image
+              className={styles.card4}
               alt="fish"
               width={500}
               height={500}
@@ -29,7 +30,7 @@ export default function Home() {
           <div className={styles.card}>
             <Image
               alt="dumpling"
-              className="img2"
+              className={styles.card4}
               width={500}
               height={500}
               src="https://res.cloudinary.com/adamaslan/image/upload/v1654718488/drinksfoodlife/northdump1_dptuen.jpg"
@@ -39,30 +40,30 @@ export default function Home() {
           </div>
         </Link>
 
-        <Link href="/naturalwine">
+        <Link href="/tealove">
           <div className={styles.card}>
             <Image
-              alt="wine"
-              className="img2"
+              alt="tea"
+              className={styles.card4}
               width={500}
               height={500}
-              src="https://res.cloudinary.com/adamaslan/image/upload/v1654718485/drinksfoodlife/coup-wine_pjdgdv.jpg"
+              src="https://res.cloudinary.com/adamaslan/image/upload/v1654718487/drinksfoodlife/teasecret1_corwi6.jpg"
             />{" "}
-            <h2> An Awkward Quest</h2> <h3>For a Funky Natural Red</h3>
+            <h2> On the Love of Loose Tea</h2> <h3>Do you love tea?</h3>
           </div>
         </Link>
 
-        <Link href="/cafeversailles" passHref>
+        <Link href="/seawolf" passHref>
           <div className={styles.card}>
             <Image
-              alt="Cafe Versailles"
-              className="img2"
+              alt="Sea Wolf"
+              className={styles.card4}
               width={500}
               height={500}
-              src="https://res.cloudinary.com/adamaslan/image/upload/v1654726367/drinksfoodlife/versailles_h25q20.jpg"
+              src="https://res.cloudinary.com/adamaslan/image/upload/v1654824690/drinksfoodlife/notes_bovahb.jpg"
             />{" "}
-            <h2> In Love with Cafe Versailles</h2>
-            <h3>Especially the MIA airport location</h3>
+            <h2> Writing Away My Sunny Days at Sea Wolf</h2>
+            <h3>Sea Wolf Brings the Boys to the Yard</h3>
           </div>
         </Link>
       </div>
@@ -70,6 +71,7 @@ export default function Home() {
       <Link href="/babydaddy">
         <div className={styles.card2}>
           <Image
+            className={styles.card4}
             src="https://res.cloudinary.com/adamaslan/image/upload/v1654731696/drinksfoodlife/babydaddy2_u29dmu.png"
             width={500}
             height={500}
@@ -81,8 +83,8 @@ export default function Home() {
       <Link href="/mole" passHref>
         <div className={styles.card2}>
           <Image
+            className={styles.card4}
             alt="mole"
-            className="img2"
             width={500}
             height={500}
             src="/mole.jpg"
