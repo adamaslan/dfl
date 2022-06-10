@@ -20,39 +20,30 @@ export default function Home() {
         <div className={styles.article1}>
           <br />
           <p className={headerStyles.description}>
-            On the Love of Mole and Coyoacan <br />
+            On the Love of Mole at Meson Antugua Santa Catarina
+            <br />
             <div className="image-wrapper">
-              <Image alt="mole" width={872} height={554} src="/mole.jpg" />{" "}
+              <Image alt="mole" width={872} height={872} src="/mole.jpg" />{" "}
             </div>
           </p>
           <p>
-            I love Mole. I love Coyoacan. I love Frida Kahlo. What a lovely way
-            to spend the day, visiting the Blue House and the market in
-            Coyoacan!
+            I love Mole. You can get in dry form at the market in{" "}
+            <a href="./coyoacan.js">Coyoacan</a> or you can get it in mousse
+            form at the Meson Antigua Santa Catarina which is right next to the
+            Parque Santa Catarina. It also comes with a cute apple shaped duck.
+            Nuff said.
           </p>
+          <div className="image-wrapper">
+            <Image
+              alt="mole duck"
+              width={872}
+              height={872}
+              src="https://res.cloudinary.com/adamaslan/image/upload/v1654895312/drinksfoodlife/cdmx1_zm5yyj.jpg"
+            />{" "}
+          </div>
         </div>
       </div>
-      <div className="wrapper">
-        <a href="./amaromontenegro">
-          <ContentCard
-            img="amaro-monte.jpg"
-            title="Drinking Amaros at ZXY Gallery"
-            description="Amaro at ZXY Gallery"
-            tag="amaromontenegro"
-            href="amaromontenegro"
-            //techdebt-make this into an IMAGE for NEXT Optimization
-          />
-        </a>
-
-        <a href="./northdumpling">
-          <ContentCard
-            img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-            title="North Dumpling"
-            description="In love with North Dumpling "
-            href="northdumpling"
-          />
-        </a>
-      </div>
+      <ContentCard />
     </>
   );
 }
