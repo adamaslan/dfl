@@ -18,10 +18,11 @@ export default function Home() {
             Writing Away My Sunny Days at Sea Wolf
             <div className="image-wrapper">
               <Image
+                className="card4"
                 alt="Oysters"
                 width={640}
-                height={800}
-                src="/oysters.jepg"
+                height={640}
+                src="https://res.cloudinary.com/adamaslan/image/upload/v1654824690/drinksfoodlife/notes_bovahb.jpg"
               />{" "}
             </div>
           </p>
