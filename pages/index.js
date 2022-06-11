@@ -93,23 +93,25 @@ export default function Home() {
           <h3>Fida, Mole, Coyoacan Oh MY!</h3>
         </div>
       </Link>
-      <Link href="/coyoacan" passHref>
-        <div className={styles.card2}>
-          <Image
-            className={styles.card5}
-            alt="mole"
-            width={500}
-            height={500}
-            src="https://res.cloudinary.com/adamaslan/image/upload/v1654895312/drinksfoodlife/cdmx1_zm5yyj.jpg"
-          />{" "}
-        </div>
-      </Link>
-      <Link href="/coyoacan" passHref>
-        <div className={styles.card4}>
-          <h2> Going Through It in Coyoacan</h2>{" "}
-          <h3>Frida, Mole, Coyoacan...Life!</h3>
-        </div>
-      </Link>
+      <div className={styles.cards}>
+        <Link href="/coyoacan" passHref>
+          <div>
+            <Image
+              className={styles.card5}
+              alt="mole"
+              width={500}
+              height={500}
+              src="https://res.cloudinary.com/adamaslan/image/upload/v1654895312/drinksfoodlife/cdmx1_zm5yyj.jpg"
+            />{" "}
+          </div>
+        </Link>
+        <Link href="/coyoacan" passHref>
+          <div className={styles.card5}>
+            <h2> Going Through It in Coyoacan</h2>{" "}
+            <h3>Frida, Mole, Coyoacan...Life!</h3>
+          </div>
+        </Link>
+      </div>
     </>
   );
 }
