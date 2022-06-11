@@ -67,10 +67,12 @@
   background-color: rgb(255, 234, 0);
 
   border-radius: 20px;
+  width: 500px;
+  height: 500px;
   margin: 0 5rem 0;
 }
 @media (min-width: 600px) {
-  .cards3 {
+  .cards4 {
     grid-template-columns: repeat(2, 1fr);
     padding: 0;
   }
