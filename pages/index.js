@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>{" "}
       <div className={styles.cards}>
-        <Link href="/artandfish">
+        <Link href="/artandfish" passHref>
           <div className={styles.card}>
             <Image
               className={styles.card4}
@@ -26,7 +26,7 @@ export default function Home() {
           </div>
         </Link>
 
-        <Link href="/northdumpling">
+        <Link href="/northdumpling" passHref>
           <div className={styles.card}>
             <Image
               alt="dumpling"
@@ -40,7 +40,7 @@ export default function Home() {
           </div>
         </Link>
 
-        <Link href="/tealove">
+        <Link href="/tealove" passHref>
           <div className={styles.card}>
             <Image
               alt="tea"
@@ -68,8 +68,8 @@ export default function Home() {
         </Link>
       </div>
       <ContentCard />
-      <Link href="/babydaddy">
-        <div className={styles.card2}>
+      <Link href="/babydaddy" passHref>
+        <div className={styles.cards2}>
           <Image
             className={styles.card4}
             src="https://res.cloudinary.com/adamaslan/image/upload/v1654731696/drinksfoodlife/babydaddy2_u29dmu.png"
@@ -81,7 +81,7 @@ export default function Home() {
         </div>
       </Link>
       <Link href="/mole" passHref>
-        <div className={styles.card2}>
+        <div className={styles.cards2}>
           <Image
             className={styles.card4}
             alt="mole"
@@ -90,25 +90,25 @@ export default function Home() {
             src="https://res.cloudinary.com/adamaslan/image/upload/v1654895312/drinksfoodlife/cdmx1_zm5yyj.jpg"
           />{" "}
           <h2> On the Love of Mole and Coyoacan</h2>{" "}
-          <h3>Fida, Mole, Coyoacan Oh MY!</h3>
+          <h3>Frida, Mole, Coyoacan Oh MY!</h3>
         </div>
       </Link>
-      <div className={styles.cards}>
+      <div className={styles.cards4}>
         <Link href="/coyoacan" passHref>
           <div>
             <Image
-              className={styles.card5}
+              className={styles.card4}
               alt="mole"
               width={500}
               height={500}
-              src="https://res.cloudinary.com/adamaslan/image/upload/v1654895312/drinksfoodlife/cdmx1_zm5yyj.jpg"
+              src="https://res.cloudinary.com/adamaslan/image/upload/v1654900212/drinksfoodlife/cdmx2_u0b4mi.jpg"
             />{" "}
           </div>
         </Link>
         <Link href="/coyoacan" passHref>
           <div className={styles.card5}>
-            <h2> Going Through It in Coyoacan</h2>{" "}
-            <h3>Frida, Mole, Coyoacan...Life!</h3>
+            <h2> Getting Deep in Coyoacan</h2>{" "}
+            <h3>Frida, the Trees, the Food..Life!</h3>
           </div>
         </Link>
       </div>
