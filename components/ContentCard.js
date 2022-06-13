@@ -19,7 +19,7 @@ const ContentCard = () => {
         </div>
       </Link>
 
-      <Link href="/naturalwine">
+      <Link href="/naturalwine" passHref>
         <div className={styles.card3}>
           <Image
             alt="wine"
