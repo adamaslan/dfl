@@ -13,6 +13,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>{" "}
       <div className={styles.cards}>
+        <Link href="/summer-22-cocktail-danburydonkey" passHref>
+          <div className={styles.card}>
+            <Image
+              alt="cocktail"
+              className={styles.card4}
+              width={500}
+              height={500}
+              src="https://res.cloudinary.com/adamaslan/image/upload/v1655411125/drinksfoodlife/danburydonkey_mdavxe.jpg"
+            />{" "}
+            <h2> Summer Cocktails Part 1</h2>{" "}
+            <h3>The Danbury Donkey by @chemixtry</h3>
+          </div>
+        </Link>
+
         <Link href="/artandfish" passHref>
           <div className={styles.card}>
             <Image
@@ -52,20 +66,6 @@ export default function Home() {
             <h2> On the Love of Loose Tea</h2> <h3>Do you love tea?</h3>
           </div>
         </Link>
-
-        <Link href="/seawolf" passHref>
-          <div className={styles.card}>
-            <Image
-              alt="Sea Wolf"
-              className={styles.card4}
-              width={500}
-              height={500}
-              src="https://res.cloudinary.com/adamaslan/image/upload/v1654824690/drinksfoodlife/notes_bovahb.jpg"
-            />{" "}
-            <h2> Writing Away My Sunny Days at Sea Wolf</h2>
-            <h3>Sea Wolf Brings the Boys to the Yard</h3>
-          </div>
-        </Link>
       </div>
       <ContentCard />
       <Link href="/babydaddy" passHref>
@@ -89,8 +89,7 @@ export default function Home() {
             height={500}
             src="https://res.cloudinary.com/adamaslan/image/upload/v1654895312/drinksfoodlife/cdmx1_zm5yyj.jpg"
           />{" "}
-          <h2> On the Love of Mole and Coyoacan</h2>{" "}
-          <h3>Frida, Mole, Coyoacan Oh MY!</h3>
+          <h2> On the Love of Mole and Mexico</h2> <h3>Mole, Mexico, Oh My!</h3>
         </div>
       </Link>
       <div className={styles.cards4}>
@@ -109,6 +108,23 @@ export default function Home() {
           <div className={styles.card5}>
             <h2> Getting Deep in Coyoacan</h2>{" "}
             <h3>Frida, the Trees, the Food..Life!</h3>
+          </div>
+        </Link>
+        <Link href="/coyoacan" passHref>
+          <div>
+            <Image
+              alt="Sea Wolf"
+              className={styles.card4}
+              width={500}
+              height={500}
+              src="https://res.cloudinary.com/adamaslan/image/upload/v1654824690/drinksfoodlife/notes_bovahb.jpg"
+            />{" "}
+          </div>
+        </Link>
+        <Link href="/coyoacan" passHref>
+          <div className={styles.card6}>
+            <h2> Writing Away My Sunny Days at Sea Wolf</h2>
+            <h3>Sea Wolf Brings the Boys to the Yard</h3>
           </div>
         </Link>
       </div>

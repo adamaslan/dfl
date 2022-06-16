@@ -29,40 +29,32 @@ export default function Home() {
             </div>
           </p>
           <p>
-            My friend caught a fish free diving in the depths of the Atlantic
-            like a ferocious predator, but photos of her submerged laying in
-            wait at the bottom of the sea are more precious and beautiful than
-            anything else. How nice it is to know that this blackened strip bass
-            came from the hands of a friend, Nicole Burko. Check out her art
-            here @nicoleburko on insta. Also noteworthy, fried plantains
-            forever, pescatarian vibes, and new favourite green -> Baby Kale.
-            Not that I don’t love my arugula and red lettuce, but that baby kale
-            has the cutest name of the leafy greens that I know of. Is their
-            cuter leafy green competition?
+            My friend Nicole Burko caught a fish free diving in the depths of
+            the Atlantic like a ferocious predator, but photos of her submerged
+            laying in wait at the bottom of the sea are more precious and
+            beautiful than anything else. How nice it is to know that this
+            blackened strip bass came from the hands of a friend, Nicole Burko.{" "}
+          </p>{" "}
+          <p>
+            {" "}
+            Check out her art here @nicoleburko on insta. Also noteworthy, fried
+            plantains forever, pescatarian vibes, and new favourite green ->
+            Baby Kale. Not that I don’t love my arugula and red lettuce, but
+            that baby kale has the cutest name of the leafy greens that I know
+            of. Is their cuter leafy green competition?
+          </p>
+          <p>
+            Nicole is also an accomplished painter. She earned an MFA at
+            Columbia is painting and has shown with{" "}
+            <a href="https://www.zxygallery.com">
+              <u>ZXY Gallery</u>
+            </a>{" "}
+            amongst many other prestigious galleries.
           </p>
         </div>
       </div>
-      <div className="wrapper">
-        <a href="./amaromontenegro">
-          <ContentCard
-            img="amaro-monte.jpg"
-            title="Drinking Amaros at ZXY Gallery"
-            description="Amaro at ZXY Gallery"
-            tag="amaromontenegro"
-            href="amaromontenegro"
-            //techdebt-make this into an IMAGE for NEXT Optimization
-          />
-        </a>
 
-        <a href="./northdumpling">
-          <ContentCard
-            img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-            title="North Dumpling"
-            description="In love with North Dumpling "
-            href="northdumpling"
-          />
-        </a>
-      </div>
+      <ContentCard />
     </>
   );
 }

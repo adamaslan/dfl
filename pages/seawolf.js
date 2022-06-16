@@ -31,32 +31,24 @@ export default function Home() {
             Tasty dollar oysters …Noted. I had a lot of fun enjoying a beautiful
             day in Bushwick working on some writing at Sea Wolf 🐺. Sea Wolf
             reigns as one of the premiere locations to breath fresh air while
-            you eat or drink tasty things. A solid happy hour and a diverse menu
-            are also big bonuses. Come for the people watching right by the
-            Jefferson L stop. Stay for the oysters.{" "}
+            you eat or drink tasty things.
+          </p>
+          <p>
+            A solid happy hour and a diverse menu are also big bonuses. Come for
+            the people watching right by the Jefferson L stop. Stay for the
+            oysters.{" "}
+          </p>{" "}
+          <p>
+            Checkout{" "}
+            <a href="https://www.seawolfbk.com">
+              <u>Sea Wolf</u>
+            </a>
+            for more info. They have a lot of fun events and promos that keep
+            one wanting all their food and drinks.{" "}
           </p>
         </div>
       </div>
-      <div className="wrapper">
-        <a href="./amaromontenegro">
-          <ContentCard
-            img="https://lh3.googleusercontent.com/SpfSt4EadOjpRUZCfjEPu_bl5mCTyXq5skTyHKKqwcCt1hUzXHZ5ZxU9rPg_oY4e_tIZQQnZb4RD4FjBFzJTmMGKArLmctic3R1oD7GbBy_kXHazlVy1QdGWiN0ywz1GGenQRrCl2w=w2400"
-            title="Drinking Amaros at ZXY Gallery"
-            description="Amaro at ZXY Gallery"
-            tag="amaromontenegro"
-            href="amaromontenegro"
-          />
-        </a>
-
-        <a href="./northdumpling">
-          <ContentCard
-            img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-            title="North Dumpling"
-            description="In love with North Dumpling "
-            href="northdumpling"
-          />
-        </a>
-      </div>
+      <ContentCard />
     </>
   );
 }
