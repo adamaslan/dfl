@@ -83,6 +83,18 @@
     height: 75%;
   }
 }
+.card5 {
+  background-color: rgb(255, 234, 0);
+
+  border-radius: 20px;
+  min-height: 100%;
+}
+@media (min-width: 600px) {
+  .card5 {
+    width: 75%;
+    height: 75%;
+  }
+}
 
 @media (min-width: 600px) {
   .cards3 {
@@ -102,7 +114,18 @@
     text-align: center;
   }
 }
+.card6 {
+  background-color: rgb(255, 0, 204);
 
+  border-radius: 20px;
+  min-height: 100%;
+}
+@media (min-width: 600px) {
+  .card6 {
+    width: 75%;
+    height: 75%;
+  }
+}
 /* 
 .container {
   display: grid;
