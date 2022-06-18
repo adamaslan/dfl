@@ -1,5 +1,5 @@
 import headerStyles from "../styles/Header.module.css";
-
+import Link from "next/link";
 import Head from "next/head";
 
 const Header = () => {
@@ -12,7 +12,9 @@ const Header = () => {
         />
       </Head>
       <h1 className={headerStyles.title}>
-        <span>Drinks Food</span> Life
+        <Link href="/" passHref>
+          <span>Drinks Food</span> Life
+        </Link>
       </h1>
     </div>
   );
