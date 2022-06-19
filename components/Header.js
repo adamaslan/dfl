@@ -12,8 +12,11 @@ const Header = () => {
         />
       </Head>
       <h1 className={headerStyles.title}>
-        <Link href="/" passHref>
-          <span>Drinks Food</span> Life
+        <Link href="./" passHref>
+          <a>
+            {" "}
+            <span>Drinks Food</span> Life{" "}
+          </a>
         </Link>
       </h1>
     </div>
