@@ -7,7 +7,7 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Navbare>
-      <Logo href="">
+      <Logo href="/">
         Drinks Food<span> Life</span>
       </Logo>
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
@@ -16,7 +16,7 @@ const Nav = () => {
         <span />
       </Hamburger>
       <Menu isOpen={isOpen}>
-        <MenuLink href="./about">Subscribe</MenuLink>
+        <MenuLink href="./subscribe">Subscribe</MenuLink>
         <MenuLink href="./about">About</MenuLink>
       </Menu>
     </Navbare>
