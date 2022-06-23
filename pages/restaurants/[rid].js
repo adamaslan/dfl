@@ -1,21 +1,21 @@
 import React from "react";
 
-const Restaurant = ({ restaurant }) =>  (
-    <div>
-    <div style={{marginTop: "5rem"}} />
-      <p>{restaurant.name}</p>
-      <p>{restaurant.desc}</p>
-    </div>
-  );
+const Restaurant = ({ restaurant }) => (
+  <div>
+    <div style={{ marginTop: "5rem" }} />
+    <p>{restaurant.name}</p>
+    <p>{restaurant.desc}</p>
+  </div>
+);
 
 export async function getServerSideProps(context) {
   const { params } = context;
   const { rid } = params;
   const restaurantData = {
-    1: {
+    nook: {
       name: "nook",
       desc: "coffee shop",
-      slug: "nook"
+      slug: "nook",
     },
     2: {
       name: "notnook",
@@ -31,7 +31,7 @@ export async function getServerSideProps(context) {
 
   return {
     props: {
-      restaurant: restaurantData[rid] || {name: "not found"},
+      restaurant: restaurantData[rid] || { name: "not found" },
     },
   };
 }
