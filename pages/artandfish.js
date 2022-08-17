@@ -34,7 +34,7 @@ export default function Home() {
             laying in wait at the bottom of the sea are more precious and
             beautiful than anything else. How nice it is to know that this
             blackened strip bass came from the hands of a friend, Nicole Burko.{" "}
-          </p>{" "}
+          </p>{" "}<br/>
           <p>
             {" "}
             Check out her art here @nicoleburko on insta. Also noteworthy, fried
@@ -42,7 +42,7 @@ export default function Home() {
             Baby Kale. Not that I don’t love my arugula and red lettuce, but
             that baby kale has the cutest name of the leafy greens that I know
             of. Is their cuter leafy green competition?
-          </p>
+          </p><br/>
           <p>
             Nicole is also an accomplished painter. She earned an MFA at
             Columbia is painting and has shown with{" "}
