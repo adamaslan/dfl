@@ -14,7 +14,7 @@ export default function Home() {
       </Head>{" "}
       
       
-      <Link href="/summer-22-cocktail-danburydonkey" passHref>
+      <Link href="/grandarmypunch" passHref>
           <div className={styles.card}>
             <Image
               alt="cocktail"
@@ -23,7 +23,7 @@ export default function Home() {
               height={500}
               src="https://res.cloudinary.com/adamaslan/image/upload/v1660751024/drinksfoodlife/grandarmypunch_e9pums.jpg"
             />{" "}
-            <h2> Summer Cocktails Part 3</h2>{" "}
+            <h2> Summer Cocktails Part 2</h2>{" "}
             <h3>Grand Army Punch by @chemixtry</h3>
           </div>
         </Link>
@@ -43,18 +43,7 @@ export default function Home() {
           </div>
         </Link>
 
-        <Link href="/artandfish" passHref>
-          <div className={styles.card}>
-            <Image
-              className={styles.card4}
-              alt="fish"
-              width={500}
-              height={500}
-              src="https://res.cloudinary.com/adamaslan/image/upload/v1654729613/drinksfoodlife/fish_ddrxgr.jpg"
-            />{" "}
-            <h2> On Art and Spear Fishing</h2> <h3>The Nicole Burko Story</h3>
-          </div>
-        </Link>
+       
 
         <Link href="/northdumpling" passHref>
           <div className={styles.card}>
@@ -84,6 +73,18 @@ export default function Home() {
         </Link>
       </div>
       <ContentCard />
+      <Link href="/artamdfish" passHref>
+        <div className={styles.cards2}>
+          <Image
+            className={styles.card4}
+            src="https://res.cloudinary.com/adamaslan/image/upload/v1654729613/drinksfoodlife/fish_ddrxgr.jpg"
+            width={500}
+            height={500}
+            alt="food"
+          />
+          <h2>Baby Daddy Please</h2> <h3>Baby Daddy is a great choice</h3>
+        </div>
+      </Link>
       <Link href="/babydaddy" passHref>
         <div className={styles.cards2}>
           <Image
