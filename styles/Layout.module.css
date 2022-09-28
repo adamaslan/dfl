@@ -66,8 +66,14 @@
   border-radius: 100px;
   grid-template-columns: repeat(2, 1fr);
 }
+.card4:hover {
+  opacity: 0.5;
+}
+.card5:hover {
+  opacity: 0.5;
+}
 
-.cards4:hover {
+.card6:hover {
   opacity: 0.5;
 }
 
