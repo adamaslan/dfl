@@ -22,8 +22,8 @@ export default function Home() {
               height={500}
               src="https://res.cloudinary.com/adamaslan/image/upload/v1664330111/drinksfoodlife/raki_iaoqaw_b5103d.jpg"
             />{" "}
-            <h2> Summer Cocktails Part 2</h2>{" "}
-            <h3>Grand Army Punch by @chemixtry</h3>
+            <h2> On the Love of Raki and Turkish Food</h2>{" "}
+            <h3>Dining at Turkish Grill in Queens</h3>
           </div>
         </Link>
 
@@ -66,19 +66,6 @@ export default function Home() {
             />{" "}
             <h2> North Dumpling, my Guru</h2>{" "}
             <h3>I'm in love with North Dumpling, duh.</h3>
-          </div>
-        </Link>
-
-        <Link href="/tealove" passHref>
-          <div className={styles.card}>
-            <Image
-              alt="tea"
-              className={styles.card4}
-              width={500}
-              height={500}
-              src="https://res.cloudinary.com/adamaslan/image/upload/v1654718487/drinksfoodlife/teasecret1_corwi6.jpg"
-            />{" "}
-            <h2> On the Love of Loose Tea</h2> <h3>Do you love tea?</h3>
           </div>
         </Link>
       </div>
