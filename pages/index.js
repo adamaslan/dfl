@@ -13,8 +13,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>{" "}
       <div className={styles.cards}>
-      
-      <Link href="/grandarmypunch" passHref>
+        <Link href="/grandarmypunch" passHref>
+          <div className={styles.card}>
+            <Image
+              alt="cocktail"
+              className={styles.card4}
+              width={500}
+              height={500}
+              src="https://res.cloudinary.com/adamaslan/image/upload/v1664330111/drinksfoodlife/raki_iaoqaw_b5103d.jpg"
+            />{" "}
+            <h2> Summer Cocktails Part 2</h2>{" "}
+            <h3>Grand Army Punch by @chemixtry</h3>
+          </div>
+        </Link>
+
+        <Link href="/grandarmypunch" passHref>
           <div className={styles.card}>
             <Image
               alt="cocktail"
@@ -27,8 +40,7 @@ export default function Home() {
             <h3>Grand Army Punch by @chemixtry</h3>
           </div>
         </Link>
-      
-  
+
         <Link href="/summer-22-cocktail-danburydonkey" passHref>
           <div className={styles.card}>
             <Image
@@ -42,8 +54,6 @@ export default function Home() {
             <h3>The Danbury Donkey by @chemixtry</h3>
           </div>
         </Link>
-
-       
 
         <Link href="/northdumpling" passHref>
           <div className={styles.card}>
