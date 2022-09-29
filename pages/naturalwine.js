@@ -11,8 +11,14 @@ export default function Home() {
       <Head>
         git
         <title>On the Art and Spear Fishing of Nicole Burko </title>
-       <meta name="Natural Wine Bushwick" content="Natural Red Wine purchased at Irving Bottle" />
-        <meta name="Drinks Food Life Bushwick" content="Based in NYC covering Food Spirits and Wine based around Bushwick Ridgewood Chinatown and the LES. " />
+        <meta
+          name="Natural Wine Bushwick"
+          content="Natural Red Wine purchased at Irving Bottle"
+        />
+        <meta
+          name="Drinks Food Life Bushwick"
+          content="Based in NYC covering Food Spirits and Wine based around Bushwick Ridgewood Chinatown and the LES. "
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
@@ -31,13 +37,22 @@ export default function Home() {
           </p>{" "}
           <p>
             If you are like me, then your normal speaking voice is ridden with
-            pauses so as to humbly point out a lack of certainty. Luckily, the people at <a><u>Irving Bottle<u/></a>W]hen it comes
-            to the new movement of natural wines, one could say the whole
-            movement should be speaking in such a tone. A movement that is
-            clearly going to gain steam in 2019, natural wines do not come with
-            a specific certification one has to pay for necessarily, like a wine
-            that is certified organic or biodynamic for example and thus, the
-            definition of natural is open to interpretation.
+            pauses so as to humbly point out a lack of certainty. Luckily, the
+            people at{" "}
+            <a
+              href="https://irvingbottle.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <u>Irving Bottle</u>
+            </a>{" "}
+            are prepared for this. When it comes to the new movement of natural
+            wines, one could say the whole movement should be speaking in such a
+            tone. A movement that is clearly going to gain steam in 2019,
+            natural wines do not come with a specific certification one has to
+            pay for necessarily, like a wine that is certified organic or
+            biodynamic for example and thus, the definition of natural is open
+            to interpretation.
           </p>
           <p>
             {" "}
