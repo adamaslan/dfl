@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Layout.module.css";
 import ContentCard from "../components/ContentCard";
 import Link from "next/link";
+import Newsletter from "../components/Newsletter";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>{" "}
+      <Newsletter />
       <div className={styles.cards}>
         <Link href="/grandarmypunch" passHref>
           <div className={styles.card}>

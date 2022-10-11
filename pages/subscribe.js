@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Layout.module.css";
 import ContentCard from "../components/ContentCard";
 import headerStyles from "../styles/Header.module.css";
+import Newsletter from "../components/Newsletter";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
+        <Newsletter />
         <div className={styles.article1}>
           <p className={headerStyles.description}>
             Subscribe to Drinks Food Life
