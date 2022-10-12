@@ -14,10 +14,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
-        <Newsletter />
         <div className={styles.article1}>
           <p className={headerStyles.description}>
             Subscribe to Drinks Food Life
+            <Newsletter />
             <div className="image-wrapper">
               <Image
                 alt="Party"
@@ -38,12 +38,18 @@ export default function Home() {
               <u>HERE</u>
             </a>
           </h3>
+          <h2>Sign Up to Our Amazing Non-Spammy Newletter Below: </h2>
 
+          <script
+            async
+            data-uid="44b0c96346"
+            src="https://hustling-artisan-4563.ck.page/44b0c96346/index.js"
+          ></script>
           <p>
             Founded with the desire to focus on drinks and food, but then life
             in its most general yet effervescent spirit came through. We have
             had contributions from @chemixtry, @journeyswithjaphe , Loic Luspo,
-            @omlettehoe, @cosmicveggieand others.
+            @omlettehoe, @cosmicveggie and others.
           </p>
         </div>
       </div>

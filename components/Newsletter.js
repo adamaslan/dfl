@@ -4,7 +4,7 @@ const Newsletter = () => {
   const [name, setName] = useState("");
   const [status, setStatus] = useState("");
 
-  const FORM_URL = `https://hustling-artisan-4563.ck.page/d1651193c8`;
+  const FORM_URL = `https://app.convertkit.com/forms/3690183/subscriptions`;
 
   const handleSubmit = async (event) => {
     event.preventDefault();
