@@ -12,12 +12,15 @@ export default function Home() {
     <>
       <Head>
         git
-        <title>Baby Daddy Please</title>
+        <title>Baby Daddy Beer Please</title>
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/adamaslan/image/upload/v1654725062/drinksfoodlife/amaro-monte_omsl1h.jpg"
+          content="https://res.cloudinary.com/adamaslan/image/upload/v1667159646/drinksfoodlife/dfl-logo_vnu5xy.jpg"
         />
-        <meta name="description" content="Amaro Roofparty in Bushwick" />
+        <meta
+          name="description"
+          content="Drinks Food Life. A Bushwick based publication covering the tastiest things in NYC and the rest of the world."
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>

@@ -19,6 +19,10 @@ export default function Home() {
           name="Drinks Food Life Bushwick"
           content="Based in NYC covering Food Spirits and Wine based around Bushwick Ridgewood Chinatown and the LES. "
         />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/adamaslan/image/upload/v1667159646/drinksfoodlife/dfl-logo_vnu5xy.jpg"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>

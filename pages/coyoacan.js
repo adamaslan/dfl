@@ -17,6 +17,10 @@ export default function Home() {
           name="coyocan, mole, market, mexico, mexico city, cdmx food"
           content="A journey through Coyoacan Market and all the great things we found including Mole"
         />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/adamaslan/image/upload/v1654900212/drinksfoodlife/cdmx2_u0b4mi.jpg"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
@@ -29,7 +33,7 @@ export default function Home() {
                 alt="mole"
                 width={872}
                 height={872}
-                src="https://res.cloudinary.com/adamaslan/image/upload/v1666992137/ZXY%20/Choral-show3_a4mibl.jpg"
+                src="https://res.cloudinary.com/adamaslan/image/upload/v1654900212/drinksfoodlife/cdmx2_u0b4mi.jpg"
               />{" "}
             </div>
           </p>

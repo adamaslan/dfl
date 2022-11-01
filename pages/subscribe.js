@@ -14,6 +14,11 @@ export default function Home() {
           name="description"
           content="Subscribe to our Newletter to hear about all our fun events and other fun events around the city."
         />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/adamaslan/image/upload/v1667159646/drinksfoodlife/dfl-logo_vnu5xy.jpg"
+        />
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
