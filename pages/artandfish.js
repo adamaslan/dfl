@@ -43,7 +43,8 @@ export default function Home() {
           <p>
             {" "}
             Check out her art here @nicoleburko on insta. Also noteworthy, fried
-            plantains forever, pescatarian vibes, and new favourite green ->
+            plantains forever, pescatarian vibes, and new favourite green --
+            {">"}
             Baby Kale. Not that I don’t love my arugula and red lettuce, but
             that baby kale has the cutest name of the leafy greens that I know
             of. Is their cuter leafy green competition?
