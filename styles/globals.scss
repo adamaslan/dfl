@@ -72,15 +72,17 @@ $radius: 0.2rem;
   gap: 2rem;
   justify-content: center;
   border-radius: 20px;
+  padding: 10px;
   border: 5px solid rgb(0, 32, 75);
   margin: 1rem 1rem 1rem;
 }
-@media (max-width: 200px) {
+@media (max-width: 400px) {
   .wrapper {
     grid-template-columns: repeat(auto, 1fr);
     display: grid;
     gap: 2rem;
     justify-content: center;
+    padding: 10px;
     border-radius: 20px;
     border: 5px solid rgb(0, 32, 75);
     margin: 1rem 1rem 1rem;

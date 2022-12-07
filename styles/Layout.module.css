@@ -40,7 +40,7 @@
     color: rgb(0, 0, 0);
     box-sizing: border-box;
 
-    margin: 1 rem;
+    margin: 14 rem;
     display: grid;
     grid-gap: 10px;
     padding: 1rem;
@@ -53,18 +53,25 @@
 .card4 {
   border-radius: 20px;
 }
-
 .cards4 {
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
-  margin: 5px 0px 0px 5px;
-  display: grid;
-  grid-gap: 0rem;
-  padding: 0;
+@media (min-width: 600px) {
+  .cards4 {
+    box-sizing: border-box;
 
-  text-align: center;
-  border-radius: 100px;
-  grid-template-columns: repeat(2, 1fr);
+    margin: 5px 0px 0px 5px;
+    display: grid;
+    grid-gap: 0rem;
+    padding: 0;
+
+    text-align: center;
+    border-radius: 100px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .card4:hover {
   opacity: 0.5;
@@ -79,7 +86,8 @@
 
 .card5 {
   background-color: rgb(255, 234, 0);
-
+  display: flex;
+  flex-direction: column;
   border-radius: 20px;
   min-height: 100%;
   text-align: center;
@@ -101,7 +109,6 @@
 @media (min-width: 600px) {
   .cards3 {
     color: rgb(0, 0, 0);
-    box-sizing: border-box;
 
     margin: 1 rem;
     display: grid;
@@ -112,7 +119,8 @@
 }
 .card6 {
   background-color: rgb(255, 0, 204);
-
+  display: flex;
+  flex-direction: column;
   border-radius: 20px;
   min-height: 100%;
   text-align: center;
