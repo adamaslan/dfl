@@ -27,7 +27,7 @@ export default function Home() {
       </Head>{" "}
       <Newsletter />
       <div className={styles.cards}>
-        <Link href="/grandarmypunch" passHref>
+        <Link href="/raki" passHref>
           <div className={styles.card}>
             <Image
               alt="cocktail"
