@@ -33,7 +33,7 @@ export default function Home() {
           </p>
           <p>
             A little bit of Raki goes a long way. Add a couple ice cubes and
-            suddlenly its a glory of cloud liquid. Keep adding cubes and it
+            suddenly its a glory of cloud liquid. Keep adding cubes and it
             still has that strong anise taste. All of these things add up to
             make it a great digestif or first drink.{" "}
           </p>{" "}
@@ -44,6 +44,9 @@ export default function Home() {
             costs only 12 dollars and comes with this elegant and efficient set
             up.
           </p>
+          <p>Turkish Grill is located at 4203 Queens Blvd, Sunnyside, NY 11104</p>
+
+
           <br />
           <p>
             Learn more about{" "}
