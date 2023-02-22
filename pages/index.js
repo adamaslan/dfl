@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Layout.module.css";
 import ContentCard from "../components/ContentCard";
 import Link from "next/link";
+import Script from "next/script";
 import Newsletter from "../components/Newsletter";
 
 export default function Home() {
@@ -27,6 +28,21 @@ export default function Home() {
       </Head>{" "}
       <Newsletter />
       <div className={styles.cards}>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'GA_MEASUREMENT_ID');
+        `}
+        </Script>
+
         <Link href="/raki" passHref>
           <div className={styles.card}>
             <Image
