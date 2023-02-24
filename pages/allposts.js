@@ -1,5 +1,10 @@
 import { getAllPosts } from "../lib/post";
 import Link from "next/link";
+export async function getStaticProps() {
+  const posts = await getAllPosts();
+
+  return { props: { posts } };
+}
 export default function AllPosts({ posts }) {
   return (
     <div>
@@ -7,7 +12,9 @@ export default function AllPosts({ posts }) {
       <ul>
         {posts.map((post) => (
           <li key={post.params.title}>
-            <Link href={`/${post.params.title.replace(/\s+/g, "-")}`}>
+            <Link
+              href={`/${post.params.title.toLowerCase().replace(/\s+/g, "-")}`}
+            >
               {post.params.title}
             </Link>
           </li>
@@ -15,9 +22,4 @@ export default function AllPosts({ posts }) {
       </ul>
     </div>
   );
-}
-
-export async function getStaticProps() {
-  const posts = await getAllPosts();
-  return { props: { posts } };
 }
