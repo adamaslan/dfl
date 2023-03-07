@@ -35,7 +35,7 @@
   }
 }
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   .cards3 {
     color: rgb(0, 0, 0);
     box-sizing: border-box;
@@ -45,13 +45,15 @@
     grid-gap: 10px;
     padding: 1rem;
     text-align: center;
-  }
-}
+  } */
+/* } */
 .cards3:hover {
   cursor: grab;
 }
 .card4 {
   border-radius: 20px;
+  /* object-fit: cover; */
+  object-fit: cover;
 }
 .cards4 {
   display: flex;
@@ -110,7 +112,7 @@
   .cards3 {
     color: rgb(0, 0, 0);
 
-    margin: 1 rem;
+    margin: 10px;
     display: grid;
     grid-gap: 10px;
     padding: 1rem;
