@@ -1,4 +1,4 @@
-import "../styles/globals.scss";
+import "../styles/globals.css";
 import Layout from "../components/Layout";
 
 import { useEffect } from "react";
