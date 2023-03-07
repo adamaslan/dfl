@@ -1,10 +1,27 @@
 import { getAllPostsById, getPostByTitle } from "../lib/post";
+const SinglePost = ({ post }) => {
+  return (
+    <div>
+      {" "}
+      <h1>{post.title}</h1>{" "}
+      <div className="flex-container">
+        {" "}
+        <div>
+          <img alt={post.title} src={post.image} />{" "}
+        </div>{" "}
+      </div>
+      <p>{post.article}</p>
+    </div>
+  );
+};
+export default SinglePost;
 
 export async function getStaticProps(ctx) {
+  const objectID = ctx.params.objectID;
   const prisma = new PrismaClient();
   const post = await prisma.post.findOne({
     where: {
-      id: parseInt(ctx.params.postId),
+      post: { slug: objectID },
     },
   });
   return {
@@ -14,8 +31,12 @@ export async function getStaticProps(ctx) {
   };
 }
 export async function getStaticPaths() {
+  const posts = await getAllPostsById();
+  const paths = posts.map((p) => ({
+    params: { objectID: p.post.slug },
+  }));
   return {
-    paths: [{ params: { postId: "1" } }],
+    paths: paths,
     fallback: false,
   };
 }
