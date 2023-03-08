@@ -1,4 +1,4 @@
-import { getAllPostsById, getPostByTitle } from "../lib/post";
+// import { getAllPostsById, getPostByTitle } from "../lib/post";
 const SinglePost = ({ post }) => {
   return (
     <div>
@@ -16,64 +16,64 @@ const SinglePost = ({ post }) => {
 };
 export default SinglePost;
 
-export async function getStaticProps(ctx) {
-  const objectID = ctx.params.objectID;
-  const prisma = new PrismaClient();
-  const post = await prisma.post.findOne({
-    where: {
-      post: { slug: objectID },
-    },
-  });
-  return {
-    props: {
-      post,
-    },
-  };
-}
-export async function getStaticPaths() {
-  const posts = await getAllPostsById();
-  const paths = posts.map((p) => ({
-    params: { objectID: p.post.slug },
-  }));
-  return {
-    paths: paths,
-    fallback: false,
-  };
-}
-
-// export const getStaticPaths = async () => {
-//   // map data to an array of path objects with params (objectID)
-//   const posts = await getAllPostsById();
-
-//   // const paths = posts.map((tasty) => {
-//   //   return {
-//   //     params: { objectID: tasty.objectID },
-//   //   };
+// export async function getStaticProps(ctx) {
+//   const objectID = ctx.params.objectID;
+//   const prisma = new PrismaClient();
+//   const post = await prisma.post.findOne({
+//     where: {
+//       post: { slug: objectID },
+//     },
 //   });
-
 //   return {
-//     paths,
+//     props: {
+//       post,
+//     },
+//   };
+// }
+// export async function getStaticPaths() {
+//   const posts = await getAllPostsById();
+//   const paths = posts.map((p) => ({
+//     params: { objectID: p.post.slug },
+//   }));
+//   return {
+//     paths: paths,
 //     fallback: false,
 //   };
-// };
+// }
 
-// export const getStaticProps = async (context) => {
-//   const data = await getAllPostsById;
+// // export const getStaticPaths = async () => {
+// //   // map data to an array of path objects with params (objectID)
+// //   const posts = await getAllPostsById();
 
-//   return {
-//     props: { tasty: data },
-//   };
-// };
+// //   // const paths = posts.map((tasty) => {
+// //   //   return {
+// //   //     params: { objectID: tasty.objectID },
+// //   //   };
+// //   });
 
-// const Details = ({ tasty }) => {
-//   return (
-//     <div>
-//       <h1>{tasty.objectID}</h1>
-//       {/* <p>{tasty.title}</p> */}
-//       <p>{tasty.image}</p>
-//       <p>{tasty.article}</p>
-//     </div>
-//   );
-// };
+// //   return {
+// //     paths,
+// //     fallback: false,
+// //   };
+// // };
 
-// export default Details;
+// // export const getStaticProps = async (context) => {
+// //   const data = await getAllPostsById;
+
+// //   return {
+// //     props: { tasty: data },
+// //   };
+// // };
+
+// // const Details = ({ tasty }) => {
+// //   return (
+// //     <div>
+// //       <h1>{tasty.objectID}</h1>
+// //       {/* <p>{tasty.title}</p> */}
+// //       <p>{tasty.image}</p>
+// //       <p>{tasty.article}</p>
+// //     </div>
+// //   );
+// // };
+
+// // export default Details;
