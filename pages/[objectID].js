@@ -1,20 +1,24 @@
 // import { getAllPostsById, getPostByTitle } from "../lib/post";
-const SinglePost = ({ post }) => {
-  return (
-    <div>
-      {" "}
-      <h1>{post.title}</h1>{" "}
-      <div className="flex-container">
-        {" "}
-        <div>
-          <img alt={post.title} src={post.image} />{" "}
-        </div>{" "}
-      </div>
-      <p>{post.article}</p>
-    </div>
-  );
+const SinglePost = () => {
+  return <div>hi</div>;
 };
 export default SinglePost;
+// const SinglePost = ({ post }) => {
+//   return (
+//     <div>
+//       {/* {" "}
+//       <h1>{post.title}</h1>{" "}
+//       <div className="flex-container">
+//         {" "}
+//         <div>
+//           <img alt={post.title} src={post.image} />{" "}
+//         </div>{" "}
+//       </div>
+//       <p>{post.article}</p> */}
+//     </div>
+//   );
+// };
+// export default SinglePost;
 
 // export async function getStaticProps(ctx) {
 //   const objectID = ctx.params.objectID;
