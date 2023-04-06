@@ -8,7 +8,7 @@ import Newsletter from "../components/Newsletter";
 
 export default function Home() {
   return (
-    <>
+    <><div className={styles.biggerdiv}>
       <Head>
         <title>Drinks Food Life</title>
         <meta
@@ -26,7 +26,9 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>{" "}
+
       <Newsletter />
+
       <div className={styles.cards}>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
@@ -182,6 +184,7 @@ export default function Home() {
             <h3>Sea Wolf Brings the Boys to the Yard</h3>
           </div>
         </Link>
+      </div>
       </div>
     </>
   );
