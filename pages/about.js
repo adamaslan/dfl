@@ -19,30 +19,31 @@ export default function Home() {
             <div className="image-wrapper">
               <Image
                 alt="Party"
-                width={800}
-                height={800}
+                width={500}
+                height={500}
                 src="https://res.cloudinary.com/adamaslan/image/upload/v1654725062/drinksfoodlife/amaro-monte_omsl1h.jpg"
               />{" "}
             </div>
           </p>
           <br />
-          <h3>
-            Please follow us on Instagram{" "}
-            <a
-              href="https://www.instagram.com/drinksfoodlife/?hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <u>HERE</u>
-            </a>
-          </h3>
+
 
           <p>
             Founded with the desire to focus on drinks and food, but then life
             in its most general yet effervescent spirit came through. We have
             had contributions from @chemixtry, @journeyswithjaphe , Loic Luspo,
-            @omlettehoe, @cosmicveggieand others.
+            @omlettehoe, @cosmicveggie and others.
           </p>
+          <h4>
+            Please follow us on Instagram{" "}
+            <a
+                href="https://www.instagram.com/drinksfoodlife/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+              <u>HERE</u>
+            </a>
+          </h4>
         </div>
       </div>
       <ContentCard />
