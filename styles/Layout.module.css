@@ -1,19 +1,16 @@
 .card {
   color: rgb(0, 0, 0);
   border-radius: 20px;
-  margin: 5px 10px 5px 10px;
+  /* margin: 5px 10px 5px 10px; */
 }
 .biggerdiv {
   padding: 5px;
-
 }
 .cards {
   box-sizing: border-box;
 
-  margin:  5px 10px 5px 10px;
   display: grid;
   grid-gap: 1rem;
-  padding:  5px 10px 5px 10px;
 
   text-align: center;
   border-radius: 100px;
@@ -25,6 +22,8 @@
 @media (min-width: 600px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
+    padding: 5px 10px 5px 10px;
+    margin: 5px 10px 5px 10px;
   }
 }
 
@@ -33,7 +32,7 @@
     color: rgb(0, 0, 0);
 
     border-radius: 20px;
-    margin:  2rem 10rem 2rem 10rem;
+    margin: 2rem 10rem 2rem 10rem;
     padding: 1rem 10rem 1rem 10rem;
   }
 }
@@ -171,7 +170,6 @@
     width: 100%;
   }
 }
-
 
 /* 
 .container {
