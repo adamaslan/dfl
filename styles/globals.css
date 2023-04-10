@@ -35,25 +35,9 @@ a {
   justify-content: center;
   align-items: center;
 }
-.image-wrapper {
-  display: flex;
-  width: auto;
-
-  justify-content: center;
-  align-items: center;
-}
 img {
   border-radius: 20px;
 }
-/* the magic happens here */
-.image-wrapper > div {
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
-
-  justify-content: center;
-  align-items: center;
-}
-
 .wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 25rem));
