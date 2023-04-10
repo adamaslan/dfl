@@ -183,6 +183,26 @@ export default function Home() {
             <h3>Sea Wolf Brings the Boys to the Yard</h3>
           </div>
         </Link>
+        <Link href="/naplesbotanicalgardenwelcomesfrida" passHref>
+          <div>
+            <Image
+              alt="Frida"
+              className={styles.card4}
+              width={500}
+              height={500}
+              src="https://res.cloudinary.com/adamaslan/image/upload/v1681154705/drinksfoodlife/frida-diego_fi26ml.jpg"
+            />{" "}
+          </div>
+        </Link>
+        <Link href="/naplesbotanicalgardenwelcomesfrida" passHref>
+          <div className={styles.card8}>
+            <h2> Naples Botanical Garden Welcomes Frida and the Casa Azul </h2>
+            <h3>
+              Celebrating of Art, Nature, and Mexican Culture in Southwest
+              Florida
+            </h3>
+          </div>
+        </Link>
       </div>
       {/* </div> */}
     </>
