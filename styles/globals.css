@@ -27,13 +27,11 @@ a {
 
 .photo {
   max-width: 50%;
-  /* max-height: 10%;
- display: block;
- display: flex;
- width: auto; */
-
-  justify-content: center;
-  align-items: center;
+  /* max-height: 10%; */
+  display: block;
+  /* display: flex; */
+  height: auto;
+  margin: 0 auto;
 }
 img {
   border-radius: 20px;
