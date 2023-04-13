@@ -38,7 +38,6 @@ export default function Home() {
             you are trying to do it in a cost effective way that's another
             story.{" "}
           </p>{" "}
-          <br />
           <p>
             {" "}
             Style can be defined as a way of doing things or appearing. One
@@ -53,7 +52,33 @@ export default function Home() {
             a friend a delicious bottle of Whispering Angel Rose for only 45
             dollars.{" "}
           </p>
-          <br />
+          <p>
+            {" "}
+            Looking for a winter sports destination that offers both luxurious
+            amenities and cost-effective options? Aspen might be just what
+            you're looking for. With its reputation for stylish gluttony, Aspen
+            certainly has plenty of high-end dining options and luxurious
+            accommodations. However, these amenities can come at a high cost,
+            making it difficult for travelers on a budget to fully enjoy all
+            that Aspen has to offer.
+          </p>{" "}
+          <p>
+            On the other hand, Aspen does offer some cost-effective options for
+            those who plan ahead, such as purchasing a multi-day pass or finding
+            affordable dining options. And with its four mountains, including
+            Aspen Mountain and Snowmass, visitors can experience some of the
+            best ski slopes in the world. Additionally, Aspen boasts world-class
+            spas and resorts, making it a great destination for those who want
+            to relax and unwind after a day on the slopes.
+          </p>{" "}
+          <p>
+            Aspen's natural beauty, stunning scenery, and awe-inspiring
+            landscapes can provide a sense of transcendental meaning for some
+            visitors. The feeling of being surrounded by the majestic Rocky
+            Mountains, the crisp mountain air, and the serene wilderness can
+            inspire a sense of awe and wonder, connecting visitors to something
+            greater than themselves.{" "}
+          </p>
           <p>
             Learn more about{" "}
             <a href="https://www.esclans.com/product/whispering-angel/">

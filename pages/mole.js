@@ -30,7 +30,7 @@ export default function Home() {
             On the Love of Mole at Meson Antugua Santa Catarina
             <br />
             <div className="image-wrapper">
-              <Image alt="mole" width={872} height={872} src="/mole.jpg" />{" "}
+              <img className="photo" alt="mole" src="/mole.jpg" />{" "}
             </div>
           </p>
           <p>

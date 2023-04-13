@@ -29,10 +29,9 @@ export default function Home() {
           <p className={headerStyles.description}>
             Getting Deep in Coyoacan <br />
             <div className="card4">
-              <Image
+              <img
+                className="photo"
                 alt="mole"
-                width={872}
-                height={872}
                 src="https://res.cloudinary.com/adamaslan/image/upload/v1654900212/drinksfoodlife/cdmx2_u0b4mi.jpg"
               />{" "}
             </div>

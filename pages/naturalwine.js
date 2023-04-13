@@ -31,7 +31,7 @@ export default function Home() {
             An Awkward Question about Natural Wine
           </p>
           <div className="image-wrapper">
-            <Image alt="wine" width={554} height={554} src="/coup-wine.jpg" />{" "}
+            <img className="photo" alt="wine" src="/coup-wine.jpg" />{" "}
           </div>
           <p>
             {" "}
@@ -85,26 +85,8 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="wrapper">
-        <a href="./amaromontenegro">
-          <ContentCard
-            img="https://lh3.googleusercontent.com/SpfSt4EadOjpRUZCfjEPu_bl5mCTyXq5skTyHKKqwcCt1hUzXHZ5ZxU9rPg_oY4e_tIZQQnZb4RD4FjBFzJTmMGKArLmctic3R1oD7GbBy_kXHazlVy1QdGWiN0ywz1GGenQRrCl2w=w2400"
-            title="Drinking Amaros at ZXY Gallery"
-            description="Amaro Montenegro making an appearance at ZXY Gallery"
-            tag="amaromontenegro"
-            href="amaromontenegro"
-          />
-        </a>
 
-        <a href="./northdumpling">
-          <ContentCard
-            img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-            title="North Dumpling"
-            description="In love with North Dumpling "
-            href="northdumpling"
-          />
-        </a>
-      </div>
+      <ContentCard />
     </>
   );
 }
