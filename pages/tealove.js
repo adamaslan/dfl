@@ -10,7 +10,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>We Love Loose Tea</title>
+        <title>
+          On the Love of Loose Tea: 5 Reasons Why Loose Tea is Great
+        </title>
         <meta
           property="og:image"
           content="https://res.cloudinary.com/adamaslan/image/upload/v1667159646/drinksfoodlife/dfl-logo_vnu5xy.jpg"
@@ -25,7 +27,7 @@ export default function Home() {
         <div className={styles.article1}>
           <br />
           <p className={headerStyles.description}>
-            Teas, yes please
+            5 Reasons Why You Should Drink Loose Teas
             <br />
             <img
               className="photo"
@@ -34,9 +36,37 @@ export default function Home() {
             />{" "}
           </p>
           <p>
-            Lots to say about the tea in its loosest form and genmaicha...for
-            now.
+            Lots to say about the tea in its loosest form and genmaicha...and
+            Porto Rico Importing Company which dates back to 1907. Here are 5
+            reasons why loose tea is great!
           </p>
+          <ol>
+            <li>
+              <strong>Lots of flavor:</strong> Loose tea leaves are larger and
+              less processed than tea found in bags, which means they retain
+              more of their natural oils and flavor.
+            </li>
+            <li>
+              <strong>Higher quality:</strong> Loose tea is often made from
+              better quality tea leaves compared to the broken leaves and dust
+              found in tea bags.
+            </li>
+            <li>
+              <strong>Health benefits:</strong> Loose tea contains antioxidants,
+              polyphenols, and other beneficial compounds that can help support
+              overall health and well-being.
+            </li>
+            <li>
+              <strong>Customizable:</strong> Loose tea allows for more control
+              over the strength and flavor of your tea. You can adjust the
+              amount of tea leaves and steeping time to your liking.
+            </li>
+            <li>
+              <strong>Eco-friendly:</strong> Loose tea generates less waste than
+              tea bags, which are often made with non-biodegradable materials
+              like nylon or polyester.
+            </li>
+          </ol>
         </div>
       </div>
       <ContentCard />
