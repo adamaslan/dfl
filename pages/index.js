@@ -86,7 +86,7 @@ export default function Home() {
           </div>
         </Link>
 
-        <Link href="/northdumpling" passHref>
+        <Link href="/northdumplingindimessquare" passHref>
           <div className={styles.card}>
             <Image
               alt="dumpling"
@@ -95,8 +95,8 @@ export default function Home() {
               height={500}
               src="https://res.cloudinary.com/adamaslan/image/upload/v1654718488/drinksfoodlife/northdump1_dptuen.jpg"
             />{" "}
-            <h2> North Dumpling, my Guru</h2>{" "}
-            <h3>I'm in love with North Dumpling, duh.</h3>
+            <h2> North Dumpling, the Guru of Dimes Square,</h2>{" "}
+            <h3> Dumplings Shining Brightly on the Lower East Side</h3>
           </div>
         </Link>
       </div>
