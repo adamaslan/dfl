@@ -101,6 +101,17 @@ export default function Home() {
         </Link>
       </div>
       <ContentCard />
+      <Link href="/besttacosinbk" passHref>
+        <div className={styles.cards2}>
+          <Image
+              className={styles.card4}
+              src="https://res.cloudinary.com/adamaslan/image/upload/v1685058269/tacos1_onlnoj.jpg"   width={500}
+              height={500}
+              alt="food"
+          />
+          <h2>Taco Poll Brooklyn</h2> <h3>See the results of our hotly contested poll!</h3>
+        </div>
+      </Link>
       <Link href="/artandfish" passHref>
         <div className={styles.cards2}>
           <Image
