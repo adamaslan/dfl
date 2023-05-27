@@ -46,11 +46,9 @@ export default function Home() {
 
         <Link href="/raki" passHref>
           <div className={styles.card}>
-            <Image
-              alt="cocktail"
-              className={styles.card4}
-              width={500}
-              height={500}
+            <img
+                className="photo"
+                alt='food'
               src="https://res.cloudinary.com/adamaslan/image/upload/v1664330111/drinksfoodlife/raki_iaoqaw_b5103d.jpg"
             />{" "}
             <h2> On the Love of Raki and Turkish Food</h2>{" "}
@@ -60,11 +58,9 @@ export default function Home() {
 
         <Link href="/grandarmypunch" passHref>
           <div className={styles.card}>
-            <Image
-              alt="cocktail"
-              className={styles.card4}
-              width={500}
-              height={500}
+            <img
+                className="photo"
+                alt='cocktail'
               src="https://res.cloudinary.com/adamaslan/image/upload/v1660751024/drinksfoodlife/grandarmypunch_e9pums.jpg"
             />{" "}
             <h2> Summer Cocktails Part 2</h2>{" "}
@@ -74,11 +70,9 @@ export default function Home() {
 
         <Link href="/summer-22-cocktail-danburydonkey" passHref>
           <div className={styles.card}>
-            <Image
-              alt="cocktail"
-              className={styles.card4}
-              width={500}
-              height={500}
+            <img
+                className="photo"
+                alt='cocktail'
               src="https://res.cloudinary.com/adamaslan/image/upload/v1655411125/drinksfoodlife/danburydonkey_mdavxe.jpg"
             />{" "}
             <h2> Summer Cocktails Part 1</h2>{" "}
@@ -88,11 +82,9 @@ export default function Home() {
 
         <Link href="/northdumplingindimessquare" passHref>
           <div className={styles.card}>
-            <Image
-              alt="dumpling"
-              className={styles.card4}
-              width={500}
-              height={500}
+          <img
+              className="photo"
+            alt='dumpling'
               src="https://res.cloudinary.com/adamaslan/image/upload/v1654718488/drinksfoodlife/northdump1_dptuen.jpg"
             />{" "}
             <h2> North Dumpling, the Guru of Dimes Square,</h2>{" "}
