@@ -29,7 +29,7 @@ export default function Home() {
           </p>
 
           <div className="image-wrapper">
-            <Image alt="dumps" width={572} height={572} src="/northdump1.jpg" />{" "}
+            <img className="photo" alt="dumps" src="/northdump1.jpg" />{" "}
           </div>
           <p>
             {" "}
@@ -39,28 +39,15 @@ export default function Home() {
             seemingly years ago. Eternal endless bliss pours through your
             dumplings. Bountiful is the vitality of the owners ps.{" "}
           </p>
-        </div>
-      </div>
-      <div className="wrapper">
-        <a href="./amaromontenegro">
-          <ContentCard
-            img="https://lh3.googleusercontent.com/SpfSt4EadOjpRUZCfjEPu_bl5mCTyXq5skTyHKKqwcCt1hUzXHZ5ZxU9rPg_oY4e_tIZQQnZb4RD4FjBFzJTmMGKArLmctic3R1oD7GbBy_kXHazlVy1QdGWiN0ywz1GGenQRrCl2w=w2400"
-            title="Drinking Amaros at ZXY Gallery"
-            description="Amaro Montenegro making an appearance at ZXY Gallery"
-            tag="amaromontenegro"
-            href="amaromontenegro"
-          />
-        </a>
+          <p>As a fan of authentic Chinese cuisine, I can confidently say that North Dumpling is the best dumpling spot in the Lower East Side. I follow the directions for your frozen dumplings that you pasted on to the glass display next to the spring rolls seemingly years ago. With each succulent bite of these homemade dumplings, I am transported to a realm of eternal, endless bliss, where the flavors of Asia come alive.
 
-        <a href="./northdumpling">
-          <ContentCard
-            img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-            title="North Dumpling"
-            description="In love with North Dumpling "
-            href="northdumpling"
-          />
-        </a>
+</p> <p>Located on Essex St, North Dumpling is a true gem in the local food scene of NYC. The Chinese-style dumplings are a beloved staple of this city's cuisine, and North Dumpling's take on them is simply unmatched. Whether you're a seasoned dumpling enthusiast or new to the game, these frozen dumplings are a must-try.
+</p> <p>
+And let us not forget the vitality of your owners, whose passion for creating the perfect dumpling is evident in every morsel. Their dedication to preserving the flavors and traditions of Chinese cuisine is truly admirable. Thank you for being a part of the vibrant food culture of the Lower East Side, North Dumpling.
+        </p></div>
       </div>
+
+      <ContentCard />
     </>
   );
 }

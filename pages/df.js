@@ -27,7 +27,7 @@ export default function Home() {
           <p className={headerStyles.description}>
             In Love With Mexico City <br />
             <div className="image-wrapper">
-              <Image alt="market" width={872} height={554} src="/mex.png" />{" "}
+              <img className="photo" alt="market" src="/mex.png" />{" "}
             </div>
           </p>
           <p>

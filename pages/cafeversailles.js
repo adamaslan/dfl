@@ -24,10 +24,9 @@ export default function Home() {
           <p className={headerStyles.description}>
             In Love with Cafe Versailles
             <div className="image-wrapper">
-              <Image
+              <img
+                className="photo"
                 alt="cafe versailles"
-                width={640}
-                height={800}
                 src="/versailles.jpg"
               />{" "}
             </div>

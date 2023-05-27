@@ -25,10 +25,9 @@ export default function Home() {
             Drinking Amaro Montenegro at ZXY Gallery
           </p>
           <div className="image-wrapper">
-            <Image
+            <img
+              className="photo"
               alt="Amaro Bottle"
-              width={872}
-              height={872}
               src="https://res.cloudinary.com/adamaslan/image/upload/v1654725062/drinksfoodlife/amaro-monte_omsl1h.jpg"
             />{" "}
           </div>
