@@ -6,8 +6,6 @@
 9
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 D
-components/Footer.js,a/2/a2e278e89d548df83aadcfd93796fe3ee43ceea3
-D
 components/Layout.js,d/6/d66112310f5c3cbc64b97eb89ff81256ef69c24b
 ;
 lib/gtag.js,6/6/66448cb74dc42cf88b441086f7e1ee3e10e9c653
@@ -19,5 +17,3 @@ A
 pages/about.js,c/9/c9b3e2409187639aa778d6ccf86b8c09dc8dfd08
 I
 components/ContentCard.js,5/c/5c1ebf35cf016f59b311c48d3cefb389c224ba50
-H
-styles/Layout.module.css,1/9/198b580a82a49c522ad467a20dac38c0b545a23e
