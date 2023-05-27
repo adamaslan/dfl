@@ -11,11 +11,15 @@ export default function Home() {
       <Head>
         git
         <title>On the Love of Raki and Turkish Food</title>
-          <meta
+        <meta
           property="og:image"
-          content="https://res.cloudinary.com/adamaslan/image/upload/v1667159646/drinksfoodlife/dfl-logo_vnu5xy.jpg"/>
-        <meta name="description" content="Drinks Food Life. A Bushwick based publication covering the tastiest things in NYC and the rest of the world." />
-       <link rel="icon" href="/favicon.ico" />
+          content="https://res.cloudinary.com/adamaslan/image/upload/v1667159646/drinksfoodlife/dfl-logo_vnu5xy.jpg"
+        />
+        <meta
+          name="description"
+          content="Drinks Food Life. A Bushwick based publication covering the tastiest things in NYC and the rest of the world."
+        />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
         <div className={styles.article1}>
@@ -23,19 +27,18 @@ export default function Home() {
           <p className={headerStyles.description}>
             On the Love of Raki and Turkish Food <br />
             <div className="image-wrapper">
-              <Image
+              <img
                 alt="fish plate"
-                width={872}
-                height={554}
+                className="photo"
                 src="https://res.cloudinary.com/adamaslan/image/upload/v1664330111/drinksfoodlife/raki_iaoqaw_b5103d.jpg"
               />{" "}
             </div>
           </p>
           <p>
             A little bit of Raki goes a long way. Add a couple ice cubes and
-            suddenly its a glory of cloud liquid. Keep adding cubes and it
-            still has that strong anise taste. All of these things add up to
-            make it a great digestif or first drink.{" "}
+            suddenly its a glory of cloud liquid. Keep adding cubes and it still
+            has that strong anise taste. All of these things add up to make it a
+            great digestif or first drink.{" "}
           </p>{" "}
           <br />
           <p>
@@ -44,9 +47,9 @@ export default function Home() {
             costs only 12 dollars and comes with this elegant and efficient set
             up.
           </p>
-          <p>Turkish Grill is located at 4203 Queens Blvd, Sunnyside, NY 11104</p>
-
-
+          <p>
+            Turkish Grill is located at 4203 Queens Blvd, Sunnyside, NY 11104
+          </p>
           <br />
           <p>
             Learn more about{" "}

@@ -8,7 +8,8 @@ import Newsletter from "../components/Newsletter";
 
 export default function Home() {
   return (
-    <><div className={styles.biggerdiv}>
+    <>
+      {/* <div className={styles.biggerdiv}> */}
       <Head>
         <title>Drinks Food Life</title>
         <meta
@@ -26,9 +27,7 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>{" "}
-
       <Newsletter />
-
       <div className={styles.cards}>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
@@ -81,15 +80,15 @@ export default function Home() {
           </div>
         </Link>
 
-        <Link href="/northdumpling" passHref>
+        <Link href="/northdumplingindimessquare" passHref>
           <div className={styles.card}>
           <img
               className="photo"
             alt='dumpling'
               src="https://res.cloudinary.com/adamaslan/image/upload/v1654718488/drinksfoodlife/northdump1_dptuen.jpg"
             />{" "}
-            <h2> North Dumpling, my Guru</h2>{" "}
-            <h3>I'm in love with North Dumpling, duh.</h3>
+            <h2> North Dumpling, the Guru of Dimes Square,</h2>{" "}
+            <h3> Dumplings Shining Brightly on the Lower East Side</h3>
           </div>
         </Link>
       </div>
@@ -187,8 +186,28 @@ export default function Home() {
             <h3>Sea Wolf Brings the Boys to the Yard</h3>
           </div>
         </Link>
+        <Link href="/naplesbotanicalgardenwelcomesfrida" passHref>
+          <div>
+            <Image
+              alt="Frida"
+              className={styles.card4}
+              width={500}
+              height={500}
+              src="https://res.cloudinary.com/adamaslan/image/upload/v1681154705/drinksfoodlife/frida-diego_fi26ml.jpg"
+            />{" "}
+          </div>
+        </Link>
+        <Link href="/naplesbotanicalgardenwelcomesfrida" passHref>
+          <div className={styles.card8}>
+            <h2> Naples Botanical Garden Welcomes Frida and the Casa Azul </h2>
+            <h3>
+              Celebrating of Art, Nature, and Mexican Culture in Southwest
+              Florida
+            </h3>
+          </div>
+        </Link>
       </div>
-      </div>
+      {/* </div> */}
     </>
   );
 }

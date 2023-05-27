@@ -29,12 +29,7 @@ export default function Home() {
           <p className={headerStyles.description}>
             Baby Daddy Please <br />
             <div className="image-wrapper">
-              <Image
-                alt="beer can"
-                width={872}
-                height={554}
-                src="/babydaddy.jpg"
-              />{" "}
+              <img className="photo" alt="beer can" src="/babydaddy.jpg" />{" "}
             </div>
           </p>
           <p>
@@ -63,27 +58,8 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="wrapper">
-        <a href="./amaromontenegro">
-          <ContentCard
-            img="amaro-monte.jpg"
-            title="Drinking Amaros at ZXY Gallery"
-            description="Amaro at ZXY Gallery"
-            tag="amaromontenegro"
-            href="amaromontenegro"
-            //techdebt-make this into an IMAGE for NEXT Optimization
-          />
-        </a>
 
-        <a href="./northdumpling">
-          <ContentCard
-            img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-            title="North Dumpling"
-            description="In love with North Dumpling "
-            href="northdumpling"
-          />
-        </a>
-      </div>
+      <ContentCard />
     </>
   );
 }

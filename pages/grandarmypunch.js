@@ -31,11 +31,9 @@ export default function Home() {
             <br />
             by @chemixtry
             <div className="image-wrapper">
-              <Image
-                className="card4"
+              <img
+                className="photo"
                 alt="cocktail"
-                width={640}
-                height={640}
                 src="https://res.cloudinary.com/adamaslan/image/upload/v1660751024/drinksfoodlife/grandarmypunch_e9pums.jpg"
               />{" "}
             </div>
@@ -45,16 +43,15 @@ export default function Home() {
             Summer has indeed hit us with some heat. A good elixer for all this
             sun and humidity is a delicious cocktail by @chemixtry.
           </p>
-          <br />
+
           <p>
-            Grand Army Punch
+            Grand Army Punch In 1883, Rochester, NY bartender, Patrick H.
+            "Patsy" McDonough published this recipe specifically to celebrate
+            the Grand Army of the Republic in observance of Memorial Day; some
+            of whom were his personal friends and acquaintances fighting for the
+            Union in the Civil War. <br />
             <br />
-            In 1883, Rochester, NY bartender, Patrick H. "Patsy" McDonough
-            published this recipe specifically to celebrate the Grand Army of
-            the Republic in observance of Memorial Day; some of whom were his
-            personal friends and acquaintances fighting for the Union in the
-            Civil War. For 1 serving of his Grand Army Punch:
-            <br />
+            For 1 serving of his Grand Army Punch:
             <br />
             1 oz cognac
             <br />
@@ -76,7 +73,7 @@ export default function Home() {
             ice!
             <br />
           </p>
-          <br />
+
           <p>
             Checkout{" "}
             <a href="https://www.instagram.com/chemixtry/">
