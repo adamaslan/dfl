@@ -1,12 +1,8 @@
 
 H
 styles/Header.module.css,f/4/f4d69cda949e904a1f9ef38e89a99b868660e6bc
-@
-styles/reset.css,f/e/fe79704bac3a00543cb61b9cd7c2c5dac0b68243
 E
 styles/Nav.module.css,d/5/d5f3c9f545eaf58599b1fe4913229c8c1ca89be6
-H
-components/Newsletter.js,6/e/6efc1ee8067d13a70cb9c3b23aa4893266055882
 B
 pages/_document.js,d/1/d1cd1638ed0f36c4f90ee49276b0ae25263a6f85
 H

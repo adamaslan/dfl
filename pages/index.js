@@ -8,7 +8,8 @@ import Newsletter from "../components/Newsletter";
 
 export default function Home() {
   return (
-    <><div className={styles.biggerdiv}>
+    <>
+      <div className={styles.biggerdiv}>
       <Head>
         <title>Drinks Food Life</title>
         <meta
