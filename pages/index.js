@@ -28,7 +28,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>{" "}
       <Newsletter />
-      <div className={styles.cards}>
+      <div className={styles.gridcontainer1}>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
           strategy="afterInteractive"
@@ -45,50 +45,50 @@ export default function Home() {
         </Script>
 
         <Link href="/raki" passHref>
-          <div className={styles.card}>
+          <div className={styles.griditem1}>
             <img
                 className="photo"
                 alt='food'
               src="https://res.cloudinary.com/adamaslan/image/upload/v1664330111/drinksfoodlife/raki_iaoqaw_b5103d.jpg"
             />{" "}
-            <h2> On the Love of Raki and Turkish Food</h2>{" "}
-            <h3>Dining at Turkish Grill in Queens</h3>
+            <h3> On the Love of Raki and Turkish Food</h3>{" "}
+            <p>Dining at Turkish Grill in Queens</p>
           </div>
         </Link>
 
         <Link href="/grandarmypunch" passHref>
-          <div className={styles.card}>
+          <div className={styles.griditem1}>
             <img
                 className="photo"
                 alt='cocktail'
               src="https://res.cloudinary.com/adamaslan/image/upload/v1660751024/drinksfoodlife/grandarmypunch_e9pums.jpg"
             />{" "}
-            <h2> Summer Cocktails Part 2</h2>{" "}
-            <h3>Grand Army Punch by @chemixtry</h3>
+            <h3> Summer Cocktails Part 2</h3>{" "}
+            <p>Grand Army Punch by @chemixtry</p>
           </div>
         </Link>
 
         <Link href="/summer-22-cocktail-danburydonkey" passHref>
-          <div className={styles.card}>
+          <div className={styles.griditem1}>
             <img
                 className="photo"
                 alt='cocktail'
               src="https://res.cloudinary.com/adamaslan/image/upload/v1655411125/drinksfoodlife/danburydonkey_mdavxe.jpg"
             />{" "}
-            <h2> Summer Cocktails Part 1</h2>{" "}
-            <h3>The Danbury Donkey by @chemixtry</h3>
+            <h3> Summer Cocktails Part 1</h3>{" "}
+            <p>The Danbury Donkey by @chemixtry</p>
           </div>
         </Link>
 
         <Link href="/northdumplingindimessquare" passHref>
-          <div className={styles.card}>
+          <div className={styles.griditem1}>
           <img
               className="photo"
             alt='dumpling'
               src="https://res.cloudinary.com/adamaslan/image/upload/v1654718488/drinksfoodlife/northdump1_dptuen.jpg"
             />{" "}
-            <h2> North Dumpling, the Guru of Dimes Square,</h2>{" "}
-            <h3> Dumplings Shining Brightly on the Lower East Side</h3>
+            <h3> North Dumpling, the Guru of Dimes Square,</h3>{" "}
+            <p> Dumplings Shining Brightly on the Lower East Side</p>
           </div>
         </Link>
       </div>
