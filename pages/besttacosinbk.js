@@ -70,7 +70,7 @@ const Faux3DBarChart = () => (
 
 export default function Home() {
     return (
-        <div className={styles.container}>
+
             <div className={styles.article1}>
                 <p className={headerStyles.description}>
                     <p>The Best Tacos in BK</p>
@@ -84,10 +84,11 @@ export default function Home() {
                 <p>
                     We did a poll of the best tacos spots in BK and the results were very close. There was a write in for Taqueria Ramirez, which has us wondering if we need to do another poll! It’s always exciting to discover new places that serve delicious tacos. We value the opinions of our followers and would love to hear more about their favorite taco spots in BK. Hit us up on Instagram to let us know what you think.
                 </p>
+                <Faux3DBarChart />
             </div>
 
-            <Faux3DBarChart />
-        </div>
+
+
     );
 }
 
