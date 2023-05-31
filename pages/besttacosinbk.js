@@ -45,11 +45,12 @@ const Faux3DBarChart = () => (
                 interval={0}
                 tickLine={{ transform: 'translate(0, -6)' }}
                 tick={{
-                    fontSize: '2.5vw',
-                    fontFamily: 'Helvetica Neue, Arial',
+                    fontSize: '2vw',
+                    fontFamily: 'Roboto',
                     fontWeight: 'bold',
                     fill: '#8884d8'
                 }}
+                tickLabelOutside={true}
             />
 
             <YAxis
