@@ -8,7 +8,7 @@ import Newsletter from "../components/Newsletter";
 
 export default function Home() {
   return (
-    <>
+    <div className='root'>
       {/* <div className={styles.biggerdiv}> */}
       <Head>
         <title>Drinks Food Life</title>
@@ -28,7 +28,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>{" "}
       <Newsletter />
-      <div className={styles.gridcontainer1}>
+      <div className={styles.gridcontainer1} id="parent">
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
           strategy="afterInteractive"
@@ -210,6 +210,6 @@ export default function Home() {
         </Link>
       </div>
       {/* </div> */}
-    </>
+    </div>
   );
 }

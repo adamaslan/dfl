@@ -1,11 +1,11 @@
 @media only screen and (max-width: 600px) {
-  html {
+  .root  {
     font-size: 14px;
   }
 }
 
 @media only screen and (min-width: 601px) {
-  html {
+  .root  {
     font-size: 16px;
   }
 }
@@ -52,6 +52,19 @@
 
 .griditem1 h3 {
   margin-top: 0.5em;
+}
+
+#parent > :first-child {
+  background-color: #ffadad;
+}
+#parent > :nth-child(2) {
+  background-color: #ffd6a5;
+}
+#parent > :nth-child(3) {
+  background-color: #fdffb6;
+}
+#parent > :last-child {
+  background-color: #caffbf;
 }
 
 
