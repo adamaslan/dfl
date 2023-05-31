@@ -8,7 +8,7 @@ import Newsletter from "../components/Newsletter";
 
 export default function Home() {
   return (
-    <>
+    <div className='root'>
       {/* <div className={styles.biggerdiv}> */}
       <Head>
         <title>Drinks Food Life</title>
@@ -28,7 +28,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>{" "}
       <Newsletter />
-      <div className={styles.gridcontainer1}>
+      <div className={styles.gridcontainer1} id="parent">
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
           strategy="afterInteractive"
@@ -52,7 +52,7 @@ export default function Home() {
               src="https://res.cloudinary.com/adamaslan/image/upload/v1664330111/drinksfoodlife/raki_iaoqaw_b5103d.jpg"
             />{" "}
             <h2> On the Love of Raki and Turkish Food</h2>{" "}
-            <p>Dining at Turkish Grill in Queens</p>
+            <h3>Dining at Turkish Grill in Queens</h3>
           </div>
         </Link>
 
@@ -64,7 +64,7 @@ export default function Home() {
               src="https://res.cloudinary.com/adamaslan/image/upload/v1660751024/drinksfoodlife/grandarmypunch_e9pums.jpg"
             />{" "}
             <h2> Summer Cocktails Part 2</h2>{" "}
-            <p>Grand Army Punch by @chemixtry</p>
+            <h3>Grand Army Punch by @chemixtry</h3>
           </div>
         </Link>
 
@@ -210,6 +210,6 @@ export default function Home() {
         </Link>
       </div>
       {/* </div> */}
-    </>
+    </div>
   );
 }

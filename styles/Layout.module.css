@@ -1,3 +1,15 @@
+@media only screen and (max-width: 600px) {
+  .root  {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .root  {
+    font-size: 16px;
+  }
+}
+
 .photo {
   width: 100%;
   height: auto;
@@ -34,30 +46,43 @@
 }
 
 .griditem1 h2 {
-  margin-top: 10px;
-  font-size: 1.5em;
+  margin-top: 0.5em;
+  font-size: 1.25em;
 }
 
-.griditem1 p {
-  margin-top: 10px;
+.griditem1 h3 {
+  margin-top: 0.5em;
 }
 
-
-.griditem1:first-child {
+#parent > :first-child {
   background-color: #ffadad;
 }
-
-.griditem1:nth-child(2) {
+#parent > :nth-child(2) {
   background-color: #ffd6a5;
 }
-
-.griditem1:nth-child(3) {
+#parent > :nth-child(3) {
   background-color: #fdffb6;
 }
-
-.griditem1:nth-child(4) {
+#parent > :last-child {
   background-color: #caffbf;
 }
+
+
+/*.griditem1:first-child {*/
+/*  background-color: #ffadad;*/
+/*}*/
+
+/*.griditem1:nth-child(2) {*/
+/*  background-color: #ffd6a5;*/
+/*}*/
+
+/*.griditem1:nth-child(3) {*/
+/*  background-color: #fdffb6;*/
+/*}*/
+
+/*.griditem1:nth-child(4) {*/
+/*  background-color: #caffbf;*/
+/*}*/
 
 
 
