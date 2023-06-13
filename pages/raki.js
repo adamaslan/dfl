@@ -38,14 +38,14 @@ export default function Home() {
             A little bit of Raki goes a long way. Add a couple ice cubes and
             suddenly its a glory of cloud liquid. Keep adding cubes and it still
             has that strong anise taste. All of these things add up to make it a
-            great digestif or first drink.{" "}
+            great digestif or first drink.{" "}Raki is also a symbol of Turkish culture and hospitality, often served with meze and enjoyed in a similar way of sharing a bottle of wine with friends. It can be mixed with water to create a milky white drink called aslan sütü, meaning "lion’s milk", which might give you added courage and strength.
           </p>{" "}
           <br />
           <p>
             {" "}
             Turkish Grill in Sunnyside Queens is a great place to enjoy Raki. It
             costs only 12 dollars and comes with this elegant and efficient set
-            up.
+            up. You can also order delicious Turkish dishes, such as kebabs, manti, lahmacun, and baklava, to pair with your drink. The restaurant has a fun and cozy and atmosphere, with attentive staff and authentic decor. Turkish Grill is open every day from 11:30 am to 10:30 pm (11:00 pm on weekends), and you can order online or make a reservation.
           </p>
           <p>
             Turkish Grill is located at 4203 Queens Blvd, Sunnyside, NY 11104
@@ -58,6 +58,13 @@ export default function Home() {
             </a>{" "}
             here.
           </p>
+          <p>
+Checkout Turkish Grill's website
+         <a href='http://www.turkishgrillnewyork.com/'>
+          <u>here</u>
+        </a>{" "}
+        here.
+      </p>
         </div>
       </div>
 
