@@ -11,16 +11,12 @@ B
 pages/_document.js,d/1/d1cd1638ed0f36c4f90ee49276b0ae25263a6f85
 H
 pages/amaromontenegro.js,8/9/8973c39d3b4bb64a64f7ecf8a7e71f124b411d53
-D
-components/Layout.js,d/6/d66112310f5c3cbc64b97eb89ff81256ef69c24b
 ;
 lib/gtag.js,6/6/66448cb74dc42cf88b441086f7e1ee3e10e9c653
 @
 pages/loading.js,0/9/094334a2ba647631e7aa52bd7627a3a831ea9841
 A
 components/Nav.js,7/9/79f048ffa19d7993d4900d9e6cfda7d16df1fbef
-I
-components/ContentCard.js,5/c/5c1ebf35cf016f59b311c48d3cefb389c224ba50
 >
 pages/about.js,c/9/c9b3e2409187639aa778d6ccf86b8c09dc8dfd08
 G
@@ -35,11 +31,7 @@ b
 next.config.js,8/1/811a6d5a2e04fadb44d8eec365f2fa8af5c4facf
 G
 pages/grandarmypunch.js,d/e/de6a2c5c34b64dd12e24bfbd64ea1635a453505e
-<
-package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
->
-pages/index.js,1/7/17f8c719689e4f3221289153187a6ca1fb24dd87
 H
 styles/Footer.module.css,4/1/410f0f785b9ff0923ef5855f4a105b1b7c0ee54b
-H
-styles/Layout.module.css,1/9/198b580a82a49c522ad467a20dac38c0b545a23e
+F
+pages/besttacosinbk.js,5/a/5a73d981ef1cbb31b816898d093368c8ef618358

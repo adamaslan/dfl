@@ -3,8 +3,6 @@
 	yarn.lock,5/3/53585a096fe3a3b96321113856ae62602995a33b
 9
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-D
-components/Layout.js,d/6/d66112310f5c3cbc64b97eb89ff81256ef69c24b
 ;
 lib/gtag.js,6/6/66448cb74dc42cf88b441086f7e1ee3e10e9c653
 @
@@ -13,8 +11,6 @@ A
 components/Nav.js,7/9/79f048ffa19d7993d4900d9e6cfda7d16df1fbef
 >
 pages/about.js,c/9/c9b3e2409187639aa778d6ccf86b8c09dc8dfd08
-I
-components/ContentCard.js,5/c/5c1ebf35cf016f59b311c48d3cefb389c224ba50
 A
 pages/coyoacan.js,c/2/c26eb873572d8cde6fd6abc2315cdc600a668944
 D
@@ -31,11 +27,7 @@ G
 pages/grandarmypunch.js,d/e/de6a2c5c34b64dd12e24bfbd64ea1635a453505e
 H
 components/Newsletter.js,6/e/6efc1ee8067d13a70cb9c3b23aa4893266055882
-<
-package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
->
-pages/index.js,1/7/17f8c719689e4f3221289153187a6ca1fb24dd87
 H
 styles/Footer.module.css,4/1/410f0f785b9ff0923ef5855f4a105b1b7c0ee54b
-H
-styles/Layout.module.css,1/9/198b580a82a49c522ad467a20dac38c0b545a23e
+F
+pages/besttacosinbk.js,5/a/5a73d981ef1cbb31b816898d093368c8ef618358
