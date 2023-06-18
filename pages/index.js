@@ -92,9 +92,9 @@ export default function Home() {
           </div>
         </Link>
       </div>
-
+<div>
       <ContentCard />
-
+</div>
       <Link href="/besttacosinbk" passHref>
         <div className={styles.cards2}>
           <Image
