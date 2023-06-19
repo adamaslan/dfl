@@ -1,0 +1,46 @@
+
+@media (min-width: 600px) {
+    .card7 {
+        width: 75%;
+        height: 75%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cards7 {
+        flex-direction: column;
+        margin: .5rem;
+    }
+
+    .card7 {
+        margin: 0;
+        max-width: none;
+        width: 100%;
+    }
+}
+
+/*img {*/
+/*    border-radius: 20px;*/
+/*}*/
+
+.photos {  display: grid;
+    grid-template-rows: repeat(3, 3fr);
+    grid-gap: 5px;
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*object-fit: cover;*/
+    /*border-radius: 10px;*/
+}
+
+/*.card7 {*/
+/*  flex: 0 0 calc(33.33% - 20px);*/
+
+
+/*}*/
+
+.card7 img {
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}

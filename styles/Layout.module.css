@@ -10,10 +10,13 @@
   }
 }
 
+
+
 .photo {
   width: 100%;
   height: auto;
   object-fit: contain;
+  border-radius: 20px;
 }
 
 .gridcontainer1 {
@@ -43,6 +46,9 @@
 .griditem1 img {
   width: 100%;
   height: auto;
+
+  object-fit: contain;
+  border-radius: 20px;
 }
 
 .griditem1 h2 {
@@ -252,27 +258,6 @@
 
 }
 
-.photos {  display: grid;
-  grid-template-rows: repeat(3, 3fr);
-  grid-gap: 5px;
-  /*width: 100%;*/
-  /*height: auto;*/
-  /*object-fit: cover;*/
-  /*border-radius: 10px;*/
-}
-
-/*.card7 {*/
-/*  flex: 0 0 calc(33.33% - 20px);*/
-
-
-/*}*/
-
-.card7 img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-}
 
 .card8 {
   background-color: rgb(0, 255, 255);
@@ -294,26 +279,6 @@
     height: 75%;
   }
 }
-@media (min-width: 600px) {
-  .card7 {
-    width: 75%;
-    height: 75%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .cards7 {
-    flex-direction: column;
-    margin: 0;
-  }
-
-  .card7 {
-    margin: 0;
-    max-width: none;
-    width: 100%;
-  }
-}
-
 .divArt {
   width: 500px;
 

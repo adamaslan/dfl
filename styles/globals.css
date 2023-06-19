@@ -25,28 +25,26 @@ a {
 //   object-fit: fill;
 // } */
 
-@media (min-width: 600px) {
-  .photo {
-    width: 50%;
-    /* max-height: 10%; */
-    display: block;
-    /* display: flex; */
-    height: auto;
-    margin: 0 auto;
-  }
-}
+/*@media (min-width: 600px) {*/
+/*  .photo {*/
+/*    width: 50%;*/
+/*    !* max-height: 10%; *!*/
+/*    display: block;*/
+/*    !* display: flex; *!*/
+/*    height: auto;*/
+/*    margin: 0 auto;*/
+/*  }*/
+/*}*/
 
-.photo {
-  max-width: 95%;
-  /* max-height: 10%; */
-  display: block;
-  /* display: flex; */
-  height: auto;
-  margin: 0 auto;
-}
-img {
-  border-radius: 20px;
-}
+/*.photo {*/
+/*  max-width: 95%;*/
+/*  !* max-height: 10%; *!*/
+/*  display: block;*/
+/*  !* display: flex; *!*/
+/*  height: auto;*/
+/*  margin: 0 auto;*/
+/*}*/
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 25rem));
