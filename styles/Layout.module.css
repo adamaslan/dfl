@@ -12,13 +12,25 @@
 
 
 
-
-.photo {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 20px;
+@media only screen and (max-width: 800px) {
+  .photo {
+    width: 75vw;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+    margin: 2vw;
+  }
 }
+@media only screen and (min-width: 801px) {
+    .photo {
+      width: 50vw;
+      height: auto;
+      object-fit: contain;
+      border-radius: 20px;
+      margin: 2vw;
+    }
+  }
+
 
 .gridcontainer1 {
   display: grid;
@@ -46,6 +58,8 @@
     flex-direction: column;
     margin: 1rem 1rem 1rem 1rem;
     grid-gap: 20px;
+    line-height: 1rem;
+    font-size: 3vw;
 
   }
 }
