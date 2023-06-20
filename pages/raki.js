@@ -21,19 +21,19 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.container}>
-        <div className={styles.article1}>
-          <br />
+
+        <div className={styles.gridcontainer4}>
           <div className={headerStyles.description}>
             On the Love of Raki and Turkish Food <br />
-            <div className="image-wrapper">
+          </div>
+            <div className={styles.gridcontainer5}>
               <img
                 alt="fish plate"
-                className="photo"
+                className={styles.photo}
                 src="https://res.cloudinary.com/adamaslan/image/upload/v1664330111/drinksfoodlife/raki_iaoqaw_b5103d.jpg"
               />{" "}
             </div>
-          </div>
+
           <p>
             A little bit of Raki goes a long way. Add a couple ice cubes or water and
             suddenly its a glory of cloud liquid called "Aslan Sütü", meaning "Lion’s Milk". It still has that strong anise taste which is said to inspire power and bravery. All of these things add up to make it a
@@ -65,7 +65,7 @@ Checkout Turkish Grill's website
 
       </p>
         </div>
-      </div>
+
 <div>
 
 </div>

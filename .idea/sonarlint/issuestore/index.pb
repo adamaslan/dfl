@@ -13,8 +13,6 @@ A
 pages/about.js,c/9/c9b3e2409187639aa778d6ccf86b8c09dc8dfd08
 A
 pages/coyoacan.js,c/2/c26eb873572d8cde6fd6abc2315cdc600a668944
-D
-components/Footer.js,a/2/a2e278e89d548df83aadcfd93796fe3ee43ceea3
 b
 2pages/stylish-in-aspen-drinking-rose-at-bonnies.js,6/a/6a9dc26e93f203facc848664473232dcbd56143f
 >
@@ -27,7 +25,5 @@ G
 pages/grandarmypunch.js,d/e/de6a2c5c34b64dd12e24bfbd64ea1635a453505e
 H
 components/Newsletter.js,6/e/6efc1ee8067d13a70cb9c3b23aa4893266055882
-H
-styles/Footer.module.css,4/1/410f0f785b9ff0923ef5855f4a105b1b7c0ee54b
 F
 pages/besttacosinbk.js,5/a/5a73d981ef1cbb31b816898d093368c8ef618358
