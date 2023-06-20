@@ -9,8 +9,6 @@
 pages/loading.js,0/9/094334a2ba647631e7aa52bd7627a3a831ea9841
 A
 components/Nav.js,7/9/79f048ffa19d7993d4900d9e6cfda7d16df1fbef
->
-pages/about.js,c/9/c9b3e2409187639aa778d6ccf86b8c09dc8dfd08
 A
 pages/coyoacan.js,c/2/c26eb873572d8cde6fd6abc2315cdc600a668944
 b

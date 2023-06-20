@@ -83,10 +83,8 @@ export default function Home() {
           </p>
         </div>
       </div>
+
       <ContentCard />
-      <div className={styles.smain}>
-        Contact us cause this is now the footer
-      </div>
     </>
   );
 }
