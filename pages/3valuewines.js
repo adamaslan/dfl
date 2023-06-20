@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+
 import styles from "../styles/Layout.module.css";
 import ContentCard from "../components/ContentCard";
 
@@ -29,7 +29,7 @@ export default function Home() {
           <p>
             <h2>1. Santa Rita’s 120 Carménère </h2>
             <div className="image-wrapper">
-              <Image alt="120 Wine" width={872} height={554} src="/120.png" />{" "}
+              <img alt="120 Wine"  className={styles.photo} src="/120.png" />{" "}
             </div>
             While Carménère is not one of the most popular types of wine out
             there it certainly a solid bodied red that is the pride of Chile.

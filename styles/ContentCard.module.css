@@ -42,8 +42,9 @@
     .gridcontainer3 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 100px 200px;
-        grid-gap: 20px;
+        /*grid-template-rows: 100px 200px;*/
+        grid-gap: 1rem;
+        margin: 1rem 3rem 1rem 3rem;
     }
 }
 /*.card7 {*/
