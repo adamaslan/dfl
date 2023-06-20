@@ -4,22 +4,22 @@ import styles from "../styles/ContentCard.module.css";
 
 const ContentCard = () => {
     return (
-        <div className={styles.cards7}>
+        <div className={styles.gridcontainer3}>
 
             <Link href="/amaromontenegro" passHref>
-                <div>
+                <div className={styles.griditem1}>
                     <img
                         alt="Amaro"
-                        // className={styles.photos}
+                         className={styles.photos}
                         src="https://res.cloudinary.com/adamaslan/image/upload/v1654725062/drinksfoodlife/amaro-monte_omsl1h.jpg"
                     />{" "}
-                    <h2> Drinking Amaro Montenegro at ZXY Gallery</h2>{" "}
+                    <h2> Amaro Montenegro at ZXY Gallery</h2>{" "}
                     <h3>A delicious party.</h3>
                 </div>
             </Link>
 
             <Link href="/naturalwine" passHref>
-                <div >
+                <div className={styles.griditem1}>
                     <img
                         alt="wine"
                         // className={styles.photos}
@@ -30,7 +30,7 @@ const ContentCard = () => {
             </Link>
 
             <Link href="/tealove" passHref>
-                <div >
+                <div className={styles.griditem1} >
                     <img
                         alt="Tea"
                         // className={styles.photos}
