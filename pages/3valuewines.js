@@ -29,7 +29,7 @@ export default function Home() {
           <p>
             <h2>1. Santa Rita’s 120 Carménère </h2>
             <div className="image-wrapper">
-              <img alt="120 Wine"  className={styles.photo} src="/120.png" />{" "}
+              <img   className={styles.photo} alt="120 Wine" src="/120.png" />{" "}
             </div>
             While Carménère is not one of the most popular types of wine out
             there it certainly a solid bodied red that is the pride of Chile.
@@ -45,10 +45,10 @@ export default function Home() {
           </p>
           <h2>2) Fetzer Valley Oaks Cabernet Sauvignon</h2>
           <div className="image-wrapper">
-            <Image
-              alt="Fetzer Wine"
-              width={872}
-              height={554}
+
+              <img   className={styles.photo}
+                     alt="Fetzer Wine"
+
               src="/fetzer.png"
             />{" "}
           </div>
@@ -64,10 +64,9 @@ export default function Home() {
 
           <h2>3) Casillero del Diablo Reserva Cabernet Sauvignon</h2>
           <div className="image-wrapper">
-            <Image
-              alt="Diablo Wine"
-              width={872}
-              height={554}
+            <img   className={styles.photo}
+                   alt="Diablo Wine"
+
               src="/diablo.png"
             />{" "}
           </div>
