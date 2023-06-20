@@ -69,7 +69,7 @@ Checkout Turkish Grill's website
 <div>
 
 </div>
-      <ContentCard className={styles.card7} />
+      <ContentCard  />
     </>
   );
 }
