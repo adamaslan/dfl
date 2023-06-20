@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Layout.module.css";
 import ContentCard from "../components/ContentCard";
+
 import Link from "next/link";
 import Script from "next/script";
 import Newsletter from "../components/Newsletter";
@@ -92,69 +93,73 @@ export default function Home() {
           </div>
         </Link>
       </div>
-<div>
+
+
       <ContentCard />
-</div>
-      <Link href="/besttacosinbk" passHref>
-        <div className={styles.cards2}>
-          <Image
-              className={styles.card4}
-              src="https://res.cloudinary.com/adamaslan/image/upload/v1685058269/tacos1_onlnoj.jpg"   width={500}
-              height={500}
-              alt="food"
-          />
-          <h2>Taco Poll Brooklyn</h2> <h3>See the results of our hotly contested poll!</h3>
-        </div>
-      </Link>
-      <Link href="/artandfish" passHref>
-        <div className={styles.cards2}>
-          <Image
-            className={styles.card4}
-            src="https://res.cloudinary.com/adamaslan/image/upload/v1654729613/drinksfoodlife/fish_ddrxgr.jpg"
-            width={500}
-            height={500}
-            alt="food"
-          />
-          <h2>Art and Fish</h2> <h3>The Story of Nicole Burko</h3>
-        </div>
-      </Link>
-      <Link href="./stylish-in-aspen-drinking-rose-at-bonnies" passHref>
-        <div className={styles.cards2}>
-          <Image
-            className={styles.card4}
-            src="https://res.cloudinary.com/adamaslan/image/upload/v1678159115/drinksfoodlife/rose_mgk9sv.jpg"
-            width={500}
-            height={500}
-            alt="Aspen"
-          />
-          <h2>Awe and Culture in Aspen</h2>{" "}
-          <h3>Whispering Angel Rose at Bonnies</h3>
-        </div>
-      </Link>
-      <div className={styles.cards2}>
-        <Link href="/babydaddy" passHref>
-          <Image
-            className={styles.card4}
-            src="https://res.cloudinary.com/adamaslan/image/upload/v1654731696/drinksfoodlife/babydaddy2_u29dmu.png"
-            width={500}
-            height={500}
-            alt="beer"
-          />
-          <h2>Baby Daddy Please</h2> <h3>Baby Daddy is a great choice</h3>
+
+
+      <div className={styles.gridcontainer4}>
+
+        <Link href="/besttacosinbk" passHref>
+          <div className={styles.griditem1}>
+            <img
+                className="photo"
+                src="https://res.cloudinary.com/adamaslan/image/upload/v1685058269/tacos1_onlnoj.jpg"   width="500"
+
+                alt="food"
+            />
+            <h2>Taco Poll Brooklyn</h2> <h3>See the results of our hotly contested poll!</h3>
+          </div>
         </Link>
-      </div>
-      <div className={styles.cards2}>
-        <Link href="/mole" passHref>
-          <Image
-            className={styles.card4}
-            alt="mole"
-            width={500}
-            height={500}
-            src="https://res.cloudinary.com/adamaslan/image/upload/v1654895312/drinksfoodlife/cdmx1_zm5yyj.jpg"
+
+        <Link href="/artandfish" passHref>
+          <div className={styles.griditem1}>
+            <img className="photo"
+                 src="https://res.cloudinary.com/adamaslan/image/upload/v1654729613/drinksfoodlife/fish_ddrxgr.jpg"
+                 alt="food"
+            />
+            <h2>Art and Fish</h2> <h3>The Story of Nicole Burko</h3>
+          </div>
+        </Link>
+
+        <Link href="./stylish-in-aspen-drinking-rose-at-bonnies" passHref>
+          <div className={styles.griditem1}>
+            <img
+                className="photo"
+                src="https://res.cloudinary.com/adamaslan/image/upload/v1678159115/drinksfoodlife/rose_mgk9sv.jpg"
+                alt="Aspen"
+            />
+            <h2>Awe and Culture in Aspen</h2>{" "}
+            <h3>Whispering Angel Rose at Bonnies</h3>
+          </div>
+        </Link>
+
+        <Link href="/babydaddy" passHref>
+          <div className={styles.griditem1}>
+            <img
+                className="photo"
+                src="https://res.cloudinary.com/adamaslan/image/upload/v1654731696/drinksfoodlife/babydaddy2_u29dmu.png"
+
+                alt="beer"
+            />
+            <h2>Baby Daddy Please</h2> <h3>Baby Daddy is a great choice</h3>
+          </div>
+        </Link>
+
+
+      <Link href="/mole" passHref>
+        <div className={styles.griditem1}>
+          <img
+              className="photo"
+              alt="mole"
+
+              src="https://res.cloudinary.com/adamaslan/image/upload/v1654895312/drinksfoodlife/cdmx1_zm5yyj.jpg"
           />{" "}
           <h2> On the Love of Mole and Mexico</h2> <h3>Mole, Mexico, Oh My!</h3>
-        </Link>
+        </div>
+      </Link>
       </div>
+
       <div className={styles.cards4}>
         <Link href="/coyoacan" passHref>
           <Image
@@ -208,8 +213,11 @@ export default function Home() {
             </h3>
           </div>
         </Link>
-      </div>
+
       {/* </div> */}
+      </div>
     </div>
+
+
   );
 }

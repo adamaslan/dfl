@@ -10,10 +10,13 @@
   }
 }
 
+
+
 .photo {
   width: 100%;
   height: auto;
   object-fit: contain;
+  border-radius: 20px;
 }
 
 .gridcontainer1 {
@@ -33,6 +36,17 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media only screen and (min-width: 801px) {
+  .gridcontainer4 {
+    /*display: grid;*/
+    /*grid-template-columns: repeat(1, 1fr);*/
+    display: flex;
+    flex-direction: column;
+    margin: 20rem;
+    grid-gap: 20px;
+  }
+}
 .griditem1 {
   display: flex;
   flex-direction: column;
@@ -43,6 +57,9 @@
 .griditem1 img {
   width: 100%;
   height: auto;
+
+  object-fit: contain;
+  border-radius: 20px;
 }
 
 .griditem1 h2 {
@@ -120,7 +137,7 @@
     color: rgb(0, 0, 0);
 
     border-radius: 20px;
-    margin: 2rem 10rem 2rem 10rem;
+    /*margin: 2rem 10rem 2rem 10rem;*/
     padding: 1rem 10rem 1rem 10rem;
   }
 }
@@ -252,27 +269,6 @@
 
 }
 
-.photos {  display: grid;
-  grid-template-rows: repeat(3, 3fr);
-  grid-gap: 5px;
-  /*width: 100%;*/
-  /*height: auto;*/
-  /*object-fit: cover;*/
-  /*border-radius: 10px;*/
-}
-
-/*.card7 {*/
-/*  flex: 0 0 calc(33.33% - 20px);*/
-
-
-/*}*/
-
-.card7 img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-}
 
 .card8 {
   background-color: rgb(0, 255, 255);
@@ -294,26 +290,6 @@
     height: 75%;
   }
 }
-@media (min-width: 600px) {
-  .card7 {
-    width: 75%;
-    height: 75%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .cards7 {
-    flex-direction: column;
-    margin: 0;
-  }
-
-  .card7 {
-    margin: 0;
-    max-width: none;
-    width: 100%;
-  }
-}
-
 .divArt {
   width: 500px;
 
@@ -346,6 +322,63 @@
 }
 
 
+
+@media (min-width: 600px) {
+  .card7 {
+    width: 75%;
+    height: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards7 {
+    flex-direction: column;
+    margin: .5rem;
+  }
+
+  .card7 {
+    margin: 0;
+    max-width: none;
+    width: 100%;
+  }
+}
+
+.griditem1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*background-color: hsl(calc(360 * var(--i)), 70%, 80%);*/
+}
+
+.griditem1 img {
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+/*img {*/
+/*    border-radius: 20px;*/
+/*}*/
+
+@media only screen and (min-width: 801px) {
+  .gridcontainer3 {
+    grid-template-columns: repeat(3, 3fr);
+  }
+}
+/*.card7 {*/
+/*  flex: 0 0 calc(33.33% - 20px);*/
+
+
+/*}*/
+
+.cards7 img {
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
 /* 
 
