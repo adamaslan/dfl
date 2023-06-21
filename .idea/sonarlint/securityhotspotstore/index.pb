@@ -41,8 +41,6 @@ D
 components/Header.js,b/7/b7c61f0d4f510277f5a41bff1ee97fc2dc8932d1
 D
 components/Layout.js,d/6/d66112310f5c3cbc64b97eb89ff81256ef69c24b
->
-pages/index.js,1/7/17f8c719689e4f3221289153187a6ca1fb24dd87
 H
 styles/Footer.module.css,4/1/410f0f785b9ff0923ef5855f4a105b1b7c0ee54b
 M

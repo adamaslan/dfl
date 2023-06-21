@@ -101,61 +101,62 @@ export default function Home() {
       <div className={styles.gridcontainer4}>
 
         <Link href="/besttacosinbk" passHref>
-          <div className={styles.griditem1}>
+          <div className={styles.gridcontainer5}>
             <img
-                className="photo"
+                className={styles.photo}
                 src="https://res.cloudinary.com/adamaslan/image/upload/v1685058269/tacos1_onlnoj.jpg"   width="500"
 
                 alt="food"
             />
-            <h2>Taco Poll Brooklyn</h2> <h3>See the results of our hotly contested poll!</h3>
+            <h2>Taco Poll Brooklyn <br />See the results of our hotly contested poll!</h2>
           </div>
         </Link>
 
         <Link href="/artandfish" passHref>
-          <div className={styles.griditem1}>
-            <img className="photo"
+          <div className={styles.gridcontainer5}>
+            <img
+                className={styles.photo}
                  src="https://res.cloudinary.com/adamaslan/image/upload/v1654729613/drinksfoodlife/fish_ddrxgr.jpg"
                  alt="food"
             />
-            <h2>Art and Fish</h2> <h3>The Story of Nicole Burko</h3>
+            <h2>Art and Fish: <br/> The Story of Nicole Burko</h2>
           </div>
         </Link>
 
         <Link href="./stylish-in-aspen-drinking-rose-at-bonnies" passHref>
-          <div className={styles.griditem1}>
+          <div className={styles.gridcontainer5}>
             <img
-                className="photo"
+                className={styles.photo}
                 src="https://res.cloudinary.com/adamaslan/image/upload/v1678159115/drinksfoodlife/rose_mgk9sv.jpg"
                 alt="Aspen"
             />
-            <h2>Awe and Culture in Aspen</h2>{" "}
-            <h3>Whispering Angel Rose at Bonnies</h3>
+            <h2>Awe and Culture in Aspen:{" "}<br />
+            Whispering Angel Rose at Bonnies</h2>
           </div>
         </Link>
 
         <Link href="/babydaddy" passHref>
-          <div className={styles.griditem1}>
+          <div className={styles.gridcontainer5}>
             <img
-                className="photo"
+                className={styles.photo}
                 src="https://res.cloudinary.com/adamaslan/image/upload/v1654731696/drinksfoodlife/babydaddy2_u29dmu.png"
 
                 alt="beer"
             />
-            <h2>Baby Daddy Please</h2> <h3>Baby Daddy is a great choice</h3>
+            <h2>Baby Daddy Please<br />Baby Daddy is a great choice</h2>
           </div>
         </Link>
 
 
       <Link href="/mole" passHref>
-        <div className={styles.griditem1}>
+        <div className={styles.gridcontainer5}>
           <img
-              className="photo"
+              className={styles.photo}
               alt="mole"
 
               src="https://res.cloudinary.com/adamaslan/image/upload/v1654895312/drinksfoodlife/cdmx1_zm5yyj.jpg"
           />{" "}
-          <h2> On the Love of Mole and Mexico</h2> <h3>Mole, Mexico, Oh My!</h3>
+          <h2> On the Love of Mole and Mexico<br />Mole, Mexico, Oh My!</h2>
         </div>
       </Link>
       </div>
