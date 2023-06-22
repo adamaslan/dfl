@@ -19,20 +19,21 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.container}>
-        <div className={styles.article1}>
-          <p className={headerStyles.description}>
+      <div className={styles.gridcontainer4}>
+        <div className={headerStyles.description}>
             Summer Cocktails pt. 1 - The Danbury Donkey
+
             <br />
             by @chemixtry
-            <div className="image-wrapper">
+        </div>
+        <div className={styles.gridcontainer5}>
               <img
-                className="photo"
+                  className={styles.photo}
                 alt="cocktail"
                 src="https://res.cloudinary.com/adamaslan/image/upload/v1655411125/drinksfoodlife/danburydonkey_mdavxe.jpg"
               />{" "}
             </div>
-          </p>
+
           <p>
             Summer you say? Is it safe to come out yet? Finally, the sun and
             heat have descended upon us. Time to get out the beach chairs, pool
@@ -88,7 +89,7 @@ export default function Home() {
             to try.
           </p>
         </div>
-      </div>
+
       <ContentCard />
     </>
   );

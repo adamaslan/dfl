@@ -9,8 +9,7 @@ export default function Home() {
     <>
       <Head>
         <title>
-          ZXY Gallery and Drinks Food Life team up for Art Event and Amaro
-          Montenegro Tasting
+        North Dumpling, Gem of Dimes Squares
         </title>
         <meta
           property="og:image"
@@ -22,14 +21,13 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.container}>
-        <div className={styles.article1}>
-          <p className={headerStyles.description}>
-            In Love with North Dumpling
-          </p>
-
-          <div className="image-wrapper">
-            <img className="photo" alt="dumps" src="/northdump1.jpg" />{" "}
+      <div className={styles.gridcontainer4}>
+          <div className={headerStyles.description}>
+            In Love with North Dumpling in Dimes Square
+          </div>
+              <div className={styles.gridcontainer5}>
+                  <img
+                      className={styles.photo} alt="dumps" src="/northdump1.jpg" />{" "}
           </div>
           <p>
             {" "}
@@ -45,7 +43,7 @@ export default function Home() {
 </p> <p>
 And let us not forget the vitality of your owners, whose passion for creating the perfect dumpling is evident in every morsel. Their dedication to preserving the flavors and traditions of Chinese cuisine is truly admirable. Thank you for being a part of the vibrant food culture of the Lower East Side, North Dumpling.
         </p></div>
-      </div>
+
 
       <ContentCard />
     </>

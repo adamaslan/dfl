@@ -57,7 +57,7 @@ export default function Home() {
           </div>
         </Link>
 
-        <Link href="/grandarmypunch" passHref>
+        <Link href="/sherry-cocktail-grandarmypunch" passHref>
           <div className={styles.griditem1}>
             <img
                 className="photo"
@@ -69,7 +69,7 @@ export default function Home() {
           </div>
         </Link>
 
-        <Link href="/summer-22-cocktail-danburydonkey" passHref>
+        <Link href="/ginger-cocktail-danburydonkey" passHref>
           <div className={styles.griditem1}>
             <img
                 className="photo"
@@ -161,15 +161,16 @@ export default function Home() {
       </Link>
       </div>
 
-      <div className={styles.cards4}>
+
         <Link href="/coyoacan" passHref>
-          <Image
-            className={styles.card4}
+          <div className={styles.gridcontainer5}>
+            <img
+                className={styles.photo}
             alt="mole"
-            width={500}
-            height={500}
+
             src="https://res.cloudinary.com/adamaslan/image/upload/v1654900212/drinksfoodlife/cdmx2_u0b4mi.jpg"
           />{" "}
+          </div>
         </Link>
         <Link href="/coyoacan" passHref>
           <div className={styles.card5}>
@@ -178,12 +179,11 @@ export default function Home() {
           </div>
         </Link>
         <Link href="/seawolf" passHref>
-          <div>
-            <Image
+          <div className={styles.gridcontainer5}>
+            <img
+                className={styles.photo}
               alt="Sea Wolf"
-              className={styles.card4}
-              width={500}
-              height={500}
+
               src="https://res.cloudinary.com/adamaslan/image/upload/v1654824690/drinksfoodlife/notes_bovahb.jpg"
             />{" "}
           </div>
@@ -195,12 +195,11 @@ export default function Home() {
           </div>
         </Link>
         <Link href="/naplesbotanicalgardenwelcomesfrida" passHref>
-          <div>
-            <Image
+          <div className={styles.gridcontainer5}>
+            <img
+                className={styles.photo}
               alt="Frida"
-              className={styles.card4}
-              width={500}
-              height={500}
+
               src="https://res.cloudinary.com/adamaslan/image/upload/v1681154705/drinksfoodlife/frida-diego_fi26ml.jpg"
             />{" "}
           </div>
@@ -217,7 +216,7 @@ export default function Home() {
 
       {/* </div> */}
       </div>
-    </div>
+
 
 
   );
