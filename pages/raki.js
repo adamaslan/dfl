@@ -28,8 +28,8 @@ export default function Home() {
           </div>
             <div className={styles.gridcontainer5}>
               <img
-                alt="fish plate"
                 className={styles.photo}
+                alt="fish plate"
                 src="https://res.cloudinary.com/adamaslan/image/upload/v1664330111/drinksfoodlife/raki_iaoqaw_b5103d.jpg"
               />{" "}
             </div>

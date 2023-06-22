@@ -24,12 +24,14 @@
     flex-direction: column;
     align-items: center;
     /*background-color: hsl(calc(360 * var(--i)), 70%, 80%);*/
+    margin: 1rem auto;
+
 }
 
 .griditem1 img {
     width: 100%;
     height: auto;
-
+    margin: 1rem auto;
     object-fit: contain;
     border-radius: 20px;
 }

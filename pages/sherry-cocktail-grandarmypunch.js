@@ -24,27 +24,27 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.container}>
-        <div className={styles.article1}>
-          <p className={headerStyles.description}>
-            Summer Cocktails pt. 2 - Grand Army Punch
+      <div className={styles.gridcontainer4}>
+        <div className={headerStyles.description}>
+            Summer Cocktails pt.2: Grand Army Punch
             <br />
             by @chemixtry
-            <div className="image-wrapper">
+        </div>
+        <div className={styles.gridcontainer5}>
               <img
-                className="photo"
+                className={styles.photo}
                 alt="cocktail"
                 src="https://res.cloudinary.com/adamaslan/image/upload/v1660751024/drinksfoodlife/grandarmypunch_e9pums.jpg"
               />{" "}
             </div>
-          </p>
-          <br />
-          <p>
-            Summer has indeed hit us with some heat. A good elixer for all this
-            sun and humidity is a delicious cocktail by @chemixtry.
-          </p>
+
 
           <p>
+            Summer has indeed hit us with some heat. A good sherry elixer for all this
+            sun and humidity is a delicious cocktail by @chemixtry.
+
+
+ <br /> <br />
             Grand Army Punch In 1883, Rochester, NY bartender, Patrick H.
             "Patsy" McDonough published this recipe specifically to celebrate
             the Grand Army of the Republic in observance of Memorial Day; some
@@ -83,7 +83,7 @@ export default function Home() {
             to try.
           </p>
         </div>
-      </div>
+
       <ContentCard />
     </>
   );
