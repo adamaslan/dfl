@@ -7,7 +7,7 @@ export default function NaturalWine() {
   return (
     <>
       <Head>
-        <title>On the Art and Spear Fishing of Nicole Burko</title>
+        <title> An Awkward Question about Natural Wine</title>
         <meta
           name="Natural Wine Bushwick"
           content="Natural Red Wine purchased at Irving Bottle"
