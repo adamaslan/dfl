@@ -2,7 +2,6 @@ import Head from "next/head";
 
 import styles from "../styles/Layout.module.css";
 import ContentCard from "../components/ContentCard";
-
 import headerStyles from "../styles/Header.module.css";
 
 export default function Home() {
@@ -11,6 +10,9 @@ export default function Home() {
       <Head>
         git
         <title>On the Love of Raki and Turkish Food</title>
+
+
+
         <meta
           property="og:image"
           content="https://res.cloudinary.com/adamaslan/image/upload/v1667159646/drinksfoodlife/dfl-logo_vnu5xy.jpg"
@@ -21,7 +23,6 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
         <div className={styles.gridcontainer4}>
           <div className={headerStyles.description}>
             On the Love of Raki and Turkish Food <br />
@@ -33,7 +34,6 @@ export default function Home() {
                 src="https://res.cloudinary.com/adamaslan/image/upload/v1664330111/drinksfoodlife/raki_iaoqaw_b5103d.jpg"
               />{" "}
             </div>
-
           <p>
             A little bit of Raki goes a long way. Add a couple ice cubes or water and
             suddenly its a glory of cloud liquid called "Aslan Sütü", meaning "Lion’s Milk". It still has that strong anise taste which is said to inspire power and bravery. All of these things add up to make it a

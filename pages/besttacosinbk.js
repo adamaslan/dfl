@@ -35,66 +35,56 @@ const CustomTooltip = ({ active, payload }) => {
 
     return null;
 };
+
 const Faux3DBarChart = () => (
-    <div style={{ backgroundColor: '#b1ffb1' }}>
-    <ResponsiveContainer width="100%" height={300}>
-        <BarChart data={data} fill="#00FF00">
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis
-                dataKey="name"
-                interval={0}
-                tickLine={{ transform: 'translate(0, -6)' }}
-                tick={{
-                    fontSize: '2vw',
-                    fontFamily: 'Roboto',
-                    fontWeight: 'bold',
-                    fill: '#8884d8'
-                }}
-                tickLabelOutside={true}
-            />
+    <div className={styles.gridcontainer4}>
+        <ResponsiveContainer width="100%" height={300}>
+            <BarChart data={data} fill="#00FF00">
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis
+                    dataKey="name"
+                    interval={0}
+                    tickLine={{ transform: 'translate(0, -6)' }}
+                    tick={{
+                        fontSize: '2vw',
+                        fontFamily: 'Roboto',
+                        fontWeight: 'bold',
+                        fill: '#8884d8'
+                    }}
+                    tickLabelOutside={true}
+                />
 
-            <YAxis
-                tick={{
-                    fontSize: '2vw',
-                    fontFamily: 'Helvetica Neue, Arial',
-                    fontWeight: 'bold',
-                    fill: '#8884d8'
-                }}
-            />
-            <Tooltip content={<CustomTooltip />} />
+                <YAxis
+                    tick={{
+                        fontSize: '2vw',
+                        fontFamily: 'Helvetica Neue, Arial',
+                        fontWeight: 'bold',
+                        fill: '#8884d8'
+                    }}
+                />
+                <Tooltip content={<CustomTooltip />} />
 
-            <Bar dataKey="value" fill="#8884d8" shape={<Rectangle radius={[10, 10, 0, 0]} />} />
-        </BarChart>
-    </ResponsiveContainer>
+                <Bar dataKey="value" fill="#8884d8" shape={<Rectangle radius={[10, 10, 0, 0]} />} />
+            </BarChart>
+        </ResponsiveContainer>
     </div>
 );
 
-export default function Home() {
+export default function BestTacosInBK() {
     return (
-
-            <div className={styles.article1}>
-                <p className={headerStyles.description}>
-                    <p>The Best Tacos in BK</p>
-                    <img
-                        className="photo"
-                        src="https://res.cloudinary.com/adamaslan/image/upload/v1685058269/tacos1_onlnoj.jpg"
-    
-                        alt="food"
-                    />
-                </p>
-                <p>
-                    We did a poll of the best tacos spots in BK and the results were very close. There was a write in for Taqueria Ramirez, which has us wondering if we need to do another poll! It’s always exciting to discover new places that serve delicious tacos. We value the opinions of our followers and would love to hear more about their favorite taco spots in BK. Hit us up on Instagram to let us know what you think.
-                </p>
-                <Faux3DBarChart />
+        <div className={styles.gridcontainer4}>
+            <div className={headerStyles.description}>
+                <p>The Best Tacos in BK</p>
+                <img
+                    className={styles.photo}
+                    src="https://res.cloudinary.com/adamaslan/image/upload/v1685058269/tacos1_onlnoj.jpg"
+                    alt="food"
+                />
             </div>
-
-
-
+            <p>
+                We did a poll of the best tacos spots in BK and the results were very close. There was a write in for Taqueria Ramirez, which has us wondering if we need to do another poll! It’s always exciting to discover new places that serve delicious tacos. We value the opinions of our followers and would love to hear more about their favorite taco spots in BK. Hit us up on Instagram to let us know what you think.
+            </p>
+            <Faux3DBarChart />
+        </div>
     );
 }
-
-{/*<Bar dataKey="value" fill="#8884d8">*/}
-{/*    {data.map((entry, index) => (*/}
-{/*        <Cell key={`cell-${index}`} fillOpacity={1 - index * 0.1} />*/}
-{/*    ))}*/}
-{/*</Bar>*/}
