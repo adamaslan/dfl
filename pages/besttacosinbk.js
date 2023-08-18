@@ -37,8 +37,8 @@ const CustomTooltip = ({ active, payload }) => {
 };
 
 const Faux3DBarChart = () => (
-    <div className={styles.gridcontainer4}>
-        <ResponsiveContainer width="100%" height={300}>
+    <div style={{ backgroundColor: '#b1ffb1' }} className={styles.gridcontainer4}>
+        <ResponsiveContainer width="100%" height={300} style={{ backgroundColor: '#b1ffb1' }}>
             <BarChart data={data} fill="#00FF00">
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis
@@ -82,7 +82,7 @@ export default function BestTacosInBK() {
                 />
             </div>
             <p>
-                We did a poll of the best tacos spots in BK and the results were very close. There was a write in for Taqueria Ramirez, which has us wondering if we need to do another poll! It’s always exciting to discover new places that serve delicious tacos. We value the opinions of our followers and would love to hear more about their favorite taco spots in BK. Hit us up on Instagram to let us know what you think.
+                We did a poll of the best tacos spots in BK and the results were very close. There was a write-in for Taqueria Ramirez, which has us wondering if we need to do another poll! It’s always exciting to discover new places that serve delicious tacos. We value the opinions of our followers and would love to hear more about their favorite taco spots in BK. Hit us up on Instagram to let us know what you think.
             </p>
             <Faux3DBarChart />
         </div>
