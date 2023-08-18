@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Cell, Rectangle, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Rectangle, ResponsiveContainer } from 'recharts';
 import styles from '../styles/Layout.module.css';
 import headerStyles from '../styles/Header.module.css';
 import Image from 'next/image';
@@ -37,33 +37,20 @@ const CustomTooltip = ({ active, payload }) => {
 };
 
 const Faux3DBarChart = () => (
-    <div style={{ backgroundColor: '#b1ffb1' }} className={styles.gridcontainer4}>
-        <ResponsiveContainer width="100%" height={300} style={{ backgroundColor: '#b1ffb1' }}>
+    <div style={{ backgroundColor: '#b1ffb1' }} className={styles.chartContainer}>
+        <ResponsiveContainer width="100%" aspect={2}>
             <BarChart data={data} fill="#00FF00">
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis
                     dataKey="name"
                     interval={0}
                     tickLine={{ transform: 'translate(0, -6)' }}
-                    tick={{
-                        fontSize: '2vw',
-                        fontFamily: 'Roboto',
-                        fontWeight: 'bold',
-                        fill: '#8884d8'
-                    }}
-                    tickLabelOutside={true}
+                    tick={{ fontSize: '2vw', fontFamily: 'Roboto', fontWeight: 'bold', fill: '#8884d8' }}
                 />
-
                 <YAxis
-                    tick={{
-                        fontSize: '2vw',
-                        fontFamily: 'Helvetica Neue, Arial',
-                        fontWeight: 'bold',
-                        fill: '#8884d8'
-                    }}
+                    tick={{ fontSize: '2vw', fontFamily: 'Helvetica Neue, Arial', fontWeight: 'bold', fill: '#8884d8' }}
                 />
                 <Tooltip content={<CustomTooltip />} />
-
                 <Bar dataKey="value" fill="#8884d8" shape={<Rectangle radius={[10, 10, 0, 0]} />} />
             </BarChart>
         </ResponsiveContainer>
