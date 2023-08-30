@@ -6,7 +6,7 @@ const Footer = () => {
     <div className={footerStyles.container}>
       <div className={footerStyles.borderLine}></div> {/* Top border line */}
       <div className={footerStyles.basic}>
-        Check out our Instagram{" => "}
+        Check out our instagram{"=> "}
         <a
           href="https://www.instagram.com/drinksfoodlife"
           target="_blank"
