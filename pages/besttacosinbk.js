@@ -5,6 +5,7 @@ import headerStyles from '../styles/Header.module.css';
 import Image from 'next/image';
 
 const data = [
+    // Data for the chart
     { name: 'Los Hermanos', value: 7, color: '#FF0000' },
     { name: 'El Regalo', value: 6, color: '#00FF00' },
     { name: 'Al Pastor', value: 10, color: '#00ffff' },
@@ -12,9 +13,11 @@ const data = [
     { name: 'Bistro Latino', value: 1, color: '#FF00FF' }
 ];
 
+// Custom tooltip component for the chart
+// Custom tooltip component for the chart
 const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
-        const { color } = payload[0].payload;
+        const { color, name, value } = payload[0].payload;
 
         return (
             <div
@@ -25,9 +28,9 @@ const CustomTooltip = ({ active, payload }) => {
                     border: '1px solid #d0d0d0'
                 }}
             >
-                <p>{payload[0].name}</p>
+                <p>{name}</p>
                 <p>
-                    <span style={{ fontWeight: 'bold' }}>Value:</span> {payload[0].value}
+                    <span style={{ fontWeight: 'bold' }}>Value:</span> {value}
                 </p>
             </div>
         );
@@ -36,6 +39,8 @@ const CustomTooltip = ({ active, payload }) => {
     return null;
 };
 
+
+// Component for the faux 3D bar chart
 const Faux3DBarChart = () => (
     <div style={{ backgroundColor: '#b1ffb1' }} className={styles.chartContainer}>
         <ResponsiveContainer width="100%" aspect={2}>
@@ -57,6 +62,7 @@ const Faux3DBarChart = () => (
     </div>
 );
 
+// Main component for displaying the best tacos in BK
 export default function BestTacosInBK() {
     return (
         <div className={styles.gridcontainer4}>
@@ -69,9 +75,10 @@ export default function BestTacosInBK() {
                 />
             </div>
             <p>
-                We did a poll of the best tacos spots in BK and the results were very close. There was a write-in for Taqueria Ramirez, which has us wondering if we need to do another poll! It’s always exciting to discover new places that serve delicious tacos. We value the opinions of our followers and would love to hear more about their favorite taco spots in BK. Hit us up on Instagram to let us know what you think.
+                We did a poll of the best tacos spots in BK and the results were very close. There was a write-in for Taqueria Ramirez, which has us wondering if we need to do another poll!
+                It’s always exciting to discover new places that serve delicious tacos. We value the opinions of our followers and would love to hear more about their favorite taco spots in BK. Hit us up on Instagram to let us know what you think.
             </p>
-            <Faux3DBarChart />
+            <Faux3DBarChart /> {/* Rendering the bar chart */}
         </div>
     );
 }
