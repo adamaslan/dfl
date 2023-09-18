@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
+
 import styles from "../styles/Layout.module.css";
-import ContentCard from "../components/ContentCard";
+// import ContentCard from "../components/ContentCard";
 import headerStyles from "../styles/Header.module.css";
 import Newsletter from "../components/Newsletter";
 
@@ -21,16 +21,14 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.container}>
-        <div className={styles.article1}>
-          <p className={headerStyles.description}>
+      <div className={styles.gridcontainer4}>
+          <div className={headerStyles.description}>
             Subscribe to Drinks Food Life
             <Newsletter />
-            <div className="image-wrapper">
-              <Image
+            <div className="istyles.gridcontainer5">
+            <img
+                className={styles.photo}
                 alt="Party"
-                width={800}
-                height={800}
                 src="https://res.cloudinary.com/adamaslan/image/upload/v1654725062/drinksfoodlife/amaro-monte_omsl1h.jpg"
               />{" "}
             </div>
@@ -60,8 +58,8 @@ export default function Home() {
             @omlettehoe, @cosmicveggie and others.
           </p>
         </div>
-      </div>
-      <ContentCard />
+
+      {/* <ContentCard /> */}
     </>
   );
 }
