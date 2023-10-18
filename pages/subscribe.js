@@ -44,7 +44,7 @@ export default function Home() {
               <u>HERE</u>
             </a>
           </h3>
-          <h2>Sign Up to Our Amazing Non-Spammy Newletter Below: </h2>
+          <h2>Sign Up to Our Amazing Non-Spammy Newsletter Below: </h2>
 
           <script
             async

@@ -2,7 +2,7 @@ import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Rectangle, ResponsiveContainer } from 'recharts';
 import styles from '../styles/Layout.module.css';
 import headerStyles from '../styles/Header.module.css';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 const data = [
     // Data for the chart
@@ -50,13 +50,13 @@ const Faux3DBarChart = () => (
                     dataKey="name"
                     interval={0}
                     tickLine={{ transform: 'translate(0, -6)' }}
-                    tick={{ fontSize: '2vw', fontFamily: 'Roboto', fontWeight: 'bold', fill: '#8884d8' }}
+                    tick={{ fontSize: '2vw', fontFamily: 'Roboto', fontWeight: 'bold', fill: '' }}
                 />
                 <YAxis
-                    tick={{ fontSize: '2vw', fontFamily: 'Helvetica Neue, Arial', fontWeight: 'bold', fill: '#8884d8' }}
+                    tick={{ fontSize: '2vw', fontFamily: 'Helvetica Neue, Arial', fontWeight: 'bold', fill: '#130d8c' }}
                 />
                 <Tooltip content={<CustomTooltip />} />
-                <Bar dataKey="value" fill="#8884d8" shape={<Rectangle radius={[10, 10, 0, 0]} />} />
+                <Bar dataKey="value" fill="#130d8c" shape={<Rectangle radius={[10, 10, 0, 0]} />} />
             </BarChart>
         </ResponsiveContainer>
     </div>
