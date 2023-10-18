@@ -50,7 +50,7 @@ const Faux3DBarChart = () => (
                     dataKey="name"
                     interval={0}
                     tickLine={{ transform: 'translate(0, -6)' }}
-                    tick={{ fontSize: '2vw', fontFamily: 'Roboto', fontWeight: 'bold', fill: '' }}
+                    tick={{ fontSize: '2vw', fontFamily: 'Roboto', fontWeight: 'bold', fill: '#130d8c' }}
                 />
                 <YAxis
                     tick={{ fontSize: '2vw', fontFamily: 'Helvetica Neue, Arial', fontWeight: 'bold', fill: '#130d8c' }}
