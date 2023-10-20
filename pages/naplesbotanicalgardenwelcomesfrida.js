@@ -29,15 +29,14 @@ export default function Home() {
           />{" "}
         </div>
         <p>
-          The Frida Exhibit at the{" "}
+          The Frida Kahlo Exhibit at the{" "}
           <a href="https://www.naplesgarden.org/">
             <u>Naples Botanical Garden</u>
           </a>{" "}
-          is a breathtaking display of Mexican culture, art, and nature. The
+          is a unique display of Mexican culture, art, and nature. The
           exhibit showcases replicas from Frida Kahlo's Casa Azul, her garden,
           and the plants of Mexico, all of which were central to Kahlo's life
-          and art. Frida Kahlo was a renowned Mexican artist who gained
-          international recognition for her unique style and portrayal of
+          and art. THE exhibit displays much of her personal style and portrayal of
           Mexican culture. The Casa Azul, where she was born and raised, is
           now a museum in Mexico City that houses her personal belongings,
           artwork, and a collection of Mexican folk art.
