@@ -6,6 +6,7 @@ import ContentCard from "../components/ContentCard";
 import Link from "next/link";
 import Script from "next/script";
 import Newsletter from "../components/Newsletter";
+import ThreeJSReactComponent from '../components/Logo3D';
 
 export default function Home() {
   return (
@@ -29,6 +30,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>{" "}
       <Newsletter />
+      <div>
+      <ThreeJSReactComponent glbFile="/dfl-loading2.glb" />
+    </div>
       <div className={styles.gridcontainer1} id="parent">
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"

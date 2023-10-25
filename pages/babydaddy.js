@@ -3,6 +3,8 @@ import styles from "../styles/Layout.module.css";
 import ContentCard from "../components/ContentCard";
 import headerStyles from "../styles/Header.module.css";
 
+import ThreeJSReactComponent from '../components/Logo3D';
+
 export default function Home() {
   return (
     <>
@@ -18,10 +20,13 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+    
       <div className={styles.gridcontainer4}>
         <div className={headerStyles.description}>
           Baby Daddy Please <br />
         </div>
+        <div>
+        <ThreeJSReactComponent glbFile="https://sketchfab.com/models/7b101d78699843e4b73d51f4e43c0b57.glb" />   </div>
         <div className={styles.gridcontainer5}>
           <img
             className={styles.photo}
