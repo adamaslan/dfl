@@ -12,9 +12,9 @@ const RevolvingGLBPage = () => {
     let model;
     let controls;
     let isRevolvingOut = false;
-    let currentRadius = 15;
-    let minRadius = 5;
-    let maxRadius = 50;
+    let currentRadius = 30;
+    let minRadius = 15;
+    let maxRadius = 30;
 
     const init = () => {
       container = containerRef.current;
@@ -24,7 +24,7 @@ const RevolvingGLBPage = () => {
         1,
         1000
       );
-      camera.position.z = 80;
+      camera.position.z = 30;
 
       scene = new THREE.Scene();
 
@@ -50,7 +50,7 @@ const RevolvingGLBPage = () => {
         }
       );
 
-     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+      renderer = new THREE.WebGLRenderer({ antialias: true });
       renderer.setSize(container.clientWidth, container.clientHeight);
       container.appendChild(renderer.domElement);
 
@@ -80,8 +80,8 @@ const RevolvingGLBPage = () => {
         }
       }
 
-    camera.position.x = Math.cos(time) * currentRadius * 1.5; // Increase x-axis movement
-    camera.position.z = Math.sin(time) * currentRadius * 0.5; // Reduce z-axis movement
+      camera.position.x = Math.cos(time) * currentRadius; // Revolve camera around x-axis
+      camera.position.z = Math.sin(time) * currentRadius; // Revolve camera around z-axis
       camera.lookAt(scene.position); // Keep camera looking at the center of the scene
 
       controls.update(); // Update orbit controls
@@ -96,12 +96,7 @@ const RevolvingGLBPage = () => {
     };
   }, []);
 
-return (
-  <div
-    ref={containerRef}
-    style={{ width: '100%', height: '20vh', backgroundColor: 'transparent' }}
-  />
-);
+  return <div ref={containerRef} style={{ width: '100%', height: '80vh' }} />;
 };
 
 export default RevolvingGLBPage;
