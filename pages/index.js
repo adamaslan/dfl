@@ -6,7 +6,7 @@ import ContentCard from "../components/ContentCard";
 import Link from "next/link";
 import Script from "next/script";
 import Newsletter from "../components/Newsletter";
-import ThreeJSReactComponent from '../components/Logo3D';
+import RevolvingGLBPage from '../components/Logo3D';
 
 export default function Home() {
   return (
@@ -31,7 +31,7 @@ export default function Home() {
       </Head>{" "}
       <Newsletter />
       <div>
-      <ThreeJSReactComponent glbFile="/dfl-loading2.glb" />
+      <RevolvingGLBPage glbFile="/dfl-loading3.glb" />
     </div>
       <div className={styles.gridcontainer1} id="parent">
         <Script

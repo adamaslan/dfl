@@ -34,6 +34,7 @@ export default function Home() {
             src="/babydaddy.jpg"
           />
         </div>
+        
         <p>
           Baby Daddy is a great choice for anyone that wants a highly
           drinkable beer that is full of flavor. With so many styles of beer
