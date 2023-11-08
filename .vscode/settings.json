@@ -19,5 +19,6 @@
     "titleBar.inactiveForeground": "#15202b99",
     "commandCenter.border": "#15202b99"
   },
-  "peacock.color": "#61dafb"
+  "peacock.color": "#61dafb",
+  "codeium.enableSearch": true
 }
