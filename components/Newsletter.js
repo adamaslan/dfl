@@ -1,47 +1,18 @@
-import React, { useState } from "react";
-const Newsletter = () => {
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [status, setStatus] = useState("");
+// components/Newsletter.js
+import React from "react";
+import useSubscription from "../utils/useSubscription";
 
-  const FORM_URL = `https://app.convertkit.com/forms/3690183/subscriptions`;
+const FORM_URL = `https://app.convertkit.com/forms/3690183/subscriptions`;
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-
-    const data = new FormData(event);
-
-    try {
-      const response = await fetch(FORM_URL, {
-        method: "post",
-        body: data,
-        headers: {
-          accept: "application/json",
-        },
-      });
-
-      setEmail("");
-      const json = await response.json();
-
-      if (json.status === "success") {
-        setStatus("SUCCESS");
-        return;
-      }
-    } catch (err) {
-      setStatus("ERROR");
-      console.log(err);
-    }
-  };
-
-  const handleEmailChange = (e) => {
-    const { value } = e.target;
-    setEmail(value);
-  };
-
-  const handleNameChange = (event) => {
-    const { value } = event.target;
-    setName(value);
-  };
+export default function Newsletter() {
+  const {
+    email,
+    name,
+    status,
+    handleSubmit,
+    handleEmailChange,
+    handleNameChange,
+  } = useSubscription("", FORM_URL);
 
   return (
     <div>
@@ -88,6 +59,5 @@ const Newsletter = () => {
       )}
     </div>
   );
-};
+}
 
-export default Newsletter;
