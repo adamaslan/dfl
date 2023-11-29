@@ -99,7 +99,7 @@ const RevolvingGLBPage = () => {
 return (
   <div
     ref={containerRef}
-    style={{ width: '100%', height: '20vh', backgroundColor: 'transparent' }}
+    style={{ width: '100%', height: '35vh', backgroundColor: 'transparent' }}
   />
 );
 };

@@ -5,7 +5,7 @@ import ContentCard from "../components/ContentCard";
 import RecipeList from "../components/Recipes";
 import Link from "next/link";
 import Script from "next/script";
-import Newsletter from "../components/Newsletter";
+// import Newsletter from "../components/Newsletter";
 import RevolvingGLBPage from '../components/Logo3D';
 
 export default function Home() {
@@ -29,7 +29,7 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>{" "}
-      <Newsletter />
+      {/* <Newsletter /> */}
       <div>
       <RevolvingGLBPage glbFile="/dfl-loading3.glb" />
     </div>

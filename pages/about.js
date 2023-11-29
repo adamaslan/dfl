@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Layout.module.css";
 import ContentCard from "../components/ContentCard";
 import headerStyles from "../styles/Header.module.css";
-
+import RevolvingGLBPage from '../components/Logo3D';
 export default function Home() {
   return (
     <>
@@ -13,17 +13,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
+      <RevolvingGLBPage glbFile="/dfl-loading3.glb" />
         <div className={styles.article1}>
+          
           <p className={headerStyles.description}>
-            About Drinks Food Life
-            <div className="image-wrapper">
-              <Image
+    
+            {/* <div className="image-wrapper">
+              {/* <Image
                 alt="Party"
                 width={500}
                 height={500}
                 src="https://res.cloudinary.com/adamaslan/image/upload/v1654725062/drinksfoodlife/amaro-monte_omsl1h.jpg"
               />{" "}
-            </div>
+            </div> */} 
           </p>
           <br />
 
