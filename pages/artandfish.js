@@ -29,7 +29,7 @@ export default function Home() {
           </div>
         </div>
         <p>
-          My friend Nicole Burko caught a fish free diving in the depths of
+     Nicole Burko caught a fish free diving in the depths of
           the Atlantic like a ferocious predator, but photos of her submerged
           laying in wait at the bottom of the sea are more precious and
           beautiful than anything else. How nice it is to know that this
@@ -37,7 +37,7 @@ export default function Home() {
         </p>
         <br />
         <p>
-          Check out her art here @nicoleburko on insta. Also noteworthy, fried
+          Check out her art here @nicoleburko on instagram. Also noteworthy, fried
           plantains forever, pescatarian vibes, and new favourite green --&gt;
           Baby Kale. Not that I don’t love my arugula and red lettuce, but
           that baby kale has the cutest name of the leafy greens that I know

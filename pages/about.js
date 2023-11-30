@@ -13,9 +13,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
-      <RevolvingGLBPage glbFile="/dfl-loading3.glb" />
+     
         <div className={styles.article1}>
-          
+        <RevolvingGLBPage glbFile="/dfl-loading3.glb"  style={{ width: '90%', height: '70vh'}} />
           <p className={headerStyles.description}>
     
             {/* <div className="image-wrapper">
@@ -28,14 +28,15 @@ export default function Home() {
             </div> */} 
           </p>
           <br />
-
+<p>Looking to add some pop to your website? Let us help you! Email us at drinksfoodlife@gmail.com or contact us on instagram @drinksfoodlife</p>
 
           <p>
             Founded with the desire to focus on drinks and food, but then life
-            in its most general yet effervescent spirit came through. We have
-            had contributions from @chemixtry, @journeyswithjaphe , Loic Luspo,
-            @omlettehoe, @cosmicveggie and others.
+            in its most general yet effervescent spirit came through. On came the articles on Frida, on Botanical Gardens, on Skiing, and even on Spear Fishing!  
           </p>
+          <p>We have
+            had contributions from @chemixtry, @journeyswithjaphe , Loic Luspo,
+            @omlettehoe, @cosmicveggie and others.</p>
           <h4>
             Please follow us on Instagram{" "}
             <a

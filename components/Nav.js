@@ -32,6 +32,7 @@ const MenuLink = styled.a`
   cursor: crosshair;
   text-align: center;
   text-decoration: none;
+  background-color: transparent;
   color: #001022;
   transition: all 0.3s ease-in;
   font-size: 1.4rem;
@@ -87,11 +88,12 @@ const Menu = styled.div`
 const Hamburger = styled.div`
   display: none;
   flex-direction: column;
+  background-color: transparent;
   cursor: pointer;
   span {
     height: 3px;
     width: 30px;
-    background: #001022;
+    background: transparent;
     margin-bottom: 4px;
     border-radius: 5px;
   }
@@ -112,7 +114,7 @@ const Hamburger = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${({ isOpen }) => (isOpen ? "#0D0C1D" : "#EFFFFA")};
+    background: ${({ isOpen }) => (isOpen ? "#0D0C1D" : "transparent")};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
@@ -134,6 +136,7 @@ const Hamburger = styled.div`
   }
   @media (max-width: 768px) {
     display: flex;
+    background-color: transparent;
   }
 `;
 
