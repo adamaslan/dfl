@@ -3,8 +3,9 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
-const RevolvingGLBPage = () => {
+const RevolvingGLBPage = ({style}) => {
   const containerRef = useRef();
+  const containerStyle = { backgroundColor: 'transparent', ...style };
 
   useEffect(() => {
     let container;
@@ -99,7 +100,8 @@ const RevolvingGLBPage = () => {
 return (
   <div
     ref={containerRef}
-    style={{ width: '100%', height: '35vh', backgroundColor: 'transparent' }}
+    style={containerStyle}
+    
   />
 );
 };

@@ -30,9 +30,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>{" "}
       {/* <Newsletter /> */}
-      <div>
-      <RevolvingGLBPage glbFile="/dfl-loading3.glb" />
-    </div>
+      
       <div className={styles.gridcontainer1} id="parent">
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
@@ -48,7 +46,15 @@ export default function Home() {
           gtag('config', 'GA_MEASUREMENT_ID');
         `}
         </Script>
+        <Link href="/about" passHref>
+          <div className={styles.griditem1}>
+          <RevolvingGLBPage glbFile="/dfl-loading3.glb"     style={{ width: '100%', height: '90vh'}} /> 
+            <h2> Think this 3D logo is cool?</h2>{" "}
+            <h3>Let DFL make you one for CHEAP! Contact us today!</h3>
+          </div>
+        </Link>
 
+ 
         <Link href="/raki" passHref>
           <div className={styles.griditem1}>
             <img
@@ -73,18 +79,7 @@ export default function Home() {
           </div>
         </Link>
 
-        <Link href="/ginger-cocktail-danburydonkey" passHref>
-          <div className={styles.griditem1}>
-            <img
-                className="photo"
-                alt='cocktail'
-              src="https://res.cloudinary.com/adamaslan/image/upload/v1655411125/drinksfoodlife/danburydonkey_mdavxe.jpg"
-            />{" "}
-            <h2> Summer Cocktails Part 1</h2>{" "}
-            <h3>The Danbury Donkey by @chemixtry</h3>
-          </div>
-        </Link>
-
+ 
         <Link href="/northdumplingindimessquare" passHref>
           <div className={styles.griditem1}>
           <img
@@ -138,6 +133,18 @@ export default function Home() {
             Whispering Angel Rose at Bonnies</h2>
           </div>
         </Link>
+        <Link href="/ginger-cocktail-danburydonkey" passHref>
+          <div className={styles.gridcontainer5}>
+            <img
+                className="photo"
+                alt='cocktail'
+              src="https://res.cloudinary.com/adamaslan/image/upload/v1655411125/drinksfoodlife/danburydonkey_mdavxe.jpg"
+            />{" "}
+            <h2> Summer Cocktails Part 1</h2>{" "}
+            <h3>The Danbury Donkey by @chemixtry</h3>
+          </div>
+        </Link>
+
 
         <Link href="/babydaddy" passHref>
           <div className={styles.gridcontainer5}>
