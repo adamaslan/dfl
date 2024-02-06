@@ -2,8 +2,11 @@
 //import Link from "next/link";
 import React, { useState } from "react";
 import styled from "styled-components";
+import { getServerSession } from "next-auth";
+// import { options } from "../api/auth/[...nextauth]/options";
 
 const Nav = () => {
+  // const session = await getServerSession(options);
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Navbare>
@@ -19,7 +22,11 @@ const Nav = () => {
 
         <MenuLink href="./subscribe">Subscribe</MenuLink>
         <MenuLink href="./about">About</MenuLink>
-
+        {/* {session ? (
+            <MenuLink href="/api/auth/signout?callbackUrl=/">Logout</MenuLink>
+          ) : (
+            <MenuLink href="/api/auth/signin">Login</MenuLink>
+          )} */}
       </Menu>
     </Navbare>
   );
