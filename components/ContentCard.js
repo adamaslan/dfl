@@ -6,7 +6,7 @@ const ContentCard = () => {
     return (
         <div className={styles.gridcontainer3}>
 
-            <Link href="/amaromontenegro" passHref>
+            <Link href="/amaromontenegro" passHref legacyBehavior>
                 <div className={styles.griditem1}>
                     <img
                         alt="Amaro"
@@ -18,7 +18,7 @@ const ContentCard = () => {
                 </div>
             </Link>
 
-            <Link href="/naturalwine" passHref>
+            <Link href="/naturalwine" passHref legacyBehavior>
                 <div className={styles.griditem1}>
                     <img
                         alt="wine"
@@ -29,7 +29,7 @@ const ContentCard = () => {
                 </div>
             </Link>
 
-            <Link href="/tealove" passHref>
+            <Link href="/tealove" passHref legacyBehavior>
                 <div className={styles.griditem1} >
                     <img
                         alt="Tea"

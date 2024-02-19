@@ -46,7 +46,7 @@ export default function Home() {
           gtag('config', 'GA_MEASUREMENT_ID');
         `}
         </Script>
-        <Link href="/about" passHref>
+        <Link href="/about" passHref legacyBehavior>
           <div className={styles.griditem1}>
           <RevolvingGLBPage glbFile="/dfl-loading3.glb"     style={{ width: '100%', height: '90vh'}} /> 
             <h2> Think this 3D logo is cool?</h2>{" "}
@@ -55,7 +55,7 @@ export default function Home() {
         </Link>
 
  
-        <Link href="/raki" passHref>
+        <Link href="/raki" passHref legacyBehavior>
           <div className={styles.griditem1}>
             <img
                 className="photo"
@@ -67,7 +67,7 @@ export default function Home() {
           </div>
         </Link>
 
-        <Link href="/sherry-cocktail-grandarmypunch" passHref>
+        <Link href="/sherry-cocktail-grandarmypunch" passHref legacyBehavior>
           <div className={styles.griditem1}>
             <img
                 className="photo"
@@ -80,7 +80,7 @@ export default function Home() {
         </Link>
 
  
-        <Link href="/northdumplingindimessquare" passHref>
+        <Link href="/northdumplingindimessquare" passHref legacyBehavior>
           <div className={styles.griditem1}>
           <img
               className="photo"
@@ -99,7 +99,7 @@ export default function Home() {
 
       <div className={styles.gridcontainer4}>
 
-        <Link href="/besttacosinbk" passHref>
+        <Link href="/besttacosinbk" passHref legacyBehavior>
           <div className={styles.gridcontainer5}>
             <img
                 className={styles.photo}
@@ -111,7 +111,7 @@ export default function Home() {
           </div>
         </Link>
 
-        <Link href="/artandfish" passHref>
+        <Link href="/artandfish" passHref legacyBehavior>
           <div className={styles.gridcontainer5}>
             <img
                 className={styles.photo}
@@ -122,7 +122,10 @@ export default function Home() {
           </div>
         </Link>
 
-        <Link href="./stylish-in-aspen-drinking-rose-at-bonnies" passHref>
+        <Link
+          href="./stylish-in-aspen-drinking-rose-at-bonnies"
+          passHref
+          legacyBehavior>
           <div className={styles.gridcontainer5}>
             <img
                 className={styles.photo}
@@ -133,7 +136,7 @@ export default function Home() {
             Whispering Angel Rose at Bonnies</h2>
           </div>
         </Link>
-        <Link href="/ginger-cocktail-danburydonkey" passHref>
+        <Link href="/ginger-cocktail-danburydonkey" passHref legacyBehavior>
           <div className={styles.gridcontainer5}>
             <img
                 className="photo"
@@ -146,7 +149,7 @@ export default function Home() {
         </Link>
 
 
-        <Link href="/babydaddy" passHref>
+        <Link href="/babydaddy" passHref legacyBehavior>
           <div className={styles.gridcontainer5}>
             <img
                 className={styles.photo}
@@ -159,7 +162,7 @@ export default function Home() {
         </Link>
 
 
-      <Link href="/mole" passHref>
+      <Link href="/mole" passHref legacyBehavior>
         <div className={styles.gridcontainer5}>
           <img
               className={styles.photo}
@@ -173,7 +176,7 @@ export default function Home() {
       </div>
 
 
-        <Link href="/coyoacan" passHref>
+        <Link href="/coyoacan" passHref legacyBehavior>
           <div className={styles.gridcontainer5}>
             <img
                 className={styles.photo}
@@ -183,13 +186,13 @@ export default function Home() {
           />{" "}
           </div>
         </Link>
-        <Link href="/coyoacan" passHref>
+        <Link href="/coyoacan" passHref legacyBehavior>
           <div className={styles.card5}>
             <h2> Getting Deep in Coyoacan</h2>{" "}
             <h3>Frida, the Trees, the Food..Life!</h3>
           </div>
         </Link>
-        <Link href="/seawolf" passHref>
+        <Link href="/seawolf" passHref legacyBehavior>
           <div className={styles.gridcontainer5}>
             <img
                 className={styles.photo}
@@ -199,13 +202,13 @@ export default function Home() {
             />{" "}
           </div>
         </Link>
-        <Link href="/seawolf" passHref>
+        <Link href="/seawolf" passHref legacyBehavior>
           <div className={styles.card6}>
             <h2> Writing Away My Sunny Days at Sea Wolf</h2>
             <h3>Sea Wolf Brings the Boys to the Yard</h3>
           </div>
         </Link>
-        <Link href="/naplesbotanicalgardenwelcomesfrida" passHref>
+        <Link href="/naplesbotanicalgardenwelcomesfrida" passHref legacyBehavior>
           <div className={styles.gridcontainer5}>
             <img
                 className={styles.photo}
@@ -215,7 +218,7 @@ export default function Home() {
             />{" "}
           </div>
         </Link>
-        <Link href="/naplesbotanicalgardenwelcomesfrida" passHref>
+        <Link href="/naplesbotanicalgardenwelcomesfrida" passHref legacyBehavior>
           <div className={styles.card8}>
             <h2> Naples Botanical Garden Welcomes Frida and the Casa Azul </h2>
             <h3>
@@ -227,8 +230,5 @@ export default function Home() {
 
       {/* </div> */}
       </div>
-
-
-
   );
 }
