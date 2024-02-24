@@ -1,8 +1,8 @@
 //import navStyles from "../styles/Nav.module.css";
-//import Link from "next/link";
+// import Link from "next/link";
 import React, { useState } from "react";
 import styled from "styled-components";
-import { getServerSession } from "next-auth";
+// import { getServerSession } from "next-auth";
 // import { options } from "../api/auth/[...nextauth]/options";
 
 const Nav = () => {

@@ -8,7 +8,7 @@ import Script from "next/script";
 // import Newsletter from "../components/Newsletter";
 import RevolvingGLBPage from '../components/Logo3D';
 
-export default function Home() {
+export default function Home1() {
   return (
     <div className='root'>
       {/* <div className={styles.biggerdiv}> */}
