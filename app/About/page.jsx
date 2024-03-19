@@ -1,9 +1,10 @@
+
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Layout.module.css";
-import ContentCard from "../components/ContentCard";
+import ContentCard from "../(components)/ContentCard";
 import headerStyles from "../styles/Header.module.css";
-import RevolvingGLBPage from '../components/Logo3D';
+import RevolvingGLBPage from '../(components)/Logo3D';
 export default function Home() {
   return (
     <>
@@ -15,7 +16,7 @@ export default function Home() {
       <div className={styles.container}>
      
         <div className={styles.article1}>
-        <RevolvingGLBPage glbFile="/dfl-loading3.glb"  style={{ width: '90%', height: '70vh'}} />
+    
           <p className={headerStyles.description}>
     
             {/* <div className="image-wrapper">
@@ -31,6 +32,7 @@ export default function Home() {
 <p>Looking to add some pop to your website? Let us help you! Email us at drinksfoodlife@gmail.com or contact us on instagram @drinksfoodlife</p>
 
           <p>
+          <RevolvingGLBPage glbFile="../public/dfl-loading3.glb"  style={{ width: '90%', height: '70vh'}} />
             Founded with the desire to focus on drinks and food, but then life
             in its most general yet effervescent spirit came through. On came the articles on Frida, on Botanical Gardens, on Skiing, and even on Spear Fishing!  
           </p>
