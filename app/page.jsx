@@ -1,18 +1,17 @@
-import Head from "next/head";
+"use client"
+// import Head from "next/head";
 
-import styles from "../styles/Layout.module.css";
-import ContentCard from "../components/ContentCard";
-import RecipeList from "../components/Recipes";
+import styles from "./styles/Layout.module.css";
+import ContentCard from "./(components)/ContentCard";
+import RecipeList from "./(components)/Recipes";
 import Link from "next/link";
 import Script from "next/script";
 // import Newsletter from "../components/Newsletter";
-import RevolvingGLBPage from '../components/Logo3D';
+import RevolvingGLBPage from './(components)/Logo3D';
 
-export default function Home() {
-  return (
-    <div className='root'>
-      {/* <div className={styles.biggerdiv}> */}
-      <Head>
+const Home = () => {
+    return <div>
+        <head>
         <title>Drinks Food Life</title>
         <meta
           name="google-site-verification"
@@ -28,9 +27,8 @@ export default function Home() {
         />
 
         <link rel="icon" href="/favicon.ico" />
-      </Head>{" "}
-      {/* <Newsletter /> */}
-      
+      </head>{" "}
+        
       <div className={styles.gridcontainer1} id="parent">
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
@@ -228,7 +226,9 @@ export default function Home() {
       {/* </div> */}
       </div>
 
+   
 
-
-  );
-}
+      
+  };
+  
+  export default Home;
