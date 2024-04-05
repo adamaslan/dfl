@@ -32,7 +32,7 @@ export default function Home1() {
       {/* <Newsletter /> */}
       
       <div className={styles.gridcontainer1} id="parent">
-        <Script
+        {/* <Script
           src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
           strategy="afterInteractive"
         />
@@ -45,7 +45,7 @@ export default function Home1() {
 
           gtag('config', 'GA_MEASUREMENT_ID');
         `}
-        </Script>
+        </Script> */}
         <Link href="/about" passHref>
           <div className={styles.griditem1}>
           <RevolvingGLBPage glbFile="/dfl-loading3.glb"     style={{ width: '100%', height: '90vh'}} /> 
