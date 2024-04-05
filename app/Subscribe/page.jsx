@@ -24,7 +24,7 @@ export default function Home() {
      <div className={styles.gridcontainer4}>
           <div className={headerStyles.description}>
             Subscribe to Drinks Food Life
-            <Newsletter />
+            {/* <Newsletter /> */}
             <div className="istyles.gridcontainer5">
             <img
                 className={styles.photo}
