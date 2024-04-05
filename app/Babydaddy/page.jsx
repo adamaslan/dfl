@@ -3,7 +3,7 @@ import styles from "../styles/Layout.module.css";
 import ContentCard from "../(components)/ContentCard"; 
 import headerStyles from "../styles/Header.module.css";
 
-import ThreeJSReactComponent from '../components/Logo3D';
+import ThreeJSReactComponent from '../(components)/Logo3D';
 
 export default function Home() {
   return (

@@ -1,3 +1,4 @@
+"use client";
 import { Suspense } from 'react';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
