@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Layout.module.css";
-import ContentCard from "../components/ContentCard";
+import ContentCard from "../(components)/ContentCard"; 
 import headerStyles from "../styles/Header.module.css";
 
 import ThreeJSReactComponent from '../components/Logo3D';
@@ -28,7 +28,7 @@ export default function Home() {
         <div>
         <ThreeJSReactComponent glbFile="https://sketchfab.com/models/7b101d78699843e4b73d51f4e43c0b57.glb" />   </div>
         <div className={styles.gridcontainer5}>
-          <img
+          <img  
             className={styles.photo}
             alt="beer can"
             src="/babydaddy.jpg"
