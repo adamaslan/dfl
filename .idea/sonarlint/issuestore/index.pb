@@ -16,9 +16,7 @@ b
 @
 styles/reset.css,f/e/fe79704bac3a00543cb61b9cd7c2c5dac0b68243
 G
-pages/cafeversailles.js,d/e/de2bf885daeba514e74e682afd74dba65f73b624
-H
-components/Newsletter.js,6/e/6efc1ee8067d13a70cb9c3b23aa4893266055882
+,6/e/6efc1ee8067d13a70cb9c3b23aa4893266055882
 F
 pages/besttacosinbk.js,5/a/5a73d981ef1cbb31b816898d093368c8ef618358
 B

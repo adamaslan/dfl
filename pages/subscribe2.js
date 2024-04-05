@@ -3,7 +3,7 @@ import Head from "next/head";
 import styles from "../styles/Layout.module.css";
 import ContentCard from "../components/ContentCard";
 import headerStyles from "../styles/Header.module.css";
-import Newsletter from "../components/Newsletter";
+// import Newsletter from "../components/Newsletter";
 
 export default function Home() {
   return (
@@ -24,7 +24,7 @@ export default function Home() {
      <div className={styles.gridcontainer4}>
           <div className={headerStyles.description}>
             Subscribe to Drinks Food Life
-            <Newsletter />
+            {/* <Newsletter /> */}
             <div className="istyles.gridcontainer5">
             <img
                 className={styles.photo}
