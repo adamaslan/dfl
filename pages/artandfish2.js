@@ -37,7 +37,7 @@ export default function Home() {
         </p>
         <br />
         <p>
-          Check out her art here @nicoleburko on instagram. Also noteworthy, fried
+          Check out her art here @nicoleburko on instagram    . Also noteworthy, fried
           plantains forever, pescatarian vibes, and new favourite green --&gt;
           Baby Kale. Not that I don’t love my arugula and red lettuce, but
           that baby kale has the cutest name of the leafy greens that I know
