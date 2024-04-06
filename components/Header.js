@@ -1,4 +1,4 @@
-import headerStyles from "../styles/Header.module.css";
+import headerStyles from "../pages/styles/Header.module.css";
 import Link from "next/link";
 import Head from "next/head";
 

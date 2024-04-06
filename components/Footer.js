@@ -1,4 +1,4 @@
-import footerStyles from "../styles/Footer.module.css";
+import footerStyles from "../pages/styles/Footer.module.css";
 import Head from "next/head";
 
 const Footer = () => {

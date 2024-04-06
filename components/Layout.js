@@ -2,7 +2,7 @@ import Nav from "./Nav";
 import Header from "./Header";
 import Footer from "./Footer";
 import {motion, AnimatePresence} from "framer-motion";
-import styles from "../styles/Layout.module.css";
+// import styles from "../pages/styles/Layout.module.css";
 import "../styles/Nav.module.css";
 
 const Layout = ({ children }) => {
