@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../pages/styles/Layout.module.css";
+import styles from "./styles/Layout.module.css";
 import ContentCard from "../components/ContentCard";
-import headerStyles from "../pages/styles/Header.module.css"; // Use the headerStyles from raki.js
+import headerStyles from "./styles/Header.module.css"; // Use the headerStyles from raki.js
 
 export default function Home() {
   return (

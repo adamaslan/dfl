@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import styles from "../styles/Layout.module.css";
+import styles from "./styles/Layout.module.css";
 import ContentCard from "../components/ContentCard";
 import RecipeList from "../components/Recipes";
 import Link from "next/link";

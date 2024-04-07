@@ -1,7 +1,7 @@
 import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Rectangle, ResponsiveContainer } from 'recharts';
-import styles from '../styles/Layout.module.css';
-import headerStyles from '../styles/Header.module.css';
+import styles from './styles/Layout.module.css';
+import headerStyles from './styles/Header.module.css';
 // import Image from 'next/image';
 
 const data = [

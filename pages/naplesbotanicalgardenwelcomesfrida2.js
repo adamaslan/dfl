@@ -1,7 +1,7 @@
 import Head from "next/head";
-import styles from "../styles/Layout.module.css";
+import styles from "./styles/Layout.module.css";
 import ContentCard from "../components/ContentCard";
-import headerStyles from "../styles/Header.module.css";
+import headerStyles from "./styles/Header.module.css";
 import Image from "next/image";
 
 export default function Home() {
