@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../styles/ContentCard.module.css";
+import styles from "../pages/styles/ContentCard.module.css";
 // import {motion} from "framer-motion";
 
 const ContentCard = () => {

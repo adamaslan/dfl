@@ -1,11 +1,11 @@
 import Head from "next/head";
 
-import styles from "../styles/Layout.module.css";
+import styles from "./styles/Layout.module.css";
 import ContentCard from "../components/ContentCard";
 import RecipeList from "../components/Recipes";
 import Link from "next/link";
 import Script from "next/script";
-// import Newsletter from "../components/Newsletter";
+// import Newsletter from "../";
 import RevolvingGLBPage from '../components/Logo3D';
 
 export default function Home1() {
@@ -32,7 +32,7 @@ export default function Home1() {
       {/* <Newsletter /> */}
       
       <div className={styles.gridcontainer1} id="parent">
-        <Script
+        {/* <Script
           src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
           strategy="afterInteractive"
         />
@@ -45,7 +45,7 @@ export default function Home1() {
 
           gtag('config', 'GA_MEASUREMENT_ID');
         `}
-        </Script>
+        </Script> */}
         <Link href="/about" passHref>
           <div className={styles.griditem1}>
           <RevolvingGLBPage glbFile="/dfl-loading3.glb"     style={{ width: '100%', height: '90vh'}} /> 
