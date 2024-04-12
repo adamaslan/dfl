@@ -1,37 +1,47 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import styled from "styled-components";
 import Link from "next/link";
+import { useRouter } from "next/navigation"; // Import useRouter
+//navstate.js
 export function Nave({ children }) {
+  const router = useRouter();  // Access useRouter hook
 
-     const [isOpen, setIsOpen] = useState(false);
-    return (     
-    < Navbare>
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleMenuClick = (path) => {
+    setIsOpen(false); // Close the menu after navigation
+    router.push(path);  // Use useRouter for programmatic navigationD
+  };
+
+  return (
+    <Navbare>
       <Logo href="/">
         Drinks Food<span> Life</span>
       </Logo>
-      { children }
+      {children}
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
         <span />
         <span />
         <span />
       </Hamburger>
       <Menu isOpen={isOpen}>
-
-        <MenuLink href="./subscribe">Subscribe</MenuLink>
-        <MenuLink href="/About">About</MenuLink>
-        <Link href="/CreateUser">Create User</Link>
-          <Link href="/ClientMember">Client Member</Link>
-          <Link href="/Member">Member</Link>
-          <Link href="/Public">Public</Link>
-        
-          </Menu>
+        <MenuLink onClick={() => handleMenuClick("./subscribe")}>
+          Subscribe
+        </MenuLink>
+        <MenuLink onClick={() => handleMenuClick("/About")}>About</MenuLink>
+        <MenuLink onClick={() => handleMenuClick("/CreateUser")}>
+          Create User
+        </MenuLink>
+        <MenuLink onClick={() => handleMenuClick("/ClientMember")}>
+          Client Member
+        </MenuLink>
+        <MenuLink onClick={() => handleMenuClick("/Member")}>Member</MenuLink>
+        <MenuLink onClick={() => handleMenuClick("/Public")}>Public</MenuLink>
+      </Menu>
     </Navbare>
-
-
-
-  )
-    }
+  );
+}
 
 
 
@@ -147,3 +157,121 @@ div {
   background-color: transparent;
 }
 `;
+
+
+
+
+//other Navbar
+
+//"use client"
+// import React, { useState } from "react";
+// import Link from "next/link";
+
+// function Nave({ children }) {
+//   const [isOpen, setIsOpen] = useState(false);
+
+//   const styles = {
+//     navbar: {
+//       padding: "0 2rem",
+//       display: "flex",
+//       gridColumn: "1 / span 2",
+//       gridRow: 1,
+//       justifyContent: "space-between",
+//       alignItems: "center",
+//       flexWrap: "wrap",
+//     },
+//     logo: {
+//       padding: "1rem 0",
+//       color: "#7b7fda",
+//       textDecoration: "none",
+//       fontWeight: 800,
+//       fontSize: "1.7rem",
+//       color: "#001022",
+//       fontFamily: '"Palette Mosaic", cursive',
+//     },
+//     "logo span": {
+//       fontWeight: 300,
+//       fontSize: "2.3rem",
+//       color: "#001022",
+//       fontFamily: '"Palette Mosaic", cursive',
+//     },
+//     "menu-link": {
+//       padding: "1rem 2rem",
+//       cursor: "crosshair",
+//       textAlign: "center",
+//       textDecoration: "none",
+//       backgroundColor: "transparent",
+//       color: "#001022",
+//       transition: "all 0.3s ease-in",
+//       fontSize: "1.4rem",
+//     },
+//     "menu-link:hover": {
+//       color: "yellow",
+//     },
+//     hamburger: {
+//       display: "none",
+//       flexDirection: "column",
+//       backgroundColor: "transparent",
+//       cursor: "pointer",
+//     },
+//     "hamburger span": {
+//       height: "3px",
+//       width: "30px",
+//       background: "transparent",
+//       marginBottom: "4px",
+//       borderRadius: "5px",
+//     },
+//     menu: {
+//       display: "flex",
+//       justifyContent: "space-between",
+//       alignItems: "center",
+//       position: "relative",
+//     },
+//     "menu.open": {
+//       maxHeight: "250px",
+//       transition: "max-height 0.3s ease-in",
+//     },
+//     "@media (max-width: 768px)": {
+//       menu: {
+//         flexDirection: "column",
+//       },
+//       hamburger: {
+//         display: "flex",
+//       },
+//     },
+//   };
+
+//   return (
+//     <div style={styles.navbar}>
+//       <Link href="/">
+//         <a className="logo" style={styles.logo}>
+//           Drinks Food<span> Life</span>
+//         </a>
+//       </Link>
+//       {children}
+//       <div className="hamburger" style={styles.hamburger} onClick={() => setIsOpen(!isOpen)}>
+//         <span />
+//         <span />
+//         <span />
+//       </div>
+//       <div className={`menu ${isOpen ? "open" : ""}`} style={styles.menu}>
+//         <Link href="./subscribe">
+//           <a className="menu-link" style={styles["menu-link"]}>
+//             Subscribe
+//           </a>
+//         </Link>
+//         <Link href="/About">
+//           <a className="menu-link" style={styles["menu-link"]}>
+//             About
+//           </a>
+//         </Link>
+//         <Link href="/CreateUser">Create User</Link>
+//         <Link href="/ClientMember">Client Member</Link>
+//         <Link href="/Member">Member</Link>
+//         <Link href="/Public">Public</Link>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Nave;

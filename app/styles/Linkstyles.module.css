@@ -1,0 +1,16 @@
+.styledLink {
+    padding: 1rem 2rem;
+    cursor: crosshair;
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    color: #001022;
+    transition: all 0.3s ease-in;
+    font-size: 1.4rem;
+    display: flex; /* Enable flexbox for the link */
+    justify-content: flex-end; 
+  }
+  
+  .styledLink:hover {
+    color: yellow;
+  }
