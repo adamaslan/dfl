@@ -4,6 +4,8 @@ import Nav from "./(components)/Nav2";
 import Header from "./(components)/Header";
 import Footer from "./(components)/Footer";
 import { Providers } from "./(components)/Framer";
+import { GoogleTagManager } from '@next/third-parties/google'
+ 
 
 // import "../styles/Nav.module.css";
 import styles from "./styles/Layout.module.css";
@@ -27,7 +29,7 @@ export default function RootLayout({ children }) {
 
       <Footer />
       <Header />
-        
+      <GoogleTagManager gtmId="GTM-T85FK5XG" />
       </AuthProvider>
       </Providers>
     </html>
