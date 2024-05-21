@@ -31,8 +31,8 @@ export default function Home() {
           />
         </div>
         <p>
-          ZXY Gallery and Drinks...Food...Life! teamed up for Art pop up that
-          featured an Amaro Montenegro tasting on the rooftop of ZXY Gallery in Bushwick. The rest was history. Insert upside down smiley face here. Loic Luspo, french model and professional handball athlete, models for the photo.
+          ZXY Gallery and Drinks Food Life teamed up for an art pop up that
+          featured an Amaro Montenegro tasting on the rooftop of ZXY Gallery in Bushwick. The evening transformed the gallery's rooftop into an ideal place for tasting an exceptional amaro. Local artists showcased their work, while guests sipped on expertly crafted cocktails featuring Amaro Montenegro, a versatile Italian herbal liqueur known international. The rest was history. Insert upside down smiley face here. The event embodied the Drinks Food Life spirit - where a love for good food, drinks, and art come together to create unique experiences transcending the typical atmosphere one usually encounters with cocktails and culture. 
         </p>
         <p>
           ZXY Gallery is located by the Williamsburg and Bushwick border. Cosmic Veggie is a curatorial platform that focuses on art experiences paired with food and drinks.
