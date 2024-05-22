@@ -30,13 +30,14 @@ export default function Home() {
           <br />
 <p>Looking to add some pop to your website? Let us help you! Email us at drinksfoodlife@gmail.com or contact us on instagram @drinksfoodlife</p>
 
+<p>We started Drinks Food Life with a love of cocktails and spirits and then soon saw how food and all of life come together in this process. We love telling some of life’s most interesting stories, whether it be about visiting micro mezcal distilleries in rural Oaxaca, our ongoing passion for learning about spirits that come from the US and every other corner of the world, or all the beautiful places and culture we encounter along the way.</p>
           <p>
-            Founded with the desire to focus on drinks and food, but then life
-            in its most general yet effervescent spirit came through. On came the articles on Frida, on Botanical Gardens, on Skiing, and even on Spear Fishing!  
+            Find life in its most appreciative and effervescent spirit via our articles on Frida, on Botanical Gardens, on Skiing, and even on Spear Fishing!  
           </p>
-          <p>We have
-            had contributions from @chemixtry, @journeyswithjaphe , Loic Luspo,
-            @omlettehoe, @cosmicveggie and others.</p>
+          <p>To advertise with us contact: ads@drinksfoodlife.com</p>
+          <p>To pitch an article to us contact: editor@drinksfoodlife.com</p>
+          <p>Many thanks to our team who have been involved in the process with contributions from @chemixtry, @journeyswithjaphe , Loic Luspo,
+            @omlettehoe, @cosmicveggie, @adameatsanddrinkswell, and others.</p>
           <h4>
             Please follow us on Instagram{" "}
             <a
