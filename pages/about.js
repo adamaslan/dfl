@@ -37,7 +37,8 @@ export default function Home() {
           <p>To advertise with us contact: ads@drinksfoodlife.com</p>
           <p>To pitch an article to us contact: editor@drinksfoodlife.com</p>
           <p>Many thanks to our team who have been involved in the process with contributions from @chemixtry, @journeyswithjaphe , Loic Luspo,
-            @omlettehoe, @cosmicveggie, @adameatsanddrinkswell, and others.</p>
+            @omlettehoe, @cosmicveggie, @adameatsanddrinkswell, our assitant editor Cassidy Boch, and others.</p>
+            
           <h4>
             Please follow us on Instagram{" "}
             <a
