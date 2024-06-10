@@ -34,6 +34,7 @@ export default function Home() {
                 src="https://res.cloudinary.com/adamaslan/image/upload/v1664330111/drinksfoodlife/raki_iaoqaw_b5103d.jpg"
               />{" "}
             </div>
+            <p>By Adam Aslan</p>
           <p>
             A little bit of Raki goes a long way. Add a couple ice cubes or water and
             suddenly its a glory of cloud liquid called "Aslan Sütü", meaning "Lion’s Milk". It still has that strong anise taste which is said to inspire power and bravery. All of these things add up to make it a
@@ -51,6 +52,7 @@ export default function Home() {
           </p>
 
           <p>
+            Raki is the modern drink of choice in Turkey, but the nation has a long history with spirits. Raki has been written about since 1630 with its first mention by Ottoman explorer Evliya Çelebi. There is evidence of fermented beverages dating back to 10,000 BC in Turkey. Distillation techology was notably improved in the middle east by the legendary scientist Jabir ibn Hayyan in the 8th century. </p> <p>  
             Learn more about{" "}
             <a href="http://www.efealkollu.com.tr/index.php/en/history-of-raki/">
               <u>the history of raki here.</u>
