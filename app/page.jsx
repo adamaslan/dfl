@@ -44,7 +44,7 @@ const Home = () => {
           gtag('config', 'GA_MEASUREMENT_ID');
         `}
         </Script> */}
-        <Link href="/about" passHref>
+        <Link href="./About" passHref>
           <div className={styles.griditem1}>
           <RevolvingGLBPage glbFile="/dfl-loading3.glb"     style={{ width: '100%', height: '90vh'}} /> 
             <h2> Think this 3D logo is cool?</h2>{" "}

@@ -2,11 +2,11 @@
 
 import Link from "next/link";
 import { getServerSession } from "next-auth";
-import { options } from "../api/auth/[...nextauth]/options";
+// import { options } from "../api/auth/[...nextauth]/options";
 import { Nave } from "./NavState";
 
 const Nav = async () => {
-  const session = await getServerSession(options);
+  // const session = await getServerSession(options);
 
   return (
     <header >
