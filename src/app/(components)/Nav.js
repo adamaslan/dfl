@@ -14,10 +14,10 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between p-4 flex-wrap">
+    <div className="flex items-center justify-between p-4 flex-wrap bg-skin-base text-skin-base">
       <Link
         href="/"
-        className="text-2xl font-extrabold text-[#001022] dark:text-white font-palette-mosaic"
+        className="text-2xl font-extrabold font-palette-mosaic"
       >
         Drinks Food<span className="font-light text-3xl"> Life</span>
       </Link>
@@ -26,17 +26,17 @@ const Nav = () => {
         className="flex flex-col cursor-crosshair w-8 h-8 justify-around items-center md:hidden"
       >
         <span
-          className={`block w-8 h-0.5 bg-[#0D0C1D] dark:bg-white transition-transform ${
+          className={`block w-8 h-0.5 bg-skin-muted transition-transform ${
             isOpen ? "rotate-45" : ""
           }`}
         ></span>
         <span
-          className={`block w-8 h-0.5 bg-[#0D0C1D] dark:bg-white transition-opacity ${
+          className={`block w-8 h-0.5 bg-skin-muted transition-opacity ${
             isOpen ? "opacity-0" : ""
           }`}
         ></span>
         <span
-          className={`block w-8 h-0.5 bg-[#0D0C1D] dark:bg-white transition-transform ${
+          className={`block w-8 h-0.5 bg-skin-muted transition-transform ${
             isOpen ? "-rotate-45" : ""
           }`}
         ></span>
@@ -48,19 +48,16 @@ const Nav = () => {
       >
         <Link
           href="./subscribe"
-          className="py-2 px-4 text-center text-[#001022] dark:text-white text-lg hover:text-yellow-500 transition-colors"
+          className="py-2 px-4 text-center text-skin-base text-lg hover:text-skin-accent transition-colors"
         >
           Subscribe
         </Link>
         <Link
           href="./about"
-          className="py-2 px-4 text-center text-[#001022] dark:text-white text-lg hover:text-yellow-500 transition-colors"
+          className="py-2 px-4 text-center text-skin-base text-lg hover:text-skin-accent transition-colors"
         >
           About
         </Link>
-        {/* <a href="/api/auth/signin" className="py-2 px-4 text-center text-[#001022] dark:text-white text-lg hover:text-yellow-500 transition-colors">
-            Login
-          </a> */}
       </div>
     </div>
   );
