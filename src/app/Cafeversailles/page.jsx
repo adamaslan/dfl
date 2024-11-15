@@ -35,9 +35,9 @@ export default function Home() {
           <p>
             This is Adam Aslan. He Loves Cafe Versailles. He took his family
             there. Other families go there. Its like my memory of my grandpa
-            eating pumpkin pie as I eat pumpkin pie with my mom's homemade whip
+            eating pumpkin pie as I eat pumpkin pie with my mom&apos;s homemade whip
             creme except its like delicious cafecitos and ceviche. Its also
-            known as the world's most famous Cuban restraurant, but that
+            known as the world&apos;s most famous Cuban restraurant, but that
             resonates with me because it has actually touched the hearts of many
             in the Cuban and greater Latino population in Miami regardless of
             income level. They have a location in Little Haiti and in the Miami

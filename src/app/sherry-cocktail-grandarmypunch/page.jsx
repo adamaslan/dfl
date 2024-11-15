@@ -46,7 +46,7 @@ export default function Home() {
 
  <br /> <br />
             Grand Army Punch In 1883, Rochester, NY bartender, Patrick H.
-            "Patsy" McDonough published this recipe specifically to celebrate
+            &quot;Patsy&quot; McDonough published this recipe specifically to celebrate
             the Grand Army of the Republic in observance of Memorial Day; some
             of whom were his personal friends and acquaintances fighting for the
             Union in the Civil War. <br />
@@ -69,7 +69,7 @@ export default function Home() {
             <br />
             <br />
             You could really do almost anything with an oleo saccharum. Keep it
-            simple and pour some good gin or rum over it. But don't forget the
+            simple and pour some good gin or rum over it. But don&apos;t forget the
             ice!
             <br />
           </p>
@@ -77,7 +77,7 @@ export default function Home() {
           <p>
             Checkout{" "}
             <a href="https://www.instagram.com/chemixtry/">
-              <u>Chemixtry's</u>
+              <u>Chemixtry&apos;s</u>
             </a>{" "}
             instagram for more cocktail ideas. They have a ton of drink recipes
             to try.
