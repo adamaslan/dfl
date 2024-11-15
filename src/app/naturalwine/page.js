@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Layout.module.css";
 import ContentCard from "../(components)/ContentCard"; 
 import headerStyles from "../styles/Header.module.css";
+import Image from "next/image";
 
 export default function NaturalWine() {
   return (
@@ -27,14 +28,18 @@ export default function NaturalWine() {
           An Awkward Question about Natural Wine <br />
         </div>
         <div className={styles.gridcontainer5}>
-          <img
-            className={styles.photo}
-            alt="wine"
-            src="/coup-wine.jpg"
-          />
+        <Image
+    className={styles.photo}
+    alt="wine"
+    src="/coup-wine.jpg"
+    layout="responsive"
+
+    width={500} // Optional: specify the width of the image
+    height={500} // Optional: specify the height of the image
+  />
         </div>
         <p>
-          An awkward question is posed, “hey...there...I'm looking for a
+          An awkward question is posed, “hey...there...I&apos;m looking for a
           ...natural wine...something funky...that isn’t going to cost over
           twenty five dollars?”
         </p>
