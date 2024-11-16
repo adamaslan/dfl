@@ -30,10 +30,11 @@ export default function Home() {
             </div> */} 
           </p>
           <br />
+          {/* className="revolving-glb-container" */}
 <p>Looking to add some pop to your website? Let us help you! Email us at drinksfoodlife@gmail.com or contact us on instagram @drinksfoodlife</p>
 
           <p>
-          <RevolvingGLBPage glbFile="/dfl-loading3.glb"  style={{ width: '90%', height: '70vh'}} />
+          <RevolvingGLBPage glbFile="/dfl-loading3.glb"     style={{ width: '90%', height: '70vh'}} />
             Founded with the desire to focus on drinks and food, but then life
             in its most general yet effervescent spirit came through. On came the articles on Frida, on Botanical Gardens, on Skiing, and even on Spear Fishing!  
           </p>
