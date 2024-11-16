@@ -1,117 +1,335 @@
-"use client";
+"use client"
+// import Head from "next/head";
+import Image from "next/image";
+import styles from "./styles/Layout.module.css";
+import ContentCard from "./(components)/ContentCard";
+import RecipeList from "./(components)/Recipes";
+import Link from "next/link";
+import Script from "next/script";
+// import Newsletter from "../components/Newsletter";
+import RevolvingGLBPage from './(components)/Logo3D';
 
-import { useEffect, useRef } from "react";
-import * as THREE from "three";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
-const RevolvingGLBPage = ({ style }) => {
-  const containerRef = useRef();
-  const containerStyle = { backgroundColor: "transparent", ...style };
+const Home = () => {
+  return <div>
+      <head>
+      <title>Drinks Food Life</title>
+      <meta
+        name="google-site-verification"
+        content="hibJJdNyGOXl4aB0kEVBNFHgXe61cum7gLKs_J2A50A"
+      />
+      <meta
+        name="Drinks Food Life Bushwick"
+        content="Based in NYC covering Food Spirits and Wine based around Bushwick Ridgewood Chinatown and the LES. "
+      />
+      <meta
+        property="og:image"
+        content="https://res.cloudinary.com/adamaslan/image/upload/v1667159646/drinksfoodlife/dfl-logo_vnu5xy.jpg"
+      />
 
-  useEffect(() => {
-    let container;
-    let camera, scene, renderer;
-    let model;
-    let controls;
-    let isRevolvingOut = false;
-    let currentRadius = 15;
-    let minRadius = 5;
-    let maxRadius = 50;
+      <link rel="icon" href="/favicon.ico" />
+    </head>{" "}
+      
+    <div className={styles.gridcontainer1} id="parent">
+      {/* <Script
+        src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+        strategy="afterInteractive"
+      /> */}
+{/* 
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    const init = () => {
-      container = containerRef.current;
+        gtag('config', 'GA_MEASUREMENT_ID');
+      `}
+      </Script> */}
+      
 
-      // Adjust the camera's FOV for responsiveness
-      const aspect = container.clientWidth / container.clientHeight;
-      camera = new THREE.PerspectiveCamera(45, aspect, 1, 1000);
-      camera.position.z = 80;
 
-      scene = new THREE.Scene();
+      <Link href="./raki" passHref>
+        <div className={styles.griditem1}>
+          <img
+              className="photo"
+              alt='food'
+            src="https://res.cloudinary.com/adamaslan/image/upload/v1664330111/drinksfoodlife/raki_iaoqaw_b5103d.jpg"
+          />{" "}
+          <h2> On the Love of Raki and Turkish Food</h2>{" "}
+          <h3>Dining at Turkish Grill in Queens</h3>
+        </div>
+      </Link>
 
-      const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-      directionalLight.position.set(1, 1, 1);
-      scene.add(directionalLight);
+      <Link href="/sherry-cocktail-grandarmypunch" passHref>
+        <div className={styles.griditem1}>
+          <img
+              className="photo"
+              alt='cocktail'
+            src="https://res.cloudinary.com/adamaslan/image/upload/v1660751024/drinksfoodlife/grandarmypunch_e9pums.jpg"
+          />{" "}
+          <h2> Summer Cocktails Part 2</h2>{" "}
+          <h3>Grand Army Punch by @chemixtry</h3>
+        </div>
+      </Link>
+      <Link href="./about" passHref>
+        <div className={styles.griditem1}>
+        <RevolvingGLBPage glbFile="/dfl-loading3.glb"     style={{ width: '90%', height: '70vh'}} />
+          <h2> Think this 3D logo is cool?</h2>{" "}
+          <h3>Let us make you one for an Ad on our site! Contact us today!</h3>
+        </div>
+      </Link>
 
-      const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-      scene.add(ambientLight);
+      <Link href="/northdumplingindimessquare" passHref>
+        <div className={styles.griditem1}>
+        <img
+            className="photo"
+          alt='dumpling'
+            src="https://res.cloudinary.com/adamaslan/image/upload/v1654718488/drinksfoodlife/northdump1_dptuen.jpg"
+          />{" "}
+          <h2> North Dumpling, the Guru of Dimes Square,</h2>{" "}
+          <h3> Dumplings Shining Brightly on the Lower East Side</h3>
+        </div>
+      </Link>
+    </div>
 
-      const loader = new GLTFLoader();
-      loader.load(
-        "/dfl-loading3.glb",
-        (gltf) => {
-          model = gltf.scene;
-          scene.add(model);
 
-          animate();
-        },
-        undefined,
-        (error) => {
-          console.error(error);
-        }
-      );
+    <ContentCard />
+<RecipeList />
 
-      renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-      renderer.setSize(container.clientWidth, container.clientHeight);
-      container.appendChild(renderer.domElement);
+    <div className={styles.gridcontainer4}>
 
-      controls = new OrbitControls(camera, renderer.domElement);
-      controls.enableDamping = true;
-      controls.dampingFactor = 0.05;
+      <Link href="/besttacosinbk" passHref>
+        <div className={styles.gridcontainer5}>
+          <img
+              className={styles.photo}
+              src="https://res.cloudinary.com/adamaslan/image/upload/v1685058269/tacos1_onlnoj.jpg"   width="500"
 
-      // Handle resizing
-      window.addEventListener("resize", onWindowResize);
-    };
+              alt="food"
+          />
+          <h2>Taco Poll Brooklyn <br />See the results of our hotly contested poll!</h2>
+        </div>
+      </Link>
 
-    const onWindowResize = () => {
-      const width = container.clientWidth;
-      const height = container.clientHeight;
+      <Link href="/artandfish" passHref>
+        <div className={styles.gridcontainer5}>
+          <img
+              className={styles.photo}
+               src="https://res.cloudinary.com/adamaslan/image/upload/v1654729613/drinksfoodlife/fish_ddrxgr.jpg"
+               alt="food"
+          />
+          <h2>Art and Fish: <br/> The Story of Nicole Burko</h2>
+        </div>
+      </Link>
 
-      camera.aspect = width / height;
-      camera.updateProjectionMatrix();
+      <Link href="./stylish-in-aspen-drinking-rose-at-bonnies" passHref>
+        <div className={styles.gridcontainer5}>
+          <img
+              className={styles.photo}
+              src="https://res.cloudinary.com/adamaslan/image/upload/v1678159115/drinksfoodlife/rose_mgk9sv.jpg"
+              alt="Aspen"
+          />
+          <h2>Awe and Culture in Aspen:{" "}<br />
+          Whispering Angel Rose at Bonnies</h2>
+        </div>
+      </Link>
+      <Link href="/ginger-cocktail-danburydonkey" passHref>
+        <div className={styles.gridcontainer5}>
+          <img
+              className="photo"
+              alt='cocktail'
+            src="https://res.cloudinary.com/adamaslan/image/upload/v1655411125/drinksfoodlife/danburydonkey_mdavxe.jpg"
+          />{" "}
+          <h2> Summer Cocktails Part 1</h2>{" "}
+          <h3>The Danbury Donkey by @chemixtry</h3>
+        </div>
+      </Link>
 
-      renderer.setSize(width, height);
-    };
 
-    const animate = () => {
-      requestAnimationFrame(animate);
+      <Link href="/babydaddy" passHref>
+        <div className={styles.gridcontainer5}>
+          <img
+              className={styles.photo}
+              src="https://res.cloudinary.com/adamaslan/image/upload/v1654731696/drinksfoodlife/babydaddy2_u29dmu.png"
 
-      if (model) {
-        model.rotation.y += 0.01; // Rotate the model
-      }
+              alt="beer"
+          />
+          <h2>Baby Daddy Please<br />Baby Daddy is a great choice</h2>
+        </div>
+      </Link>
 
-      const time = Date.now() * 0.0005; // Time for the revolving motion
 
-      if (isRevolvingOut) {
-        currentRadius -= 0.1; // Decrease the radius to move out
-        if (currentRadius <= minRadius) {
-          isRevolvingOut = false;
-        }
-      } else {
-        currentRadius += 0.1; // Increase the radius to move in
-        if (currentRadius >= maxRadius) {
-          isRevolvingOut = true;
-        }
-      }
+    <Link href="/mole" passHref>
+      <div className={styles.gridcontainer5}>
+        <img
+            className={styles.photo}
+            alt="mole"
 
-      camera.position.x = Math.cos(time) * currentRadius * 1.5; // Increase x-axis movement
-      camera.position.z = Math.sin(time) * currentRadius * 0.5; // Reduce z-axis movement
-      camera.lookAt(scene.position); // Keep camera looking at the center of the scene
+            src="https://res.cloudinary.com/adamaslan/image/upload/v1654895312/drinksfoodlife/cdmx1_zm5yyj.jpg"
+        />{" "}
+        <h2> On the Love of Mole and Mexico<br />Mole, Mexico, Oh My!</h2>
+      </div>
+    </Link>
+    </div>
 
-      controls.update(); // Update orbit controls
 
-      renderer.render(scene, camera);
-    };
+      <Link href="/coyoacan" passHref>
+        <div className={styles.gridcontainer5}>
+          <img
+              className={styles.photo}
+          alt="mole"
 
-    init();
+          src="https://res.cloudinary.com/adamaslan/image/upload/v1654900212/drinksfoodlife/cdmx2_u0b4mi.jpg"
+        />{" "}
+        </div>
+      </Link>
+      <Link href="/coyoacan" passHref>
+        <div className={styles.card5}>
+          <h2> Getting Deep in Coyoacan</h2>{" "}
+          <h3>Frida, the Trees, the Food..Life!</h3>
+        </div>
+      </Link>
+      <Link href="/seawolf" passHref>
+        <div className={styles.gridcontainer5}>
+          <img
+              className={styles.photo}
+            alt="Sea Wolf"
 
-    return () => {
-      container.removeChild(renderer.domElement);
-      window.removeEventListener("resize", onWindowResize);
-    };
-  }, []);
+            src="https://res.cloudinary.com/adamaslan/image/upload/v1654824690/drinksfoodlife/notes_bovahb.jpg"
+          />{" "}
+        </div>
+      </Link>
+      <Link href="/seawolf" passHref>
+        <div className={styles.card6}>
+          <h2> Writing Away My Sunny Days at Sea Wolf</h2>
+          <h3>Sea Wolf Brings the Boys to the Yard</h3>
+        </div>
+      </Link>
+      <Link href="/naplesbotanicalgardenwelcomesfrida" passHref>
+        <div className={styles.gridcontainer5}>
+          <img
+              className={styles.photo}
+            alt="Frida"
 
-  return <div ref={containerRef} className="revolving-glb-container" style={containerStyle} />;
+            src="https://res.cloudinary.com/adamaslan/image/upload/v1681154705/drinksfoodlife/frida-diego_fi26ml.jpg"
+          />{" "}
+        </div>
+      </Link>
+      <Link href="/naplesbotanicalgardenwelcomesfrida" passHref>
+        <div className={styles.card8}>
+          <h2> Naples Botanical Garden Welcomes Frida and the Casa Azul </h2>
+          <h3>
+            Celebrating of Art, Nature, and Mexican Culture in Southwest
+            Florida
+          </h3>
+        </div>
+      </Link>
+
+    {/* </div> */}
+    </div>
+
+ 
+
+    
 };
 
-export default RevolvingGLBPage;
+export default Home;
+
+// export default function Home() {
+//   return (
+//     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+//       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+//         <Image
+//           className="dark:invert"
+//           src="/next.svg"
+//           alt="Next.js logo"
+//           width={180}
+//           height={38}
+//           priority
+//         />
+//         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+//           <li className="mb-2">
+//             Get started by editing{" "}
+//             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
+//               src/app/page.js
+//             </code>
+//             .
+//           </li>
+//           <li>Save and see your changes instantly.</li>
+//         </ol>
+
+//         <div className="flex gap-4 items-center flex-col sm:flex-row">
+//           <a
+//             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+//             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//           >
+//             <Image
+//               className="dark:invert"
+//               src="/vercel.svg"
+//               alt="Vercel logomark"
+//               width={20}
+//               height={20}
+//             />
+//             Deploy now
+//           </a>
+//           <a
+//             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+//             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//           >
+//             Read our docs
+//           </a>
+//         </div>
+//       </main>
+//       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+//         <a
+//           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+//           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           <Image
+//             aria-hidden
+//             src="/file.svg"
+//             alt="File icon"
+//             width={16}
+//             height={16}
+//           />
+//           Learn
+//         </a>
+//         <a
+//           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+//           href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           <Image
+//             aria-hidden
+//             src="/window.svg"
+//             alt="Window icon"
+//             width={16}
+//             height={16}
+//           />
+//           Examples
+//         </a>
+//         <a
+//           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+//           href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           <Image
+//             aria-hidden
+//             src="/globe.svg"
+//             alt="Globe icon"
+//             width={16}
+//             height={16}
+//           />
+//           Go to nextjs.org →
+//         </a>
+//       </footer>
+//     </div>
+//   );
+// }

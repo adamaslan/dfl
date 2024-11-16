@@ -1,4 +1,14 @@
 /* Layout.module.css */
+/* styles.css */
+.revolving-glb-container {
+  width: 100%; /* Full width of the parent */
+  height: 100%; /* Full height of the parent */
+  position: relative; /* Needed for canvas positioning */
+  border: 2px solid #3498db; /* Add your border here */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for better visuals */
+}
+
 
 @media only screen and (max-width: 600px) {
   .root {
