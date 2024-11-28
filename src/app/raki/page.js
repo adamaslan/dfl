@@ -36,7 +36,7 @@ export default function Home() {
             </div>
           <p>
             A little bit of Raki goes a long way. Add a couple ice cubes or water and
-            suddenly its a glory of cloud liquid called "Aslan Sütü", meaning "Lion’s Milk". It still has that strong anise taste which is said to inspire power and bravery. All of these things add up to make it a
+            suddenly its a glory of cloud liquid called &quot;Aslan Sütü&quot;, meaning &quot;Lion’s Milk&quot;. It still has that strong anise taste which is said to inspire power and bravery. All of these things add up to make it a
             great digestif or first drink.{" "}Raki is also a symbol of Turkish culture and hospitality, often served with meze and enjoyed in a similar way of sharing a bottle of wine with friends.
           </p>{" "}
 
@@ -58,7 +58,7 @@ export default function Home() {
 
           </p>
           <p>
-Checkout Turkish Grill's website
+Checkout Turkish Grill&apos;s website
          <a href='http://www.turkishgrillnewyork.com/'>
              {" "}<u>here.</u>
         </a>{" "}

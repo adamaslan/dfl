@@ -54,7 +54,7 @@ const Home = () => {
       </Link>
 
 
-      <Link href="./Raki" passHref>
+      <Link href="./raki" passHref>
         <div className={styles.griditem1}>
           <img
               className="photo"
