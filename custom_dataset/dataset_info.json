@@ -16,7 +16,7 @@
     },
     "embeddings": {
       "feature": {
-        "dtype": "float32",
+        "dtype": "float16",
         "_type": "Value"
       },
       "_type": "Sequence"
