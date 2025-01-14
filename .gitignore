@@ -63,3 +63,13 @@ results/
 
 # Exclude specific files but track configuration
 !models/.gitkeep  # To keep the folder structure
+
+# Ignore specific file types
+*.pkl
+*.safetensors
+
+# Ignore specific files
+path/to/largefile.extension
+
+# Ignore folders
+path/to/folder/
