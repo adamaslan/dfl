@@ -34,3 +34,42 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Ignore model checkpoints
+models/
+*.safetensors
+*.bin
+
+# Ignore dataset and index files
+custom_dataset/
+custom_index.faiss
+
+# Ignore Python cache and logs
+*.pyc
+__pycache__/
+*.log
+
+# Ignore temporary files and directories
+*.tmp
+*.temp
+.DS_Store
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore output and results directories (if any)
+output/
+results/
+
+# Exclude specific files but track configuration
+!models/.gitkeep  # To keep the folder structure
+
+# Ignore specific file types
+*.pkl
+*.safetensors
+
+# Ignore specific files
+path/to/largefile.extension
+
+# Ignore folders
+path/to/folder/
