@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, MessageCircle } from 'lucide-react';
+// import { X, MessageCircle } from 'lucide-react';
 
 const ArticleChatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,7 +57,7 @@ const ArticleChatbot = () => {
           onClick={toggleChatbot} 
           className="bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition-colors"
         >
-          <MessageCircle />
+          {/* <MessageCircle /> */}
         </button>
       )}
 
