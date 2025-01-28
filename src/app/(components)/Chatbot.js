@@ -119,9 +119,8 @@
 
 const Footer = () => {
   return (
-    <div className={footerStyles.container}>
-      <div className={footerStyles.borderLine}></div> {/* Top border line */}
-      <div className={footerStyles.basic}>
+    <div >
+    
         Check out our instagram{"=> "}
         <a
           href="https://www.instagram.com/drinksfoodlife"
@@ -132,7 +131,7 @@ const Footer = () => {
         </a>
         !
       </div>
-    </div>
+   
   );
 };
 
