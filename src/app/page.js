@@ -60,7 +60,7 @@ const Home = () => {
         </div>
       </Link>
 
-      <Link href="/sherry-cocktail-grandarmypunch" passHref>
+      <Link href="/sherrycbasedocktailperfectforsummer" passHref>
         <div className={styles.griditem1}>
           <img
               className="photo"
@@ -132,7 +132,7 @@ const Home = () => {
           Whispering Angel Rose at Bonnies</h2>
         </div>
       </Link>
-      <Link href="/ginger-cocktail-danburydonkey" passHref>
+      <Link href="/summercocktailspart1" passHref>
         <div className={styles.gridcontainer5}>
           <img
               className="photo"
