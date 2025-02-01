@@ -1,6 +1,6 @@
 // frontend/pages/index.js
 import { useState, useEffect } from 'react';
-
+import "../styles/globals.css";
 export default function AstroChatbot() {
   const [step, setStep] = useState('sign');
   const [zodiacSign, setZodiacSign] = useState('');
