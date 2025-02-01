@@ -7,7 +7,7 @@ import ContentCard from "../(components)/ContentCard";
 import headerStyles from "../styles/Header.module.css";
 
 import ThreeJSReactComponent from '../(components)/Logo3D';
-import ArticleChatbot from "../(components)/Chatbot";
+import Chat from "../(components)/Chatbot";
 
 export default function Home() {
   return (
@@ -39,7 +39,7 @@ export default function Home() {
           />
         </div>
         
-        <ArticleChatbot />
+        <Chat/>
 
       </div>
 
