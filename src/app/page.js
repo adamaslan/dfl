@@ -60,7 +60,7 @@ const Home = () => {
         </div>
       </Link>
 
-      <Link href="/sherry-cocktail-grandarmypunch" passHref>
+      <Link href="/sherrycbasedocktailperfectforsummer" passHref>
         <div className={styles.griditem1}>
           <img
               className="photo"
@@ -132,7 +132,7 @@ const Home = () => {
           Whispering Angel Rose at Bonnies</h2>
         </div>
       </Link>
-      <Link href="/ginger-cocktail-danburydonkey" passHref>
+      <Link href="/summercocktailspart1" passHref>
         <div className={styles.gridcontainer5}>
           <img
               className="photo"
@@ -157,6 +157,16 @@ const Home = () => {
         </div>
       </Link>
 
+      <Link href="/babydaddy" passHref>
+        <div className={styles.gridcontainer5}>
+          <img
+              className={styles.photo}
+               alt="cafe versailles"
+                src="/versailles.jpg"
+          />
+          <h2>In Love with: <br />Cafe Versailles</h2>
+        </div>
+      </Link>
 
     <Link href="/mole" passHref>
       <div className={styles.gridcontainer5}>
@@ -170,7 +180,16 @@ const Home = () => {
       </div>
     </Link>
     </div>
-
+    <Link href="/3valuewines" passHref>
+        <div className={styles.gridcontainer5}>
+          <img
+              className={styles.photo}
+               alt="cafe versailles"
+                src="/versailles.jpg"
+          />
+          <h2>In Love with: <br />Cafe Versailles</h2>
+        </div>
+      </Link>
 
       <Link href="/coyoacan" passHref>
         <div className={styles.gridcontainer5}>
