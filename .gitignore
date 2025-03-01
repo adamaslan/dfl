@@ -73,3 +73,5 @@ path/to/largefile.extension
 
 # Ignore folders
 path/to/folder/
+
+.env
