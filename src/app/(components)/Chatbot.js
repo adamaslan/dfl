@@ -214,25 +214,4 @@ export default function Chat() {
 
 
 
-// const Footer = () => {
-//   return (
-//     <div >
-    
-//         Check out our instagram{"=> "}
-//         <a
-//           href="https://www.instagram.com/drinksfoodlife"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           <u>HERE</u>
-//         </a>
-//         !
-//       </div>
-   
-//   );
-// };
-
-// export default Footer;
-
-
 

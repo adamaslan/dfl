@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title> Sourdough Recipe 2025</title>
+        <title> Easy All Purpose Flour Sourdough Recipe 2025</title>
         <meta
           name="liquor, cocktail, drinks, tasty"
           content="Delicious Summer Cocktails by Chemixtry. Tasty Drinks"
@@ -38,47 +38,34 @@ export default function Home() {
 
 
           <p>
-            Summer has indeed hit us with some heat. A good sherry elixer for all this
-            sun and humidity is a delicious cocktail by @chemixtry.
-
+      Sourdough is delicious, but what is an easy enough way to make it with just all purpose flour.
 
  <br /> <br />
-            Grand Army Punch In 1883, Rochester, NY bartender, Patrick H.
-            &quot;Patsy&quot; McDonough published this recipe specifically to celebrate
-            the Grand Army of the Republic in observance of Memorial Day; some
-            of whom were his personal friends and acquaintances fighting for the
-            Union in the Civil War. <br />
+           You can sub in bread flour for 50 percent of the flour or use all purpose. <br />
             <br />
-            For 1 serving of his Grand Army Punch:
+          Enough talk here's the easy recipe:
             <br />
-            1 oz cognac
+            - Water: 350g
             <br />
-            1 oz oloroso sherry
+            - Starter: 100g (u can use less starter and substitute with a mix of water and flour)
             <br />
-            1 oz white dessert wine
+            - Total flour: 500g 
             <br />
-            3 oz champagne
+            - 10 grams salt (adjust as you see fit)
             <br />
-            0.5 oz lemon juice
+            Pre-heat over to 500°F - heat dutch oven up as well
             <br />
-            Oleo Saccharum from previous recipe ~0.5 oz
+            Place some flour in the bottom of the dutch oven, then add dough
             <br />
-            Pineapple rings, orange and lemon slices
+            Cook for 20 mins at 500°F
             <br />
+           Uncover and cook for another 20 mins at 425°F
             <br />
-            You could really do almost anything with an oleo saccharum. Keep it
-            simple and pour some good gin or rum over it. But don&apos;t forget the
-            ice!
-            <br />
+            Let cool for 1 hour if you have the patience!
           </p>
 
           <p>
-            Checkout{" "}
-            <a href="https://www.instagram.com/chemixtry/">
-              <u>Chemixtry&apos;s</u>
-            </a>{" "}
-            instagram for more cocktail ideas. They have a ton of drink recipes
-            to try.
+          That's it! Please follow us on instagram @drinksfoodlife if you liked this recipe!
           </p>
         </div>
 
