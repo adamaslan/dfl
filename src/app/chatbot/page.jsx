@@ -9,9 +9,9 @@ import headerStyles from "../styles/Header.module.css";
 import ThreeJSReactComponent from '../(components)/Logo3D';
 import Chat from "../(components)/Chatbot";
 import AstroChatbot from '../(components)/Chatbot2';
-import Chatbot3 from '../(components)/Chatbot3';
-import ChatApp from '../(components)/Chatbot4';
-
+// import Chatbot3 from '../(components)/Chatbot3';
+// import ChatApp from '../(components)/Chatbot4';
+import ChatApp1 from '../(components)/Chatbot4';
 export default function Home() {
   return (
     <>
@@ -41,9 +41,10 @@ export default function Home() {
             src="/babydaddy.jpg"
           />
         </div>
-        <ChatApp />
-        <Chatbot3 />
-        <Chat/>
+        <ChatApp1 />
+        {/* <ChatApp /> */}
+        {/* <Chatbot3 /> */}
+        {/* <Chat/> */}
         <AstroChatbot />
 
       </div>
