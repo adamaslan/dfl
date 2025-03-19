@@ -157,7 +157,7 @@ const Home = () => {
         </div>
       </Link>
 
-      <Link href="/babydaddy" passHref>
+      <Link href="/cafeversailles" passHref>
         <div className={styles.gridcontainer5}>
           <img
               className={styles.photo}
