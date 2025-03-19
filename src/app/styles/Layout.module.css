@@ -57,6 +57,16 @@
 }
 
 @media only screen and (min-width: 801px) {
+  .gridcontainer3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /*grid-template-rows: 100px 200px;*/
+      grid-gap: 1rem;
+      margin: 1rem 3rem 1rem 3rem;
+  }
+}
+
+@media only screen and (min-width: 801px) {
   .gridcontainer1 {
     grid-template-columns: repeat(2, 1fr);
   }
