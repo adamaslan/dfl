@@ -135,7 +135,7 @@ const Home = () => {
       <Link href="/summercocktailspart1" passHref>
         <div className={styles.gridcontainer5}>
           <img
-              className="photo"
+             className={styles.photo}
               alt='cocktail'
             src="https://res.cloudinary.com/adamaslan/image/upload/v1655411125/drinksfoodlife/danburydonkey_mdavxe.jpg"
           />{" "}
@@ -185,9 +185,9 @@ const Home = () => {
           <img
               className={styles.photo}
                alt="cafe versailles"
-                src="/versailles.jpg"
+                src="/diablo.png"
           />
-          <h2>In Love with: <br />Cafe Versailles</h2>
+          <h2>3 High Value <br />Red Wines</h2>
         </div>
       </Link>
 

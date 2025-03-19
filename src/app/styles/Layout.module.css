@@ -24,8 +24,8 @@
 
 @media only screen and (max-width: 800px) {
   .photo {
-    width: 75vw;
-    height: auto;
+    width: 15em;
+    height: 10em;
     object-fit: contain;
     border-radius: 20px;
     margin: 1rem auto;
@@ -34,8 +34,8 @@
 
 @media only screen and (min-width: 801px) {
   .photo {
-    width: 50vw;
-    height: auto;
+    width: 30em;
+    height: 20em;
     object-fit: contain;
     border-radius: 20px;
     margin: 1rem auto;
@@ -198,6 +198,8 @@
   min-height: 100%;
   text-align: center;
   padding: 70px 80px 70px 80px;
+  margin: 10rem;
+  
 }
 
 @media (min-width: 600px) {
@@ -216,6 +218,7 @@
   text-align: center;
   justify-content: center;
   padding: 70px 0;
+  margin: 10rem;
 }
 
 @media (min-width: 600px) {
@@ -252,6 +255,7 @@
   min-height: 100%;
   text-align: center;
   padding: 70px 80px 70px 80px;
+  margin: 10rem;
 }
 
 .card8:hover {
