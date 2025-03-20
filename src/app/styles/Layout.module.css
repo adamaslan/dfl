@@ -66,6 +66,7 @@
   }
 }
 
+
 @media only screen and (min-width: 801px) {
   .gridcontainer1 {
     grid-template-columns: repeat(2, 1fr);
@@ -114,7 +115,13 @@
     grid-gap: 20px;
   }
 }
-
+.summary{
+  padding: 0 15%;
+}
+.caption { padding: 0 20%; 
+  align-items: center;
+justify-content: center;
+text-align: center;}
 .container {
   display: flex;
   flex-direction: column;
