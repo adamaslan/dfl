@@ -73,6 +73,24 @@
   }
 }
 
+@media only screen and (min-width: 801px) {
+  .gridcontainerb {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.griditemb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.griditemb img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
 .gridcontainer4 {
   display: flex;
   flex-direction: column;
