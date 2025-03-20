@@ -180,8 +180,9 @@ const Home = () => {
       </div>
     </Link>
     </div>
+    <div className={styles.gridcontainerb}>
     <Link href="/3valuewines" passHref>
-        <div className={styles.gridcontainer5}>
+        <div className={styles.itemb}>
           <img
               className={styles.photo}
                alt="cafe versailles"
@@ -189,7 +190,7 @@ const Home = () => {
           />
           <h2>3 High Value <br />Red Wines</h2>
         </div>
-      </Link>
+      </Link> 
 
       <Link href="/coyoacan" passHref>
         <div className={styles.gridcontainer5}>
@@ -246,7 +247,7 @@ const Home = () => {
     {/* </div> */}
     </div>
 
- 
+ </div>
 
     
 };

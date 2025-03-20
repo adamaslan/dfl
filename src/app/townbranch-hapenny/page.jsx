@@ -10,7 +10,7 @@ export default function Home() {
         <title>Transatlantic Collaboration and Sustainability: The Story of Town Branch and Ha'Penny</title>
         <meta
           name="description"
-          content="A journey through Coyoacan Market and all the great things we found including Mole"
+          content="The Story of Town Branch and Ha'Penny"
         />
         <meta
           property="og:image"
@@ -22,13 +22,18 @@ export default function Home() {
         <div className={headerStyles.description}>
         Transatlantic Collaboration and Sustainability: The Story of Town Branch and Ha'Penny <br />
         </div>
+
+        <div className={styles.summary}>
+        A transatlantic collaboration fuses Irish whiskey heritage with modern sustainable distilling innovations.
+        </div>
         <div className={styles.gridcontainer5}>
           <img
             className={styles.photo}
             alt="mole"
-            src="https://res.cloudinary.com/adamaslan/image/upload/v1654900212/drinksfoodlife/cdmx2_u0b4mi.jpg"
-          />
+           src="/townbranch1.jpeg"  />
+            <p className={styles.caption}>Photo by Adam Aslan</p>
         </div>
+    
 
 <p>
 Ha’Penny Four Cask Wheated Irish Whiskey is a distinctive spirit from Pearse Lyons Distillery, crafted from 100% Irish-grown grains and aged in four types of casks—Port Pipe, Bourbon Barrel, Sherry Butt, and Double Charred Barrels. The whiskey blends 66% locally sourced wheat whiskey with 34% single malt produced at the heart of the distillery, yielding flavors of vanilla, honey, caramel, toasted oak, toffee, vanilla ice cream, and banana.

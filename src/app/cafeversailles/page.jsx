@@ -11,8 +11,7 @@ export default function Home() {
         <title>In Love with Cafe Versailles</title>
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/adamaslan/image/upload/v1667159646/drinksfoodlife/dfl-logo_vnu5xy.jpg"
-        />
+          content="/versailles.jpg" />
         <meta
           name="description"
           content="Drinks Food Life. A Bushwick based publication covering the tastiest things in NYC and the rest of the world."
@@ -44,6 +43,8 @@ export default function Home() {
             Airport, which makes MIA one of the more culturally relevant
             airports in the US in competition with DEN to name one.
           </p>
+          <p>Founded in 1971 by Felipe A. Valls Sr., Cafe Versailles began as a modest family-run establishment on Calle Ocho in Miami’s vibrant Cuban community. Over the decades, it transformed into a cultural landmark—a meeting place where Cuban exiles and locals gathered to share not only authentic food but also memories, political debates, and stories of a bygone era. Its evolution mirrors Miami’s own transformation, expanding to include an on-site bakery and even a branch at Miami International Airport, each extension celebrating the legacy of a restaurant that has been as much about community as it has been about cuisine.</p>
+       <p>Cafe Versailles is celebrated for its rich and authentic Cuban fare that masterfully blends tradition with innovative touches. The menu boasts iconic dishes like ropa vieja, vaca frita, and roast pork seasoned with signature Cuban mojo, alongside a range of beloved treats—from perfectly crafted cafecitos and pastelitos to the classic Cuban sandwich. Every dish is prepared with meticulous care and locally sourced ingredients, ensuring that each bite encapsulates the warmth, passion, and heritage of Cuban culture. This dedication to preserving authentic flavors has not only made Cafe Versailles a culinary institution but also a touchstone of Miami’s dynamic cultural identity.</p>
         </div>
       </div>
       <div className="wrapper">
