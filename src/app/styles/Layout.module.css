@@ -331,7 +331,9 @@ text-align: center;}
   border-radius: 20px;
   border: 2px solid rgb(32, 179, 39);
 }
-
+.sect3 {
+  border: 2px solid rgb(58, 64, 255);
+}
 .img2 {
   max-width: 20%;
   height: 50%;
