@@ -176,7 +176,9 @@ const Home = () => {
 
             src="https://res.cloudinary.com/adamaslan/image/upload/v1654895312/drinksfoodlife/cdmx1_zm5yyj.jpg"
         />{" "}
+              <div className={styles.card9}></div>
         <h2> On the Love of Mole and Mexico<br />Mole, Mexico, Oh My!</h2>
+        </div>
       </div>
     </Link>
     </div>

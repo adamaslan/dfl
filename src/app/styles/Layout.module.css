@@ -304,6 +304,27 @@ text-align: center;}
   }
 }
 
+.card9 {
+  background-color: rgb(133, 114, 255);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  min-height: 100%;
+  text-align: center;
+  padding: 70px 80px 70px 80px;
+  margin: 10rem;
+}
+
+.card9:hover {
+  opacity: 0.5;
+}
+
+@media (min-width: 600px) {
+  .card9 {
+    width: 75%;
+    height: 75%;
+  }
+}
 .divArt {
   width: 500px;
   height: 500px;
