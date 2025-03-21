@@ -106,7 +106,7 @@ const Home = () => {
 
               alt="food"
           />
-          <h2>Taco Poll Brooklyn <br />See the results of our hotly contested poll!</h2>
+          <h2 className={styles.sect3}>Taco Poll Brooklyn <br />See the results of our hotly contested poll!</h2>
         </div>
       </Link>
 
@@ -117,7 +117,7 @@ const Home = () => {
                src="https://res.cloudinary.com/adamaslan/image/upload/v1654729613/drinksfoodlife/fish_ddrxgr.jpg"
                alt="food"
           />
-          <h2>Art and Fish: <br/> The Story of Nicole Burko</h2>
+          <h2 className={styles.sect3}>Art and Fish: <br/> The Story of Nicole Burko</h2>
         </div>
       </Link>
 
@@ -128,7 +128,7 @@ const Home = () => {
               src="https://res.cloudinary.com/adamaslan/image/upload/v1678159115/drinksfoodlife/rose_mgk9sv.jpg"
               alt="Aspen"
           />
-          <h2>Awe and Culture in Aspen:{" "}<br />
+          <h2 className={styles.sect3}>Awe and Culture in Aspen:{" "}<br />
           Whispering Angel Rose at Bonnies</h2>
         </div>
       </Link>
@@ -139,8 +139,8 @@ const Home = () => {
               alt='cocktail'
             src="https://res.cloudinary.com/adamaslan/image/upload/v1655411125/drinksfoodlife/danburydonkey_mdavxe.jpg"
           />{" "}
-          <h2> Summer Cocktails Part 1</h2>{" "}
-          <h3>The Danbury Donkey by @chemixtry</h3>
+          <h2 className={styles.sect3}> Summer Cocktails Part 1
+          The Danbury Donkey by @chemixtry</h2>{" "}
         </div>
       </Link>
 
@@ -153,7 +153,7 @@ const Home = () => {
 
               alt="beer"
           />
-          <h2>Baby Daddy Please<br />Baby Daddy is a great choice</h2>
+          <h2 className={styles.sect3}>Baby Daddy Please<br />Baby Daddy is a great choice</h2>
         </div>
       </Link>
 
@@ -164,7 +164,7 @@ const Home = () => {
                alt="cafe versailles"
                 src="/versailles.jpg"
           />
-          <h2>In Love with: <br />Cafe Versailles</h2>
+          <h2 className={styles.sect3}>In Love with: <br />Cafe Versailles</h2>
         </div>
       </Link>
 
@@ -176,7 +176,9 @@ const Home = () => {
 
             src="https://res.cloudinary.com/adamaslan/image/upload/v1654895312/drinksfoodlife/cdmx1_zm5yyj.jpg"
         />{" "}
+              <div className={styles.card8}>
         <h2> On the Love of Mole and Mexico<br />Mole, Mexico, Oh My!</h2>
+        </div>
       </div>
     </Link>
     </div>
@@ -185,10 +187,12 @@ const Home = () => {
         <div className={styles.itemb}>
           <img
               className={styles.photo}
-               alt="cafe versailles"
+               alt="wine"
                 src="/diablo.png"
           />
+          <div className={styles.card9}>
           <h2>3 High Value <br />Red Wines</h2>
+          </div>
         </div>
       </Link> 
 

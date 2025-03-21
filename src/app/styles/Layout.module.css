@@ -304,13 +304,36 @@ text-align: center;}
   }
 }
 
+.card9 {
+  background-color: rgb(133, 114, 255);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  min-height: 100%;
+  text-align: center;
+  padding: 70px 80px 70px 80px;
+  margin: 10rem;
+}
+
+.card9:hover {
+  opacity: 0.5;
+}
+
+@media (min-width: 600px) {
+  .card9 {
+    width: 75%;
+    height: 75%;
+  }
+}
 .divArt {
   width: 500px;
   height: 500px;
   border-radius: 20px;
   border: 2px solid rgb(32, 179, 39);
 }
-
+.sect3 {
+  border: 2px solid rgb(58, 64, 255);
+}
 .img2 {
   max-width: 20%;
   height: 50%;
