@@ -196,22 +196,20 @@ const Home = () => {
         </div>
       </Link> 
 
-      <Link href="/coyoacan" passHref>
-        <div className={styles.gridcontainer5}>
-          <img
-              className={styles.photo}
-          alt="mole"
+      <Link href="/coyoacan">
+  <div className={styles.gridcontainer5}>
+    <img
+      className={styles.photo}
+      alt="mole"
+      src="https://res.cloudinary.com/adamaslan/image/upload/v1654900212/drinksfoodlife/cdmx2_u0b4mi.jpg"
+    />
+    <div className={styles.card5}>
+      <h2>Getting Deep in Coyoacan</h2>
+      <h3>Frida, the Trees, the Food..Life!</h3>
+    </div>
+  </div>
+</Link>
 
-          src="https://res.cloudinary.com/adamaslan/image/upload/v1654900212/drinksfoodlife/cdmx2_u0b4mi.jpg"
-        />{" "}
-        </div>
-      </Link>
-      <Link href="/coyoacan" passHref>
-        <div className={styles.card5}>
-          <h2> Getting Deep in Coyoacan</h2>{" "}
-          <h3>Frida, the Trees, the Food..Life!</h3>
-        </div>
-      </Link>
       <Link href="/seawolf" passHref>
         <div className={styles.gridcontainer5}>
           <img
