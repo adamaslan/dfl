@@ -4,28 +4,35 @@ import Image from "next/image";
 import styles from "../styles/Bubble.module.css";
 import ContentCard from "../(components)/ContentCard";
 import RecipeList from "../(components)/Recipes";
+import RevolvingGLBPage from '../(components)/Logo3D';
 import Nav from "../(components)/Nav";
-import dynamic from 'next/dynamic';
-
-const RevolvingGLBPage = dynamic(
-  () => import('../(components)/Logo3D'),
-  { 
-    ssr: false,
-    loading: () => <div className={styles.loadingBubble} />
-  }
-);
 
 const Home = () => {
-  // Content arrays with gradient classes
   const foodItems = [
     {
       href: "/raki",
       img: "https://res.cloudinary.com/adamaslan/image/upload/v1664330111/drinksfoodlife/raki_iaoqaw_b5103d.jpg",
       title: "Raki & Turkish Food",
-      subtitle: "Dining at Turkish Grill in Queens",
-      gradient: styles.gradient1
+      subtitle: "Dining at Turkish Grill in Queens"
     },
-    // ... rest of food items with gradients
+    {
+      href: "/sherrycbasedocktailperfectforsummer",
+      img: "https://res.cloudinary.com/adamaslan/image/upload/v1660751024/drinksfoodlife/grandarmypunch_e9pums.jpg",
+      title: "Summer Cocktails Part 2",
+      subtitle: "Grand Army Punch by @chemixtry"
+    },
+    {
+      href: "/northdumplingindimessquare",
+      img: "https://res.cloudinary.com/adamaslan/image/upload/v1654718488/drinksfoodlife/northdump1_dptuen.jpg",
+      title: "North Dumpling Guru",
+      subtitle: "Dimes Square Dumplings"
+    },
+    {
+      href: "/besttacosinbk",
+      img: "https://res.cloudinary.com/adamaslan/image/upload/v1685058269/tacos1_onlnoj.jpg",
+      title: "Taco Poll Brooklyn",
+      subtitle: "See our hotly contested results!"
+    }
   ];
 
   const culturalItems = [
@@ -33,10 +40,26 @@ const Home = () => {
       href: "/coyoacan",
       img: "https://res.cloudinary.com/adamaslan/image/upload/v1654900212/drinksfoodlife/cdmx2_u0b4mi.jpg",
       title: "Discovering Coyoacan",
-      subtitle: "Frida, Food, and Culture",
-      gradient: styles.gradient3
+      subtitle: "Frida, Food, and Culture"
     },
-    // ... rest of cultural items with gradients
+    {
+      href: "/naplesbotanicalgardenwelcomesfrida",
+      img: "https://res.cloudinary.com/adamaslan/image/upload/v1681154705/drinksfoodlife/frida-diego_fi26ml.jpg",
+      title: "Naples Botanical Garden",
+      subtitle: "Celebrating Mexican Culture"
+    },
+    {
+      href: "/artandfish",
+      img: "https://res.cloudinary.com/adamaslan/image/upload/v1654729613/drinksfoodlife/fish_ddrxgr.jpg",
+      title: "Art and Fish",
+      subtitle: "The Story of Nicole Burko"
+    },
+    {
+      href: "/stylish-in-aspen-drinking-rose-at-bonnies",
+      img: "https://res.cloudinary.com/adamaslan/image/upload/v1678159115/drinksfoodlife/rose_mgk9sv.jpg",
+      title: "Aspen Culture",
+      subtitle: "Whispering Angel Rose at Bonnies"
+    }
   ];
 
   const featureItems = [
@@ -44,33 +67,42 @@ const Home = () => {
       href: "/babydaddy",
       img: "https://res.cloudinary.com/adamaslan/image/upload/v1654731696/drinksfoodlife/babydaddy2_u29dmu.png",
       title: "Baby Daddy Please",
-      subtitle: "Great Beer Choice",
-      gradient: styles.gradient4
+      subtitle: "Great Beer Choice"
     },
-    // ... rest of feature items with gradients
+    {
+      href: "/mole",
+      img: "https://res.cloudinary.com/adamaslan/image/upload/v1654895312/drinksfoodlife/cdmx1_zm5yyj.jpg",
+      title: "Love of Mole",
+      subtitle: "Mexican Culinary Journey"
+    },
+    {
+      href: "/3valuewines",
+      img: "/diablo.png",
+      title: "3 Value Wines",
+      subtitle: "Premium Red Wines Selection"
+    },
+    {
+      href: "/seawolf",
+      img: "https://res.cloudinary.com/adamaslan/image/upload/v1654824690/drinksfoodlife/notes_bovahb.jpg",
+      title: "Sea Wolf Experience",
+      subtitle: "Writing Away Sunny Days"
+    }
   ];
 
   return (
     <div className={styles.vars}>
-      <Nav />
       <main className={styles.mainGrid}>
-        {/* Featured Food Section with Bubbles */}
+        {/* Featured Food Section */}
         <section className={styles.gridSection}>
           {foodItems.map((item, index) => (
-            <Link 
-              key={index} 
-              href={item.href} 
-              className={`${styles.gridCard} ${item.gradient} ${styles.bubbleHover}`}
-            >
+            <Link key={index} href={item.href} className={styles.gridCard}>
               <div className={styles.squareAspect}>
                 <Image
                   src={item.img}
                   alt={item.title}
                   fill
                   className={styles.photo}
-                  priority={index < 4}
                 />
-                <div className={styles.imageOverlay} />
               </div>
               <div className={styles.captionBox}>
                 <h2>{item.title}</h2>
@@ -81,14 +113,13 @@ const Home = () => {
         </section>
 
         {/* 3D Ad Section */}
-        <section className={`${styles.gridCard} ${styles.adBubble} ${styles.float}`}>
+        <section className={`${styles.gridCard} ${styles.adBubble}`}>
           <Link href="/about" className={styles.interactive3D}>
-            <div className={styles.threeDContainer}>
+            <div className={styles.squareAspect}>
               <RevolvingGLBPage 
                 glbFile="/dfl-loading3.glb"
-                className={styles.threeDModel}
+                style={{ width: '100%', height: '100%' }}
               />
-              <div className={styles.bubbleParticles} />
             </div>
             <div className={styles.captionBox}>
               <h2>Custom 3D Ads Available!</h2>
@@ -97,22 +128,10 @@ const Home = () => {
           </Link>
         </section>
 
-        {/* Portrait Ad */}
-        <section className={`${styles.gridCard} ${styles.portraitAd}`}>
-          <div className={styles.adContent}>
-            <span className={styles.adLabel}>Sponsored</span>
-            <div className={styles.adPlaceholder} />
-          </div>
-        </section>
-
         {/* Cultural Highlights */}
         <section className={styles.gridSection}>
           {culturalItems.map((item, index) => (
-            <Link 
-              key={index} 
-              href={item.href} 
-              className={`${styles.gridCard} ${item.gradient} ${styles.bubbleHover}`}
-            >
+            <Link key={index} href={item.href} className={styles.gridCard}>
               <div className={styles.squareAspect}>
                 <Image
                   src={item.img}
@@ -120,7 +139,6 @@ const Home = () => {
                   fill
                   className={styles.photo}
                 />
-                <div className={styles.imageOverlay} />
               </div>
               <div className={styles.captionBox}>
                 <h2>{item.title}</h2>
@@ -130,20 +148,12 @@ const Home = () => {
           ))}
         </section>
 
-        {/* Landscape Ad */}
-        <section className={`${styles.gridCard} ${styles.landscapeAd}`}>
-          <div className={styles.adContent}>
-            <span className={styles.adLabel}>Partner Content</span>
-            <div className={styles.adPlaceholder} />
-          </div>
-        </section>
-
         {/* Recipes & Content */}
-        <section className={`${styles.gridSection} ${styles.rainbowGrid}`}>
-          <div className={`${styles.gridCard} ${styles.gradient5}`}>
+        <section className={styles.gridSection}>
+          <div className={styles.gridCard}>
             <ContentCard />
           </div>
-          <div className={`${styles.gridCard} ${styles.gradient3} ${styles.float}`}>
+          <div className={styles.gridCard}>
             <RecipeList />
           </div>
         </section>
@@ -151,11 +161,7 @@ const Home = () => {
         {/* Additional Features */}
         <section className={styles.gridSection}>
           {featureItems.map((item, index) => (
-            <Link 
-              key={index} 
-              href={item.href} 
-              className={`${styles.gridCard} ${item.gradient} ${styles.bubbleHover}`}
-            >
+            <Link key={index} href={item.href} className={styles.gridCard}>
               <div className={styles.squareAspect}>
                 <Image
                   src={item.img}
@@ -163,7 +169,6 @@ const Home = () => {
                   fill
                   className={styles.photo}
                 />
-                <div className={styles.imageOverlay} />
               </div>
               <div className={styles.captionBox}>
                 <h2>{item.title}</h2>
