@@ -2,12 +2,15 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Bubble.module.css";
-import ContentCard from "./(components)/ContentCard";
-import RecipeList from "./(components)/Recipes";
-import RevolvingGLBPage from './(components)/Logo3D';
+import ContentCard from "../(components)/ContentCard";
+import RecipeList from "../(components)/Recipes";
+import RevolvingGLBPage from '../(components)/Logo3D';
+import Nav from "../(components)/Nav";
+
 
 const Home = () => {
   return (
+    <div className={styles.vars}> 
     <main className={styles.mainGrid}>
       {/* Featured Food Section */}
       <section className={styles.gridSection}>
@@ -165,6 +168,7 @@ const Home = () => {
         ))}
       </section>
     </main>
+    </div>
   );
 };
 
