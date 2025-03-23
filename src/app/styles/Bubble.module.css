@@ -95,3 +95,56 @@
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
   }
+
+  /* Ad Placeholders */
+.portraitAd {
+    grid-row: span 2;
+    min-height: 600px;
+    background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.3));
+    border: 2px dashed rgba(255,255,255,0.5);
+  }
+  
+  .landscapeAd {
+    grid-column: span 2;
+    min-height: 300px;
+    background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.3));
+    border: 2px dashed rgba(255,255,255,0.5);
+  }
+  
+  .adContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .adLabel {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 1rem;
+  }
+  
+  .adPlaceholder {
+    width: 80%;
+    height: 60%;
+    background: rgba(255,255,255,0.1);
+    border-radius: var(--radius-lg);
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 0.3; }
+  }
+  
+  @media (max-width: 768px) {
+    .landscapeAd {
+      grid-column: span 1;
+    }
+    
+    .portraitAd {
+      grid-row: span 1;
+      min-height: 300px;
+    }
+  }
