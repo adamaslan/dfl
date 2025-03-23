@@ -1,13 +1,16 @@
 .vars {
+    /* Color Variables */
     --primary: #FF6B6B;
     --secondary: #4ECDC4;
     --accent: #FFE66D;
     --purple: #9B59B6;
+    --text: #2c3e50;
+    
+    /* Size Variables */
     --radius-xl: 1.5rem;
     --radius-lg: 1rem;
     --shadow: 0 8px 24px rgba(0,0,0,0.1);
     --transition: all 0.3s ease;
-    --square-aspect: 1/1;
   }
   
   .mainGrid {
@@ -16,6 +19,7 @@
     padding: 1.5rem;
     margin: 0 auto;
     max-width: 1400px;
+    background: #f8f9fa;
   }
   
   .gridSection {
@@ -24,66 +28,70 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
   
-  .squareAspect {
-    aspect-ratio: var(--square-aspect);
-    position: relative;
-    overflow: hidden;
-    border-radius: var(--radius-lg);
-  }
-  
-  .photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: var(--transition);
-  }
-  
   .gridCard {
-    display: grid;
-    gap: 1rem;
     background: white;
     border-radius: var(--radius-xl);
     padding: 1.5rem;
     transition: var(--transition);
     box-shadow: var(--shadow);
+    color: var(--text);
   }
   
   .gridCard:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
   }
   
-  @media (min-width: 768px) {
-    .gridSection {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-    
-    .mainGrid {
-      gap: 2rem;
-      padding: 2rem;
-    }
+  .squareAspect {
+    position: relative;
+    aspect-ratio: 1/1;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: #f1f1f1;
   }
   
-  @media (min-width: 1024px) {
-    .gridSection {
-      grid-template-columns: repeat(4, 1fr);
-    }
-    
-    .gridCard {
-      padding: 2rem;
-    }
+  .adBubble {
+    background: linear-gradient(45deg, var(--purple), var(--accent));
+    color: white !important;
+    grid-column: 1 / -1;
+  }
+  
+  .adBubble .gridCard {
+    background: transparent;
+    box-shadow: none;
   }
   
   .captionBox {
-    padding: 1rem;
+    padding: 1.5rem 0 0;
     text-align: center;
   }
   
   .captionBox h2 {
     font-size: 1.25rem;
-    margin-bottom: 0.5rem;
+    margin: 0 0 0.5rem;
+    color: inherit;
   }
   
   .captionBox p {
     font-size: 0.9rem;
-    color: #666;
+    opacity: 0.9;
+    margin: 0;
+    color: inherit;
+  }
+  
+  .threeDContainer {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+  
+  @media (min-width: 768px) {
+    .threeDContainer {
+      height: 500px;
+    }
+    
+    .gridSection {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
   }
