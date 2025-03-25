@@ -1,0 +1,333 @@
+/* Grid Container for Desktop/Mobile */
+.gridcontainer4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .gridcontainerb {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Mobile layout */
+  @media (max-width: 768px) {
+    .gridcontainer4 {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    }
+    
+    .gridcontainerb {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    }
+  }
+  
+  /* Common styles for all grid items */
+  .gridcontainer5 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .gridcontainer5:hover {
+    transform: translateY(-5px);
+  }
+  
+  .photo {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .gridcontainer5:hover .photo {
+    transform: scale(1.05);
+  }
+  
+  /* Card Styles */
+  .card5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(to top, var(--primary-color), transparent);
+    color: var(--text-color);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .card5 h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .card5 h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: var(--hover-opacity);
+  }
+  
+  .gridcontainer5:hover .card5 {
+    transform: translateY(0);
+  }
+  
+  .card6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 20px;
+    background: var(--secondary-color);
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card6 h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .card6 h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: var(--hover-opacity);
+  }
+  
+  .gridcontainer5:hover .card6 {
+    opacity: 1;
+  }
+  
+  .card8 {
+    padding: 15px;
+    background: linear-gradient(135deg, var(--tertiary-color), var(--quaternary-color));
+    color: var(--text-color);
+    border-radius: 0 0 15px 15px;
+  }
+  
+  .card8 h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .card8 h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: var(--hover-opacity);
+  }
+  
+  .card9 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card9 h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .card9 h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: var(--hover-opacity);
+  }
+  
+  .card10 {
+    padding: 20px;
+    background: linear-gradient(to right, var(--secondary-color), var(--tertiary-color));
+    color: var(--text-color);
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  .card10 h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .card10 h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: var(--hover-opacity);
+  }
+  
+  .card11 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background: var(--quaternary-color);
+    color: var(--text-color);
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card11 h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .card11 h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: var(--hover-opacity);
+  }
+  
+  .card12 {
+    padding: 15px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border-top: 4px solid var(--border-color);
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .card12 h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .card12 h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: var(--hover-opacity);
+  }
+  
+  .card13 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: linear-gradient(to bottom, var(--tertiary-color), transparent);
+    color: var(--text-color);
+  }
+  
+  .card13 h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .card13 h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: var(--hover-opacity);
+  }
+  
+  .card14 {
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid var(--border-color);
+  }
+  
+  .card14 h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .card14 h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: var(--hover-opacity);
+  }
+  
+  .card15 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: var(--secondary-color);
+    color: var(--text-color);
+    transform: skewY(-5deg);
+  }
+  
+  .card15 h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .card15 h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: var(--hover-opacity);
+  }
+  
+  /* Additional Utility Classes */
+  .sect3 {
+    padding: 15px;
+    color: var(--text-color);
+  }
+  
+  .sect3 h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  .sect3 h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: var(--hover-opacity);
+  }
+  
+  .itemb {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .itemb:hover {
+    transform: translateY(-5px);
+  }
