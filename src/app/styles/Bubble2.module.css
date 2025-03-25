@@ -1,4 +1,98 @@
-/* Grid Container for Desktop/Mobile */
+/* Layout.module.css */
+/* styles.css */
+.revolving-glb-container {
+  width: 100%; /* Full width of the parent */
+  height: 100%; /* Full height of the parent */
+  position: relative; /* Needed for canvas positioning */
+  border: 2px solid #3498db; /* Add your border here */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for better visuals */
+}
+
+
+@media only screen and (max-width: 600px) {
+  .root {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .root {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .photo {
+    width: 15em;
+    height: 10em;
+    object-fit: contain;
+    border-radius: 20px;
+    margin: 1rem auto;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .photo {
+    width: 30em;
+    height: 20em;
+    object-fit: contain;
+    border-radius: 20px;
+    margin: 1rem auto;
+  }
+}
+
+.gridcontainer1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  margin: 1rem auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .gridcontainer1 {
+    grid-template-columns: 1fr;
+    margin: 1rem auto;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .gridcontainer3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /*grid-template-rows: 100px 200px;*/
+      grid-gap: 1rem;
+      margin: 1rem 3rem 1rem 3rem;
+  }
+}
+
+
+@media only screen and (min-width: 801px) {
+  .gridcontainer1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .gridcontainerb {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.griditemb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.griditemb img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+
+/* Nuu Grid Container for Desktop/Mobile */
 .gridcontainer4 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */

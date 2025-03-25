@@ -8,6 +8,7 @@ import Nav from "../(components)/Nav";
 // import dynamic from 'next/dynamic';
 import RevolvingGLBPage from '../(components)/Logo3D';
 
+//part zero
 
 const Home = () => {
     return <div>
@@ -44,7 +45,8 @@ const Home = () => {
           gtag('config', 'GA_MEASUREMENT_ID');
         `}
         </Script> */}
-        
+ 
+ {/* part 1 */}
   
   
         <Link href="./raki" passHref>

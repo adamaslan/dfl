@@ -46,7 +46,7 @@ const Home = () => {
       `}
       </Script> */}
       
-
+//Part one
 
       <Link href="./raki" passHref>
         <div className={styles.griditem1}>
@@ -92,10 +92,162 @@ const Home = () => {
       </Link>
     </div>
 
-
+//Part Two
     <ContentCard />
 <RecipeList />
+//Part Three
+<div className={styles.gridcontainer4}>
 
+<Link href="/besttacosinbk" passHref>
+  <div className={styles.gridcontainer5}>
+    <img
+        className={styles.photo}
+        src="https://res.cloudinary.com/adamaslan/image/upload/v1685058269/tacos1_onlnoj.jpg"   width="500"
+
+        alt="food"
+    />
+    <h2 className={styles.sect3}>Taco Poll Brooklyn <br />See the results of our hotly contested poll!</h2>
+  </div>
+</Link>
+
+<Link href="/artandfish" passHref>
+  <div className={styles.gridcontainer5}>
+    <img
+        className={styles.photo}
+         src="https://res.cloudinary.com/adamaslan/image/upload/v1654729613/drinksfoodlife/fish_ddrxgr.jpg"
+         alt="food"
+    />
+    <h2 className={styles.sect3}>Art and Fish: <br/> The Story of Nicole Burko</h2>
+  </div>
+</Link>
+
+<Link href="./stylish-in-aspen-drinking-rose-at-bonnies" passHref>
+  <div className={styles.gridcontainer5}>
+    <img
+        className={styles.photo}
+        src="https://res.cloudinary.com/adamaslan/image/upload/v1678159115/drinksfoodlife/rose_mgk9sv.jpg"
+        alt="Aspen"
+    />
+    <h2 className={styles.sect3}>Awe and Culture in Aspen:{" "}<br />
+    Whispering Angel Rose at Bonnies</h2>
+  </div>
+</Link>
+<Link href="/summercocktailspart1" passHref>
+  <div className={styles.gridcontainer5}>
+    <img
+       className={styles.photo}
+        alt='cocktail'
+      src="https://res.cloudinary.com/adamaslan/image/upload/v1655411125/drinksfoodlife/danburydonkey_mdavxe.jpg"
+    />{" "}
+    <h2 className={styles.sect3}> Summer Cocktails Part 1
+    The Danbury Donkey by @chemixtry</h2>{" "}
+  </div>
+</Link>
+
+
+<Link href="/babydaddy" passHref>
+  <div className={styles.gridcontainer5}>
+    <img
+        className={styles.photo}
+        src="https://res.cloudinary.com/adamaslan/image/upload/v1654731696/drinksfoodlife/babydaddy2_u29dmu.png"
+
+        alt="beer"
+    />
+    <h2 className={styles.sect3}>Baby Daddy Please<br />Baby Daddy is a great choice</h2>
+  </div>
+</Link>
+
+<Link href="/cafeversailles" passHref>
+  <div className={styles.gridcontainer5}>
+    <img
+        className={styles.photo}
+         alt="cafe versailles"
+          src="/versailles.jpg"
+    />
+    <h2 className={styles.sect3}>In Love with: <br />Cafe Versailles</h2>
+  </div>
+</Link>
+
+<Link href="/mole" passHref>
+<div className={styles.gridcontainer5}>
+  <img
+      className={styles.photo}
+      alt="mole"
+
+      src="https://res.cloudinary.com/adamaslan/image/upload/v1654895312/drinksfoodlife/cdmx1_zm5yyj.jpg"
+  />{" "}
+        <div className={styles.card8}>
+  <h2> On the Love of Mole and Mexico<br />Mole, Mexico, Oh My!</h2>
+  </div>
+</div>
+</Link>
+</div>
+<div className={styles.gridcontainerb}>
+<Link href="/3valuewines" passHref>
+  <div className={styles.itemb}>
+    <img
+        className={styles.photo}
+         alt="wine"
+          src="/diablo.png"
+    />
+    <div className={styles.card9}>
+    <h2>3 High Value <br />Red Wines</h2>
+    </div>
+  </div>
+</Link> 
+
+<Link href="/coyoacan">
+<div className={styles.gridcontainer5}>
+<img
+className={styles.photo}
+alt="mole"
+src="https://res.cloudinary.com/adamaslan/image/upload/v1654900212/drinksfoodlife/cdmx2_u0b4mi.jpg"
+/>
+<div className={styles.card5}>
+<h2>Getting Deep in Coyoacan</h2>
+<h3>Frida, the Trees, the Food..Life!</h3>
+</div>
+</div>
+</Link>
+
+<Link href="/seawolf" passHref>
+  <div className={styles.gridcontainer5}>
+    <img
+        className={styles.photo}
+      alt="Sea Wolf"
+
+      src="https://res.cloudinary.com/adamaslan/image/upload/v1654824690/drinksfoodlife/notes_bovahb.jpg"
+    />{" "}
+  </div>
+</Link>
+<Link href="/seawolf" passHref>
+  <div className={styles.card6}>
+    <h2> Writing Away My Sunny Days at Sea Wolf</h2>
+    <h3>Sea Wolf Brings the Boys to the Yard</h3>
+  </div>
+</Link>
+<Link href="/naplesbotanicalgardenwelcomesfrida" passHref>
+  <div className={styles.gridcontainer5}>
+    <img
+        className={styles.photo}
+      alt="Frida"
+
+      src="https://res.cloudinary.com/adamaslan/image/upload/v1681154705/drinksfoodlife/frida-diego_fi26ml.jpg"
+    />{" "}
+  </div>
+</Link>
+<Link href="/naplesbotanicalgardenwelcomesfrida" passHref>
+  <div className={styles.card8}>
+    <h2> Naples Botanical Garden Welcomes Frida and the Casa Azul </h2>
+    <h3>
+      Celebrating of Art, Nature, and Mexican Culture in Southwest
+      Florida
+    </h3>
+  </div>
+</Link>
+
+{/* </div> */}
+</div>
 
  </div>
 
