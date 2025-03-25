@@ -29,8 +29,9 @@ const Home = () => {
   
         <link rel="icon" href="/favicon.ico" />
       </head>{" "}
-        
-      <div className={styles.gridcontainer1} id="parent">
+      <div className={styles.container} id="parent"> 
+      <div className={styles.gridcontainer1} >
+
         {/* <Script
           src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
           strategy="afterInteractive"
@@ -341,7 +342,7 @@ const Home = () => {
   </div>
   
    </div>
-  
+  </div>
       
   };
   
