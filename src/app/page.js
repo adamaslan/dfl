@@ -46,7 +46,7 @@ const Home = () => {
       `}
       </Script> */}
       
-//Part one
+{/* Part one */}
 
       <Link href="./raki" passHref>
         <div className={styles.griditem1}>
@@ -92,10 +92,10 @@ const Home = () => {
       </Link>
     </div>
 
-//Part Two
+{/* Part Two */}
     <ContentCard />
 <RecipeList />
-//Part Three
+{/* Part Three */}
 <div className={styles.gridcontainer4}>
 
 <Link href="/besttacosinbk" passHref>
