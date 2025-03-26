@@ -1,0 +1,88 @@
+/* Bubble2.module.css */
+
+/* Define variables in a container class */
+.container {
+    /* Font Options */
+    --font-1: 'Inter', system-ui;
+    --font-2: 'Space Grotesk', monospace;
+    --font-3: 'Poppins', sans-serif;
+    
+    /* Color Variables */
+    --primary-color: #3498db;
+    --text-color: #2c3e50;
+    --background-color: #f8f9fa;
+    --border-radius: 12px;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
+    font-family: var(--font-1); /* Default font */
+    line-height: 1.5;
+    color: var(--text-color);
+    background: var(--background-color);
+  }
+  
+  /* Square Grid System */
+  .gridcontainer1,
+  .gridcontainer3,
+  .gridcontainer4,
+  .gridcontainerb {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+  
+  .gridcontainer1 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+  .gridcontainer3 { grid-template-columns: repeat(3, 1fr); }
+  .gridcontainer4 { grid-template-columns: repeat(4, 1fr); }
+  .gridcontainerb { grid-template-columns: repeat(3, 1fr); }
+  
+  /* Square Items */
+  .griditemb,
+  .itemb {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Square Photos */
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Font Options as Classes */
+  .fontTheme1 { font-family: var(--font-1); }
+  .fontTheme2 { font-family: var(--font-2); }
+  .fontTheme3 { font-family: var(--font-3); }
+  
+  /* Media Queries */
+  @media (max-width: 800px) {
+    .container {
+      --border-radius: 8px;
+    }
+    
+    .gridcontainer1,
+    .gridcontainer3,
+    .gridcontainer4,
+    .gridcontainerb {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      font-size: 15px;
+    }
+    
+    .gridcontainer1,
+    .gridcontainer3,
+    .gridcontainer4,
+    .gridcontainerb {
+      grid-template-columns: 1fr;
+    }
+  }
