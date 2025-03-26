@@ -29,7 +29,7 @@ const Home = () => {
   
         <link rel="icon" href="/favicon.ico" />
       </head>{" "}
-      <div className={styles.container} id="parent"> 
+      {/* <div className={styles.container} id="parent">  */}
       <div className={styles.gridcontainer1} >
 
         {/* <Script
@@ -75,8 +75,7 @@ const Home = () => {
         </Link>
         <Link href="./about" passHref>
           <div className={styles.griditem1}>
-          <RevolvingGLBPage glbFile="/dfl-loading3.glb"     style={{ width: '90%', height: '70vh'}} />
-            <h2> Think this 3D logo is cool?</h2>{" "}
+          <RevolvingGLBPage  /> <h2> Think this 3D logo is cool?</h2>{" "}
             <h3>Let us make you one for an Ad on our site! Contact us today!</h3>
           </div>
         </Link>
@@ -98,7 +97,7 @@ const Home = () => {
       <ContentCard />
   <RecipeList />
   
-  <div className={styles.gridcontainer4}>
+<div className={styles.gridcontainer4}>
   
   <Link href="/besttacosinbk" passHref>
     <div className={styles.gridcontainer5}>
@@ -169,20 +168,7 @@ const Home = () => {
       <h2 className={styles.sect3}>In Love with: <br />Cafe Versailles</h2>
     </div>
   </Link>
-  
-  <Link href="/mole" passHref>
-  <div className={styles.gridcontainer5}>
-    <img
-        className={styles.photo}
-        alt="mole"
-  
-        src="https://res.cloudinary.com/adamaslan/image/upload/v1654895312/drinksfoodlife/cdmx1_zm5yyj.jpg"
-    />{" "}
-          <div className={styles.card8}>
-    <h2> On the Love of Mole and Mexico<br />Mole, Mexico, Oh My!</h2>
-    </div>
-  </div>
-  </Link>
+
   </div>
   <div className={styles.gridcontainerb}>
   <Link href="/3valuewines" passHref>
@@ -192,9 +178,9 @@ const Home = () => {
            alt="wine"
             src="/diablo.png"
       />
-      <div className={styles.card9}>
+      {/* <div className={styles.card9}> */}
       <h2>3 High Value <br />Red Wines</h2>
-      </div>
+      {/* </div> */}
     </div>
   </Link> 
   
@@ -205,10 +191,10 @@ const Home = () => {
   alt="mole"
   src="https://res.cloudinary.com/adamaslan/image/upload/v1654900212/drinksfoodlife/cdmx2_u0b4mi.jpg"
   />
-  <div className={styles.card5}>
+  {/* <div className={styles.card5}> */}
   <h2>Getting Deep in Coyoacan</h2>
   <h3>Frida, the Trees, the Food..Life!</h3>
-  </div>
+  {/* </div> */}
   </div>
   </Link>
   
@@ -220,10 +206,8 @@ const Home = () => {
   
         src="https://res.cloudinary.com/adamaslan/image/upload/v1654824690/drinksfoodlife/notes_bovahb.jpg"
       />{" "}
-    </div>
-  </Link>
-  <Link href="/seawolf" passHref>
-    <div className={styles.card6}>
+
+    {/* <div className={styles.card6}> */}
       <h2> Writing Away My Sunny Days at Sea Wolf</h2>
       <h3>Sea Wolf Brings the Boys to the Yard</h3>
     </div>
@@ -236,10 +220,8 @@ const Home = () => {
   
         src="https://res.cloudinary.com/adamaslan/image/upload/v1681154705/drinksfoodlife/frida-diego_fi26ml.jpg"
       />{" "}
-    </div>
-  </Link>
-  <Link href="/naplesbotanicalgardenwelcomesfrida" passHref>
-    <div className={styles.card8}>
+   
+    {/* <div className={styles.card8}> */}
       <h2> Naples Botanical Garden Welcomes Frida and the Casa Azul </h2>
       <h3>
         Celebrating of Art, Nature, and Mexican Culture in Southwest
@@ -247,102 +229,36 @@ const Home = () => {
       </h3>
     </div>
   </Link>
-  <div className={styles.gridcontainerb}>
-
+    
+  <Link href="/mole" passHref>
+  <div className={styles.gridcontainer5}>
+    <img
+        className={styles.photo}
+        alt="mole"
+  
+        src="https://res.cloudinary.com/adamaslan/image/upload/v1654895312/drinksfoodlife/cdmx1_zm5yyj.jpg"
+    />{" "}
+          {/* <div className={styles.card8}> */}
+    <h2> On the Love of Mole and Mexico<br /></h2> <h3>Mole, Mexico, Oh My!</h3>
+    </div>
+  {/* </div> */}
+  </Link>
+  {/* <div className={styles.gridcontainerb}>
+ */}
 
   {/* New Cell 1 */}
-  <Link href="/new-eats-1" passHref>
-    <div className={styles.gridcontainer5}>
-      <img
-        className={styles.photo}
-        src="https://res.cloudinary.com/adamaslan/image/upload/v1654900212/drinksfoodlife/cdmx2_u0b4mi.jpg"
-        alt="new food"
-      />
-      <div className={styles.card10}>
-        <h2>New Culinary Adventures</h2>
-        <h3>Exploring Fresh Flavors</h3>
-      </div>
-    </div>
-  </Link>
+
 
   {/* New Cell 2 */}
-  <Link href="/new-drinks-2" passHref>
-    <div className={styles.gridcontainer5}>
-      <img
-        className={styles.photo}
-        src="https://res.cloudinary.com/adamaslan/image/upload/v1655411125/drinksfoodlife/danburydonkey_mdavxe.jpg"
-        alt="drinks"
-      />
-      <div className={styles.card11}>
-        <h2>Cocktail Chronicles</h2>
-      </div>
-    </div>
-  </Link>
+
 
   {/* New Cell 3 */}
-  <Link href="/new-place-3" passHref>
-    <div className={styles.gridcontainer5}>
-      <img
-        className={styles.photo}
-        src="https://res.cloudinary.com/adamaslan/image/upload/v1681154705/drinksfoodlife/frida-diego_fi26ml.jpg"
-        alt="place"
-      />
-      <div className={styles.card12}>
-        <h2>Hidden Gems</h2>
-        <h3>Secret Spots Revealed</h3>
-      </div>
-    </div>
-  </Link>
-
-  {/* New Cell 4 */}
-  <Link href="/new-culture-4" passHref>
-    <div className={styles.gridcontainer5}>
-      <img
-        className={styles.photo}
-        src="https://res.cloudinary.com/adamaslan/image/upload/v1654729613/drinksfoodlife/fish_ddrxgr.jpg"
-        alt="culture"
-      />
-      <div className={styles.card13}>
-        <h2>Cultural Bites</h2>
-      </div>
-    </div>
-  </Link>
-
-  {/* New Cell 5 */}
-  <Link href="/new-wine-5" passHref>
-    <div className={styles.gridcontainer5}>
-      <img
-        className={styles.photo}
-        src="https://res.cloudinary.com/adamaslan/image/upload/v1678159115/drinksfoodlife/rose_mgk9sv.jpg"
-        alt="wine"
-      />
-      <div className={styles.card14}>
-        <h2>Wine Wonders</h2>
-        <h3>Best Vintage Finds</h3>
-      </div>
-    </div>
-  </Link>
-
-  {/* New Cell 6 */}
-  <Link href="/new-food-6" passHref>
-    <div className={styles.gridcontainer5}>
-      <img
-        className={styles.photo}
-        src="https://res.cloudinary.com/adamaslan/image/upload/v1685058269/tacos1_onlnoj.jpg"
-        alt="food"
-      />
-      <div className={styles.card15}>
-        <h2>Foodie Heaven</h2>
-        <h3>Taste the Magic</h3>
-      </div>
-    </div>
-  </Link>
-</div>
+  {/* </div> */}
   {/* </div> */}
   </div>
   
    </div>
-  </div>
+  // </div>
       
   };
   

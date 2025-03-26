@@ -1,4 +1,4 @@
-/* Layout.module.css */
+Layout.module.css
 /* styles.css */
 .revolving-glb-container {
   width: 100%; /* Full width of the parent */
@@ -189,6 +189,8 @@
     opacity: 0;
     transition: opacity 0.3s ease;
   }
+  
+
   
   .card6 h2 {
     margin: 0 0 10px 0;
