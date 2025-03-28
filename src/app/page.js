@@ -60,7 +60,7 @@ const Home = () => {
         </div>
       </Link>
 
-      <Link href="/sherrycbasedocktailperfectforsummer" passHref>
+      <Link href="/sherrycbasedcktailperfectforsummer" passHref>
         <div className={styles.griditem1}>
           <img
               className="photo"
@@ -73,7 +73,7 @@ const Home = () => {
       </Link>
       <Link href="./about" passHref>
         <div className={styles.griditem1}>
-        <RevolvingGLBPage glbFile="/dfl-loading3.glb"     style={{ width: '90%', height: '70vh'}} />
+        <RevolvingGLBPage glbFile="/dfl-loading3.glb"     style={{ width: '100%', height: '50vh'}} />
           <h2> Think this 3D logo is cool?</h2>{" "}
           <h3>Let us make you one for an Ad on our site! Contact us today!</h3>
         </div>
@@ -96,162 +96,171 @@ const Home = () => {
     <ContentCard />
 <RecipeList />
 {/* Part Three */}
-<div className={styles.gridcontainer4}>
 
-<Link href="/besttacosinbk" passHref>
-  <div className={styles.gridcontainer5}>
-    <img
-        className={styles.photo}
-        src="https://res.cloudinary.com/adamaslan/image/upload/v1685058269/tacos1_onlnoj.jpg"   width="500"
+<div>
+  {/* Grid Container 4 */}
+  <div className="grid grid-cols-2 md:grid-cols-3 gap-5 p-5 max-w-screen-xl mx-auto">
+    <Link href="/besttacosinbk" passHref>
+      <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
+        <img
+          className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+          src="https://res.cloudinary.com/adamaslan/image/upload/v1685058269/tacos1_onlnoj.jpg"
+          alt="food"
+        />
+        <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">
+          <h2 className="text-lg font-semibold mb-2">Taco Poll Brooklyn</h2>
+          <p className="text-sm opacity-90">See the results of our hotly contested poll!</p>
+        </div>
+      </div>
+    </Link>
 
-        alt="food"
-    />
-    <h2 className={styles.sect3}>Taco Poll Brooklyn <br />See the results of our hotly contested poll!</h2>
-  </div>
-</Link>
+    <Link href="/artandfish" passHref>
+      <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
+        <img
+          className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+          src="https://res.cloudinary.com/adamaslan/image/upload/v1654729613/drinksfoodlife/fish_ddrxgr.jpg"
+          alt="food"
+        />
+        <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">
+          <h2 className="text-lg font-semibold mb-2">Art and Fish</h2>
+          <p className="text-sm opacity-90">The Story of Nicole Burko</p>
+        </div>
+      </div>
+    </Link>
 
-<Link href="/artandfish" passHref>
-  <div className={styles.gridcontainer5}>
-    <img
-        className={styles.photo}
-         src="https://res.cloudinary.com/adamaslan/image/upload/v1654729613/drinksfoodlife/fish_ddrxgr.jpg"
-         alt="food"
-    />
-    <h2 className={styles.sect3}>Art and Fish: <br/> The Story of Nicole Burko</h2>
-  </div>
-</Link>
+    <Link href="./stylish-in-aspen-drinking-rose-at-bonnies" passHref>
+      <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
+        <img
+          className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+          src="https://res.cloudinary.com/adamaslan/image/upload/v1678159115/drinksfoodlife/rose_mgk9sv.jpg"
+          alt="Aspen"
+        />
+        <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">
+          <h2 className="text-lg font-semibold mb-2">Awe and Culture in Aspen</h2>
+          <p className="text-sm opacity-90">Whispering Angel Rose at Bonnies</p>
+        </div>
+      </div>
+    </Link>
 
-<Link href="./stylish-in-aspen-drinking-rose-at-bonnies" passHref>
-  <div className={styles.gridcontainer5}>
-    <img
-        className={styles.photo}
-        src="https://res.cloudinary.com/adamaslan/image/upload/v1678159115/drinksfoodlife/rose_mgk9sv.jpg"
-        alt="Aspen"
-    />
-    <h2 className={styles.sect3}>Awe and Culture in Aspen:{" "}<br />
-    Whispering Angel Rose at Bonnies</h2>
-  </div>
-</Link>
-<Link href="/summercocktailspart1" passHref>
-  <div className={styles.gridcontainer5}>
-    <img
-       className={styles.photo}
-        alt='cocktail'
-      src="https://res.cloudinary.com/adamaslan/image/upload/v1655411125/drinksfoodlife/danburydonkey_mdavxe.jpg"
-    />{" "}
-    <h2 className={styles.sect3}> Summer Cocktails Part 1
-    The Danbury Donkey by @chemixtry</h2>{" "}
-  </div>
-</Link>
+    <Link href="/summercocktailspart1" passHref>
+      <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
+        <img
+          className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+          alt="cocktail"
+          src="https://res.cloudinary.com/adamaslan/image/upload/v1655411125/drinksfoodlife/danburydonkey_mdavxe.jpg"
+        />
+        <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">
+          <h2 className="text-lg font-semibold mb-2">Summer Cocktails Part 1</h2>
+          <p className="text-sm opacity-90">The Danbury Donkey by @chemixtry</p>
+        </div>
+      </div>
+    </Link>
 
+    <Link href="/babydaddy" passHref>
+      <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
+        <img
+          className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+          src="https://res.cloudinary.com/adamaslan/image/upload/v1654731696/drinksfoodlife/babydaddy2_u29dmu.png"
+          alt="beer"
+        />
+        <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">
+          <h2 className="text-lg font-semibold mb-2">Baby Daddy Please</h2>
+          <p className="text-sm opacity-90">Baby Daddy is a great choice</p>
+        </div>
+      </div>
+    </Link>
 
-<Link href="/babydaddy" passHref>
-  <div className={styles.gridcontainer5}>
-    <img
-        className={styles.photo}
-        src="https://res.cloudinary.com/adamaslan/image/upload/v1654731696/drinksfoodlife/babydaddy2_u29dmu.png"
-
-        alt="beer"
-    />
-    <h2 className={styles.sect3}>Baby Daddy Please<br />Baby Daddy is a great choice</h2>
-  </div>
-</Link>
-
-<Link href="/cafeversailles" passHref>
-  <div className={styles.gridcontainer5}>
-    <img
-        className={styles.photo}
-         alt="cafe versailles"
+    <Link href="/cafeversailles" passHref>
+      <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
+        <img
+          className="w-full h-64 object-cover"
+          alt="cafe versailles"
           src="/versailles.jpg"
-    />
-    <h2 className={styles.sect3}>In Love with: <br />Cafe Versailles</h2>
+        />
+        <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">
+          <h2 className="text-lg font-semibold">In Love with</h2>
+          <p className="text-sm opacity-90">Cafe Versailles</p>
+        </div>
+      </div>
+    </Link>
   </div>
-</Link>
 
-<Link href="/mole" passHref>
-<div className={styles.gridcontainer5}>
-  <img
-      className={styles.photo}
-      alt="mole"
-
-      src="https://res.cloudinary.com/adamaslan/image/upload/v1654895312/drinksfoodlife/cdmx1_zm5yyj.jpg"
-  />{" "}
-        <div className={styles.card8}>
-  <h2> On the Love of Mole and Mexico<br />Mole, Mexico, Oh My!</h2>
-  </div>
-</div>
-</Link>
-</div>
-<div className={styles.gridcontainerb}>
-<Link href="/3valuewines" passHref>
-  <div className={styles.itemb}>
-    <img
-        className={styles.photo}
-         alt="wine"
+  {/* Grid Container B */}
+  <div className="grid grid-cols-2 md:grid-cols-3 gap-5 p-5 max-w-screen-xl mx-auto">
+    <Link href="/3valuewines" passHref>
+      <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
+        <img
+          className="w-full h-64 object-cover"
+          alt="wine"
           src="/diablo.png"
-    />
-    <div className={styles.card9}>
-    <h2>3 High Value <br />Red Wines</h2>
-    </div>
-  </div>
-</Link> 
+        />
+        <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">
+          <h2 className="text-lg font-semibold">3 High Value Red Wines</h2>
+        </div>
+      </div>
+    </Link>
 
-<Link href="/coyoacan">
-<div className={styles.gridcontainer5}>
-<img
-className={styles.photo}
-alt="mole"
-src="https://res.cloudinary.com/adamaslan/image/upload/v1654900212/drinksfoodlife/cdmx2_u0b4mi.jpg"
-/>
-<div className={styles.card5}>
-<h2>Getting Deep in Coyoacan</h2>
-<h3>Frida, the Trees, the Food..Life!</h3>
+    <Link href="/coyoacan">
+      <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
+        <img
+          className="w-full h-64 object-cover"
+          alt="mole"
+          src="https://res.cloudinary.com/adamaslan/image/upload/v1654900212/drinksfoodlife/cdmx2_u0b4mi.jpg"
+        />
+        <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">
+          <h2 className="text-lg font-semibold mb-2">Getting Deep in Coyoacan</h2>
+          <p className="text-sm opacity-90">Frida, the Trees, the Food..Life!</p>
+        </div>
+      </div>
+    </Link>
+
+    <Link href="/seawolf" passHref>
+      <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
+        <img
+          className="w-full h-64 object-cover"
+          alt="Sea Wolf"
+          src="https://res.cloudinary.com/adamaslan/image/upload/v1654824690/drinksfoodlife/notes_bovahb.jpg"
+        />
+        <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">
+          <h2 className="text-lg font-semibold mb-2">Writing Away My Sunny Days at Sea Wolf</h2>
+          <p className="text-sm opacity-90">Sea Wolf Brings the Boys to the Yard</p>
+        </div>
+      </div>
+    </Link>
+
+    <Link href="/naplesbotanicalgardenwelcomesfrida" passHref>
+      <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
+        <img
+          className="w-full h-64 object-cover"
+          alt="Frida"
+          src="https://res.cloudinary.com/adamaslan/image/upload/v1681154705/drinksfoodlife/frida-diego_fi26ml.jpg"
+        />
+        <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">
+          <h2 className="text-lg font-semibold mb-2">Naples Botanical Garden Welcomes Frida and the Casa Azul</h2>
+          <p className="text-sm opacity-90">Celebrating of Art, Nature, and Mexican Culture in Southwest Florida</p>
+        </div>
+      </div>
+    </Link>
+
+    <Link href="/mole" passHref>
+      <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
+        <img
+          className="w-full h-64 object-cover"
+          alt="mole"
+          src="https://res.cloudinary.com/adamaslan/image/upload/v1654895312/drinksfoodlife/cdmx1_zm5yyj.jpg"
+        />
+        <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">
+          <h2 className="text-lg font-semibold mb-2">On the Love of Mole and Mexico</h2>
+          <p className="text-sm opacity-90">Mole, Mexico, Oh My!</p>
+        </div>
+      </div>
+    </Link>
+  </div>
 </div>
-</div>
-</Link>
+   </div>
 
-<Link href="/seawolf" passHref>
-  <div className={styles.gridcontainer5}>
-    <img
-        className={styles.photo}
-      alt="Sea Wolf"
-
-      src="https://res.cloudinary.com/adamaslan/image/upload/v1654824690/drinksfoodlife/notes_bovahb.jpg"
-    />{" "}
-  </div>
-</Link>
-<Link href="/seawolf" passHref>
-  <div className={styles.card6}>
-    <h2> Writing Away My Sunny Days at Sea Wolf</h2>
-    <h3>Sea Wolf Brings the Boys to the Yard</h3>
-  </div>
-</Link>
-<Link href="/naplesbotanicalgardenwelcomesfrida" passHref>
-  <div className={styles.gridcontainer5}>
-    <img
-        className={styles.photo}
-      alt="Frida"
-
-      src="https://res.cloudinary.com/adamaslan/image/upload/v1681154705/drinksfoodlife/frida-diego_fi26ml.jpg"
-    />{" "}
-  </div>
-</Link>
-<Link href="/naplesbotanicalgardenwelcomesfrida" passHref>
-  <div className={styles.card8}>
-    <h2> Naples Botanical Garden Welcomes Frida and the Casa Azul </h2>
-    <h3>
-      Celebrating of Art, Nature, and Mexican Culture in Southwest
-      Florida
-    </h3>
-  </div>
-</Link>
-
-{/* </div> */}
-</div>
-
- </div>
-
-    
-};
-
-export default Home;
+      
+  };
+  
+  export default Home;
+  
