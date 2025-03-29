@@ -48,15 +48,14 @@ const Home = () => {
       
 {/* Part one */}
 
-      <Link href="./raki" passHref>
+      <Link href="./townbranch-hapenny" passHref>
         <div className={styles.griditem1}>
-          <img
-              className="photo"
+          <img className="photo"
               alt='food'
-            src="https://res.cloudinary.com/adamaslan/image/upload/v1664330111/drinksfoodlife/raki_iaoqaw_b5103d.jpg"
-          />{" "}
-          <h2> On the Love of Raki and Turkish Food</h2>{" "}
-          <h3>Dining at Turkish Grill in Queens</h3>
+            src="/townbranch.jpeg" />{" "}
+          <h2> Transatlantic Collaboration and Sustainability</h2>{" "}
+          <h3>The Story of Town Branch and Ha'Penny </h3>
+         
         </div>
       </Link>
 
@@ -255,6 +254,20 @@ const Home = () => {
         </div>
       </div>
     </Link>
+    <Link href="./raki" passHref>
+    <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
+        <img
+          className="w-full h-64 object-cover"
+              alt='food'
+            src="https://res.cloudinary.com/adamaslan/image/upload/v1664330111/drinksfoodlife/raki_iaoqaw_b5103d.jpg"
+          />{" "}
+          <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">
+          <h2 className="text-lg font-semibold mb-2">On the Love of Raki and Turkish Food</h2>
+          <h3 className="text-sm opacity-90">Dining at Turkish Grill in Queens</h3>
+     
+        </div>
+      </div>
+      </Link>
   </div>
 </div>
    </div>

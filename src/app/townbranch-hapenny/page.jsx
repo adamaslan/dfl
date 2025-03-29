@@ -14,8 +14,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/adamaslan/image/upload/v1654900212/drinksfoodlife/cdmx2_u0b4mi.jpg"
-        />
+          content="/townbranch.jpeg" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.gridcontainer4}>
@@ -30,7 +29,7 @@ export default function Home() {
           <img
             className={styles.photo}
             alt="mole"
-           src="/townbranch1.jpeg"  />
+             src="/townbranch.jpeg"  />
             <p className={styles.caption}>Photo by Adam Aslan</p>
         </div>
     
