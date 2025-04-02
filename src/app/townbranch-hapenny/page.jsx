@@ -88,7 +88,8 @@ export default function Home() {
         spanned generations—these entities fuse Irish heritage with American craft 
         expertise. Lexington Brewing & Distilling Co. revitalizes time-honored practices 
         through upcycling and local sourcing, while Pearse Lyons Distillery preserves a 
-        rich Dublin legacy in a historic setting. The Ha’Penny Spirits range, inspired 
+        rich Dublin legacy in a historic setting. </p>
+        <p>  The Ha’Penny Spirits range, inspired 
         by the iconic Ha’Penny Bridge, encapsulates the spirit of Dublin and the passion 
         for craft, linking these endeavors through a shared commitment to quality, 
         sustainability, and family tradition. This Kentucky-Ireland partnership isn't 
@@ -96,6 +97,9 @@ export default function Home() {
         bourbon innovation elevates Dublin’s wheat-driven whiskey, creating a hybrid that 
         honors both roots.
       </p>
+      <p>
+          For more on the Town Branch and Ha'Penny collaboration visit <a href="https://lexingtonbrewingco.com/whiskey-spirits/hapenny"><u>www.lexingtonbrewingco.com/whiskey-spirits/hapenny</u></a>
+        </p>
 
       <ContentCard />
     </div>
