@@ -47,53 +47,64 @@ const Home = () => {
         `}
         </Script> */}
  
- {/* part 1 */}
-  
-  
-        <Link href="./raki" passHref>
-          <div className={styles.griditem1}>
-            <img
-                className="photo"
-                alt='food'
-              src="https://res.cloudinary.com/adamaslan/image/upload/v1664330111/drinksfoodlife/raki_iaoqaw_b5103d.jpg"
-            />{" "}
-            <h2> On the Love of Raki and Turkish Food</h2>{" "}
-            <h3>Dining at Turkish Grill in Queens</h3>
+ {/* part 1 */} <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 p-5 max-w-6xl mx-auto" id="parent">
+        <Link href="./townbranch-hapenny" className="block">
+          <div className="flex flex-col rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-1">
+            <img 
+              className="w-full h-64 md:h-80 object-cover rounded-t-lg" 
+              alt='food' 
+              src="/townbranch.jpeg" 
+            />
+            <div className="p-4 bg-white">
+              <h2 className="text-xl font-semibold mb-2">Transatlantic Collaboration and Sustainability</h2>
+              <h3 className="text-lg text-gray-700">The Story of Town Branch and Ha'Penny</h3>
+            </div>
           </div>
         </Link>
-  
-        <Link href="/sherrycbasedcktailperfectforsummer" passHref>
-          <div className={styles.griditem1}>
+        
+        <Link href="/sherrycbasedcktailperfectforsummer" className="block">
+          <div className="flex flex-col rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-1">
             <img
-                className="photo"
-                alt='cocktail'
+              className="w-full h-64 md:h-80 object-cover rounded-t-lg"
+              alt='cocktail'
               src="https://res.cloudinary.com/adamaslan/image/upload/v1660751024/drinksfoodlife/grandarmypunch_e9pums.jpg"
-            />{" "}
-            <h2> Summer Cocktails Part 2</h2>{" "}
-            <h3>Grand Army Punch by @chemixtry</h3>
+            />
+            <div className="p-4 bg-white">
+              <h2 className="text-xl font-semibold mb-2">Summer Cocktails Part 2</h2>
+              <h3 className="text-lg text-gray-700">Grand Army Punch by @chemixtry</h3>
+            </div>
           </div>
         </Link>
-        <Link href="./about" passHref>
-          <div className={styles.griditem1}>
-          <RevolvingGLBPage  /> 
-          <h2> Think this 3D logo is cool?</h2>{" "}
-            <h3>Let us make you one for an Ad on our site! Contact us today!</h3>
+        
+        <Link href="./about" className="block">
+          <div className="flex flex-col rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-1">
+            <div className="w-full h-64 md:h-80 border-2 border-blue-500 rounded-t-lg overflow-hidden relative">
+              <RevolvingGLBPage 
+                glbFile="/dfl-loading3.glb" 
+                className="w-full h-full"
+              />
+            </div>
+            <div className="p-4 bg-white">
+              <h2 className="text-xl font-semibold mb-2">Think this 3D logo is cool?</h2>
+              <h3 className="text-lg text-gray-700">Let us make you one for an Ad on our site! Contact us today!</h3>
+            </div>
           </div>
         </Link>
-  
-        <Link href="/northdumplingindimessquare" passHref>
-          <div className={styles.griditem1}>
-          <img
-              className="photo"
-            alt='dumpling'
+        
+        <Link href="/northdumplingindimessquare" className="block">
+          <div className="flex flex-col rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-1">
+            <img
+              className="w-full h-64 md:h-80 object-cover rounded-t-lg"
+              alt='dumpling'
               src="https://res.cloudinary.com/adamaslan/image/upload/v1654718488/drinksfoodlife/northdump1_dptuen.jpg"
-            />{" "}
-            <h2> North Dumpling, the Guru of Dimes Square,</h2>{" "}
-            <h3> Dumplings Shining Brightly on the Lower East Side</h3>
+            />
+            <div className="p-4 bg-white">
+              <h2 className="text-xl font-semibold mb-2">North Dumpling, the Guru of Dimes Square,</h2>
+              <h3 className="text-lg text-gray-700">Dumplings Shining Brightly on the Lower East Side</h3>
+            </div>
           </div>
         </Link>
       </div>
-  
   
       <ContentCard />
   <RecipeList />
