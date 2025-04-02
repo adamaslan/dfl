@@ -10,6 +10,8 @@
 }
 
 
+
+
 @media only screen and (max-width: 600px) {
   .root {
     font-size: 14px;
@@ -22,7 +24,24 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+
+.photo {
+  width: 95%;
+  aspect-ratio: 1/1; /* Ensures square shape */
+  object-fit: contain; /* Preserves image proportions */
+  border-radius: 20px;
+  margin: 1rem auto; /* Centers the image */
+  padding: 0 2.5%; /* Minimal side padding */
+}
+
+@media only screen and (min-width: 801px) {
+  .photo {
+    width: 85%; /* Slightly larger on desktop */
+    max-width: 800px; /* Prevent excessive sizing on large screens */
+  }
+}
+
+/* @media only screen and (max-width: 800px) {
   .photo {
     width: 15em;
     height: 10em;
@@ -40,7 +59,9 @@
     border-radius: 20px;
     margin: 1rem auto;
   }
-}
+} */
+
+
 
 .gridcontainer1 {
   display: grid;
