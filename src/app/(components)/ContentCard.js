@@ -64,7 +64,7 @@ const ContentCard = () => {
                   On the Love of Loose Tea
                 </h2>
                 <p className="mt-3 text-orange-200 font-semibold text-lg italic">
-                  MIA's Best Kept Secret 🫖
+                  Where to find Tea in NYC 🫖
                 </p>
               </div>
             </div>
