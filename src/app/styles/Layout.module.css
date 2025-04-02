@@ -24,22 +24,93 @@
   }
 }
 
-
-.photo {
-  width: 95%;
-  aspect-ratio: 1/1; /* Ensures square shape */
-  object-fit: contain; /* Preserves image proportions */
-  border-radius: 20px;
-  margin: 1rem auto; /* Centers the image */
-  padding: 0 2.5%; /* Minimal side padding */
+/* Container styles */
+.gridcontainer4 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1200px;
 }
 
-@media only screen and (min-width: 801px) {
+/* Header styles */
+.description {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  line-height: 1.3;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Summary text */
+.summary {
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  color: #555;
+}
+
+/* Image container */
+.gridcontainer5 {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Image styling */
+.photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image caption */
+.caption {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  margin-top: -0.5rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .gridcontainer4 {
+    padding: 2rem;
+  }
+  
+  .summary {
+    padding: 0 2rem;
+    font-size: 1.1rem;
+  }
+  
+  .caption {
+    font-size: 1rem;
+    padding: 0 2rem;
+  }
+  
   .photo {
-    width: 85%; /* Slightly larger on desktop */
-    max-width: 800px; /* Prevent excessive sizing on large screens */
+    border-radius: 16px;
   }
 }
+
+@media (min-width: 1200px) {
+  .gridcontainer4 {
+    gap: 2rem;
+  }
+  
+  .description {
+    margin: 3rem 0;
+  }
+}
+
 
 /* @media only screen and (max-width: 800px) {
   .photo {
@@ -111,7 +182,7 @@
   object-fit: contain;
   border-radius: 20px;
 }
-
+/* 
 .gridcontainer4 {
   display: flex;
   flex-direction: column;
@@ -165,7 +236,7 @@ text-align: center;}
   display: flex;
   flex-direction: column;
   margin: 1rem;
-}
+} */
 
 .griditem1 {
   display: flex;
