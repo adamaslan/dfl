@@ -172,7 +172,7 @@ const Home = () => {
                 alt="beer"
               />
               <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">
-                <h2 className="text-lg font-semibold mb-2">Baby Daddy Please</h2>
+                <h2 className="text-lg font-semibold mb-2">Baby Daddy Beer</h2>
                 <p className="text-sm opacity-90">Baby Daddy is a great choice</p>
               </div>
             </div>
