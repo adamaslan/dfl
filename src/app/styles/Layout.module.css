@@ -45,7 +45,7 @@
 
 /* Summary text */
 .summary {
-  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  font-size: clamp(1.5rem, 2.5vw, 1.5rem);
   line-height: 1.6;
   max-width: 800px;
   margin: 0 auto;
@@ -75,7 +75,7 @@
 /* Image caption */
 .caption {
   font-size: 0.9rem;
-  color: #666;
+  color: #131313;
   text-align: center;
   margin-top: -0.5rem;
   padding: 0 1rem;
@@ -88,7 +88,7 @@
   
   .summary {
     padding: 0 2rem;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
   }
   
   .caption {

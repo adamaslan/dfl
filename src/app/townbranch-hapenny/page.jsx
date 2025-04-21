@@ -9,7 +9,7 @@ const FIRST_IMAGE = {
   alt: 'Town Branch and Ha\'Penny distillery collaboration',
   width: 1200,
   height: 630,
-  credit: 'Photo by Adam Aslan'
+  credit: 'Article by Adam Aslan'
 };
 
 export const metadata = {
