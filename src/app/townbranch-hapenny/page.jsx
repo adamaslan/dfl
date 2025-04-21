@@ -5,7 +5,7 @@ import headerStyles from "../styles/Header.module.css";
 // Shared constants
 const PAGE_TITLE = 'Transatlantic Collaboration and Sustainability: The Story of Town Branch and Ha\'Penny';
 const FIRST_IMAGE = {
-  path: '/townbranch.jpeg',
+  path: '/happeny2b.jpg',
   alt: 'Town Branch and Ha\'Penny distillery collaboration',
   width: 1200,
   height: 630,
