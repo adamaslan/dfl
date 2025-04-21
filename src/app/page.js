@@ -36,7 +36,7 @@ const Home = () => {
         <img 
           className="w-full h-64 md:h-80 object-cover transform transition-all duration-500 group-hover:scale-105"
           alt='food' 
-          src="/townbranch.jpeg" 
+          src="/happeny2.jpg" 
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30"></div>
       </div>
