@@ -100,9 +100,15 @@ const Home = () => {
   </Link>
 </div>
     
+
+
+
       {/* Part Two */}
       <ContentCard />
       <RecipeList />
+
+
+    
       
       {/* Part Three */}
       <div>
