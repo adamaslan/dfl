@@ -82,19 +82,19 @@ const Home = () => {
     </div>
   </Link>
 
-  <Link href="/northdumplingindimessquare" className="block group">
+  <Link href="/the-most-fun-conventions" className="block group">
     <div className="flex flex-col rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5">
       <div className="relative overflow-hidden">
         <img
           className="w-full h-64 md:h-80 object-cover transform transition-all duration-500 group-hover:scale-105"
-          alt='dumpling'
-          src="https://res.cloudinary.com/adamaslan/image/upload/v1654718488/drinksfoodlife/northdump1_dptuen.jpg"
+          alt='fest'
+          src="/fest1.png"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30"></div>
       </div>
       <div className="p-4 bg-amber-100 transition-colors duration-300 group-hover:bg-orange-100">
-        <h2 className="text-xl font-semibold mb-2 text-gray-800">North Dumpling, the Guru of Dimes Square,</h2>
-        <h3 className="text-lg text-gray-600">Dumplings Shining Brightly on the Lower East Side</h3>
+        <h2 className="text-xl font-semibold mb-2 text-gray-800">The Most Fun...Conventions</h2>
+        <h3 className="text-lg text-gray-600">Shining a light on the road to the most fun conventions in the world</h3>
       </div>
     </div>
   </Link>
@@ -155,6 +155,22 @@ const Home = () => {
               </div>
             </div>
           </Link>
+         
+
+  <Link href="/northdumplingindimessquare" passHref>
+            <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
+              <img
+                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                alt="cocktail"
+                src="https://res.cloudinary.com/adamaslan/image/upload/v1654718488/drinksfoodlife/northdump1_dptuen.jpg"
+       />
+              <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">
+                <h2 className="text-lg font-semibold mb-2">North Dumpling, the Guru of Dimes Square,</h2>
+                <p className="text-sm opacity-90">Dumplings Shining Brightly on the Lower East Side</p>
+              </div>
+            </div>
+          </Link>
+
 
           <Link href="/summercocktailspart1" passHref>
             <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
@@ -184,19 +200,7 @@ const Home = () => {
             </div>
           </Link>
 
-          <Link href="/cafeversailles" passHref>
-            <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
-              <img
-                className="w-full h-64 object-cover"
-                alt="cafe versailles"
-                src="/versailles.jpg"
-              />
-              <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">
-                <h2 className="text-lg font-semibold">In Love with</h2>
-                <p className="text-sm opacity-90">Cafe Versailles</p>
-              </div>
-            </div>
-          </Link>
+       
         </div>
 
         {/* Grid Container B */}
@@ -280,6 +284,19 @@ const Home = () => {
               <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">
                 <h2 className="text-lg font-semibold mb-2">On the Love of Raki and Turkish Food</h2>
                 <h3 className="text-sm opacity-90">Dining at Turkish Grill in Queens</h3>
+              </div>
+            </div>
+          </Link>
+          <Link href="/cafeversailles" passHref>
+            <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
+              <img
+                className="w-full h-64 object-cover"
+                alt="cafe versailles"
+                src="/versailles.jpg"
+              />
+              <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">
+                <h2 className="text-lg font-semibold">In Love with</h2>
+                <p className="text-sm opacity-90">Cafe Versailles</p>
               </div>
             </div>
           </Link>
