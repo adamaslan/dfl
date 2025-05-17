@@ -80,6 +80,13 @@ When & Where: June 10th - 11th, Industry City, Brooklyn, NY</h2>
         </p>
       <p>Whether you're a seasoned industry professional or a passionate enthusiast, these conventions offer unparalleled opportunities to taste, learn, and connect with the vibrant world of spirits and cocktail culture.</p>
 
+
+      <h2>RAW WINE</h2>
+      <p>Held in major cities globally, including London, Berlin, New York, Los Angeles, Montréal, Toronto, Paris, Copenhagen, and Tokyo, the RAW WINE fairs serve as a tangible gathering point for the RAW WINE Community. These events offer attendees a unique opportunity to connect with some of the wine world's most notable producers and sample their distinctive creations – wines celebrated for their purity, environmental consciousness, potential health benefits, and exceptional taste.</p>
+      <p>
+        For more on RAW WINE click <a href="https://www.rawwine.com/fairs"><u>here</u></a>
+      </p>
+
       <ContentCard />
     </div>
   );
