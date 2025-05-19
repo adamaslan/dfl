@@ -3,7 +3,7 @@ import ContentCard from "../(components)/ContentCard";
 import headerStyles from "../styles/Header.module.css";
 
 // Shared constants
-const PAGE_TITLE = 'The Most Fun...Conventions in the World';
+const PAGE_TITLE = 'The Most Fun...Conventions in 2025';
 const FIRST_IMAGE = {
   path: '/fest1.png',
   alt: 'Fun Fest',
@@ -85,6 +85,13 @@ When & Where: June 10th - 11th, Industry City, Brooklyn, NY</h2>
       <p>Held in major cities globally, including London, Berlin, New York, Los Angeles, Montréal, Toronto, Paris, Copenhagen, and Tokyo, the RAW WINE fairs serve as a tangible gathering point for the RAW WINE Community. These events offer attendees a unique opportunity to connect with some of the wine world's most notable producers and sample their distinctive creations – wines celebrated for their purity, environmental consciousness, potential health benefits, and exceptional taste.</p>
       <p>
         For more on RAW WINE click <a href="https://www.rawwine.com/fairs"><u>here</u></a>
+      </p>
+
+      <h2>New York City Wine & Food Festival (NYCWFF) -
+      When & Where: October 16th-19th, 2025, Various Locations, New York, NY</h2>
+      <p>The New York City Wine & Food Festival stands as one of the nation's largest food and beverage events, bringing together world-renowned chefs, culinary personalities, and wine and spirits producers for four days of tastings, demonstrations, and exclusive dining experiences. With over 80 events spread across the city, NYCWFF offers attendees unprecedented access to culinary masters while supporting important causes—100% of the festival's net proceeds benefit food-related charities. From intimate dinners prepared by Michelin-starred chefs to grand tastings featuring hundreds of vendors, the festival showcases the diversity and innovation of the culinary world in America's food capital.</p>
+      <p>
+        For more on NYCWFF click <a href="https://nycwff.org/"><u>here</u></a>
       </p>
 
       <ContentCard />

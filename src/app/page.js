@@ -82,7 +82,7 @@ const Home = () => {
     </div>
   </Link>
 
-  <Link href="/the-most-fun-conventions" className="block group">
+  <Link href="/the-most-fun-conventions-in-2025" className="block group">
     <div className="flex flex-col rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5">
       <div className="relative overflow-hidden">
         <img
@@ -93,7 +93,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30"></div>
       </div>
       <div className="p-4 bg-amber-100 transition-colors duration-300 group-hover:bg-orange-100">
-        <h2 className="text-xl font-semibold mb-2 text-gray-800">The Most Fun...Conventions</h2>
+        <h2 className="text-xl font-semibold mb-2 text-gray-800">The Most Fun...Conventions in 2025</h2>
         <h3 className="text-lg text-gray-600">Shining a light on the road to the most fun conventions in the world</h3>
       </div>
     </div>
