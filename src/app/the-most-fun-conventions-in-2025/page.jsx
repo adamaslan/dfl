@@ -93,6 +93,13 @@ When & Where: June 10th - 11th, Industry City, Brooklyn, NY</h2>
       <p>
         For more on NYCWFF click <a href="https://nycwff.org/"><u>here</u></a>
       </p>
+      
+      <h2>Honerable Mention:</h2>
+
+      <h2>WhiskyFest New York 2025</h2>
+      <h2>Hoochenanny Whiskey & Music Festival 2025</h2>
+
+
 
       <ContentCard />
     </div>
