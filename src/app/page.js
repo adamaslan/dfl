@@ -88,7 +88,7 @@ const Home = () => {
         <img
           className="w-full h-64 md:h-80 object-cover transform transition-all duration-500 group-hover:scale-105"
           alt='fest'
-          src="/fest1.png"
+          src="/bc.png"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30"></div>
       </div>

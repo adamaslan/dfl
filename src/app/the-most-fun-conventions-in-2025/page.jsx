@@ -5,11 +5,11 @@ import headerStyles from "../styles/Header.module.css";
 // Shared constants
 const PAGE_TITLE = 'The Most Fun...Conventions in 2025';
 const FIRST_IMAGE = {
-  path: '/fest1.png',
+  path: '/bc.png',
   alt: 'Fun Fest',
   width: 1200,
   height: 630,
-  credit: 'Article by Adam Aslan'
+  credit: 'Article by Adam Aslan. Photo courtesy of KAMIKI WHISKY'
 };
 
 export const metadata = {
