@@ -43,6 +43,7 @@ export default function Home() {
         <p>
           For more on Amaro Montenegro visit <a href="http://www.amaromontenegro.com"><u>www.amaromontenegro.com</u></a>
         </p>
+        <p>Drinks Food Life did recieve a free sample of Amaro Montenegro but was not paid to promote the event.</p>
       </div>
       <ContentCard />
     </>
