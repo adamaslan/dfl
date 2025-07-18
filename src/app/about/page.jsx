@@ -29,18 +29,19 @@ export default function Home() {
               />{" "}
             </div> */} 
           </p>
+          <p>Drinks Food Life is a tech-forward media company based in New York City. Leveraging API development and AI pipelines, DFL is always looking for the next avenue to disrupt traditional media in the attention economy. </p>
           <br />
           {/* className="revolving-glb-container" */}
 <p>Looking to add some pop to your website? Let us help you! Email us at drinksfoodlife@gmail.com or contact us on instagram @drinksfoodlife</p>
 
           <p>
           <RevolvingGLBPage glbFile="/dfl-loading3.glb"     style={{ width: '90%', height: '70vh'}} />
-            Founded with the desire to focus on drinks and food, but then life
-            in its most general yet effervescent spirit came through. On came the articles on Frida, on Botanical Gardens, on Skiing, and even on Spear Fishing!  
-          </p>
-          <p>We have
-            had contributions from @chemixtry, @journeyswithjaphe , Loic Luspo,
-            @omlettehoe, @cosmicveggie and others.</p>
+
+  Founded with a desire to focus on drinks and food, the project quickly evolved as life—in its most general yet effervescent spirit—began to pour through. Soon came articles on Frida, on Botanical Gardens, on Skiing, and even on Spear Fishing! What began as a niche exploration has grown into a vibrant mosaic of culture, curiosity, and lived experience.
+</p>
+<p>
+  We’ve been fortunate to feature contributions from @chemixtry, @journeyswithjaphe, Loic Luspo, @omlettehoe, @cosmicveggie, and others, each bringing their unique voice and perspective to the mix.
+</p>
           <h4>
             Please follow us on Instagram{" "}
             <a
