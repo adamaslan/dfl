@@ -114,6 +114,20 @@ const Home = () => {
       <div>
         {/* Grid Container 4 */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-5 p-5 max-w-screen-xl mx-auto">
+            <Link href="/tasty-tech-bytes" passHref>             
+    <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">               
+      <img                 
+        className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"                 
+        src="/restoration.png"                 
+        alt="Technology and AI development resources"               
+      />               
+      <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">                 
+        <h2 className="text-lg font-semibold mb-2">Introducing Tasty Tech Bytes</h2>                 
+        <p className="text-sm opacity-90">Your guide to AI and modern development insights!</p>               
+      </div>             
+    </div>           
+  </Link>
+
           <Link href="/besttacosinbk" passHref>
             <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
               <img
