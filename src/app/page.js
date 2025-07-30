@@ -47,7 +47,7 @@ const Home = () => {
     </div>
   </Link>
 
-  <Link href="/sherrycbasedcktailperfectforsummer" className="block group">
+  <Link href="/perfect-nyc-summer-cocktail" className="block group">
     <div className="flex flex-col rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5">
       <div className="relative overflow-hidden">
         <img
