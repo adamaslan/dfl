@@ -30,9 +30,9 @@ export default function Home() {
             </div> */} 
           </p>
           <p>Drinks Food Life is a tech-forward media company based in New York City. Leveraging API development and AI pipelines, DFL is always looking for the next avenue to disrupt traditional media in the attention economy. </p>
-          <br />
+          <br /> <br /> 
           {/* className="revolving-glb-container" */}
-<p>Looking to add some pop to your website? Let us help you! Email us at drinksfoodlife@gmail.com or contact us on instagram @drinksfoodlife</p>
+<p>Drag and interact with our custom 3D logo! Looking to add some pop to your website? Wanting to integrate more AI into your business? Let us help you. We have solutions for businesses with 1 to 10000 employees! Email us at drinksfoodlife@gmail.com or contact us on instagram @drinksfoodlife</p>
 
           <p>
           <RevolvingGLBPage glbFile="/dfl-loading3.glb"     style={{ width: '90%', height: '70vh'}} />
