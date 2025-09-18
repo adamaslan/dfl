@@ -75,3 +75,10 @@ path/to/largefile.extension
 path/to/folder/
 
 .env
+
+
+# gemini-cli settings
+.gemini/
+
+# GitHub App credentials
+gha-creds-*.json
