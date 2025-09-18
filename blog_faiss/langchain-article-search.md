@@ -48,7 +48,8 @@ The system demonstrates:
 - This suggests the process was manually stopped during execution
 
 ## Files Generated
-- `embeddings.csv`: Contains article embeddings
+- `embeddings.
+csv`: Contains article embeddings
 - `vector_store.pkl`: Serialized FAISS vector store
 - `embeddings_and_texts.csv`: Combined embeddings and text data
 
