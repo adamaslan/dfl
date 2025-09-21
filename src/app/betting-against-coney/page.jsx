@@ -9,14 +9,14 @@ const FIRST_IMAGE = {
   alt: 'A view of the Coney Island boardwalk and amusement park.',
   width: 1200,
   height: 630,
-  credit: 'Article by Michele Schultz'
+  credit: 'Photo by Michele Schultz'
 };
 const SECOND_IMAGE = {
   path: '/coney2.jpg',
   alt: 'A view of the Coney Island boardwalk and amusement park.',
   width: 1200,
   height: 630,
-  credit: 'Article by Michele Schultz'
+  credit: 'Photo by Michele Schultz'
 };
 
 export const metadata = {
