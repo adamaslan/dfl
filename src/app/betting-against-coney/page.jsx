@@ -4,12 +4,17 @@ import headerStyles from "../styles/Header.module.css";
 
 // Shared constants
 const PAGE_TITLE = 'Betting Against Coney: Community Fights Back on Proposed Casino Development';
+
 const FIRST_IMAGE = {
   path: '/coney1.jpg',
   alt: 'A view of the Coney Island boardwalk and amusement park.',
   width: 1200,
   height: 630,
   credit: 'Photo by Michele Schultz'
+};
+
+const AUTHOR_INFO = {
+  name: 'Michele Schultz'
 };
 const SECOND_IMAGE = {
   path: '/coney2.jpg',
@@ -54,7 +59,11 @@ export default function Home() {
 
       <div className={styles.summary}>
         {metadata.description}
+          <div className={styles.authorCaption}><br />
+        <p>Written by {AUTHOR_INFO.name}</p>
       </div>
+      </div>
+      
 
       <div className={styles.gridcontainer5}>
         <img
@@ -66,6 +75,7 @@ export default function Home() {
         />
         <p className={styles.caption}>{FIRST_IMAGE.credit}</p>
       </div>
+    
 
       <p>
         In a bold move that could reshape New York's iconic Coney Island, a billionaire developer's casino proposal has gained approval from the New York City Council on a rezoning plan that would remap the local streets. The latest Community Advisory Committee (CAC) public hearing reveals rising opposition, and legal challenges that could threaten to derail this development.
