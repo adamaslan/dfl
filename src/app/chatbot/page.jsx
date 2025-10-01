@@ -12,6 +12,7 @@ import AstroChatbot from '../(components)/Chatbot2';
 // import Chatbot3 from '../(components)/Chatbot3';
 // import ChatApp from '../(components)/Chatbot4';
 import ChatApp1 from '../(components)/Chatbot4';
+import Chatbot6 from '../(components)/Chatbot6';
 export default function Home() {
   return (
     <>
@@ -41,11 +42,12 @@ export default function Home() {
             src="/babydaddy.jpg"
           />
         </div>
-        <ChatApp1 />
+        {/* {/* <ChatApp1 /> */}
         {/* <ChatApp /> */}
         {/* <Chatbot3 /> */}
         {/* <Chat/> */}
-        <AstroChatbot />
+        {/* <AstroChatbot /> */} 
+        <Chatbot6 />
 
       </div>
 
