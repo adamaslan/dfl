@@ -4,6 +4,16 @@
 
 This guide covers setting up NextAuth (Auth.js v5) with GitHub, Google, and Email authentication on Vercel, including Captcha protection for email sign-ins. The workflow uses Next.js 14+ with App Router, PostgreSQL on Neon, Prisma ORM, and Resend for email delivery.
 
+## Resources 
+
+### NextJS Auth docs
+
+https://nextjs.org/docs/pages/guides/authentication
+
+- good diagram
+
+![Auth with Next JS](public/auth1.jpg "Next JS Auth Workflow")
+
 ## Core Architecture
 
 The authentication system consists of several key components:
