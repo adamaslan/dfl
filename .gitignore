@@ -82,3 +82,4 @@ path/to/folder/
 
 # GitHub App credentials
 gha-creds-*.json
+/src/generated/prisma

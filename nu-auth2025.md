@@ -8,7 +8,7 @@ This guide covers setting up NextAuth (Auth.js v5) with GitHub, Google, and Emai
 
 ### NextJS Auth docs
 
-https://nextjs.org/docs/pages/guides/authentication
+https://nextjs.org/docs/app/guides/authentication
 
 - good diagram
 

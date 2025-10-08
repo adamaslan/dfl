@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@auth/prisma-adapter": "^2.10.0",
+    "@prisma/client": "^6.17.0",
     "framer-motion": "^12.4.7",
     "next": "14.2.18",
+    "next-auth": "^5.0.0-beta.29",
     "papaparse": "^5.5.1",
+    "prisma": "^6.17.0",
     "react": "^18",
     "react-dom": "^18",
     "recharts": "^2.13.3",
