@@ -335,6 +335,12 @@ const Home = () => {
             </div>
           </Link>
         </div>
+        <Link
+  href="/login"
+  className="fixed bottom-6 right-6 bg-blue-600 text-white font-medium rounded-xl px-6 py-3 shadow-lg hover:bg-blue-700 transition"
+>
+  Sign In
+</Link>
       </div>
     </div>
   );
