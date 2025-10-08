@@ -185,14 +185,6 @@ You should see a success message confirming the tables were created.
 3. Wait for the project to be created (takes a few seconds)
 4. Select your new project from the project dropdown
 
-### Enable Required APIs
-
-Google OAuth requires the Google+ API to be enabled:
-
-1. In the left sidebar, go to "APIs & Services" → "Library"
-2. Search for "Google+ API"
-3. Click on it and press "Enable"
-
 ### Configure OAuth Consent Screen
 
 Before creating credentials, you need to configure the consent screen:
@@ -306,13 +298,26 @@ import Google from "next-auth/providers/google"
 import { PrismaAdapter } from "@auth/prisma-adapter"
 import { prisma } from "@/lib/prisma"
 
+// Validate required environment variables
+const requiredEnvVars = {
+  AUTH_GOOGLE_ID: process.env.AUTH_GOOGLE_ID,
+  AUTH_GOOGLE_SECRET: process.env.AUTH_GOOGLE_SECRET,
+  AUTH_SECRET: process.env.AUTH_SECRET,
+}
+
+for (const [key, value] of Object.entries(requiredEnvVars)) {
+  if (!value) {
+    throw new Error(`Missing required environment variable: ${key}`)
+  }
+}
+
 export const { handlers, signIn, signOut, auth } = NextAuth({
   adapter: PrismaAdapter(prisma),
   
   providers: [
     Google({
-      clientId: process.env.AUTH_GOOGLE_ID!,
-      clientSecret: process.env.AUTH_GOOGLE_SECRET!,
+      clientId: process.env.AUTH_GOOGLE_ID,
+      clientSecret: process.env.AUTH_GOOGLE_SECRET,
     }),
   ],
 
@@ -953,7 +958,7 @@ Now that you have Google OAuth working, you can:
 
 ## Additional Resources
 
-- [NextAuth.js Documentation](https://authjs.dev)
+- [Auth.js Documentation](https://authjs.dev/getting-started/installation?framework=next.js)
 - [Google OAuth Documentation](https://developers.google.com/identity/protocols/oauth2)
 - [Prisma Documentation](https://www.prisma.io/docs)
 - [Vercel Documentation](https://vercel.com/docs)
