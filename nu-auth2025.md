@@ -18,6 +18,8 @@ The authentication system consists of several key components:
 
 **Security Layer**: Cloudflare Turnstile provides Captcha verification for email sign-ins to prevent spam and bot abuse.
 
+***Email Delivery for verification with email initially
+
 ## Simplified Alternative Workflows
 
 ### Alternative 1: Vercel-Native Email (Easiest)
@@ -29,6 +31,8 @@ Instead of using Resend separately, you can use Vercel's built-in email service 
 **Setup Process**: Enable Email in Vercel project settings under the Integrations tab. Vercel automatically provisions a Resend account and handles API keys. Use the Vercel email provider in NextAuth instead of Resend directly. Environment variables are managed automatically by Vercel.
 
 **Tradeoff**: Less control over email customization and you're locked into Vercel's email infrastructure.
+
+https://vercel.com/marketplace/resend
 
 ### Alternative 2: Supabase Auth (Complete Platform)
 
