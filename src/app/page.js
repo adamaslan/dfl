@@ -82,19 +82,19 @@ const Home = () => {
     </div>
   </Link>
 
- <Link href="/betting-against-coney" className="block group">
-  <div className="flex flex-col rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5">
+  <Link href="/new-day-for-coney-island" className="block group">
+    <div className="flex flex-col rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5">
       <div className="relative overflow-hidden">
         <img 
           className="w-full h-64 md:h-80 object-cover transform transition-all duration-500 group-hover:scale-105"
-          alt='fest'
-          src="/coney1.jpg"
+          alt='A view of the Coney Island boardwalk and amusement park at sunrise.' 
+          src="/coney4.jpg" 
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30"></div>
       </div>
-      <div className="p-4 bg-amber-100 transition-colors duration-300 group-hover:bg-orange-100">
-        <h2 className="text-xl font-semibold mb-2 text-gray-800">Betting Against Coney</h2>
-        <h3 className="text-lg text-gray-600">Community Fights Back on Proposed Casino Development</h3>
+      <div className="p-4 bg-gray-100 transition-colors duration-300 hover:bg-gray-200">
+        <h2 className="text-xl font-semibold mb-2 text-gray-800">New Day Rises Over Coney Island: Casino Proposal Rejected</h2>
+        <h3 className="text-lg text-gray-600">Community Celebrates Victory Against Casino Development</h3>
       </div>
     </div>
   </Link>
@@ -334,6 +334,19 @@ const Home = () => {
               </div>
             </div>
           </Link>
+ <Link href="/betting-against-coney" passHref>
+  <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
+      <img 
+          className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+          alt='fest'
+          src="/coney1.jpg"
+        />
+      <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">
+        <h2 className="text-lg font-semibold mb-2">Betting Against Coney</h2>
+        <p className="text-sm opacity-90">Community Fights Back on Proposed Casino Development</p>
+      </div>
+    </div>
+  </Link>
         </div>
         <Link
   href="/login"
