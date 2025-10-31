@@ -70,13 +70,14 @@ export default function Home() {
         <p className={styles.caption}>{FIRST_IMAGE.credit}</p>
       </div>
 
-      <p>
+     <p>
         A wave washed over Coney Island after a decisive “no” vote by the Community Advisory Committee (CAC) officially sank the $3 billion year-round casino proposal. With the high-stakes gaming bid for the seaside boardwalk district officially dead, it ushered in a new day and another tomorrow in a future for the People's Playground.
-      </p>
-
+    “A casino is not appropriate for a residential neighborhood close to schools, close to daycares, close to other businesses,” Coney Island-Brighton Beach Community Board 13 member Kouichi Shirayanagi said, highlighting the rejection. “There's a lot of things that we can have to revitalize Coney Island."
+       </p>
+      
       <h2>A Victory for Culture and Creativity</h2>
       <p>
-        The opposition was not merely against a type of development perceived as antithetical to Coney Island's world-famous, quirky, and storied history. Over a thousand petition signatures were gathered during a series of public hearings, demonstrating unified opposition attributed to a collaboration of artists, local activists, and community members.
+        The opposition was merely against a type of development perceived as antithetical to Coney Island's world-famous, quirky, and extended history. Over a thousand petition signatures were gathered during a series of public hearings, demonstrating unified opposition attributed to a collaboration of artists, local activists, and community members.
       </p>
       <p>
         The project posed a threat to Coney Island's creativity and culture, and opposition stemmed from collaboration among artists, local activists, and community members, including concerns about future development that would reflect the community's artistic and cultural values, with suggestions for more artistic spaces and community-focused projects.
