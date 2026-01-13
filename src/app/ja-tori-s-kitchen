@@ -1,0 +1,119 @@
+import styles from "../styles/Layout.module.css";
+import ContentCard from "../(components)/ContentCard";
+import headerStyles from "../styles/Header.module.css";
+import { FIRST_IMAGE } from "./FIRST_IMAGE";
+// Shared constants
+const PAGE_TITLE = "Ja Tori's Kitchen: A New Culinary Pop-Up Expansion in South Brooklyn";
+const FIRST_IMAGE = {
+    path: '/5966.jpg',
+    alt: 'Ja Tori\'s Kitchen platter with soul food dish including ribs, mac and cheese.',
+    width: 800
+    height: 600
+    credit: 'Courtesy of Ja Tori\'s Kitchen's
+};
+const AUTHOR_INFO = {
+  name: 'Michele Schultz'
+};
+const SECOND_IMAGE = {
+   path: '/5980.jpg',
+   alt: 'Ja Tori\'s Kitchen chef hold a platter of soul food dish includes fried chicken',
+   width: 800,
+   height: 600,
+   credit: 'Courtesy of Ja Tori\'s Kitchen'
+};
+export const metadata = {
+  title: PAGE_TITLE,
+  description: '',
+  openGraph: {
+    title: PAGE_TITLE,
+    description: '',
+    images: [{
+      url: FIRST_IMAGE.path,
+      width: FIRST_IMAGE.width,
+      height: FIRST_IMAGE.height,
+      alt: FIRST_IMAGE.alt,
+    }],
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: PAGE_TITLE,
+    images: [{
+      url: FIRST_IMAGE.path,
+      alt: FIRST_IMAGE.alt,
+      width: FIRST_IMAGE.width,
+      height: FIRST_IMAGE.height,
+    }]
+  }
+};
+      export default function Home() {
+        return (
+          <div className={styles.gridcontainer4}>
+            <div className={headerStyles.description}>
+              {PAGE_TITLE}<br />
+            </div>
+            <div className={styles.summary}>
+              {metadata.description}
+              <div className={styles.authorCaption}><br />
+                <p>By {AUTHOR_INFO.name}</p>
+              </div>
+            </div>
+      
+            <div className={styles.gridcontainer5}>
+              <img
+                className={styles.photo}
+                alt={FIRST_IMAGE.alt}
+                src={FIRST_IMAGE.path}
+                width={FIRST_IMAGE.width}
+                height={FIRST_IMAGE.height}
+              />
+              <p className={styles.caption}>{FIRST_IMAGE.credit}</p>
+            </div>
+        <p>
+        When asked, the chef and owner of Ja'Tori's Kitchen about any plans for 2026, emphasized a clear focus on supporting the South Brooklyn community and a vision to open a physical brick-and-mortar location of Ja'Tori's Kitchen. Ja'Tori's Kitchen began as a food pop-up, evolving strategically to represent soul food in Coney Island, South Brooklyn.
+          </p>
+
+        <p>
+         “It really went from literally just a quick idea,” Erica, chef-owner of Ja’Tori’s Kitchen, said, describing the spontaneous origin and success of the food pop-up, which led to the formal LLC, while outlining dual goals of business growth and community support.
+         “I want to expand and grow from a home-based company to a storefront— I want to do more give-backs to the Coney Island community as well.” 
+          </p>
+
+        <p>
+         Ja’Tori Kitchen is one of the entrants for the Coney Island Spark $2,000 microgrant, which awards three small businesses physically located in the Coney Island zip code. Grants are intended to help three selected applicants cover start-up expenses, such as licenses, supplies, first inventory, marketing, the security deposit, and other immediate needs that will enable a storefront, service, or creative pop-up to open and serve the neighborhood.
+          </p>
+
+        <p>
+        The passion for cooking served as an ingredient to Ja'Tori's Kitchen, which first originated when the owner-chef pretended to host her own cooking show at the age of 8 or 9 in her mother's kitchen. Her comfort in the kitchen has often been cooking for friends who visited her home, her culinary style was influenced by a desire to bring international cuisines locally, and her family-oriented upbringing, where large meals, particularly Sunday dinners, were a staple.
+          </p>
+
+        <p>
+        The initiation of Ja'Tori Kitchen started as a pop-up called Ja'Tori's Friday Kitchen to rebrand as it's known now, Ja'Tori's Kitchen, a full culinary LLC service to reflect an expansion into lunch specials, catering (e.g., school events, weddings), and more. 
+          </p>
+
+        <p>
+         The importance of quality over quantity, which Ja’Tori’s Kitchen chef-owner highlighted the menu items include spices and flavors of different cultures, aiming to bring international dishes from places like e.g., Italy and Africa to New York. Owner and chef emphasizes exploring healthier options, such as meal prepping, exploring vegan and pescatarian dishes to cater the modern dietary trends. 
+          </p>
+
+        <p>
+         A core mission of Ja'Tori's Kitchen is to bring the community together and provide support through food, with plans to give out meals to the homeless and families in South Brooklyn.
+          </p>
+
+        <p>
+         “We all come from different backgrounds and different stories, but a home cooked meal could make someone's day,” Erica, chef-owner of Ja’Tori’s Kitchen said, emphasizing her philanthropic spirit of Ja'Tori's Kitchen. 
+         “I'm not saying to do it through food— everyone needs a meal and that's something that I want to bring to my community.”
+          </p>
+
+      <div className={styles.gridcontainer5}>
+        <img
+          className={styles.photo}
+          alt={SECOND_IMAGE.alt}
+          src={SECOND_IMAGE.path}
+          width={SECOND_IMAGE.width}
+          height={SECOND_IMAGE.height}
+        />
+        <p className={styles.caption}>{SECOND_IMAGE.credit}</p>
+      </div>
+      <ContentCard />
+    </div>
+  );
+}
