@@ -129,6 +129,26 @@ const Home = () => {
     </div>           
   </Link>
 
+          {/* JA'TORI'S KITCHEN CARD */}
+          <Link href="/jatoris-kitchen" className="block mt-12">
+            <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
+              <img
+                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                src="/5966.jpg"
+                alt="Ja'Tori's Kitchen soul food platter with ribs, mac and cheese"
+              />
+              <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">
+                <h2 className="text-lg font-semibold mb-2">
+                  Ja’Tori’s Kitchen: Soul Food with Heart
+                </h2>
+                <p className="text-sm opacity-90">
+                  From Coney Island pop-up to community staple — discover the story, the flavor, and the vision.
+                </p>
+              </div>
+            </div>
+          </Link>
+
+
           <Link href="/besttacosinbk" passHref>
             <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
               <img
