@@ -129,6 +129,10 @@ const Home = () => {
     </div>           
   </Link>
 
+
+  {/* next article link card goes here */}
+
+
           {/* JA'TORI'S KITCHEN CARD */}
           <Link href="/jatoris-kitchen" className="block mt-12">
             <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
