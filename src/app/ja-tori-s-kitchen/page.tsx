@@ -24,10 +24,10 @@ const SECOND_IMAGE = {
 
 export const metadata = {
   title: PAGE_TITLE,
-  description: "Ja'Tori's Kitchen, a South Brooklyn pop-up, is pursuing a storefront and community-focused expansion including participation in microgrant programs.",
+  description: PAGE_DESCRIPTION "Ja'Tori's Kitchen, a South Brooklyn pop-up, is pursuing a storefront and community-focused expansion including participation in microgrant programs.",
   openGraph: {
     title: PAGE_TITLE,
-    description: "Ja'Tori's Kitchen, a South Brooklyn pop-up, is pursuing a storefront and community-focused expansion including participation in microgrant programs.",
+    description: PAGE_DESCRIPTION "Ja'Tori's Kitchen, a South Brooklyn pop-up, is pursuing a storefront and community-focused expansion including participation in microgrant programs.",
     images: [
       {
         url: FIRST_IMAGE.path,
@@ -68,7 +68,7 @@ export default function Page() {
       </div>
 
       <div className={styles.gridcontainer5}>
-        <img
+        <Image
           className={styles.photo}
           alt={FIRST_IMAGE.alt}
           src={FIRST_IMAGE.path}
@@ -111,7 +111,7 @@ export default function Page() {
       </p>
 
       <div className={styles.gridcontainer5}>
-        <img
+        <Image
           className={styles.photo}
           alt={SECOND_IMAGE.alt}
           src={SECOND_IMAGE.path}
