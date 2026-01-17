@@ -24,10 +24,10 @@ const SECOND_IMAGE = {
 
 export const metadata = {
   title: PAGE_TITLE
-  escription: "Ja'Tori's Kitchen, a South Brooklyn pop-up, is pursuing a storefront and community-focused expansion including participation in microgrant programs.",
+  + description: PAGE_DESCRIPTION "Ja'Tori's Kitchen, a South Brooklyn pop-up, is pursuing a storefront and community-focused expansion including participation in microgrant programs.",
   openGraph: {
     title: PAGE_TITLE,
-    description: "Ja'Tori's Kitchen, a South Brooklyn pop-up, is pursuing a storefront and community-focused expansion including participation in microgrant programs.",
+    + description: PAGE_DESCRIPTION "Ja'Tori's Kitchen, a South Brooklyn pop-up, is pursuing a storefront and community-focused expansion including participation in microgrant programs.",
     images: [
       {
         url: FIRST_IMAGE.path,
