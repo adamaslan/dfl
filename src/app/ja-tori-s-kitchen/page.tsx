@@ -7,15 +7,15 @@ const PAGE_TITLE = "Ja Tori's Kitchen: A New Culinary Pop-Up Expansion in South 
 const AUTHOR_INFO = { name: 'Michele Schultz' };
 
 const FIRST_IMAGE = {
-  path: '/5966.jpg',
-  alt: "Ja Tori's Kitchen platter with soul food dish including ribs, mac and cheese. Yum!",
+  path: '/5980.jpg',
+  alt: "Ja Tori's Kitchen platter with soul food dish including ribs, mac and cheese.",
   width: 800,
   height: 600,
   credit: "Courtesy of Ja Tori's Kitchen",
 };
 
 const SECOND_IMAGE = {
-  path: '/5980.jpg',
+  path: '/5966.jpg',
   alt: "Ja Tori's Kitchen chef holding a platter of soul food that includes fried chicken",
   width: 800,
   height: 600,
