@@ -8,7 +8,7 @@ const AUTHOR_INFO = { name: 'Michele Schultz' };
 
 const FIRST_IMAGE = {
   path: '/5966.jpg',
-  alt: "Ja Tori's Kitchen platter with soul food dish including ribs, mac and cheese.",
+  alt: "Ja Tori's Kitchen platter with soul food dish including ribs, mac and cheese. Yum!",
   width: 800,
   height: 600,
   credit: "Courtesy of Ja Tori's Kitchen",
