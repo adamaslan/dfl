@@ -134,11 +134,11 @@ const Home = () => {
 
 
           {/* JA'TORI'S KITCHEN CARD */}
-          <Link href="/jatoris-kitchen" className="block mt-12">
+          <Link href="/ja-tori-s-kitchen" passHref>
             <div className="relative overflow-hidden rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300">
               <img
                 className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-                src="/5966.jpg"
+                src="/5980.jpg"
                 alt="Ja'Tori's Kitchen soul food platter with ribs, mac and cheese"
               />
               <div className="p-4 absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent text-white">
