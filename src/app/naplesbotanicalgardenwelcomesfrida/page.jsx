@@ -27,7 +27,9 @@ export default function Home() {
             alt="Aspen"
             src="https://res.cloudinary.com/adamaslan/image/upload/v1681154705/drinksfoodlife/frida-diego_fi26ml.jpg"
           />{" "}
+         
         </div>
+        <p>Article by Adam Aslan</p>
         <p>
           The Frida Kahlo Exhibit at the{" "}
           <a href="https://www.naplesgarden.org/">
