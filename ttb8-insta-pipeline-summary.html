@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTB8 & Instagram Content Pipeline Summary</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #764ba2;
+            padding-bottom: 10px;
+        }
+
+        .section h3 {
+            color: #764ba2;
+            font-size: 1.4em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .pipeline-stage {
+            background: #f8f9fa;
+            border-left: 5px solid #667eea;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .pipeline-stage h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .flow-diagram {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .flow-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 30px;
+            border-radius: 8px;
+            text-align: center;
+            min-width: 150px;
+            font-weight: bold;
+        }
+
+        .flow-arrow {
+            font-size: 2em;
+            color: #667eea;
+        }
+
+        .platform-section {
+            background: #f0f4ff;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 2px solid #e0e7ff;
+        }
+
+        .platform-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .platform-icon {
+            font-size: 2em;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 50%;
+            border: 2px solid #667eea;
+        }
+
+        .platform-header h4 {
+            color: #667eea;
+            font-size: 1.3em;
+            margin: 0;
+        }
+
+        .key-features {
+            list-style-position: inside;
+            margin: 15px 0;
+        }
+
+        .key-features li {
+            margin: 10px 0;
+            padding-left: 10px;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline-item {
+            margin-bottom: 30px;
+            padding-left: 40px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background: #667eea;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #667eea;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 20px;
+            width: 4px;
+            height: 30px;
+            background: #667eea;
+        }
+
+        .timeline-item:last-child::after {
+            display: none;
+        }
+
+        .timeline-item h5 {
+            color: #764ba2;
+            margin-bottom: 5px;
+            font-size: 1.05em;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+        }
+
+        .comparison-table th {
+            background: #667eea;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .comparison-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e0e7ff;
+        }
+
+        .comparison-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .checklist li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 30px 40px;
+            text-align: center;
+            border-top: 1px solid #e0e7ff;
+            color: #666;
+        }
+
+        .highlight {
+            background: #fffacd;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        .note {
+            background: #e3f2fd;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .note strong {
+            color: #1976D2;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .flow-diagram {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .flow-arrow {
+                transform: rotate(90deg);
+            }
+
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 TTB8 & Instagram Content Pipeline</h1>
+            <p>Comprehensive Summary of Content Creation & Distribution Workflow</p>
+        </div>
+
+        <div class="content">
+            <!-- Overview Section -->
+            <div class="section">
+                <h2>📋 Pipeline Overview</h2>
+                <p>This document outlines the integrated content creation and distribution pipeline for <strong>Tasty Tech Bytes (TTB8)</strong> and <strong>Instagram</strong>. The pipeline ensures consistent, high-quality content across both platforms with platform-specific optimizations.</p>
+
+                <div class="flow-diagram">
+                    <div class="flow-box">📝 Content Creation</div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-box">✏️ Editorial Review</div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-box">🎨 Adaptation</div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-box">📤 Publishing</div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-box">📊 Analytics</div>
+                </div>
+            </div>
+
+            <!-- Stage 1: Content Creation -->
+            <div class="section">
+                <h2>1️⃣ Content Creation Phase</h2>
+
+                <div class="pipeline-stage">
+                    <h4>Source & Research</h4>
+                    <p>Content originates from multiple sources including:</p>
+                    <ul class="key-features">
+                        <li>Original research and technical explorations</li>
+                        <li>Industry news aggregation and curation</li>
+                        <li>Expert interviews and contributions</li>
+                        <li>Community submissions and feedback</li>
+                        <li>Trending topics in AI, tech, and development</li>
+                    </ul>
+                </div>
+
+                <div class="pipeline-stage">
+                    <h4>Drafting & Outlining</h4>
+                    <p>Writers create comprehensive outlines and first drafts with:</p>
+                    <ul class="key-features">
+                        <li>Clear topic definition and scope</li>
+                        <li>Target audience identification</li>
+                        <li>Key points and learning objectives</li>
+                        <li>Supporting examples and code snippets</li>
+                        <li>Visual asset planning (images, diagrams)</li>
+                    </ul>
+                </div>
+
+                <div class="note">
+                    <strong>Focus Areas for TTB8:</strong> AI advancements, ML techniques, web frameworks, development tools, and career guidance for developers.
+                </div>
+            </div>
+
+            <!-- Stage 2: Editorial Review -->
+            <div class="section">
+                <h2>2️⃣ Editorial Review & Quality Assurance</h2>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h5>Content Review</h5>
+                        <p>Editorial team reviews for accuracy, clarity, and alignment with publication standards</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>Technical Verification</h5>
+                        <p>Code samples are tested, technical claims validated, and dependencies verified</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>SEO & Metadata Optimization</h5>
+                        <p>Keywords, meta descriptions, and titles optimized for search engines and social sharing</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>Visual Assets Preparation</h5>
+                        <p>Images are optimized, diagrams created, and cover graphics designed</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>Approval & Sign-Off</h5>
+                        <p>Content receives final approval for publication across platforms</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stage 3: Platform-Specific Adaptation -->
+            <div class="section">
+                <h2>3️⃣ Platform-Specific Adaptation</h2>
+
+                <div class="platform-section">
+                    <div class="platform-header">
+                        <div class="platform-icon">🌐</div>
+                        <h4>TTB8 Website (tastytechbytes.com)</h4>
+                    </div>
+                    <p><strong>Format:</strong> Full-length articles, tutorials, guides</p>
+                    <ul class="key-features">
+                        <li>Complete article with code blocks and syntax highlighting</li>
+                        <li>In-depth explanations and technical details</li>
+                        <li>Related articles and recommended reading links</li>
+                        <li>Author bio and social links</li>
+                        <li>Newsletter signup integration</li>
+                        <li>Comments and community engagement section</li>
+                    </ul>
+                    <p><strong>Content Structure:</strong></p>
+                    <ul class="key-features">
+                        <li>Compelling headline and cover image</li>
+                        <li>Executive summary or introduction</li>
+                        <li>Table of contents (for long articles)</li>
+                        <li>Structured sections with subheadings</li>
+                        <li>Code examples with explanations</li>
+                        <li>Conclusion with key takeaways</li>
+                        <li>Resources and further reading</li>
+                    </ul>
+                </div>
+
+                <div class="platform-section">
+                    <div class="platform-header">
+                        <div class="platform-icon">📸</div>
+                        <h4>Instagram (@tastytechbytes)</h4>
+                    </div>
+                    <p><strong>Format:</strong> Visual-first content, short-form snippets, carousel posts</p>
+                    <ul class="key-features">
+                        <li>Eye-catching graphics and carousel slides</li>
+                        <li>Key takeaways in digestible snippets</li>
+                        <li>Engaging captions with relevant hashtags</li>
+                        <li>Code snippets in visually appealing formats</li>
+                        <li>Quote graphics from articles</li>
+                        <li>Behind-the-scenes and team content</li>
+                    </ul>
+                    <p><strong>Content Types:</strong></p>
+                    <ul class="key-features">
+                        <li>5-10 slide carousels highlighting article summaries</li>
+                        <li>Single image posts with key takeaways</li>
+                        <li>Infographics explaining tech concepts</li>
+                        <li>Reels featuring quick tips and tutorials (15-60 seconds)</li>
+                        <li>Stories for daily updates and engagement</li>
+                        <li>Poll stickers and interactive elements</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Stage 4: Publishing -->
+            <div class="section">
+                <h2>4️⃣ Publishing & Distribution</h2>
+
+                <h3>TTB8 Website Publishing</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h5>Article Upload</h5>
+                        <p>Article is published to tastytechbytes.com using the CMS (Next.js MDX framework)</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>SEO Index</h5>
+                        <p>Article is indexed for search engines and social media crawlers</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>Newsletter Distribution</h5>
+                        <p>Subscribers notified via email with article summary and link</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>Social Media Announcement</h5>
+                        <p>Article announcement posted to Twitter, LinkedIn, and Instagram</p>
+                    </div>
+                </div>
+
+                <h3>Instagram Publishing</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h5>Content Scheduling</h5>
+                        <p>Instagram posts scheduled using Meta Business Suite or scheduling tool</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>Optimal Timing</h5>
+                        <p>Posts scheduled for peak engagement times (typically 9 AM, 12 PM, 6 PM in target timezone)</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>Caption & Hashtag Strategy</h5>
+                        <p>Captions include clear CTAs, relevant hashtags (#AI #WebDevelopment #TechTips), and article link in bio</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>Engagement Monitoring</h5>
+                        <p>Team monitors comments, responds to inquiries, and engages with followers</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stage 5: Analytics & Optimization -->
+            <div class="section">
+                <h2>5️⃣ Analytics & Performance Tracking</h2>
+
+                <h3>Metrics & KPIs</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Platform</th>
+                            <th>Key Metrics</th>
+                            <th>Tracking Tools</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>TTB8 Website</strong></td>
+                            <td>
+                                • Page views & unique visitors<br>
+                                • Time on page & scroll depth<br>
+                                • Bounce rate<br>
+                                • Click-through rates<br>
+                                • Newsletter signups<br>
+                                • Returning visitor rate
+                            </td>
+                            <td>Google Analytics<br>Hotjar<br>CMS analytics</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Instagram</strong></td>
+                            <td>
+                                • Impressions & reach<br>
+                                • Engagement rate (likes, comments)<br>
+                                • Saves & shares<br>
+                                • Click rate to website<br>
+                                • Follower growth<br>
+                                • Story completion rate
+                            </td>
+                            <td>Instagram Insights<br>Meta Analytics<br>Later</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="pipeline-stage">
+                    <h4>Weekly Review & Optimization</h4>
+                    <ul class="key-features">
+                        <li>Analyze top-performing content and identify patterns</li>
+                        <li>Review audience demographics and engagement trends</li>
+                        <li>Optimize future content based on performance data</li>
+                        <li>Adjust posting schedule and frequency as needed</li>
+                        <li>Update SEO elements for underperforming articles</li>
+                        <li>Identify content gaps and trending topics</li>
+                    </ul>
+                </div>
+
+                <div class="note">
+                    <strong>Feedback Loop:</strong> Insights from analytics directly inform next week's content strategy, ensuring continuous improvement and audience-driven content development.
+                </div>
+            </div>
+
+            <!-- Workflow Timeline -->
+            <div class="section">
+                <h2>⏱️ Publishing Workflow Timeline</h2>
+
+                <div class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Phase</th>
+                            <th>Duration</th>
+                            <th>Activities</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Week 1: Planning</strong></td>
+                            <td>2-3 days</td>
+                            <td>Topic research, outline creation, resource gathering</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Week 1-2: Writing</strong></td>
+                            <td>3-5 days</td>
+                            <td>Draft creation, code examples, initial revisions</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Week 2: Review</strong></td>
+                            <td>2 days</td>
+                            <td>Editorial review, technical verification, SEO optimization</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Week 2: Visual Prep</strong></td>
+                            <td>1-2 days</td>
+                            <td>Image optimization, Instagram graphics creation, cover design</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Week 3: Publishing</strong></td>
+                            <td>1 day</td>
+                            <td>TTB8 publication, Instagram scheduling, announcement posts</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Week 3+: Promotion</strong></td>
+                            <td>Ongoing</td>
+                            <td>Social sharing, engagement, response to comments</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Quality Checklist -->
+            <div class="section">
+                <h2>✅ Pre-Publication Quality Checklist</h2>
+
+                <h3>Content Quality</h3>
+                <ul class="checklist">
+                    <li>Writing is clear, concise, and engaging</li>
+                    <li>No grammatical errors or typos</li>
+                    <li>Facts and claims are verified and cited</li>
+                    <li>Code examples are tested and working</li>
+                    <li>Links are functional and relevant</li>
+                    <li>Images are optimized and properly credited</li>
+                </ul>
+
+                <h3>SEO & Discoverability</h3>
+                <ul class="checklist">
+                    <li>Primary keyword appears in title and first 100 words</li>
+                    <li>Meta description is under 160 characters</li>
+                    <li>Heading structure is logical (H1 → H2 → H3)</li>
+                    <li>Internal links to related articles included</li>
+                    <li>Alt text added to all images</li>
+                    <li>Schema markup applied for rich snippets</li>
+                </ul>
+
+                <h3>Instagram Optimization</h3>
+                <ul class="checklist">
+                    <li>Graphics are 1080x1350px (portrait) or 1200x628px (landscape)</li>
+                    <li>Text is legible on mobile devices</li>
+                    <li>Captions include relevant hashtags (10-30)</li>
+                    <li>Call-to-action (CTA) is clear and compelling</li>
+                    <li>First slide/image is most engaging</li>
+                    <li>Link to full article included in bio/caption</li>
+                </ul>
+            </div>
+
+            <!-- Team Roles -->
+            <div class="section">
+                <h2>👥 Team Roles & Responsibilities</h2>
+
+                <div class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Role</th>
+                            <th>Responsibilities</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Content Creator/Writer</strong></td>
+                            <td>Research, write original content, create code examples, initial self-review</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Editor</strong></td>
+                            <td>Copy editing, fact-checking, technical review, SEO optimization</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Designer</strong></td>
+                            <td>Cover images, Instagram graphics, infographics, visual assets</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Social Media Manager</strong></td>
+                            <td>Schedule posts, craft captions, engagement, community management</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Publisher/CMS Manager</strong></td>
+                            <td>Upload to website, schedule publishing, manage metadata</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Analyst</strong></td>
+                            <td>Track metrics, identify trends, provide recommendations</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Tools & Technology -->
+            <div class="section">
+                <h2>🛠️ Tools & Technology Stack</h2>
+
+                <h3>Content Creation & Management</h3>
+                <ul class="key-features">
+                    <li><strong>CMS:</strong> Next.js with MDX (markdown) for structured content</li>
+                    <li><strong>Documentation:</strong> Google Docs / Notion for collaborative editing</li>
+                    <li><strong>Code Editor:</strong> VSCode for code examples and snippets</li>
+                    <li><strong>Version Control:</strong> GitHub for tracking article versions</li>
+                </ul>
+
+                <h3>Design & Assets</h3>
+                <ul class="key-features">
+                    <li><strong>Design Tool:</strong> Figma for creating graphics and layouts</li>
+                    <li><strong>Image Optimization:</strong> TinyPNG / ImageOptim</li>
+                    <li><strong>Social Graphics:</strong> Canva templates for Instagram posts</li>
+                </ul>
+
+                <h3>Publishing & Scheduling</h3>
+                <ul class="key-features">
+                    <li><strong>Website CMS:</strong> Next.js deployment via Vercel</li>
+                    <li><strong>Email:</strong> Newsletter service (Substack / ConvertKit)</li>
+                    <li><strong>Social Scheduling:</strong> Meta Business Suite / Later / Buffer</li>
+                </ul>
+
+                <h3>Analytics & Tracking</h3>
+                <ul class="key-features">
+                    <li><strong>Website Analytics:</strong> Google Analytics 4</li>
+                    <li><strong>Heatmaps:</strong> Hotjar for user behavior</li>
+                    <li><strong>Social Analytics:</strong> Instagram Insights / Meta Analytics</li>
+                    <li><strong>Dashboards:</strong> Google Data Studio for reporting</li>
+                </ul>
+            </div>
+
+            <!-- Best Practices -->
+            <div class="section">
+                <h2>💡 Best Practices & Optimization Tips</h2>
+
+                <h3>Content Strategy</h3>
+                <ul class="key-features">
+                    <li>Maintain a 2-3 week content calendar for planning</li>
+                    <li>Batch similar content creation tasks for efficiency</li>
+                    <li>Repurpose content across platforms (blog → Instagram carousel)</li>
+                    <li>Create content clusters around core topics</li>
+                    <li>Monitor trending topics and capitalize on timely content</li>
+                    <li>Include diverse content types (tutorials, news, opinion, case studies)</li>
+                </ul>
+
+                <h3>Instagram Strategy</h3>
+                <ul class="key-features">
+                    <li>Post consistently (3-5 times per week recommended)</li>
+                    <li>Engage with followers within first hour of posting</li>
+                    <li>Use Reels for increased reach (Instagram prioritizes video)</li>
+                    <li>Cross-promote with Stories and regular posts</li>
+                    <li>Build community through genuine interactions</li>
+                    <li>Test different post formats and optimal timing</li>
+                </ul>
+
+                <h3>Website Optimization</h3>
+                <ul class="key-features">
+                    <li>Ensure mobile-responsive design for all articles</li>
+                    <li>Implement fast loading times (target &lt;3 seconds)</li>
+                    <li>Use descriptive internal linking strategy</li>
+                    <li>Optimize images for web (balance quality and file size)</li>
+                    <li>Monitor and fix broken links regularly</li>
+                    <li>Keep content fresh with periodic updates</li>
+                </ul>
+            </div>
+
+            <!-- Future Roadmap -->
+            <div class="section">
+                <h2>🗓️ Future Pipeline Enhancements</h2>
+
+                <div class="pipeline-stage">
+                    <h4>Automation Opportunities</h4>
+                    <ul class="key-features">
+                        <li>Automated cross-posting from blog to Instagram (with manual approval)</li>
+                        <li>AI-assisted content generation for drafts</li>
+                        <li>Automatic SEO metadata generation based on content</li>
+                        <li>Newsletter automation and personalization</li>
+                        <li>Scheduled social media sharing at optimal times</li>
+                    </ul>
+                </div>
+
+                <div class="pipeline-stage">
+                    <h4>Platform Expansion</h4>
+                    <ul class="key-features">
+                        <li>LinkedIn content strategy (professional audience)</li>
+                        <li>TikTok presence (short-form video content)</li>
+                        <li>YouTube channel for video tutorials and deep dives</li>
+                        <li>Podcast integration for audio content</li>
+                        <li>Community platform (Discord/Slack) for engagement</li>
+                    </ul>
+                </div>
+
+                <div class="pipeline-stage">
+                    <h4>Advanced Analytics</h4>
+                    <ul class="key-features">
+                        <li>Audience segmentation and personalization</li>
+                        <li>Predictive analytics for content performance</li>
+                        <li>A/B testing framework for headlines and visuals</li>
+                        <li>Sentiment analysis of comments and engagement</li>
+                        <li>Revenue tracking and conversion optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact & Questions -->
+            <div class="section">
+                <h2>❓ Questions & Support</h2>
+                <p>For questions about this pipeline, content submission, or collaboration opportunities, please contact the Tasty Tech Bytes team.</p>
+                <ul class="key-features">
+                    <li>Website: <a href="https://tastytechbytes.com">tastytechbytes.com</a></li>
+                    <li>Instagram: @tastytechbytes</li>
+                    <li>Email: Contact through website</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>📊 TTB8 & Instagram Content Pipeline Summary</p>
+            <p>Last Updated: June 7, 2026</p>
+            <p>This document provides a comprehensive overview of the integrated content creation and distribution workflow for Tasty Tech Bytes and Instagram. Processes may evolve based on team feedback and platform changes.</p>
+        </div>
+    </div>
+</body>
+</html>
