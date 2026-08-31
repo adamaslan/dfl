@@ -53,14 +53,12 @@ export default function Ascot2025Winners() {
 
       <div className={awardStyles.intro}>
         <p>
-          <span className={awardStyles.introLead}>The sophomore surge:</span>{" "}
-          After the clandestine speakeasy origins of 2024, the ASCOT Awards
-          returned in 2025 with a vengeance. The blind-tasting gauntlet that
-          started in a Louisville backroom had now gone global — over 1,100
-          entries from distillers across five continents showed up to prove their
-          mettle. The judging panel, a rotating cast of 40+ of the world&apos;s
-          most opinionated palates, put every drop through the wringer without
-          mercy.
+          <span className={awardStyles.introLead}>Going global:</span> The
+          ASCOT Awards returned in 2025 with a vengeance. The blind-tasting
+          gauntlet had gone international — over 1,100 entries from distillers
+          across five continents showed up to prove their mettle. The judging
+          panel, a rotating cast of 40+ of the world&apos;s most opinionated
+          palates, put every drop through the wringer without mercy.
         </p>
         <p>
           By the time the smoke cleared, two bottles stood above the rest:{" "}

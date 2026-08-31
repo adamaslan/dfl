@@ -55,16 +55,15 @@ export default function Ascot2026Winners() {
         <p>
           <span className={awardStyles.introLead}>A little backstory:</span> The
           ASCOT Awards weren&apos;t forged in some stuffy corporate boardroom.
-          Legend has it, the whole thing kicked off in a hidden Louisville
-          speakeasy back in 2012, where a ragtag crew of distillers, bartenders,
-          and gloriously opinionated drinkers got tired of watching
-          shelf-trophies go to the highest bidder. Armed with Glencairn glasses
-          and zero chill, they swore to build a competition where the liquid did
-          the talking — blind, brutal, and totally unbiased.
+          They were built by people who got tired of watching shelf-trophies go
+          to the highest bidder — distillers, bartenders, and gloriously
+          opinionated drinkers armed with Glencairn glasses and zero chill, out
+          to make a competition where the liquid did the talking: blind, brutal,
+          and totally unbiased.
         </p>
         <p>
-          Fast-forward to 2026, and that clandestine tasting has exploded into
-          the most relentless double-blind gauntlet in the spirits world. Over
+          Fast-forward to 2026, and that idea has grown into one of the most
+          relentless double-blind gauntlets in the spirits world. Over
           1,500 entries entered the arena this year, but after weeks of
           palate-pummeling brackets, only these elite bottles clawed their way
           through <strong>Round 1</strong> to claim the title of{" "}
