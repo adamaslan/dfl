@@ -101,16 +101,44 @@
   object-fit: contain;
 }
 
-.bottleFallback {
+/* Placeholder tile shown in place of unavailable bottle photography. */
+.bottleTile {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 0.25rem;
   border-radius: 6px;
-  background: linear-gradient(to bottom, #fef3c7, #fffbeb);
-  font-size: 1.875rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: linear-gradient(160deg, var(--tile-from, #fef3c7), var(--tile-to, #fffbeb));
 }
+
+.tileGlyph {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.tileInitials {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--tile-ink, #92400e);
+}
+
+.tintBourbon  { --tile-from: #fde68a; --tile-to: #fffbeb; --tile-ink: #92400e; }
+.tintRye      { --tile-from: #fed7aa; --tile-to: #fff7ed; --tile-ink: #9a3412; }
+.tintScotch   { --tile-from: #ddd6fe; --tile-to: #f5f3ff; --tile-ink: #5b21b6; }
+.tintIrish    { --tile-from: #bbf7d0; --tile-to: #f0fdf4; --tile-ink: #166534; }
+.tintAgave    { --tile-from: #d9f99d; --tile-to: #f7fee7; --tile-ink: #3f6212; }
+.tintGin      { --tile-from: #a7f3d0; --tile-to: #ecfdf5; --tile-ink: #065f46; }
+.tintVodka    { --tile-from: #e0f2fe; --tile-to: #f8fafc; --tile-ink: #075985; }
+.tintRum      { --tile-from: #fecaca; --tile-to: #fef2f2; --tile-ink: #991b1b; }
+.tintBrandy   { --tile-from: #fbcfe8; --tile-to: #fdf2f8; --tile-ink: #9d174d; }
+.tintLiqueur  { --tile-from: #fef08a; --tile-to: #fefce8; --tile-ink: #854d0e; }
+.tintSingleMalt { --tile-from: #fde68a; --tile-to: #fefce8; --tile-ink: #854d0e; }
+.tintWhiskey  { --tile-from: #fde68a; --tile-to: #fffbeb; --tile-ink: #92400e; }
 
 .category {
   font-size: 0.75rem;

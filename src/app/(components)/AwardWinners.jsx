@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import styles from "../styles/Awards.module.css";
+import { spiritStyleFor, initialsFor } from "./spiritStyle";
 
 /**
  * Bottle image with a graceful fallback.
@@ -8,11 +9,18 @@ import styles from "../styles/Awards.module.css";
  * Many source image URLs point at hosts that hotlink-block or no longer serve
  * the asset; without this a card renders a broken-image icon.
  */
-function BottleImage({ src, alt }) {
+function BottleImage({ src, alt, category }) {
   const [failed, setFailed] = useState(!src);
 
   if (failed) {
-    return <div className={styles.bottleFallback}>🥃</div>;
+    const { glyph, tint } = spiritStyleFor(category);
+    const tintClass = styles[`tint${tint[0].toUpperCase()}${tint.slice(1)}`];
+    return (
+      <div className={`${styles.bottleTile} ${tintClass ?? ""}`} aria-hidden="true">
+        <span className={styles.tileGlyph}>{glyph}</span>
+        <span className={styles.tileInitials}>{initialsFor(alt)}</span>
+      </div>
+    );
   }
 
   return (
@@ -30,7 +38,7 @@ export function WinnerCard({ category, winner, image, runnersUp = [], note, high
   return (
     <div className={styles.card}>
       <div className={styles.imageFrame}>
-        <BottleImage src={image} alt={winner} />
+        <BottleImage src={image} alt={winner} category={category} />
       </div>
       <h3 className={styles.category}>{category}</h3>
       <p className={styles.winner}>🏆 {winner}</p>
