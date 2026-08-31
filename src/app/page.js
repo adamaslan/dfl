@@ -30,6 +30,23 @@ const Home = () => {
       {/* Remove the CSS module container and use only Tailwind */}
      
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 p-5 max-w-6xl mx-auto" id="parent">
+  <Link href="/ascot-awards-2026" className="block group">
+    <div className="flex flex-col rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5">
+      <div className="relative overflow-hidden">
+        <img
+          className="w-full h-64 md:h-80 object-cover transform transition-all duration-500 group-hover:scale-105"
+          alt="Whiskey bottles lined up for a blind tasting"
+          src="https://images.untp.beer/crop?width=800&height=640&stripmeta=true&url=https://untappd.s3.amazonaws.com/photos/2026_06_21/0eeb0ebdb5a86e7faad1eb270ac35b3f_c_1579727069_raw.jpg"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30"></div>
+      </div>
+      <div className="p-4 bg-amber-100 transition-colors duration-300 group-hover:bg-yellow-100">
+        <h2 className="text-xl font-semibold mb-2 text-gray-800">2026 ASCOT Awards: Round 1 Winners</h2>
+        <h3 className="text-lg text-gray-600">1,500 entries went in blind. These bottles came out on top.</h3>
+      </div>
+    </div>
+  </Link>
+
   <Link href="./townbranch-hapenny" className="block group">
     <div className="flex flex-col rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5">
       <div className="relative overflow-hidden">
