@@ -47,6 +47,23 @@ const Home = () => {
     </div>
   </Link>
 
+  <Link href="/ascot-awards-2025" className="block group">
+    <div className="flex flex-col rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5">
+      <div className="relative overflow-hidden">
+        <img
+          className="w-full h-64 md:h-80 object-cover transform transition-all duration-500 group-hover:scale-105"
+          alt="A lineup of award-winning spirits bottles"
+          src="https://res.cloudinary.com/adamaslan/image/upload/v1660751024/drinksfoodlife/grandarmypunch_e9pums.jpg"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30"></div>
+      </div>
+      <div className="p-4 bg-yellow-100 transition-colors duration-300 group-hover:bg-amber-100">
+        <h2 className="text-xl font-semibold mb-2 text-gray-800">2025 ASCOT Awards: Best in Category</h2>
+        <h3 className="text-lg text-gray-600">1,100 entries, five continents, two Best in Show crowns.</h3>
+      </div>
+    </div>
+  </Link>
+
   <Link href="./townbranch-hapenny" className="block group">
     <div className="flex flex-col rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5">
       <div className="relative overflow-hidden">
