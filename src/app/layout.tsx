@@ -31,6 +31,7 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body className="antialiased">
         <Nav />
+        <p className="mx-auto max-w-3xl px-4 py-3"><a href="/listen.html" className="underline">Listen: Play all or by theme</a></p>
         <AuthProvider><ArticleAudio>{children}</ArticleAudio></AuthProvider>
       </body>
     </html>
