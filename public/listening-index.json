@@ -1,0 +1,182 @@
+{
+  "site": "Drinks Food Life",
+  "dark": false,
+  "selector": "[class*=\"gridcontainer4\"],[class*=\"article1\"]",
+  "articles": [
+    {
+      "path": "/ascot-awards-2026",
+      "title": "2026 ASCOT Awards – Round 1 Winners",
+      "themes": [
+        "Drinks"
+      ]
+    },
+    {
+      "path": "/ascot-awards-2025",
+      "title": "2025 ASCOT Awards – Best in Category Winners",
+      "themes": [
+        "Drinks"
+      ]
+    },
+    {
+      "path": "/townbranch-hapenny",
+      "title": "Transatlantic Collaboration and Sustainability: The Story of Town Branch and Ha'Penny",
+      "themes": [
+        "Drinks"
+      ]
+    },
+    {
+      "path": "/perfect-nyc-summer-cocktail",
+      "title": "Summer Cocktails pt.2: Grand Army Punch by @chemixtry",
+      "themes": [
+        "Drinks"
+      ]
+    },
+    {
+      "path": "/new-day-for-coney-island",
+      "title": "New Day Rises Over Coney Island: Casino Proposal Rejected",
+      "themes": [
+        "Life & culture"
+      ]
+    },
+    {
+      "path": "/ja-tori-s-kitchen",
+      "title": "Ja Tori's Kitchen: A New Culinary Pop-Up Expansion in South Brooklyn",
+      "themes": [
+        "Food"
+      ]
+    },
+    {
+      "path": "/besttacosinbk",
+      "title": "The Best Tacos in BK",
+      "themes": [
+        "Food"
+      ]
+    },
+    {
+      "path": "/artandfish",
+      "title": "On Art and Spear Fishing",
+      "themes": [
+        "Life & culture"
+      ]
+    },
+    {
+      "path": "/stylish-in-aspen-drinking-rose-at-bonnies",
+      "title": "Awe and Culture in Aspen: Whispering Angel Rose",
+      "themes": [
+        "Life & culture"
+      ]
+    },
+    {
+      "path": "/northdumplingindimessquare",
+      "title": "In Love with North Dumpling in Dimes Square",
+      "themes": [
+        "Food"
+      ]
+    },
+    {
+      "path": "/summercocktailspart1",
+      "title": "Summer Cocktails pt. 1 - The Danbury Donkey by @chemixtry",
+      "themes": [
+        "Drinks"
+      ]
+    },
+    {
+      "path": "/babydaddy",
+      "title": "Baby Daddy Please",
+      "themes": [
+        "Drinks"
+      ]
+    },
+    {
+      "path": "/3valuewines",
+      "title": "3 Low Cost High Value Red Wines",
+      "themes": [
+        "Drinks"
+      ]
+    },
+    {
+      "path": "/coyoacan",
+      "title": "Getting Deep in Coyoacan",
+      "themes": [
+        "Life & culture"
+      ]
+    },
+    {
+      "path": "/seawolf",
+      "title": "Writing Away Your Sunny Days at Sea Wolf",
+      "themes": [
+        "Food"
+      ]
+    },
+    {
+      "path": "/the-most-fun-conventions-in-2025",
+      "title": "The Most Fun...Conventions in 2025",
+      "themes": [
+        "Life & culture"
+      ]
+    },
+    {
+      "path": "/naplesbotanicalgardenwelcomesfrida",
+      "title": "Naples Botanical Garden Welcomes Frida and the Casa Azul",
+      "themes": [
+        "Life & culture"
+      ]
+    },
+    {
+      "path": "/mole",
+      "title": "On the Love of Mole at Meson Antugua Santa Catarina",
+      "themes": [
+        "Food"
+      ]
+    },
+    {
+      "path": "/raki",
+      "title": "On the Love of Raki and Turkish Food",
+      "themes": [
+        "Drinks"
+      ]
+    },
+    {
+      "path": "/cafeversailles",
+      "title": "In Love with Café Versailles",
+      "themes": [
+        "Food"
+      ]
+    },
+    {
+      "path": "/betting-against-coney",
+      "title": "Betting Against Coney: Community Fights Back on Proposed Casino Development",
+      "themes": [
+        "Life & culture"
+      ]
+    },
+    {
+      "path": "/amaromontenegro",
+      "title": "Drinking Amaro Montenegro at ZXY Gallery",
+      "themes": [
+        "Drinks"
+      ]
+    },
+    {
+      "path": "/sourdough-recipe",
+      "title": "Sourdough Recipe 2025",
+      "themes": [
+        "Food"
+      ]
+    },
+    {
+      "path": "/tealove",
+      "title": "5 Reasons Why You Should Drink Loose Teas",
+      "themes": [
+        "Drinks"
+      ]
+    },
+    {
+      "path": "/naturalwine",
+      "title": "An Awkward Question about Natural Wine",
+      "themes": [
+        "Drinks"
+      ]
+    }
+  ]
+}
