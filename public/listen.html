@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Article listening queue</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f8fafc;color:#111827;font:17px/1.5 system-ui,sans-serif}main{max-width:850px;margin:auto;padding:24px 18px}a{color:#075985}h1{line-height:1.15}button,select{font:inherit;min-height:44px;border:1px solid #64748b;border-radius:6px;background:white;color:#111827;padding:8px 12px}button:disabled{opacity:.5}button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #0369a1;outline-offset:3px}.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.player{background:white;border:1px solid #64748b;border-radius:12px;padding:18px;margin:20px 0}li{margin:12px 0}li button{margin:5px 8px 5px 0}.note{font-size:14px;color:#475569}#now{font-size:1.25rem;font-weight:650}#status{min-height:3em}label{display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap}select{max-width:100%}#articles{padding-left:24px}body.dark{background:#000;color:#f8fafc}body.dark .player{background:#111827}body.dark a{color:#7dd3fc}body.dark .note{color:#cbd5e1}
+</style></head><body><main>
+<a href="/">Back to magazine</a>
+<h1 id="site">Article listening queue</h1>
+<p>Play all articles in catalog order, or choose a theme. The next article plays here without opening another page.</p>
+<label>Theme <select id="theme" aria-label="Listening theme"><option value="">All articles</option></select></label>
+<div class="player" aria-label="Listening queue player">
+<p id="position"></p><p id="now">Choose Play all or a starting article.</p>
+<a id="read" hidden>Read current article</a>
+<div class="controls"><button id="play" type="button">Play all</button><button id="pause" type="button" disabled>Pause</button><button id="stop" type="button" disabled>Stop</button><button id="previous" type="button" disabled>Previous article</button><button id="next" type="button" disabled>Next article</button><label>Speed <select id="speed" aria-label="Reading speed"><option value="0.75">0.75x</option><option value="1" selected>1x</option><option value="1.25">1.25x</option><option value="1.5">1.5x</option><option value="1.75">1.75x</option><option value="2">2x</option><option value="2.5">2.5x</option></select></label></div>
+<p id="status" role="status">Loading article index...</p>
+<p class="note">Browser/OS voices may use network services. Voice quality, actual speed and background playback vary by device. Keep this page open. Speech may need another tap between articles on some browsers. Code blocks, navigation and related-story cards are not narrated. Changing speed repeats the current short part. Leaving this page stops the queue.</p>
+</div>
+<h2>Queue</h2><p class="note">Themes are editorial groupings. Each article appears once in Play all; an article can belong to more than one theme. No listening history is saved.</p><ol id="articles"></ol>
+<noscript>This listening queue requires JavaScript and a browser speech voice. Article text is still available from the magazine homepage.</noscript>
+<script type="module" src="/listening-queue.js"></script></main></body></html>
