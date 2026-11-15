@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 import Nav from "./(components)/Nav";
+import ArticleAudio from "@/components/ArticleAudio";
 import { AuthProvider } from "@/components/auth-provider";
 
 export const metadata: Metadata = {
@@ -30,7 +31,7 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body className="antialiased">
         <Nav />
-        <AuthProvider>{children}</AuthProvider>
+        <AuthProvider><ArticleAudio>{children}</ArticleAudio></AuthProvider>
       </body>
     </html>
   );
